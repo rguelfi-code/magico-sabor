@@ -5023,6 +5023,51 @@
       "entregue": true,
       "recebido": true,
       "dataRecebimento": "2026-05-27"
+    },
+    {
+      "id": 1779987837721,
+      "clienteId": 1775768243865,
+      "clienteNome": "Nacional Hotel",
+      "clienteTel": "",
+      "clienteDoc": "",
+      "data": "2026-05-28",
+      "vencimento": "2026-05-28",
+      "tipo": "entrega",
+      "endereco": "",
+      "frete": 0,
+      "pagamento": "pix",
+      "obs": "",
+      "itens": [
+        {
+          "nome": "Pão australiano VEG",
+          "qtd": 1,
+          "preco": 38
+        },
+        {
+          "nome": "Pão de forma VEG",
+          "qtd": 1,
+          "preco": 36
+        },
+        {
+          "nome": "Bolo caseiro de laranja VEG",
+          "qtd": 1,
+          "preco": 30
+        },
+        {
+          "nome": "Bolo caseiro de chocolate VEG",
+          "qtd": 1,
+          "preco": 30
+        },
+        {
+          "nome": "Bolo caseiro de banana VEG",
+          "qtd": 1,
+          "preco": 30
+        }
+      ],
+      "subtotal": 164,
+      "total": 164,
+      "status": "aberto",
+      "dataRegistro": "2026-05-28"
     }
   ],
   "precificados": [
