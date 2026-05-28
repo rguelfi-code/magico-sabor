@@ -1425,11 +1425,7 @@ function setStatus(msg,cor='#3d5c2a'){
 }
 
 async function tentarReconectar(){
-  const nomeArquivo=localStorage.getItem('msAutoSaveFile');
-  if(!nomeArquivo)return;
-  const btn=document.getElementById('btnAbrir');
-  if(btn)btn.textContent=`📂 Reabrir: ${nomeArquivo}`;
-  setStatus(`📂 Clique em "Reabrir" para carregar ${nomeArquivo}`,'#a67c20');
+  // Não utilizado — auto-save agora via GitHub
 }
 
 // abrirViaUrl removida
