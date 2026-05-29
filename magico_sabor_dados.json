@@ -5137,8 +5137,9 @@
       ],
       "subtotal": 76,
       "total": 76,
-      "status": "aberto",
-      "dataRegistro": "2026-05-29"
+      "status": "entregue",
+      "dataRegistro": "2026-05-29",
+      "entregue": false
     }
   ],
   "precificados": [
@@ -11455,6 +11456,34 @@
       "dataEmissao": "2026-05-29",
       "status": "emitida",
       "enviada": false
+    },
+    {
+      "id": 1780066151741,
+      "numero": "FAT-0028",
+      "encId": 1780066093324,
+      "clienteNome": "Ana Paula Bertozzi",
+      "clienteDoc": "—",
+      "clienteTel": "(35) 99907 0048",
+      "data": "2026-05-29",
+      "vencimento": "2026-05-29",
+      "pagamento": "pix",
+      "itens": [
+        {
+          "nome": "Pão fatiado abóbora",
+          "qtd": 1,
+          "preco": 36
+        },
+        {
+          "nome": "Bolo caseiro de chocolate - C/cob",
+          "qtd": 1,
+          "preco": 40
+        }
+      ],
+      "frete": 0,
+      "subtotal": 76,
+      "total": 76,
+      "dataEmissao": "2026-05-29",
+      "status": "emitida"
     }
   ],
   "_exportSeq": 44,
