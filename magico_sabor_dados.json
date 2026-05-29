@@ -11424,40 +11424,6 @@
       "enviada": false
     },
     {
-      "id": 1780062384813,
-      "numero": "FAT-0027",
-      "encId": 1780062372821,
-      "clienteNome": "Monreale - D.C. Turismo Ltda.",
-      "clienteDoc": "01.204.495/0001-33",
-      "clienteTel": "",
-      "data": "2026-05-29",
-      "vencimento": "2026-05-29",
-      "pagamento": "pix",
-      "itens": [
-        {
-          "nome": "Bolo de banana VEG",
-          "qtd": 1,
-          "preco": 38
-        },
-        {
-          "nome": "Bolo de cenoura C/cob",
-          "qtd": 1,
-          "preco": 60
-        },
-        {
-          "nome": "Pão fatiado milho",
-          "qtd": 1,
-          "preco": 36
-        }
-      ],
-      "frete": 0,
-      "subtotal": 134,
-      "total": 134,
-      "dataEmissao": "2026-05-29",
-      "status": "emitida",
-      "enviada": false
-    },
-    {
       "id": 1780066151741,
       "numero": "FAT-0028",
       "encId": 1780066093324,
