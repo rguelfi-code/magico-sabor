@@ -5068,7 +5068,7 @@
       "total": 164,
       "status": "entregue",
       "dataRegistro": "2026-05-28",
-      "entregue": false,
+      "entregue": true,
       "recebido": false,
       "dataRecebimento": null
     },
