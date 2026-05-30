@@ -2136,14 +2136,14 @@
       "nome": "Eritritol",
       "unidade": "kg",
       "estoque": 0,
-      "custo": 70,
+      "custo": 40,
       "minimo": 0,
       "fornecedor": "",
       "sg": true,
       "sl": true,
       "veg": true,
       "dataCadastro": "2026-04-05",
-      "dataAtualizacao": null
+      "dataAtualizacao": "2026-05-30"
     },
     {
       "id": 1775422470909,
