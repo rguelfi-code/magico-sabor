@@ -1428,24 +1428,6 @@
       "dataAtualizacao": "2026-04-27"
     },
     {
-      "id": 1775413014807,
-      "nome": "Pão de hamburguer (4 un)",
-      "categoria": "pao",
-      "medida": "peso",
-      "peso": 4,
-      "pesoUn": "g",
-      "qtd": null,
-      "qtdUn": "un",
-      "tempo": "",
-      "desc": "",
-      "sg": true,
-      "sl": true,
-      "veg": false,
-      "sd": false,
-      "dataCadastro": "2026-04-05",
-      "dataAtualizacao": "2026-04-12"
-    },
-    {
       "id": 1779109491117,
       "nome": "Pão de Hamburguer (4 unidades)",
       "categoria": "",
