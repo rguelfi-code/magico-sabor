@@ -2220,14 +2220,14 @@
       "nome": "farinha de aveia",
       "unidade": "kg",
       "estoque": 0,
-      "custo": 24,
+      "custo": 20,
       "minimo": 0,
       "fornecedor": "",
       "sg": true,
       "sl": true,
       "veg": true,
       "dataCadastro": "2026-04-05",
-      "dataAtualizacao": "2026-04-06"
+      "dataAtualizacao": "2026-05-30"
     },
     {
       "id": 1775422640602,
