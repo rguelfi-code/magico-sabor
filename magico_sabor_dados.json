@@ -1800,14 +1800,14 @@
       "nome": "ameixa",
       "unidade": "kg",
       "estoque": 0,
-      "custo": 45,
+      "custo": 50,
       "minimo": 0,
       "fornecedor": "",
       "sg": true,
       "sl": true,
       "veg": true,
       "dataCadastro": "2026-04-05",
-      "dataAtualizacao": null
+      "dataAtualizacao": "2026-05-30"
     },
     {
       "id": 1775418529925,
