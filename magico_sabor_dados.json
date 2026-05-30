@@ -5139,7 +5139,7 @@
       "total": 76,
       "status": "entregue",
       "dataRegistro": "2026-05-29",
-      "entregue": true,
+      "entregue": false,
       "recebido": false,
       "dataRecebimento": null
     }
