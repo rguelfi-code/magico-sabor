@@ -5139,7 +5139,9 @@
       "total": 76,
       "status": "entregue",
       "dataRegistro": "2026-05-29",
-      "entregue": false
+      "entregue": true,
+      "recebido": false,
+      "dataRecebimento": null
     }
   ],
   "precificados": [
@@ -11449,7 +11451,8 @@
       "subtotal": 76,
       "total": 76,
       "dataEmissao": "2026-05-29",
-      "status": "emitida"
+      "status": "emitida",
+      "enviada": false
     },
     {
       "id": 1780067746888,
@@ -11482,7 +11485,8 @@
       "subtotal": 134,
       "total": 134,
       "dataEmissao": "2026-05-29",
-      "status": "emitida"
+      "status": "emitida",
+      "enviada": false
     }
   ],
   "_exportSeq": 44,
