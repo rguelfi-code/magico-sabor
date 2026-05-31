@@ -5210,8 +5210,9 @@
       ],
       "subtotal": 30,
       "total": 30,
-      "status": "aberto",
-      "dataRegistro": "2026-05-31"
+      "status": "entregue",
+      "dataRegistro": "2026-05-31",
+      "entregue": false
     }
   ],
   "precificados": [
@@ -11616,6 +11617,29 @@
       "dataEmissao": "2026-05-31",
       "status": "emitida",
       "enviada": false
+    },
+    {
+      "id": 1780255627814,
+      "numero": "FAT-0034",
+      "encId": 1780255623314,
+      "clienteNome": "Bibiana",
+      "clienteDoc": "—",
+      "clienteTel": "(35) 99779 0060",
+      "data": "2026-05-31",
+      "vencimento": "2026-05-31",
+      "pagamento": "pix",
+      "itens": [
+        {
+          "nome": "Bolo caseiro de chocolate VEG",
+          "qtd": 1,
+          "preco": 30
+        }
+      ],
+      "frete": 0,
+      "subtotal": 30,
+      "total": 30,
+      "dataEmissao": "2026-05-31",
+      "status": "emitida"
     }
   ],
   "_exportSeq": 44,
