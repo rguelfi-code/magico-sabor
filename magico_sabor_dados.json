@@ -11532,6 +11532,64 @@
       "dataEmissao": "2026-05-29",
       "status": "emitida",
       "enviada": false
+    },
+    {
+      "id": 1780243750364,
+      "numero": "FAT-0033",
+      "encId": 1780235978235,
+      "clienteNome": "Cassino Hotel",
+      "clienteDoc": "—",
+      "clienteTel": "",
+      "data": "2026-05-31",
+      "vencimento": "2026-05-31",
+      "pagamento": "pix",
+      "itens": [
+        {
+          "nome": "Bolo caseiro de fubá VEG",
+          "preco": 30,
+          "qtd": 1
+        },
+        {
+          "nome": "Bolo caseiro de banana VEG",
+          "qtd": 2,
+          "preco": 30
+        },
+        {
+          "nome": "Bolo caseiro de chocolate ZERO",
+          "qtd": 1,
+          "preco": 35
+        },
+        {
+          "nome": "Bolo caseiro de laranja VEG",
+          "qtd": 1,
+          "preco": 30
+        },
+        {
+          "nome": "Bolo caseiro de chocolate VEG",
+          "preco": 30,
+          "qtd": 1
+        },
+        {
+          "nome": "Pão de forma VEG",
+          "preco": 36,
+          "qtd": 2
+        },
+        {
+          "nome": "Pão australiano VEG",
+          "preco": 38,
+          "qtd": 2
+        },
+        {
+          "nome": "Pão fatiado abóbora",
+          "qtd": 1,
+          "preco": 36
+        }
+      ],
+      "frete": 0,
+      "subtotal": 369,
+      "total": 369,
+      "dataEmissao": "2026-05-31",
+      "status": "emitida"
     }
   ],
   "_exportSeq": 44,
