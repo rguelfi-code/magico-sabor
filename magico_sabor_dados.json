@@ -5187,34 +5187,6 @@
       "entregue": false,
       "recebido": false,
       "dataRecebimento": null
-    },
-    {
-      "id": 1780255623314,
-      "clienteId": 1775764988997,
-      "clienteNome": "Bibiana",
-      "clienteTel": "(35) 99779 0060",
-      "clienteDoc": "",
-      "data": "2026-05-31",
-      "vencimento": "2026-05-31",
-      "tipo": "entrega",
-      "endereco": "Rua Gerváso Antônio Chiminazzo, 87",
-      "frete": 0,
-      "pagamento": "pix",
-      "obs": "",
-      "itens": [
-        {
-          "nome": "Bolo caseiro de chocolate VEG",
-          "qtd": 1,
-          "preco": 30
-        }
-      ],
-      "subtotal": 30,
-      "total": 30,
-      "status": "entregue",
-      "dataRegistro": "2026-05-31",
-      "entregue": false,
-      "recebido": false,
-      "dataRecebimento": null
     }
   ],
   "precificados": [
