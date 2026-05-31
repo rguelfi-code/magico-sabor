@@ -2416,14 +2416,14 @@
       "nome": "goma xantana",
       "unidade": "kg",
       "estoque": 0,
-      "custo": 60,
+      "custo": 70,
       "minimo": 0,
       "fornecedor": "",
       "sg": true,
       "sl": true,
       "veg": true,
       "dataCadastro": "2026-04-05",
-      "dataAtualizacao": null
+      "dataAtualizacao": "2026-05-31"
     },
     {
       "id": 1775423117627,
