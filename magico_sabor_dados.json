@@ -5140,9 +5140,9 @@
       "obs": "",
       "itens": [
         {
-          "nome": "Bolo caseiro de cenoura - C/cob",
-          "qtd": 1,
-          "preco": 40
+          "nome": "Bolo caseiro de fubá VEG",
+          "preco": 30,
+          "qtd": 1
         },
         {
           "nome": "Bolo caseiro de banana VEG",
@@ -5160,19 +5160,19 @@
           "preco": 30
         },
         {
-          "nome": "Bolo caseiro de chocolate - C/cob",
-          "qtd": 1,
-          "preco": 40
+          "nome": "Bolo caseiro de chocolate VEG",
+          "preco": 30,
+          "qtd": 1
         },
         {
-          "nome": "Pão fatiado multigrãos",
-          "qtd": 2,
-          "preco": 36
+          "nome": "Pão de forma VEG",
+          "preco": 36,
+          "qtd": 2
         },
         {
-          "nome": "Pão fatiado milho",
-          "qtd": 2,
-          "preco": 36
+          "nome": "Pão australiano VEG",
+          "preco": 38,
+          "qtd": 2
         },
         {
           "nome": "Pão fatiado abóbora",
@@ -5180,8 +5180,8 @@
           "preco": 36
         }
       ],
-      "subtotal": 385,
-      "total": 385,
+      "subtotal": 369,
+      "total": 369,
       "status": "entregue",
       "dataRegistro": "2026-05-31",
       "entregue": false,
