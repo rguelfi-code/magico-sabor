@@ -400,6 +400,12 @@
     body { background:#fff; }
     /* Quando modal da fatura estiver aberto: mostrar só a fatura */
     body.imprimindo-nf #blocoResumoCliente { display:none !important; }
+    body.imprimindo-precos #pg-relatorios { display:block !important; }
+    body.imprimindo-precos .rel-section { display:none !important; }
+    body.imprimindo-precos #rel-precos-pub { display:block !important; }
+    body.imprimindo-precos .rel-tabs,
+    body.imprimindo-precos .periodo-bar,
+    body.imprimindo-precos .page-header { display:none !important; }
     body.imprimindo-nf #pg-relatorios { display:block !important; }
     body.fatura-aberta #pg-relatorios { display:none !important; }
     #modalFaturaOverlay.open { position:fixed !important; inset:0 !important; background:#fff !important; display:flex !important; align-items:flex-start !important; z-index:9999 !important; overflow:auto !important; }
@@ -839,7 +845,7 @@
 <div class="pagina" id="pg-relatorios">
   <div class="page-header">
     <h2>📈 <span>Relatórios</span></h2>
-    <button class="btn-imprimir" onclick="window.print()">🖨️ Imprimir / PDF</button>
+    <button class="btn-imprimir" onclick="imprimirPrecosPub()">🖨️ Imprimir / PDF</button>
   </div>
   <div class="periodo-bar">
     <label>Período:</label>
@@ -972,9 +978,7 @@
 
   <!-- PREÇOS PARA CLIENTES -->
   <div class="rel-section" id="rel-precos-pub">
-    <div class="secao-titulo">📢 Lista de Preços para Clientes</div>
-    <p style="font-size:13px;color:var(--texto-ter);margin-bottom:16px;">Versão simplificada para divulgação — apenas produto, medida e preço de venda.</p>
-    <table class="tabela-rel"><thead><tr><th>Produto</th><th>Medida / Rendimento</th><th class="num">Preço de Venda</th></tr></thead><tbody id="tbPrecosPub"></tbody></table>
+    <div id="precosPubContainer"></div>
   </div>
 
   <!-- COMPONENTES -->
@@ -2417,7 +2421,7 @@ function emitirFaturaSimples(encId){
   const c=dados.clientes.find(c=>c.id===enc.clienteId)||{};
   const numFatura=`FAT-${String(faturaContador++).padStart(4,'0')}`;
   const dataEmissao=new Date().toISOString().split('T')[0];
-  const fatura={id:Date.now(),numero:numFatura,encId,clienteNome:enc.clienteNome,clienteDoc:enc.clienteDoc||c.doc||'—',clienteTel:enc.clienteTel,data:enc.data,vencimento:enc.vencimento,pagamento:enc.pagamento,itens:enc.itens,frete:enc.frete,subtotal:enc.subtotal,total:enc.total,dataEmissao,status:'emitida'};
+  const fatura={id:Date.now(),numero:numFatura,encId,clienteNome:enc.clienteNome,clienteDoc:enc.clienteDoc||c.doc||'—',clienteTel:enc.clienteTel,clienteEnd:enc.endereco||'',data:enc.data,vencimento:enc.vencimento,pagamento:enc.pagamento,itens:enc.itens,frete:enc.frete,subtotal:enc.subtotal,total:enc.total,dataEmissao,status:'emitida'};
   dados.faturas.push(fatura);
   // Não sobrescrever status — entrega e fatura são independentes
   // Apenas marcar entregue se ainda estava em aberto (compatibilidade)
@@ -2457,6 +2461,8 @@ function mostrarFatura(fatId){
       <span><strong>CPF / CNPJ<\/strong>${f.clienteDoc||'—'}<\/span>
       <span><strong>WhatsApp<\/strong>${f.clienteTel||'—'}<\/span>
       <span><strong>Forma de Pgto<\/strong>${pagLabel[f.pagamento]||f.pagamento}<\/span>
+      ${f.clienteEnd?`<span style="grid-column:1/-1;"><strong>Endereço de Entrega<\/strong>${f.clienteEnd}<\/span>`:''}
+      <span><strong>Data de Entrega<\/strong>${fmtData(f.vencimento)||'—'}<\/span>
     <\/div>
     <table class="fatura-tabela">
       <thead><tr><th>Produto<\/th><th class="num">Qtd<\/th><th class="num">Unit. (R$)<\/th><th class="num">Total (R$)<\/th><\/tr><\/thead>
@@ -2509,7 +2515,8 @@ function excluirFatura(id){
 function renderFaturas(){
   const busca=document.getElementById('searchFaturas').value.toLowerCase();
   const lista=document.getElementById('listaFaturas');
-  const items=dados.faturas.filter(f=>f.clienteNome.toLowerCase().includes(busca)||f.numero.toLowerCase().includes(busca));
+  const items=dados.faturas.filter(f=>f.clienteNome.toLowerCase().includes(busca)||f.numero.toLowerCase().includes(busca))
+    .sort((a,b)=>new Date(b.dataEmissao)-new Date(a.dataEmissao));
   if(!items.length){lista.innerHTML='<div class="empty-state"><span>🧾<\/span>Nenhuma fatura emitida ainda.<\/div>';return;}
   lista.innerHTML=items.map(f=>`<div class="enc-card faturado" style="margin-bottom:12px;">
     <div class="enc-header"><div class="enc-titulo"><h4>🧾 ${f.numero} — ${f.clienteNome}<\/h4><p>Emissão: ${fmtData(f.dataEmissao)} · Entrega: ${fmtData(f.data)} · Venc: ${fmtData(f.vencimento)}<\/p><\/div><div class="enc-valor">${fmt(f.total)}<\/div><\/div>
@@ -2807,7 +2814,7 @@ function renderRelAEntregarStatus(){
   const encs=dados.encomendas.filter(e=>etapaEncomenda(e)==='aentregar');
   div.innerHTML=_tabelaStatusRel(encs,[
     {label:'Cliente',fn:e=>e.clienteNome},
-    {label:'Endereço',fn:e=>e.clienteEnd||'—'},
+    {label:'Endereço',fn:e=>e.endereco||'—'},
     {label:'Telefone',fn:e=>e.clienteTel||'—'},
     {label:'Data Entrega',fn:e=>fmtData(e.vencimento)||'—'},
     {label:'Valor (R$)',num:true,fn:e=>fmtN(e.total)}
@@ -2909,6 +2916,11 @@ function renderRelRomaneio(){
   div.innerHTML=html;
 }
 
+function imprimirPrecosPub(){
+  document.body.classList.add('imprimindo-precos');
+  window.print();
+  setTimeout(()=>document.body.classList.remove('imprimindo-precos'),1000);
+}
 function imprimirRomaneio(){
   const titulo=document.getElementById('romaneioFiltroCliente')?.value||'Todos';
   const tituloOrig=document.title;
@@ -3134,10 +3146,31 @@ function renderRelPrecos(){
 }
 
 function renderRelPrecosPub(){
-  const tb=document.getElementById('tbPrecosPub');
-  if(!dados.precificados.length){tb.innerHTML='<tr><td colspan="3" class="vazio-rel">Nenhum produto precificado.<\/td><\/tr>';return;}
+  const container=document.getElementById('precosPubContainer');
+  if(!container)return;
+  if(!dados.precificados.length){container.innerHTML='<div class="vazio-rel" style="padding:24px;text-align:center;">Nenhum produto precificado.<\/div>';return;}
   const lista=[...dados.precificados].sort((a,b)=>a.nome.localeCompare(b.nome,'pt-BR'));
-  tb.innerHTML=lista.map(p=>{const prod=dados.produtos.find(pr=>pr.id==p.prodId);const medida=prod?(prod.medida==='peso'?`${prod.peso||''} ${prod.pesoUn||''}`:prod.medida==='unidade'?`${prod.qtd||''} ${prod.qtdUn||''}`:`${prod.peso||''}${prod.pesoUn||''}`):p.rendimento+' '+p.rendimentoUn;return`<tr><td class="dest">${p.nome}<\/td><td>${medida}<\/td><td class="num" style="font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--verde-escuro);">${fmt(p.preco)}<\/td><\/tr>`;}).join('');
+  // Logo SVG do Mágico Sabor
+  const logoSvg=`<svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="30" cy="30" r="28" fill="#3d5c2a" stroke="#a67c20" stroke-width="2.5"\/>
+    <text x="30" y="22" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#a67c20" font-weight="700">Mágico<\/text>
+    <text x="30" y="34" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#fff" font-weight="700">Sabor<\/text>
+    <text x="30" y="47" text-anchor="middle" font-family="Georgia,serif" font-size="9" fill="#a67c20">🍰<\/text>
+  <\/svg>`;
+  const rows=lista.map(p=>{
+    const prod=dados.produtos.find(pr=>pr.id==p.prodId);
+    const medida=prod?(prod.medida==='peso'?`${prod.peso||''} ${prod.pesoUn||''}`:prod.medida==='unidade'?`${prod.qtd||''} ${prod.qtdUn||''}`:`${prod.peso||''}${prod.pesoUn||''}`):p.rendimento+' '+p.rendimentoUn;
+    return`<tr><td class="dest">${p.nome}<\/td><td>${medida}<\/td><td class="num" style="font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--verde-escuro);">${fmt(p.preco)}<\/td><\/tr>`;
+  }).join('');
+  container.innerHTML=`
+    <div style="display:flex;align-items:center;gap:16px;margin-bottom:20px;padding-bottom:16px;border-bottom:2px solid var(--verde-claro);">
+      ${logoSvg}
+      <div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:700;color:var(--verde-escuro);line-height:1;">Lista de Preços<\/div>
+        <div style="font-size:12px;color:var(--texto-ter);margin-top:4px;">Mágico Sabor · (35) 99720-3363<\/div>
+      <\/div>
+    <\/div>
+    <table class="tabela-rel" id="tbPrecosPub"><thead><tr><th>Produto<\/th><th>Medida<\/th><th class="num">Preço<\/th><\/tr><\/thead><tbody>${rows}<\/tbody><\/table>`;
 }
 
 function renderRelIngredientes(){
