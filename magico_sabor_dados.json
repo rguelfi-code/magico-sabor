@@ -5184,7 +5184,9 @@
       "total": 385,
       "status": "entregue",
       "dataRegistro": "2026-05-31",
-      "entregue": false
+      "entregue": false,
+      "recebido": false,
+      "dataRecebimento": null
     }
   ],
   "precificados": [
@@ -11530,64 +11532,6 @@
       "dataEmissao": "2026-05-29",
       "status": "emitida",
       "enviada": false
-    },
-    {
-      "id": 1780236009904,
-      "numero": "FAT-0032",
-      "encId": 1780235978235,
-      "clienteNome": "Cassino Hotel",
-      "clienteDoc": "—",
-      "clienteTel": "",
-      "data": "2026-05-31",
-      "vencimento": "2026-05-31",
-      "pagamento": "pix",
-      "itens": [
-        {
-          "nome": "Bolo caseiro de cenoura - C/cob",
-          "qtd": 1,
-          "preco": 40
-        },
-        {
-          "nome": "Bolo caseiro de banana VEG",
-          "qtd": 2,
-          "preco": 30
-        },
-        {
-          "nome": "Bolo caseiro de chocolate ZERO",
-          "qtd": 1,
-          "preco": 35
-        },
-        {
-          "nome": "Bolo caseiro de laranja VEG",
-          "qtd": 1,
-          "preco": 30
-        },
-        {
-          "nome": "Bolo caseiro de chocolate - C/cob",
-          "qtd": 1,
-          "preco": 40
-        },
-        {
-          "nome": "Pão fatiado multigrãos",
-          "qtd": 2,
-          "preco": 36
-        },
-        {
-          "nome": "Pão fatiado milho",
-          "qtd": 2,
-          "preco": 36
-        },
-        {
-          "nome": "Pão fatiado abóbora",
-          "qtd": 1,
-          "preco": 36
-        }
-      ],
-      "frete": 0,
-      "subtotal": 385,
-      "total": 385,
-      "dataEmissao": "2026-05-31",
-      "status": "emitida"
     }
   ],
   "_exportSeq": 44,
