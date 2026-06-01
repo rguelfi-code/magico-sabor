@@ -11185,7 +11185,7 @@
       "total": 208,
       "dataEmissao": "2026-05-20",
       "status": "emitida",
-      "enviada": false
+      "enviada": true
     },
     {
       "id": 1779357099327,
