@@ -5184,7 +5184,7 @@
       "total": 369,
       "status": "entregue",
       "dataRegistro": "2026-05-31",
-      "entregue": false,
+      "entregue": true,
       "recebido": false,
       "dataRecebimento": null
     },
@@ -5222,7 +5222,9 @@
       "total": 143,
       "status": "entregue",
       "dataRegistro": "2026-05-31",
-      "entregue": false
+      "entregue": false,
+      "recebido": false,
+      "dataRecebimento": null
     }
   ],
   "precificados": [
@@ -11660,7 +11662,8 @@
       "subtotal": 143,
       "total": 143,
       "dataEmissao": "2026-05-31",
-      "status": "emitida"
+      "status": "emitida",
+      "enviada": false
     }
   ],
   "_exportSeq": 44,
