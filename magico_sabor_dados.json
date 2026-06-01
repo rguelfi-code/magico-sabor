@@ -11663,7 +11663,7 @@
       "total": 143,
       "dataEmissao": "2026-05-31",
       "status": "emitida",
-      "enviada": false
+      "enviada": true
     }
   ],
   "_exportSeq": 44,
