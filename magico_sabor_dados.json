@@ -2680,16 +2680,16 @@
     {
       "id": 1775425512902,
       "nome": "ovos",
-      "unidade": "un",
+      "unidade": "kg",
       "estoque": 0,
-      "custo": 0.75,
+      "custo": 16,
       "minimo": 0,
       "fornecedor": "",
       "sg": true,
       "sl": true,
       "veg": false,
       "dataCadastro": "2026-04-05",
-      "dataAtualizacao": null
+      "dataAtualizacao": "2026-06-01"
     },
     {
       "id": 1775425549593,
