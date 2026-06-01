@@ -5222,7 +5222,7 @@
       "total": 143,
       "status": "entregue",
       "dataRegistro": "2026-05-31",
-      "entregue": false,
+      "entregue": true,
       "recebido": false,
       "dataRecebimento": null
     }
