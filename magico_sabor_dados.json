@@ -2696,14 +2696,14 @@
       "nome": "Pistache",
       "unidade": "kg",
       "estoque": 0,
-      "custo": 200,
+      "custo": 250,
       "minimo": 0,
       "fornecedor": "",
       "sg": true,
       "sl": true,
       "veg": true,
       "dataCadastro": "2026-04-05",
-      "dataAtualizacao": null
+      "dataAtualizacao": "2026-06-01"
     },
     {
       "id": 1775425647375,
