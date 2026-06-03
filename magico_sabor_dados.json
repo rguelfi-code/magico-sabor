@@ -12011,6 +12011,55 @@
       "total": 141,
       "dataEmissao": "2026-06-03",
       "status": "emitida"
+    },
+    {
+      "id": 1780524316749,
+      "numero": "FAT-0037",
+      "encId": 1780506083493,
+      "clienteNome": "Nacional Hotel",
+      "clienteDoc": "—",
+      "clienteTel": "",
+      "clienteEnd": "",
+      "data": "2026-06-03",
+      "vencimento": "2026-06-03",
+      "pagamento": "pix",
+      "itens": [
+        {
+          "nome": "Bolo caseiro de fubá - C/cob",
+          "qtd": 1,
+          "preco": 35
+        },
+        {
+          "nome": "Pão fatiado abóbora",
+          "qtd": 1,
+          "preco": 36
+        },
+        {
+          "nome": "Bolo de fubá cremoso",
+          "preco": 75,
+          "qtd": 1
+        },
+        {
+          "nome": "Bolo de chocolate - C/cob",
+          "qtd": 1,
+          "preco": 65
+        },
+        {
+          "nome": "Pão de forma VEG",
+          "qtd": 1,
+          "preco": 36
+        },
+        {
+          "nome": "Pão fatiado milho",
+          "qtd": 1,
+          "preco": 36
+        }
+      ],
+      "frete": 0,
+      "subtotal": 283,
+      "total": 283,
+      "dataEmissao": "2026-06-03",
+      "status": "emitida"
     }
   ],
   "_exportSeq": 44,
