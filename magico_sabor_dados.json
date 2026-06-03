@@ -5326,8 +5326,8 @@
         },
         {
           "nome": "Bolo de fubá cremoso",
-          "qtd": 1,
-          "preco": 85
+          "preco": 75,
+          "qtd": 1
         },
         {
           "nome": "Bolo de chocolate - C/cob",
@@ -5345,8 +5345,8 @@
           "preco": 36
         }
       ],
-      "subtotal": 293,
-      "total": 293,
+      "subtotal": 283,
+      "total": 283,
       "status": "aberto",
       "dataRegistro": "2026-06-03"
     }
