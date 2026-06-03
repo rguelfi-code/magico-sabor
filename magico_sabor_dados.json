@@ -3105,19 +3105,20 @@
       "id": 1777230755235,
       "nome": "Cobertura de goiabada",
       "categoria": "cobertura",
-      "rendimento": 0.2,
+      "rendimento": 0.15,
       "rendimentoUn": "kg",
       "custoUnit": 20,
-      "custoTotal": 4,
+      "custoTotal": 3,
       "ings": [
         {
           "id": 1777230730943,
           "ingId": 1775423013252,
-          "qtd": 0.2
+          "qtd": 0.15
         }
       ],
       "obs": "",
-      "dataCadastro": "2026-04-26"
+      "dataCadastro": "2026-04-26",
+      "dataAtualizacao": "2026-06-03"
     },
     {
       "id": 1777230070255,
@@ -5260,7 +5261,9 @@
       "total": 143,
       "status": "entregue",
       "dataRegistro": "2026-06-03",
-      "entregue": false
+      "entregue": false,
+      "recebido": false,
+      "dataRecebimento": null
     }
   ],
   "precificados": [
@@ -11739,7 +11742,8 @@
       "subtotal": 143,
       "total": 143,
       "dataEmissao": "2026-06-03",
-      "status": "emitida"
+      "status": "emitida",
+      "enviada": false
     }
   ],
   "_exportSeq": 44,
