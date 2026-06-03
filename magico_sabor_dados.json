@@ -270,6 +270,23 @@
       "dataCadastro": "2026-04-05"
     },
     {
+      "id": 1780505305778,
+      "nome": "Bolo caseiro de fubá - C/cob",
+      "categoria": "",
+      "medida": "peso",
+      "peso": 350,
+      "pesoUn": "g",
+      "qtd": null,
+      "qtdUn": "un",
+      "tempo": "",
+      "desc": "",
+      "sg": true,
+      "sl": true,
+      "veg": false,
+      "sd": false,
+      "dataCadastro": "2026-06-03"
+    },
+    {
       "id": 1775404020710,
       "nome": "Bolo caseiro de fubá cremoso",
       "categoria": "bolo",
