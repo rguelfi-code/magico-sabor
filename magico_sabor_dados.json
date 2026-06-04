@@ -5387,7 +5387,9 @@
       "total": 141,
       "status": "entregue",
       "dataRegistro": "2026-06-03",
-      "entregue": false
+      "entregue": false,
+      "recebido": false,
+      "dataRecebimento": null
     }
   ],
   "precificados": [
@@ -5711,90 +5713,6 @@
           "id": 1775510538614,
           "ingId": 1775519603215,
           "qtd": 1
-        }
-      ],
-      "qtdEmbalada": 1,
-      "compsPrec": []
-    },
-    {
-      "prodId": "1775337842248",
-      "nome": "Bolo de laranja VEG",
-      "preco": 45,
-      "precoSugerido": 42.37,
-      "custoUnit": 25.41944444444444,
-      "custoTotal": 76.25833333333333,
-      "lucro": 19.58055555555556,
-      "margem": "43.5",
-      "rendimento": 3,
-      "rendimentoUn": "porções",
-      "excecao": false,
-      "ingsPrec": [
-        {
-          "id": 1775504220844,
-          "ingId": 1775418230108,
-          "qtd": 0.54
-        },
-        {
-          "id": 1775504270259,
-          "ingId": 1775425432436,
-          "qtd": 0.315
-        },
-        {
-          "id": 1775504304534,
-          "ingId": 1775426196264,
-          "qtd": 0.69
-        },
-        {
-          "id": 1775504323465,
-          "ingId": 1775422603418,
-          "qtd": 0.585
-        },
-        {
-          "id": 1775504349016,
-          "ingId": 1775425677495,
-          "qtd": 0.01
-        },
-        {
-          "id": 1775504363934,
-          "ingId": 1775418797956,
-          "qtd": 0.006
-        },
-        {
-          "id": 1775504388092,
-          "ingId": 1775422763534,
-          "qtd": 0.039
-        },
-        {
-          "id": 1775504411814,
-          "ingId": 1775423055678,
-          "qtd": 0.008
-        },
-        {
-          "id": 1775504455599,
-          "ingId": 1775423194673,
-          "qtd": 0.05
-        }
-      ],
-      "embsPrec": [
-        {
-          "id": 1775570334600,
-          "ingId": 1775519983107,
-          "qtd": 6
-        },
-        {
-          "id": 1775570353393,
-          "ingId": 1775510049898,
-          "qtd": 3
-        },
-        {
-          "id": 1775570372212,
-          "ingId": 1775509791820,
-          "qtd": 9
-        },
-        {
-          "id": 1775570404027,
-          "ingId": 1775519603215,
-          "qtd": 3
         }
       ],
       "qtdEmbalada": 1,
@@ -10660,6 +10578,88 @@
           "qtdEmb": 1
         }
       ]
+    },
+    {
+      "prodId": "1775337842248",
+      "nome": "Bolo de laranja VEG",
+      "preco": 45,
+      "precoSugerido": 39.3,
+      "custoUnit": 23.580555555555552,
+      "custoTotal": 70.74166666666666,
+      "lucro": 21.419444444444448,
+      "margem": "47.6",
+      "rendimento": 3,
+      "rendimentoUn": "porções",
+      "qtdEmbalada": 1,
+      "excecao": false,
+      "ingsPrec": [
+        {
+          "id": 1775504220844,
+          "ingId": 1775418230108,
+          "qtd": 0.54
+        },
+        {
+          "id": 1775504270259,
+          "ingId": 1775425432436,
+          "qtd": 0.315
+        },
+        {
+          "id": 1775504304534,
+          "ingId": 1775426196264,
+          "qtd": 0.69
+        },
+        {
+          "id": 1775504323465,
+          "ingId": 1775422603418,
+          "qtd": 0.585
+        },
+        {
+          "id": 1775504349016,
+          "ingId": 1775425677495,
+          "qtd": 0.01
+        },
+        {
+          "id": 1775504363934,
+          "ingId": 1775418797956,
+          "qtd": 0.006
+        },
+        {
+          "id": 1775504388092,
+          "ingId": 1775422763534,
+          "qtd": 0.039
+        },
+        {
+          "id": 1775504411814,
+          "ingId": 1775423055678,
+          "qtd": 0.008
+        },
+        {
+          "id": 1775504455599,
+          "ingId": 1775423194673,
+          "qtd": 0.05
+        }
+      ],
+      "compsPrec": [],
+      "embsPrec": [
+        {
+          "id": 1775570334600,
+          "ingId": 1778116016052,
+          "qtd": 1,
+          "qtdEmb": 1
+        },
+        {
+          "id": 1775570353393,
+          "ingId": 1775510049898,
+          "qtd": 2,
+          "qtdEmb": 1
+        },
+        {
+          "id": 1775570404027,
+          "ingId": 1775519603215,
+          "qtd": 1,
+          "qtdEmb": 1
+        }
+      ]
     }
   ],
   "faturas": [
@@ -12010,7 +12010,8 @@
       "subtotal": 141,
       "total": 141,
       "dataEmissao": "2026-06-03",
-      "status": "emitida"
+      "status": "emitida",
+      "enviada": false
     },
     {
       "id": 1780524316749,
@@ -12059,7 +12060,8 @@
       "subtotal": 283,
       "total": 283,
       "dataEmissao": "2026-06-03",
-      "status": "emitida"
+      "status": "emitida",
+      "enviada": false
     }
   ],
   "_exportSeq": 44,
