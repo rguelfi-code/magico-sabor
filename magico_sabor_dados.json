@@ -10696,6 +10696,23 @@
           "qtdEmb": 1
         }
       ]
+    },
+    {
+      "prodId": "1780618422679",
+      "nome": "Bolo de aniversário 150g",
+      "preco": 20,
+      "precoSugerido": 20,
+      "custoUnit": 0,
+      "custoTotal": 0,
+      "lucro": 20,
+      "margem": "100.0",
+      "rendimento": 1,
+      "rendimentoUn": "porções",
+      "qtdEmbalada": 1,
+      "excecao": false,
+      "ingsPrec": [],
+      "compsPrec": [],
+      "embsPrec": []
     }
   ],
   "faturas": [
