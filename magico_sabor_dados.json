@@ -5432,6 +5432,36 @@
       "total": 90,
       "status": "aberto",
       "dataRegistro": "2026-06-05"
+    },
+    {
+      "id": 1780618495044,
+      "clienteId": 1775767606839,
+      "clienteNome": "Monreale - D.C. Turismo Ltda.",
+      "clienteTel": "",
+      "clienteDoc": "01.204.495/0001-33",
+      "data": "2026-06-05",
+      "vencimento": "2026-06-05",
+      "tipo": "entrega",
+      "endereco": "Av. Leonor Furlaneto Delgado, 3033",
+      "frete": 0,
+      "pagamento": "pix",
+      "obs": "",
+      "itens": [
+        {
+          "nome": "Bolo de banana VEG",
+          "qtd": 2,
+          "preco": 38
+        },
+        {
+          "nome": "Torta de maçã & chocolate VEG",
+          "qtd": 4,
+          "preco": 9
+        }
+      ],
+      "subtotal": 112,
+      "total": 112,
+      "status": "aberto",
+      "dataRegistro": "2026-06-05"
     }
   ],
   "precificados": [
