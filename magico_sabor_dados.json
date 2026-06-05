@@ -12420,40 +12420,6 @@
       "status": "emitida"
     },
     {
-      "id": 1780689957926,
-      "numero": "FAT-0041",
-      "encId": 1780673968931,
-      "clienteNome": "Nacional Hotel",
-      "clienteDoc": "—",
-      "clienteTel": "",
-      "clienteEnd": "",
-      "data": "2026-06-05",
-      "vencimento": "2026-06-05",
-      "pagamento": "pix",
-      "itens": [
-        {
-          "nome": "Bolo de chocolate - C/cob",
-          "qtd": 1,
-          "preco": 65
-        },
-        {
-          "nome": "Pão fatiado milho",
-          "qtd": 1,
-          "preco": 36
-        },
-        {
-          "nome": "Pão de forma VEG",
-          "qtd": 1,
-          "preco": 36
-        }
-      ],
-      "frete": 0,
-      "subtotal": 137,
-      "total": 137,
-      "dataEmissao": "2026-06-05",
-      "status": "emitida"
-    },
-    {
       "id": 1780690003158,
       "numero": "FAT-0042",
       "encId": 1780674404548,
