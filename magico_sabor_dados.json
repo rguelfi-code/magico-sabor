@@ -5564,6 +5564,31 @@
       "total": 137,
       "status": "aberto",
       "dataRegistro": "2026-06-05"
+    },
+    {
+      "id": 1780674158394,
+      "clienteId": 1780674108759,
+      "clienteNome": "Manuela - SP",
+      "clienteTel": "(35) ",
+      "clienteDoc": "",
+      "data": "2026-06-05",
+      "vencimento": "2026-06-05",
+      "tipo": "entrega",
+      "endereco": "",
+      "frete": 0,
+      "pagamento": "pix",
+      "obs": "",
+      "itens": [
+        {
+          "nome": "Pão fatiado abóbora",
+          "qtd": 2,
+          "preco": 36
+        }
+      ],
+      "subtotal": 72,
+      "total": 72,
+      "status": "aberto",
+      "dataRegistro": "2026-06-05"
     }
   ],
   "precificados": [
