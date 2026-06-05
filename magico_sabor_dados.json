@@ -412,6 +412,23 @@
       "dataCadastro": "2026-04-05"
     },
     {
+      "id": 1780618422679,
+      "nome": "Bolo de aniversário 150g",
+      "categoria": "bolo",
+      "medida": "peso",
+      "peso": 150,
+      "pesoUn": "g",
+      "qtd": null,
+      "qtdUn": "un",
+      "tempo": "",
+      "desc": "",
+      "sg": true,
+      "sl": true,
+      "veg": false,
+      "sd": false,
+      "dataCadastro": "2026-06-05"
+    },
+    {
       "id": 1775338517548,
       "nome": "Bolo de banana VEG",
       "categoria": "bolo",
