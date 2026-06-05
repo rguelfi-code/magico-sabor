@@ -5518,6 +5518,41 @@
       "total": 246,
       "status": "aberto",
       "dataRegistro": "2026-06-05"
+    },
+    {
+      "id": 1780673968931,
+      "clienteId": 1775768243865,
+      "clienteNome": "Nacional Hotel",
+      "clienteTel": "",
+      "clienteDoc": "",
+      "data": "2026-06-05",
+      "vencimento": "2026-06-05",
+      "tipo": "entrega",
+      "endereco": "",
+      "frete": 0,
+      "pagamento": "pix",
+      "obs": "",
+      "itens": [
+        {
+          "nome": "Bolo de chocolate - C/cob",
+          "qtd": 1,
+          "preco": 65
+        },
+        {
+          "nome": "Pão fatiado milho",
+          "qtd": 1,
+          "preco": 36
+        },
+        {
+          "nome": "Pão de forma VEG",
+          "qtd": 1,
+          "preco": 36
+        }
+      ],
+      "subtotal": 137,
+      "total": 137,
+      "status": "aberto",
+      "dataRegistro": "2026-06-05"
     }
   ],
   "precificados": [
