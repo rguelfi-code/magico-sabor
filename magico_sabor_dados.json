@@ -5430,8 +5430,9 @@
       ],
       "subtotal": 90,
       "total": 90,
-      "status": "aberto",
-      "dataRegistro": "2026-06-05"
+      "status": "entregue",
+      "dataRegistro": "2026-06-05",
+      "entregue": false
     },
     {
       "id": 1780618495044,
@@ -12160,6 +12161,30 @@
       "dataEmissao": "2026-06-03",
       "status": "emitida",
       "enviada": false
+    },
+    {
+      "id": 1780618575495,
+      "numero": "FAT-0038",
+      "encId": 1780618194823,
+      "clienteNome": "Cassino Hotel",
+      "clienteDoc": "—",
+      "clienteTel": "",
+      "clienteEnd": "",
+      "data": "2026-06-05",
+      "vencimento": "2026-06-05",
+      "pagamento": "pix",
+      "itens": [
+        {
+          "nome": "Pão francês (5 un)",
+          "qtd": 20,
+          "preco": 4.5
+        }
+      ],
+      "frete": 0,
+      "subtotal": 90,
+      "total": 90,
+      "dataEmissao": "2026-06-05",
+      "status": "emitida"
     }
   ],
   "_exportSeq": 44,
