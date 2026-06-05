@@ -5456,10 +5456,25 @@
           "nome": "Torta de maçã & chocolate VEG",
           "qtd": 4,
           "preco": 9
+        },
+        {
+          "nome": "Pão fatiado milho",
+          "preco": 36,
+          "qtd": 1
+        },
+        {
+          "nome": "Pão fatiado multigrãos",
+          "preco": 36,
+          "qtd": 1
+        },
+        {
+          "nome": "Bolo de aniversário 150g",
+          "preco": 20,
+          "qtd": 1
         }
       ],
-      "subtotal": 112,
-      "total": 112,
+      "subtotal": 204,
+      "total": 204,
       "status": "aberto",
       "dataRegistro": "2026-06-05"
     }
