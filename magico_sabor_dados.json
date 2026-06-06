@@ -5529,7 +5529,7 @@
       "total": 246,
       "status": "entregue",
       "dataRegistro": "2026-06-05",
-      "entregue": false,
+      "entregue": true,
       "recebido": false,
       "dataRecebimento": null
     },
@@ -5590,7 +5590,7 @@
       "total": 182.5,
       "status": "entregue",
       "dataRegistro": "2026-06-05",
-      "entregue": false,
+      "entregue": true,
       "recebido": false,
       "dataRecebimento": null
     }
@@ -12379,7 +12379,8 @@
       "subtotal": 246,
       "total": 246,
       "dataEmissao": "2026-06-05",
-      "status": "emitida"
+      "status": "emitida",
+      "enviada": false
     },
     {
       "id": 1780690003158,
@@ -12408,7 +12409,8 @@
       "subtotal": 182.5,
       "total": 182.5,
       "dataEmissao": "2026-06-05",
-      "status": "emitida"
+      "status": "emitida",
+      "enviada": false
     }
   ],
   "_exportSeq": 44,
