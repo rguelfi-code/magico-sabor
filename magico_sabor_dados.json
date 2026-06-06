@@ -5634,7 +5634,7 @@
       "total": 72,
       "status": "entregue",
       "dataRegistro": "2026-06-06",
-      "entregue": false
+      "entregue": true
     }
   ],
   "precificados": [
