@@ -5568,7 +5568,7 @@
       "total": 72,
       "status": "entregue",
       "dataRegistro": "2026-06-05",
-      "entregue": false,
+      "entregue": true,
       "recebido": false,
       "dataRecebimento": null
     },
