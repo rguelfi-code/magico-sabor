@@ -11844,40 +11844,6 @@
       "enviada": true
     },
     {
-      "id": 1779461502358,
-      "numero": "FAT-0019",
-      "encId": 1778423439942,
-      "clienteNome": "Sabrina",
-      "clienteDoc": "—",
-      "clienteTel": "(35) ",
-      "data": "2026-04-30",
-      "vencimento": "2026-04-30",
-      "pagamento": "pix",
-      "itens": [
-        {
-          "nome": "Bolo caseiro de fubá",
-          "qtd": 1,
-          "preco": 30
-        },
-        {
-          "nome": "Bolo caseiro de laranja ZERO",
-          "qtd": 1,
-          "preco": 30
-        },
-        {
-          "nome": "Cobertura coco 150g ZERO",
-          "qtd": 1,
-          "preco": 12
-        }
-      ],
-      "frete": 0,
-      "subtotal": 72,
-      "total": 72,
-      "dataEmissao": "2026-05-22",
-      "status": "emitida",
-      "enviada": false
-    },
-    {
       "id": 1779556505530,
       "numero": "FAT-0020",
       "encId": 1779556481162,
