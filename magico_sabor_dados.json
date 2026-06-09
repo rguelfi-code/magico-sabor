@@ -4320,7 +4320,7 @@
       "total": 72,
       "status": "entregue",
       "dataRegistro": "2026-05-10",
-      "entregue": true,
+      "entregue": false,
       "recebido": false,
       "dataRecebimento": null
     },
