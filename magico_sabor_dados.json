@@ -5708,8 +5708,9 @@
       ],
       "subtotal": 35,
       "total": 35,
-      "status": "aberto",
-      "dataRegistro": "2026-06-09"
+      "status": "entregue",
+      "dataRegistro": "2026-06-09",
+      "entregue": false
     }
   ],
   "precificados": [
@@ -12629,6 +12630,30 @@
       "dataEmissao": "2026-06-08",
       "status": "emitida",
       "enviada": false
+    },
+    {
+      "id": 1781016135460,
+      "numero": "FAT-0047",
+      "encId": 1781016130276,
+      "clienteNome": "Ana Lúcia Rosico",
+      "clienteDoc": "—",
+      "clienteTel": "(35) 99126 2053",
+      "clienteEnd": "Rua Sapucaí, 68 apt 31 - S.Benedito",
+      "data": "2026-06-09",
+      "vencimento": "2026-06-09",
+      "pagamento": "pix",
+      "itens": [
+        {
+          "nome": "Bolo caseiro de fubá - C/cob",
+          "qtd": 1,
+          "preco": 35
+        }
+      ],
+      "frete": 0,
+      "subtotal": 35,
+      "total": 35,
+      "dataEmissao": "2026-06-09",
+      "status": "emitida"
     }
   ],
   "_exportSeq": 44,
