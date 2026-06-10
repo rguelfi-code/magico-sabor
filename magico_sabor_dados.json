@@ -7606,55 +7606,6 @@
       ]
     },
     {
-      "prodId": "1775413711563",
-      "nome": "Pudim de leite",
-      "preco": 8,
-      "precoSugerido": 8.13,
-      "custoUnit": 4.87962962962963,
-      "custoTotal": 87.83333333333334,
-      "lucro": 3.1203703703703702,
-      "margem": "39.0",
-      "rendimento": 18,
-      "rendimentoUn": "unidades",
-      "qtdEmbalada": 1,
-      "excecao": false,
-      "ingsPrec": [
-        {
-          "id": 1776867363073,
-          "ingId": 1775418230108,
-          "qtd": 0.5
-        },
-        {
-          "id": 1776867396650,
-          "ingId": 1775423318836,
-          "qtd": 0.4
-        },
-        {
-          "id": 1776867443532,
-          "ingId": 1775425512902,
-          "qtd": 6
-        }
-      ],
-      "compsPrec": [],
-      "embsPrec": [
-        {
-          "id": 1776867516544,
-          "ingId": 1775510049898,
-          "qtd": 2
-        },
-        {
-          "id": 1776867554763,
-          "ingId": 1775519983107,
-          "qtd": 1
-        },
-        {
-          "id": 1776867568818,
-          "ingId": 1775519603215,
-          "qtd": 1
-        }
-      ]
-    },
-    {
       "prodId": "1775413867450",
       "nome": "Torta de morango",
       "preco": 18,
@@ -10976,6 +10927,58 @@
           "id": 1776870034561,
           "ingId": 1775510049898,
           "qtd": 2,
+          "qtdEmb": 1
+        }
+      ]
+    },
+    {
+      "prodId": "1775413711563",
+      "nome": "Pudim de leite",
+      "preco": 8,
+      "precoSugerido": 8.18,
+      "custoUnit": 4.907407407407407,
+      "custoTotal": 88.33333333333333,
+      "lucro": 3.0925925925925926,
+      "margem": "38.7",
+      "rendimento": 18,
+      "rendimentoUn": "unidades",
+      "qtdEmbalada": 1,
+      "excecao": false,
+      "ingsPrec": [
+        {
+          "id": 1776867363073,
+          "ingId": 1775418230108,
+          "qtd": 0.5
+        },
+        {
+          "id": 1776867396650,
+          "ingId": 1775423318836,
+          "qtd": 0.4
+        },
+        {
+          "id": 1776867443532,
+          "ingId": 1775425512902,
+          "qtd": 0.3
+        }
+      ],
+      "compsPrec": [],
+      "embsPrec": [
+        {
+          "id": 1776867516544,
+          "ingId": 1775510049898,
+          "qtd": 2,
+          "qtdEmb": 1
+        },
+        {
+          "id": 1776867554763,
+          "ingId": 1775519983107,
+          "qtd": 1,
+          "qtdEmb": 1
+        },
+        {
+          "id": 1776867568818,
+          "ingId": 1775519603215,
+          "qtd": 1,
           "qtdEmb": 1
         }
       ]
