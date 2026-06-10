@@ -1164,9 +1164,12 @@ async function carregarDoGitHub(){
     try{if(typeof calcularResumos==='function')calcularResumos();}catch(e){}
     try{if(typeof initCrPeriodo==='function')initCrPeriodo();}catch(e){}
     try{if(typeof initFaturaContador==='function')initFaturaContador();}catch(e){}
+    try{if(typeof migrarDadosInPlace==='function')migrarDadosInPlace();}catch(e){}
     var hora = new Date().toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'});
     setStatus('GitHub conectado — dados carregados '+hora, '#3d5c2a');
     document.getElementById('btnGitHub').textContent = 'GitHub conectado';
+    document.getElementById('btnGitHub').onclick = function(){if(confirm('Recarregar dados do GitHub?'))carregarDoGitHub();};
+    console.log('Historico:', JSON.stringify(dados._historico||{}));
     var banner=document.getElementById('bannerSalvar');if(banner)banner.style.display='none';
   }catch(err){
     setStatus('Erro ao conectar: '+err.message, '#c0392b');
