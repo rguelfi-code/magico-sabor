@@ -7737,65 +7737,6 @@
       ]
     },
     {
-      "prodId": "1775413913223",
-      "nome": "Torta de sorvete",
-      "preco": 12,
-      "precoSugerido": 13.56,
-      "custoUnit": 8.133333333333335,
-      "custoTotal": 65.06666666666668,
-      "lucro": 3.8666666666666654,
-      "margem": "32.2",
-      "rendimento": 8,
-      "rendimentoUn": "unidades",
-      "qtdEmbalada": 1,
-      "excecao": false,
-      "ingsPrec": [
-        {
-          "id": 1776869773474,
-          "ingId": 1775418230108,
-          "qtd": 0.15
-        },
-        {
-          "id": 1776869805056,
-          "ingId": 1775419140927,
-          "qtd": 0.14
-        },
-        {
-          "id": 1776869862526,
-          "ingId": 1775422236822,
-          "qtd": 0.004
-        },
-        {
-          "id": 1776869895730,
-          "ingId": 1775423055678,
-          "qtd": 0.002
-        },
-        {
-          "id": 1776869931088,
-          "ingId": 1775425381715,
-          "qtd": 0.08
-        }
-      ],
-      "compsPrec": [],
-      "embsPrec": [
-        {
-          "id": 1776870005633,
-          "ingId": 1775519603215,
-          "qtd": 1
-        },
-        {
-          "id": 1776870026564,
-          "ingId": 1775519983107,
-          "qtd": 1
-        },
-        {
-          "id": 1776870034561,
-          "ingId": 1775510049898,
-          "qtd": 2
-        }
-      ]
-    },
-    {
       "prodId": "1775414153841",
       "nome": "Cheesecake c/frutas vermelhas ZERO",
       "preco": 16,
@@ -10967,6 +10908,68 @@
           "id": 1775848162642,
           "ingId": 1775509791820,
           "qtd": 3,
+          "qtdEmb": 1
+        }
+      ]
+    },
+    {
+      "prodId": "1775413913223",
+      "nome": "Torta de sorvete",
+      "preco": 12,
+      "precoSugerido": 13.28,
+      "custoUnit": 7.970833333333333,
+      "custoTotal": 63.766666666666666,
+      "lucro": 4.029166666666667,
+      "margem": "33.6",
+      "rendimento": 8,
+      "rendimentoUn": "unidades",
+      "qtdEmbalada": 1,
+      "excecao": false,
+      "ingsPrec": [
+        {
+          "id": 1776869773474,
+          "ingId": 1775418230108,
+          "qtd": 0.15
+        },
+        {
+          "id": 1776869805056,
+          "ingId": 1775419140927,
+          "qtd": 0.14
+        },
+        {
+          "id": 1776869862526,
+          "ingId": 1775422236822,
+          "qtd": 0.004
+        },
+        {
+          "id": 1776869895730,
+          "ingId": 1775423055678,
+          "qtd": 0.002
+        },
+        {
+          "id": 1776869931088,
+          "ingId": 1775425381715,
+          "qtd": 0.08
+        }
+      ],
+      "compsPrec": [],
+      "embsPrec": [
+        {
+          "id": 1776870005633,
+          "ingId": 1775519603215,
+          "qtd": 1,
+          "qtdEmb": 1
+        },
+        {
+          "id": 1776870026564,
+          "ingId": 1775519983107,
+          "qtd": 1,
+          "qtdEmb": 1
+        },
+        {
+          "id": 1776870034561,
+          "ingId": 1775510049898,
+          "qtd": 2,
           "qtdEmb": 1
         }
       ]
