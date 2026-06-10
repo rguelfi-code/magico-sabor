@@ -1170,7 +1170,6 @@ async function carregarDoGitHub(){
     setStatus('GitHub conectado — dados carregados '+hora, '#3d5c2a');
     document.getElementById('btnGitHub').textContent = 'GitHub conectado';
     document.getElementById('btnGitHub').onclick = function(){if(confirm('Recarregar dados do GitHub?'))carregarDoGitHub();};
-    console.log('Historico:', JSON.stringify(dados._historico||{}));
     var banner=document.getElementById('bannerSalvar');if(banner)banner.style.display='none';
   }catch(err){
     setStatus('Erro ao conectar: '+err.message, '#c0392b');
@@ -1290,18 +1289,12 @@ function renderHistoricoGrid(){
 function salvarHistorico(){
   const hist={};
   document.querySelectorAll('[id^="hist_"]').forEach(inp=>{const v=parseFloat(inp.value);if(v>0)hist[inp.id.replace('hist_','')]=v;});
-  console.log('Historico a salvar:', JSON.stringify(hist));
-  console.log('Chaves:', Object.keys(hist).length);
   dados._historico=hist;
-  console.log('dados._historico após atribuição:', JSON.stringify(dados._historico));
   mostrarLembreteSalvar();
   salvarNoGitHub().then(()=>{
-    console.log('Salvo! dados._historico agora:', JSON.stringify(dados._historico));
     renderRelatorios();
-    alert('Historico salvo no GitHub!');
+    alert('Historico salvo!');
   }).catch((err)=>{
-    console.error('Erro ao salvar:', err);
-    renderRelatorios();
     alert('Erro ao salvar: '+err.message);
   });
 }
@@ -3328,12 +3321,14 @@ function _calcCrSaldos(dIni,dFim){
       ?new Date(e.dataEntrega+'T12:00:00')
       :fat?new Date(fat.dataEmissao+'T12:00:00')
       :new Date(e.data+'T12:00:00');
-    // Saldo Inicial: entregue e não recebido com data de referência ANTES do período
-    if(e.entregue&&!e.recebido&&dEntregaRef<=dIniMenos1){
+    // Saldo Inicial: entregue ANTES do período e não recebido ANTES do período
+    const dRecRef=e.recebido&&e.dataRecebimento?new Date(e.dataRecebimento+'T12:00:00'):null;
+    const recebidoAntes=dRecRef&&dRecRef<=dIniMenos1;
+    if(e.entregue&&dEntregaRef<=dIniMenos1&&!recebidoAntes){
       garantirCliente(e.clienteId,e.clienteNome);
       mapaClientes[e.clienteId].saldoIniAuto+=e.total;
     }
-    // Entregas no período: entregue com data de referência DENTRO do período
+    // Entregas no período
     if(e.entregue&&dEntregaRef>=dIni&&dEntregaRef<=dRef){
       garantirCliente(e.clienteId,e.clienteNome);
       mapaClientes[e.clienteId].entregas+=e.total;
