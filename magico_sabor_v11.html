@@ -1153,6 +1153,7 @@ async function carregarDoGitHub(){
     ['produtos','ingredientes','embalagens','componentes','clientes','encomendas','precificados','faturas'].forEach(function(k){if(imp[k])dados[k]=imp[k];});
     if(imp._exportSeq)dados._exportSeq=imp._exportSeq;
     if(imp._crSaldosIni){crSaldosIni={};Object.entries(imp._crSaldosIni).forEach(function(kv){crSaldosIni[Number(kv[0])]=kv[1];});}
+    if(imp._historico)dados._historico=imp._historico;
     if(imp._crParciais){crParciais={};Object.entries(imp._crParciais).forEach(function(kv){crParciais[Number(kv[0])]=kv[1];});}
     try{if(typeof migrarDadosInPlace==='function')migrarDadosInPlace();}catch(e){}
     try{if(typeof ordenarAlfa==='function')['produtos','ingredientes','embalagens','componentes','clientes'].forEach(ordenarAlfa);}catch(e){}
