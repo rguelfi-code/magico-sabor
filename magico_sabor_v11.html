@@ -1172,8 +1172,35 @@ async function carregarDoGitHub(){
     document.getElementById('btnGitHub').onclick = function(){if(confirm('Recarregar dados do GitHub?'))carregarDoGitHub();};
     var banner=document.getElementById('bannerSalvar');if(banner)banner.style.display='none';
   }catch(err){
-    setStatus('Erro ao conectar: '+err.message, '#c0392b');
-    console.warn('GitHub load error:', err);
+    // Fallback: carregar via URL pública raw
+    setStatus('Tentando carregamento alternativo...', '#a67c20');
+    try{
+      var rawUrl='https://raw.githubusercontent.com/'+GH_USER+'/'+GH_REPO+'/main/'+GH_FILE+'?t='+Date.now();
+      var resp2 = await fetch(rawUrl);
+      if(!resp2.ok){throw new Error('Erro '+resp2.status);}
+      var imp2 = JSON.parse(await resp2.text());
+      ['produtos','ingredientes','embalagens','componentes','clientes','encomendas','precificados','faturas'].forEach(function(k){if(imp2[k])dados[k]=imp2[k];});
+      if(imp2._exportSeq)dados._exportSeq=imp2._exportSeq;
+      if(imp2._historico)dados._historico=imp2._historico;
+      if(imp2._crSaldosIni){crSaldosIni={};Object.entries(imp2._crSaldosIni).forEach(function(kv){crSaldosIni[Number(kv[0])]=kv[1];});}
+      if(imp2._crParciais){crParciais={};Object.entries(imp2._crParciais).forEach(function(kv){crParciais[Number(kv[0])]=kv[1];});}
+      try{if(typeof migrarDadosInPlace==="function")migrarDadosInPlace();}catch(e){}
+      try{if(typeof ordenarAlfa==="function")["produtos","ingredientes","embalagens","componentes","clientes"].forEach(ordenarAlfa);}catch(e){}
+      try{if(typeof renderListaCad==="function")renderListaCad();}catch(e){}
+      try{if(typeof renderPrecificados==="function")renderPrecificados();}catch(e){}
+      try{if(typeof renderEncomendas==="function")renderEncomendas();}catch(e){}
+      try{if(typeof renderClientes==="function")renderClientes();}catch(e){}
+      try{if(typeof renderFaturas==="function")renderFaturas();}catch(e){}
+      try{if(typeof calcularResumos==="function")calcularResumos();}catch(e){}
+      try{if(typeof initCrPeriodo==="function")initCrPeriodo();}catch(e){}
+      try{if(typeof initFaturaContador==="function")initFaturaContador();}catch(e){}
+      var hora2=new Date().toLocaleTimeString("pt-BR",{hour:"2-digit",minute:"2-digit"});
+      setStatus("Dados carregados (somente leitura) "+hora2,"#a67c20");
+      document.getElementById("btnGitHub").textContent="GitHub conectado";
+    }catch(err2){
+      setStatus("Erro ao carregar: "+err2.message,"#c0392b");
+      console.warn("GitHub load error:", err2);
+    }
   }
 }
 
