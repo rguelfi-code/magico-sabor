@@ -5724,7 +5724,10 @@
       "subtotal": 179,
       "total": 179,
       "status": "aberto",
-      "dataRegistro": "2026-06-10"
+      "dataRegistro": "2026-06-10",
+      "entregue": false,
+      "recebido": false,
+      "dataRecebimento": null
     }
   ],
   "precificados": [
@@ -12663,6 +12666,9 @@
     }
   ],
   "_exportSeq": 44,
+  "_historico": {
+    "2024-01": 4477
+  },
   "_crSaldosIni": {},
   "_crParciais": {}
 }
