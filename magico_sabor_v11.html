@@ -1290,15 +1290,19 @@ function renderHistoricoGrid(){
 function salvarHistorico(){
   const hist={};
   document.querySelectorAll('[id^="hist_"]').forEach(inp=>{const v=parseFloat(inp.value);if(v>0)hist[inp.id.replace('hist_','')]=v;});
+  console.log('Historico a salvar:', JSON.stringify(hist));
+  console.log('Chaves:', Object.keys(hist).length);
   dados._historico=hist;
+  console.log('dados._historico após atribuição:', JSON.stringify(dados._historico));
   mostrarLembreteSalvar();
-  // Salvar imediatamente no GitHub (não agendar)
   salvarNoGitHub().then(()=>{
+    console.log('Salvo! dados._historico agora:', JSON.stringify(dados._historico));
     renderRelatorios();
     alert('Historico salvo no GitHub!');
-  }).catch(()=>{
+  }).catch((err)=>{
+    console.error('Erro ao salvar:', err);
     renderRelatorios();
-    alert('Historico salvo localmente. Verifique a conexao com o GitHub.');
+    alert('Erro ao salvar: '+err.message);
   });
 }
 function _graficoLinhaSVG(divId,labels,series){
