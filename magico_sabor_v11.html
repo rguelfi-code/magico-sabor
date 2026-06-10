@@ -790,6 +790,7 @@
       <span style="font-size:12px;color:var(--texto-ter);">até</span>
       <input type="date" id="filtroTodasFim" onchange="renderEncomendas()" style="border:2px solid var(--verde-claro);border-radius:8px;padding:6px 10px;font-family:'Jost',sans-serif;font-size:13px;">
       <button onclick="document.getElementById('filtroTodasCliente').value='';document.getElementById('filtroTodasIni').value='';document.getElementById('filtroTodasFim').value='';renderEncomendas();" style="padding:6px 12px;background:#eee;border:none;border-radius:8px;cursor:pointer;font-family:'Jost',sans-serif;font-size:12px;">✕ Limpar</button>
+      <span id="totalFiltradas" style="margin-left:8px;font-weight:700;color:var(--verde-escuro);font-size:14px;"></span>
     </div>
     <div id="listaEncomendas" class="encomendas-lista"></div>
   </div>
@@ -887,8 +888,18 @@
       <div class="rmini rec"><label>Recebido</label><div class="rv" id="vRec">R$ 0,00</div><small id="vRecQtd">0 pagas</small></div>
     </div>
     <div class="graficos-grid">
-      <div class="grafico-card"><h4>📈 Faturamento Mensal</h4><div class="grafico-wrap" id="graficoFat"></div></div>
-      <div class="grafico-card"><h4>💚 Lucro Líquido Mensal</h4><div class="grafico-wrap" id="graficoLuc"></div></div>
+      <div class="grafico-card" style="grid-column:1/-1;">
+        <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;margin-bottom:8px;">
+          <h4 style="margin:0;">📈 Evolução do Faturamento Mensal</h4>
+          <button onclick="toggleHistorico()" style="padding:4px 10px;background:#f4f8f0;border:1px solid var(--verde-claro);border-radius:6px;font-family:'Jost',sans-serif;font-size:12px;cursor:pointer;">📊 Dados históricos</button>
+        </div>
+        <div id="historicoPanel" style="display:none;margin-bottom:12px;background:#fafdf7;border:1px solid var(--verde-claro);border-radius:8px;padding:12px;">
+          <p style="font-size:12px;color:var(--texto-ter);margin-bottom:8px;">Digite os valores mensais históricos (Jan/2024 em diante). Deixe em branco os meses sem dados.</p>
+          <div id="historicoGrid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:6px;"></div>
+          <button onclick="salvarHistorico()" style="margin-top:8px;padding:6px 14px;background:var(--verde-escuro);color:#fff;border:none;border-radius:6px;font-family:'Jost',sans-serif;font-size:12px;cursor:pointer;">💾 Salvar histórico</button>
+        </div>
+        <div id="graficoFat" style="width:100%;"></div>
+      </div>
     </div>
   </div>
 
@@ -1252,6 +1263,62 @@ const medidaHints={peso:'Ex: bolos, pães — informe o peso total',unidade:'Ex:
 let editarTipo=null,editarId=null,periodoInicio=null,periodoFim=null;
 let encSelecionada=null;
 
+function toggleHistorico(){
+  const p=document.getElementById('historicoPanel');if(!p)return;
+  if(p.style.display==='none'){p.style.display='block';renderHistoricoGrid();}else{p.style.display='none';}
+}
+function renderHistoricoGrid(){
+  const grid=document.getElementById('historicoGrid');if(!grid)return;
+  const hist=dados._historico||{};
+  const h=new Date();const meses=[];let d=new Date(2024,0,1);
+  while(d<=h){meses.push({ano:d.getFullYear(),mes:d.getMonth()});d=new Date(d.getFullYear(),d.getMonth()+1,1);}
+  const nm=['Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez'];
+  grid.innerHTML=meses.map(m=>{
+    const key=`${m.ano}-${String(m.mes+1).padStart(2,'0')}`;
+    return`<div><label style="font-size:11px;color:var(--texto-ter);">${nm[m.mes]}\/${m.ano}<\/label><input type="number" id="hist_${key}" value="${hist[key]||''}" placeholder="0,00" step="0.01" style="width:100%;border:1px solid var(--borda);border-radius:4px;padding:3px 6px;font-family:'Jost',sans-serif;font-size:12px;"><\/div>`;
+  }).join('');
+}
+function salvarHistorico(){
+  const hist={};
+  document.querySelectorAll('[id^="hist_"]').forEach(inp=>{const v=parseFloat(inp.value);if(v>0)hist[inp.id.replace('hist_','')]=v;});
+  dados._historico=hist;mostrarLembreteSalvar();agendarSalvarGitHub();
+  renderRelatorios();alert('Historico salvo!');
+}
+function _graficoLinhaSVG(divId,labels,series){
+  const div=document.getElementById(divId);if(!div)return;
+  const W=900,H=280,padL=72,padR=20,padT=20,padB=65;
+  const allVals=series.flatMap(s=>s.vals).filter(v=>v>0);
+  const maxV=allVals.length?Math.max(...allVals)*1.1:1;
+  const n=labels.length;const xStep=(W-padL-padR)/(n-1||1);
+  let svg=`<svg viewBox="0 0 ${W} ${H}" xmlns="http:\/\/www.w3.org\/2000\/svg" style="width:100%;max-height:300px;">`;
+  for(let i=0;i<=4;i++){
+    const y=padT+(H-padT-padB)*(1-i/4);const val=maxV*i/4;
+    svg+=`<line x1="${padL}" y1="${y}" x2="${W-padR}" y2="${y}" stroke="#e8e8e8" stroke-width="1"\/>`;
+    svg+=`<text x="${padL-6}" y="${y+4}" text-anchor="end" font-size="11" fill="#999">${val>=1000?'R$'+(val/1000).toFixed(1)+'k':'R$'+Math.round(val)}<\/text>`;
+  }
+  labels.forEach((lbl,i)=>{
+    const x=padL+i*xStep;
+    svg+=`<text x="${x}" y="${H-padB+16}" text-anchor="middle" font-size="10" fill="#888" transform="rotate(-35,${x},${H-padB+16})">${lbl}<\/text>`;
+  });
+  series.forEach(s=>{
+    const pts=s.vals.map((v,i)=>[padL+i*xStep, padT+(H-padT-padB)*(1-(v||0)/maxV)]);
+    const pStr=pts.map(p=>p.join(',')).join(' ');
+    svg+=`<polyline points="${pStr}" fill="none" stroke="${s.cor}" stroke-width="${s.dashed?1.5:2.5}" stroke-dasharray="${s.dashed?'6,4':''}" opacity="${s.dashed?0.6:1}"\/>`;
+    s.vals.forEach((v,i)=>{
+      if(!v)return;
+      const[x,y]=pts[i];
+      svg+=`<circle cx="${x}" cy="${y}" r="3.5" fill="${s.cor}"\/>`;
+    });
+  });
+  // Legenda
+  let lx=padL;
+  series.forEach(s=>{
+    svg+=`<rect x="${lx}" y="${H-14}" width="12" height="4" fill="${s.cor}" rx="2"\/>`;
+    svg+=`<text x="${lx+16}" y="${H-8}" font-size="11" fill="#555">${s.label}<\/text>`;
+    lx+=s.label.length*7+30;
+  });
+  svg+='<\/svg>';div.innerHTML=svg;
+}
 function _graficoBarras(divId,vals,cor){
   var div=document.getElementById(divId);if(!div)return;
   var max=Math.max.apply(null,vals.concat([1]));
@@ -1264,8 +1331,7 @@ function _graficoBarras(divId,vals,cor){
     html+='<div style="background:'+cor+';opacity:0.85;width:100%;height:'+pct+'px;border-radius:2px 2px 0 0;"><\/div>';
     html+='<\/div>';
   }
-  html+='<\/div>';
-  div.innerHTML=html;
+  html+='<\/div>';div.innerHTML=html;
 }
 function _graficoLinha(divId,vals,cor){
   var div=document.getElementById(divId);if(!div)return;
@@ -1277,8 +1343,7 @@ function _graficoLinha(divId,vals,cor){
     html+='<div style="background:'+cor+';opacity:0.7;width:100%;height:'+pct+'px;border-radius:2px 2px 0 0;"><\/div>';
     html+='<\/div>';
   }
-  html+='<\/div>';
-  div.innerHTML=html;
+  html+='<\/div>';div.innerHTML=html;
 }
 let faturaAtual=null;
 
@@ -2355,6 +2420,10 @@ function renderEncomendas(){
     if(cli)encs=encs.filter(e=>e.clienteNome===cli);
     if(ini)encs=encs.filter(e=>new Date(e.data+'T12:00:00')>=new Date(ini+'T00:00:00'));
     if(fim)encs=encs.filter(e=>new Date(e.data+'T12:00:00')<=new Date(fim+'T23:59:59'));
+    // Mostrar total filtrado
+    const tot=encs.reduce((s,e)=>s+e.total,0);
+    const telEl=document.getElementById('totalFiltradas');
+    if(telEl)telEl.textContent=(cli||ini||fim)?`Total: ${fmt(tot)} (${encs.length} encomenda${encs.length!==1?'s':''})`:'';
   }
   if(!encs.length){lista.innerHTML='<div class="empty-state"><span>📋<\/span>Nenhuma encomenda nesta etapa.<\/div>';return;}
   lista.innerHTML=encs.map(e=>{
@@ -2388,7 +2457,7 @@ function renderEncomendas(){
     return`<div class="enc-card" style="border-left:4px solid ${corEtapa[etapa]||'#ccc'};">
       <div class="enc-header">
         <div class="enc-titulo">
-          <h4>👤 ${e.clienteNome}<\/h4>
+          <h4>👤 ${e.clienteNome}${e.clienteTel?` <span style="font-size:13px;font-weight:400;color:var(--texto-ter);">· 📱 ${e.clienteTel}<\/span>`:''}<\/h4>
           <p>📅 Entrega: ${df} · 💳 Venc: ${vf} · ${e.tipo==='entrega'?'🚚 Entrega':'🏪 Retirada'} · ${pagLabel[e.pagamento]}${fatNum}${e.dataRegistro?` · <span style="color:var(--texto-ter);">Reg: ${fmtData(e.dataRegistro)}<\/span>`:''}${recInfo}<\/p>
           ${e.obs?`<p style="margin-top:4px;font-style:italic;color:#888;">📝 ${e.obs}<\/p>`:''}
         <\/div>
@@ -2730,42 +2799,23 @@ function renderRelEmAberto(){
     });
     html+=`<\/tbody><\/table><\/div>`;
   });
-  // A Receber: separar em A Vencer / Vencido (sem cabeçalho geral)
+  // A Receber: totais por cliente sem distinção vencido/a vencer
   const aRec=dados.encomendas.filter(e=>etapaEncomenda(e)==='areceber');
-  const vencido=aRec.filter(isVencido);
-  const aVencer=aRec.filter(e=>!isVencido(e));
   if(aRec.length){
     const totRec=aRec.reduce((s,e)=>s+e.total,0);
     totalGeral+=totRec;
-    let htmlRec='';
-    if(aVencer.length){
-      const totAV=aVencer.reduce((s,e)=>s+e.total,0);
-      const mV={};aVencer.forEach(e=>{if(!mV[e.clienteNome])mV[e.clienteNome]=0;mV[e.clienteNome]+=e.total;});
-      htmlRec+=`<div style="margin-bottom:12px;">
-        <div style="display:flex;justify-content:space-between;align-items:center;background:#2e7d32;color:#fff;padding:8px 16px;border-radius:8px 8px 0 0;">
-          <strong>📅 A Vencer<\/strong><strong>${fmt(totAV)}<\/strong>
-        <\/div>
-        <table class="tabela-rel" style="margin:0;border-radius:0 0 8px 8px;"><tbody>`;
-      Object.entries(mV).sort((a,b)=>a[0].localeCompare(b[0],'pt-BR')).forEach(([n,v])=>htmlRec+=`<tr><td style="font-weight:700;">${n}<\/td><td class="num" style="font-weight:700;">${fmtN(v)}<\/td><\/tr>`);
-      htmlRec+=`<\/tbody><\/table><\/div>`;
-    }
-    if(vencido.length){
-      const totVe=vencido.reduce((s,e)=>s+e.total,0);
-      const mVe={};vencido.forEach(e=>{if(!mVe[e.clienteNome])mVe[e.clienteNome]=0;mVe[e.clienteNome]+=e.total;});
-      htmlRec+=`<div style="margin-bottom:12px;">
-        <div style="display:flex;justify-content:space-between;align-items:center;background:#a93226;color:#fff;padding:8px 16px;border-radius:8px 8px 0 0;">
-          <strong>⚠️ Vencido<\/strong><strong>${fmt(totVe)}<\/strong>
-        <\/div>
-        <table class="tabela-rel" style="margin:0;border-radius:0 0 8px 8px;"><tbody>`;
-      Object.entries(mVe).sort((a,b)=>a[0].localeCompare(b[0],'pt-BR')).forEach(([n,v])=>htmlRec+=`<tr><td style="font-weight:700;">${n}<\/td><td class="num" style="font-weight:700;">${fmtN(v)}<\/td><\/tr>`);
-      htmlRec+=`<\/tbody><\/table><\/div>`;
-    }
+    const mapa={};
+    aRec.forEach(e=>{if(!mapa[e.clienteNome])mapa[e.clienteNome]=0;mapa[e.clienteNome]+=e.total;});
+    const clientes=Object.entries(mapa).sort((a,b)=>a[0].localeCompare(b[0],'pt-BR'));
     html+=`<div style="margin-bottom:20px;">
       <div style="display:flex;justify-content:space-between;align-items:center;background:var(--verde-escuro);color:#fff;padding:10px 16px;border-radius:8px 8px 0 0;">
         <strong>💰 A Receber<\/strong><strong>${fmt(totRec)}<\/strong>
       <\/div>
-      <div style="padding:12px;background:#fafdf7;border:1px solid var(--borda);border-top:none;border-radius:0 0 8px 8px;">${htmlRec}<\/div>
-    <\/div>`;
+      <table class="tabela-rel" style="margin:0;border-radius:0 0 8px 8px;"><tbody>`;
+    clientes.forEach(([nome,val])=>{
+      html+=`<tr><td style="font-weight:700;">${nome}<\/td><td class="num" style="font-weight:700;">${fmtN(val)}<\/td><\/tr>`;
+    });
+    html+=`<\/tbody><\/table><\/div>`;
   }
   html+=`<div style="display:flex;justify-content:space-between;background:#f4f8f0;border:2px solid var(--verde-claro);border-radius:8px;padding:12px 16px;font-weight:700;font-size:16px;">
     <span>Total Geral em Aberto<\/span><span>${fmt(totalGeral)}<\/span><\/div>`;
@@ -2990,11 +3040,26 @@ function renderVisaoGeral(enc){
   set('vLuc',fmt(lucroTotal));set('vLucPerc',`${margMedia}% margem média`);
   set('vPend',fmt(pendentes.reduce((s,e)=>s+e.total,0)));set('vPendQtd',`${pendentes.length} pendente${pendentes.length!==1?'s':''}`);
   set('vRec',fmt(pagas.reduce((s,e)=>s+e.total,0)));set('vRecQtd',`${pagas.length} recebida${pagas.length!==1?'s':''}`);
-  const meses=[];const h=new Date();for(let i=11;i>=0;i--){const d=new Date(h.getFullYear(),h.getMonth()-i,1);meses.push({ano:d.getFullYear(),mes:d.getMonth()});}
-  const fatMes=meses.map(m=>dados.encomendas.filter(e=>{const d=new Date(e.data+'T12:00:00');return d.getFullYear()===m.ano&&d.getMonth()===m.mes;}).reduce((s,e)=>s+e.total,0));
-  const lucMes=meses.map(m=>{let l=0;dados.encomendas.filter(e=>{const d=new Date(e.data+'T12:00:00');return d.getFullYear()===m.ano&&d.getMonth()===m.mes;}).forEach(e=>e.itens.forEach(it=>{const p=dados.precificados.find(p=>p.nome===it.nome);if(p)l+=p.lucro*it.qtd;}));return l;});
-  _graficoBarras('graficoFat',fatMes,'#3d5c2a');
-  _graficoLinha('graficoLuc',lucMes,'#2e7d32');
+  const meses=[];const h=new Date();
+  // Incluir histórico desde Jan/2024
+  const hist=dados._historico||{};
+  let d=new Date(2024,0,1);
+  while(d<=h){meses.push({ano:d.getFullYear(),mes:d.getMonth()});d=new Date(d.getFullYear(),d.getMonth()+1,1);}
+  const nomesMes=['Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez'];
+  const labels=meses.map(m=>`${nomesMes[m.mes]}/${String(m.ano).slice(2)}`);
+  const fatMes=meses.map(m=>{
+    const key=`${m.ano}-${String(m.mes+1).padStart(2,'0')}`;
+    // Dados do app
+    const appVal=dados.encomendas.filter(e=>{const dd=new Date(e.data+'T12:00:00');return dd.getFullYear()===m.ano&&dd.getMonth()===m.mes;}).reduce((s,e)=>s+e.total,0);
+    // Dados históricos (só se não há dados no app)
+    return appVal>0?appVal:(hist[key]||0);
+  });
+  // Média acumulada
+  const media=fatMes.map((_,i)=>{const vals=fatMes.slice(0,i+1).filter(v=>v>0);return vals.length?vals.reduce((s,v)=>s+v,0)/vals.length:0;});
+  _graficoLinhaSVG('graficoFat',labels,[
+    {label:'Faturamento',vals:fatMes,cor:'#3d5c2a',dashed:false},
+    {label:'Média',vals:media,cor:'#a67c20',dashed:true}
+  ]);
 }
 function renderRelContas(enc){
   if(!enc)enc=dados.encomendas.filter(encFaturadoNoPeriodo);
@@ -3236,16 +3301,18 @@ function _calcCrSaldos(dIni,dFim){
   const garantirCliente=(id,nome)=>{if(!mapaClientes[id])mapaClientes[id]={clienteId:id,nome:nome,saldoIniAuto:0,entregas:0,recebido:0};};
   dados.clientes.forEach(c=>garantirCliente(c.id,c.nome));
   dados.encomendas.forEach(e=>{
-    // Data de referência da entrega: dataEntrega explícita > data da encomenda
+    const fat=dados.faturas.find(f=>f.encId===e.id);
+    // Data de referência: dataEntrega explícita > dataEmissao da fatura > data da encomenda
     const dEntregaRef=e.dataEntrega
       ?new Date(e.dataEntrega+'T12:00:00')
+      :fat?new Date(fat.dataEmissao+'T12:00:00')
       :new Date(e.data+'T12:00:00');
-    // Saldo Inicial: entregue e não recebido com data de entrega ANTES do período
+    // Saldo Inicial: entregue e não recebido com data de referência ANTES do período
     if(e.entregue&&!e.recebido&&dEntregaRef<=dIniMenos1){
       garantirCliente(e.clienteId,e.clienteNome);
       mapaClientes[e.clienteId].saldoIniAuto+=e.total;
     }
-    // Entregas no período: entregue com data de entrega DENTRO do período
+    // Entregas no período: entregue com data de referência DENTRO do período
     if(e.entregue&&dEntregaRef>=dIni&&dEntregaRef<=dRef){
       garantirCliente(e.clienteId,e.clienteNome);
       mapaClientes[e.clienteId].entregas+=e.total;
