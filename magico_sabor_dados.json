@@ -5768,6 +5768,31 @@
       "entregue": true,
       "recebido": false,
       "dataRecebimento": null
+    },
+    {
+      "id": 1781212039531,
+      "clienteId": 1778161807723,
+      "clienteNome": "Fernanda França",
+      "clienteTel": "(35) 99958 3655",
+      "clienteDoc": "",
+      "data": "2026-06-11",
+      "vencimento": "2026-06-11",
+      "tipo": "entrega",
+      "endereco": "Rua Assis Figueiredo 1920, apto. 31",
+      "frete": 0,
+      "pagamento": "pix",
+      "obs": "",
+      "itens": [
+        {
+          "nome": "Pão francês vegano",
+          "qtd": 10,
+          "preco": 3.8
+        }
+      ],
+      "subtotal": 38,
+      "total": 38,
+      "status": "aberto",
+      "dataRegistro": "2026-06-11"
     }
   ],
   "precificados": [
