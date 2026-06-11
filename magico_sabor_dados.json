@@ -1566,6 +1566,23 @@
       "dataCadastro": "2026-04-21"
     },
     {
+      "id": 1781188398351,
+      "nome": "Pão francês vegano",
+      "categoria": "pao",
+      "medida": "unidade",
+      "peso": null,
+      "pesoUn": "g",
+      "qtd": 5,
+      "qtdUn": "un",
+      "tempo": "",
+      "desc": "",
+      "sg": true,
+      "sl": true,
+      "veg": true,
+      "sd": false,
+      "dataCadastro": "2026-06-11"
+    },
+    {
       "id": 1775413711563,
       "nome": "Pudim de leite",
       "categoria": "sobremesa",
@@ -12804,7 +12821,8 @@
       "subtotal": 179,
       "total": 179,
       "dataEmissao": "2026-06-11",
-      "status": "emitida"
+      "status": "emitida",
+      "enviada": false
     }
   ],
   "_exportSeq": 49,
