@@ -5791,8 +5791,9 @@
       ],
       "subtotal": 38,
       "total": 38,
-      "status": "aberto",
-      "dataRegistro": "2026-06-11"
+      "status": "entregue",
+      "dataRegistro": "2026-06-11",
+      "entregue": false
     }
   ],
   "precificados": [
@@ -12940,6 +12941,30 @@
       "dataEmissao": "2026-06-11",
       "status": "emitida",
       "enviada": false
+    },
+    {
+      "id": 1781212050737,
+      "numero": "FAT-0048",
+      "encId": 1781212039531,
+      "clienteNome": "Fernanda França",
+      "clienteDoc": "—",
+      "clienteTel": "(35) 99958 3655",
+      "clienteEnd": "Rua Assis Figueiredo 1920, apto. 31",
+      "data": "2026-06-11",
+      "vencimento": "2026-06-11",
+      "pagamento": "pix",
+      "itens": [
+        {
+          "nome": "Pão francês vegano",
+          "qtd": 10,
+          "preco": 3.8
+        }
+      ],
+      "frete": 0,
+      "subtotal": 38,
+      "total": 38,
+      "dataEmissao": "2026-06-11",
+      "status": "emitida"
     }
   ],
   "_exportSeq": 49,
