@@ -5793,7 +5793,7 @@
       "total": 38,
       "status": "entregue",
       "dataRegistro": "2026-06-11",
-      "entregue": false
+      "entregue": true
     }
   ],
   "precificados": [
