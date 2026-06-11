@@ -12739,7 +12739,7 @@
       "total": 182.5,
       "dataEmissao": "2026-06-05",
       "status": "emitida",
-      "enviada": false
+      "enviada": true
     },
     {
       "id": 1780773537101,
