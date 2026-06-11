@@ -5457,8 +5457,8 @@
       "status": "entregue",
       "dataRegistro": "2026-06-05",
       "entregue": true,
-      "recebido": false,
-      "dataRecebimento": null
+      "recebido": true,
+      "dataRecebimento": "2026-06-11"
     },
     {
       "id": 1780618495044,
@@ -5604,8 +5604,8 @@
       "status": "entregue",
       "dataRegistro": "2026-06-05",
       "entregue": true,
-      "recebido": false,
-      "dataRecebimento": null
+      "recebido": true,
+      "dataRecebimento": "2026-06-11"
     },
     {
       "id": 1780773528205,
