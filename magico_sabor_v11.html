@@ -1165,7 +1165,6 @@ async function carregarDoGitHub(){
     try{if(typeof calcularResumos==='function')calcularResumos();}catch(e){}
     try{if(typeof initCrPeriodo==='function')initCrPeriodo();}catch(e){}
     try{if(typeof initFaturaContador==='function')initFaturaContador();}catch(e){}
-    try{if(typeof migrarDadosInPlace==='function')migrarDadosInPlace();}catch(e){}
     var hora = new Date().toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'});
     setStatus('GitHub conectado — dados carregados '+hora, '#3d5c2a');
     document.getElementById('btnGitHub').textContent = 'GitHub conectado';
@@ -1175,7 +1174,7 @@ async function carregarDoGitHub(){
     // Fallback: carregar via URL pública raw
     setStatus('Tentando carregamento alternativo...', '#a67c20');
     try{
-      var rawUrl='https://raw.githubusercontent.com/'+GH_USER+'/'+GH_REPO+'/main/'+GH_FILE+'?t='+Date.now();
+      var rawUrl='https://'+GH_USER+'.github.io/'+GH_REPO+'/'+GH_FILE+'?t='+Date.now();
       var resp2 = await fetch(rawUrl);
       if(!resp2.ok){throw new Error('Erro '+resp2.status);}
       var imp2 = JSON.parse(await resp2.text());
@@ -1198,8 +1197,31 @@ async function carregarDoGitHub(){
       setStatus("Dados carregados (somente leitura) "+hora2,"#a67c20");
       document.getElementById("btnGitHub").textContent="GitHub conectado";
     }catch(err2){
-      setStatus("Erro ao carregar: "+err2.message,"#c0392b");
-      console.warn("GitHub load error:", err2);
+      // Último fallback: carregar do localStorage
+      try{
+        var backup=localStorage.getItem('msDadosBackup');
+        if(backup){
+          var imp3=JSON.parse(backup);
+          ['produtos','ingredientes','embalagens','componentes','clientes','encomendas','precificados','faturas'].forEach(function(k){if(imp3[k])dados[k]=imp3[k];});
+          if(imp3._exportSeq)dados._exportSeq=imp3._exportSeq;
+          if(imp3._historico)dados._historico=imp3._historico;
+          if(imp3._crSaldosIni){crSaldosIni={};Object.entries(imp3._crSaldosIni).forEach(function(kv){crSaldosIni[Number(kv[0])]=kv[1];});}
+          if(imp3._crParciais){crParciais={};Object.entries(imp3._crParciais).forEach(function(kv){crParciais[Number(kv[0])]=kv[1];});}
+          try{if(typeof renderListaCad==="function")renderListaCad();}catch(e){}
+          try{if(typeof renderEncomendas==="function")renderEncomendas();}catch(e){}
+          try{if(typeof renderClientes==="function")renderClientes();}catch(e){}
+          try{if(typeof renderFaturas==="function")renderFaturas();}catch(e){}
+          try{if(typeof calcularResumos==="function")calcularResumos();}catch(e){}
+          try{if(typeof initCrPeriodo==="function")initCrPeriodo();}catch(e){}
+          var backupHora=localStorage.getItem('msDadosBackupHora');
+          setStatus("Dados do backup local carregados"+(backupHora?" ("+new Date(backupHora).toLocaleString('pt-BR')+")":'')+" — GitHub indisponível","#a67c20");
+        } else {
+          setStatus("GitHub indisponível e sem backup local","#c0392b");
+        }
+      }catch(err3){
+        setStatus("Erro ao carregar: "+err3.message,"#c0392b");
+        console.warn("Load error:", err3);
+      }
     }
   }
 }
@@ -1210,6 +1232,8 @@ async function salvarNoGitHub(){
     dados._crSaldosIni = crSaldosIni;
     dados._crParciais = crParciais;
     var json = JSON.stringify(dados, null, 2);
+    // Salvar sempre no localStorage como backup
+    try{localStorage.setItem('msDadosBackup', json);localStorage.setItem('msDadosBackupHora', new Date().toISOString());}catch(le){}
     var encoded = btoa(unescape(encodeURIComponent(json)));
     var body = {
       message: 'Auto-save ' + new Date().toLocaleString('pt-BR'),
@@ -1217,7 +1241,7 @@ async function salvarNoGitHub(){
       committer: {name: 'Magico Sabor', email: 'app@magicosabor.local'}
     };
     if(GH_SHA) body.sha = GH_SHA;
-    setStatus('Salvando no GitHub...','#a67c20');
+    setStatus('Salvando...','#a67c20');
     var resp = await fetch('https://api.github.com/repos/'+GH_USER+'/'+GH_REPO+'/contents/'+GH_FILE,{
       method: 'PUT',
       headers:{'Authorization':'token '+GH_TOKEN,'Accept':'application/vnd.github.v3+json','Content-Type':'application/json'},
@@ -1233,7 +1257,9 @@ async function salvarNoGitHub(){
     setStatus('Salvo no GitHub as '+hora, '#3d5c2a');
     var banner=document.getElementById('bannerSalvar');if(banner)banner.style.display='none';
   }catch(err){
-    setStatus('Erro ao salvar: '+err.message, '#c0392b');
+    // API falhou — dados já estão no localStorage, oferecer export
+    var hora=new Date().toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit',second:'2-digit'});
+    setStatus('⚠️ GitHub indisponível — dados salvos localmente às '+hora+' — clique em 📥 Cópia local para backup', '#c0392b');
     console.warn('GitHub save error:', err);
     throw err;
   }
