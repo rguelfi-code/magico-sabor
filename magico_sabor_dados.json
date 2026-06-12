@@ -1532,10 +1532,10 @@
     },
     {
       "id": 1775412983271,
-      "nome": "Pão francês (5 un)",
+      "nome": "Pão francês (6 un)",
       "categoria": "pao",
       "medida": "peso",
-      "peso": 5,
+      "peso": 6,
       "pesoUn": "g",
       "qtd": null,
       "qtdUn": "un",
@@ -1546,7 +1546,7 @@
       "veg": false,
       "sd": false,
       "dataCadastro": "2026-04-05",
-      "dataAtualizacao": "2026-04-12"
+      "dataAtualizacao": "2026-06-12"
     },
     {
       "id": 1776807915677,
@@ -11129,7 +11129,7 @@
     },
     {
       "prodId": "1775412983271",
-      "nome": "Pão francês (5 un)",
+      "nome": "Pão francês (6 un)",
       "preco": 3.8,
       "precoSugerido": 2.98,
       "custoUnit": 1.789814814814815,
