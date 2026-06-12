@@ -13114,7 +13114,7 @@
       "total": 43.8,
       "dataEmissao": "2026-06-12",
       "status": "emitida",
-      "enviada": false
+      "enviada": true
     }
   ],
   "_exportSeq": 49,
