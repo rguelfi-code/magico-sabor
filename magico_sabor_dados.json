@@ -5870,7 +5870,9 @@
       "total": 43.8,
       "status": "entregue",
       "dataRegistro": "2026-06-12",
-      "entregue": false
+      "entregue": true,
+      "recebido": false,
+      "dataRecebimento": null
     }
   ],
   "precificados": [
@@ -13111,7 +13113,8 @@
       "subtotal": 43.8,
       "total": 43.8,
       "dataEmissao": "2026-06-12",
-      "status": "emitida"
+      "status": "emitida",
+      "enviada": false
     }
   ],
   "_exportSeq": 49,
