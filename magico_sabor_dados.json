@@ -5868,8 +5868,9 @@
       ],
       "subtotal": 43.8,
       "total": 43.8,
-      "status": "aberto",
-      "dataRegistro": "2026-06-12"
+      "status": "entregue",
+      "dataRegistro": "2026-06-12",
+      "entregue": false
     }
   ],
   "precificados": [
@@ -13082,6 +13083,35 @@
       "dataEmissao": "2026-06-11",
       "status": "emitida",
       "enviada": false
+    },
+    {
+      "id": 1781284591826,
+      "numero": "FAT-0050",
+      "encId": 1781284572625,
+      "clienteNome": "Ana Lúcia Rosico",
+      "clienteDoc": "—",
+      "clienteTel": "(35) 99126 2053",
+      "clienteEnd": "Rua Sapucaí, 68 apt 31 - S.Benedito",
+      "data": "2026-06-12",
+      "vencimento": "2026-06-12",
+      "pagamento": "pix",
+      "itens": [
+        {
+          "nome": "Pão francês (6 un)",
+          "qtd": 6,
+          "preco": 3.8
+        },
+        {
+          "nome": "Mini-pão 45g (6 un)",
+          "qtd": 6,
+          "preco": 3.5
+        }
+      ],
+      "frete": 0,
+      "subtotal": 43.8,
+      "total": 43.8,
+      "dataEmissao": "2026-06-12",
+      "status": "emitida"
     }
   ],
   "_exportSeq": 49,
