@@ -1572,7 +1572,7 @@
       "medida": "unidade",
       "peso": null,
       "pesoUn": "g",
-      "qtd": 5,
+      "qtd": 6,
       "qtdUn": "un",
       "tempo": "",
       "desc": "",
@@ -1580,7 +1580,8 @@
       "sl": true,
       "veg": true,
       "sd": false,
-      "dataCadastro": "2026-06-11"
+      "dataCadastro": "2026-06-11",
+      "dataAtualizacao": "2026-06-12"
     },
     {
       "id": 1775413711563,
@@ -5836,7 +5837,9 @@
       "total": 172,
       "status": "entregue",
       "dataRegistro": "2026-06-11",
-      "entregue": false
+      "entregue": false,
+      "recebido": false,
+      "dataRecebimento": null
     }
   ],
   "precificados": [
@@ -13047,7 +13050,8 @@
       "subtotal": 172,
       "total": 172,
       "dataEmissao": "2026-06-11",
-      "status": "emitida"
+      "status": "emitida",
+      "enviada": false
     }
   ],
   "_exportSeq": 49,
