@@ -5985,6 +5985,36 @@
       "status": "entregue",
       "dataRegistro": "2026-06-14",
       "entregue": false
+    },
+    {
+      "id": 1781453645229,
+      "clienteId": 1775766527070,
+      "clienteNome": "Carol Tenari",
+      "clienteTel": "",
+      "clienteDoc": "",
+      "data": "2026-06-14",
+      "vencimento": "2026-06-14",
+      "tipo": "entrega",
+      "endereco": "",
+      "frete": 0,
+      "pagamento": "pix",
+      "obs": "",
+      "itens": [
+        {
+          "nome": "Pão francês vegano",
+          "qtd": 18,
+          "preco": 3.8
+        },
+        {
+          "nome": "Disco pizza 100g  (5 un) VEG",
+          "qtd": 5,
+          "preco": 7
+        }
+      ],
+      "subtotal": 103.39999999999999,
+      "total": 103.39999999999999,
+      "status": "aberto",
+      "dataRegistro": "2026-06-14"
     }
   ],
   "precificados": [
