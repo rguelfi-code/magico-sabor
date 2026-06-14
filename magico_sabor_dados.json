@@ -13122,7 +13122,7 @@
       "total": 248,
       "dataEmissao": "2026-06-08",
       "status": "emitida",
-      "enviada": false
+      "enviada": true
     },
     {
       "id": 1781180241017,
