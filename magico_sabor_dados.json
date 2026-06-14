@@ -13419,7 +13419,7 @@
       "total": 142,
       "dataEmissao": "2026-06-14",
       "status": "emitida",
-      "enviada": false
+      "enviada": true
     },
     {
       "id": 1781453649872,
