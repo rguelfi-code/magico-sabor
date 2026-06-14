@@ -5984,7 +5984,9 @@
       "total": 142,
       "status": "entregue",
       "dataRegistro": "2026-06-14",
-      "entregue": false
+      "entregue": true,
+      "recebido": false,
+      "dataRecebimento": null
     },
     {
       "id": 1781453645229,
@@ -6015,7 +6017,9 @@
       "total": 103.39999999999999,
       "status": "entregue",
       "dataRegistro": "2026-06-14",
-      "entregue": false
+      "entregue": false,
+      "recebido": false,
+      "dataRecebimento": null
     },
     {
       "id": 1781457599501,
@@ -6066,7 +6070,9 @@
       "total": 298,
       "status": "entregue",
       "dataRegistro": "2026-06-14",
-      "entregue": false
+      "entregue": false,
+      "recebido": false,
+      "dataRecebimento": null
     }
   ],
   "precificados": [
@@ -13412,7 +13418,8 @@
       "subtotal": 142,
       "total": 142,
       "dataEmissao": "2026-06-14",
-      "status": "emitida"
+      "status": "emitida",
+      "enviada": false
     },
     {
       "id": 1781453649872,
@@ -13441,7 +13448,8 @@
       "subtotal": 103.39999999999999,
       "total": 103.39999999999999,
       "dataEmissao": "2026-06-14",
-      "status": "emitida"
+      "status": "emitida",
+      "enviada": false
     },
     {
       "id": 1781457636918,
@@ -13490,7 +13498,8 @@
       "subtotal": 298,
       "total": 298,
       "dataEmissao": "2026-06-14",
-      "status": "emitida"
+      "status": "emitida",
+      "enviada": false
     }
   ],
   "_exportSeq": 49,
