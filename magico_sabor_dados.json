@@ -6017,7 +6017,7 @@
       "total": 103.39999999999999,
       "status": "entregue",
       "dataRegistro": "2026-06-14",
-      "entregue": false,
+      "entregue": true,
       "recebido": false,
       "dataRecebimento": null
     },
