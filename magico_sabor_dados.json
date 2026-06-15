@@ -12915,7 +12915,7 @@
       "total": 143,
       "dataEmissao": "2026-06-03",
       "status": "emitida",
-      "enviada": false
+      "enviada": true
     },
     {
       "id": 1780509881400,
@@ -12950,7 +12950,7 @@
       "total": 141,
       "dataEmissao": "2026-06-03",
       "status": "emitida",
-      "enviada": false
+      "enviada": true
     },
     {
       "id": 1780524316749,
