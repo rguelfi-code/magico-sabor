@@ -13310,7 +13310,7 @@
       "total": 179,
       "dataEmissao": "2026-06-11",
       "status": "emitida",
-      "enviada": false
+      "enviada": true
     },
     {
       "id": 1781212050737,
