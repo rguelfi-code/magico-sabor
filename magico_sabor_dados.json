@@ -13070,7 +13070,7 @@
       "total": 204,
       "dataEmissao": "2026-06-05",
       "status": "emitida",
-      "enviada": false
+      "enviada": true
     },
     {
       "id": 1780689868055,
