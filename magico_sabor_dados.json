@@ -6207,8 +6207,9 @@
       ],
       "subtotal": 258.8,
       "total": 258.8,
-      "status": "aberto",
-      "dataRegistro": "2026-06-17"
+      "status": "entregue",
+      "dataRegistro": "2026-06-17",
+      "entregue": false
     }
   ],
   "precificados": [
@@ -13721,6 +13722,50 @@
       "dataEmissao": "2026-06-15",
       "status": "emitida",
       "enviada": true
+    },
+    {
+      "id": 1781739262432,
+      "numero": "FAT-0058",
+      "encId": 1781739254931,
+      "clienteNome": "Cassino Hotel",
+      "clienteDoc": "—",
+      "clienteTel": "",
+      "clienteEnd": "",
+      "data": "2026-06-17",
+      "vencimento": "2026-06-17",
+      "pagamento": "pix",
+      "itens": [
+        {
+          "nome": "Pão francês (6 un)",
+          "qtd": 6,
+          "preco": 3.8
+        },
+        {
+          "nome": "Bolo caseiro de chocolate VEG",
+          "qtd": 3,
+          "preco": 30
+        },
+        {
+          "nome": "Bolo caseiro de laranja VEG",
+          "qtd": 3,
+          "preco": 30
+        },
+        {
+          "nome": "Cheesecake c/frutas vermelhas ZERO",
+          "qtd": 2,
+          "preco": 16
+        },
+        {
+          "nome": "Mousse de limão",
+          "qtd": 2,
+          "preco": 12
+        }
+      ],
+      "frete": 0,
+      "subtotal": 258.8,
+      "total": 258.8,
+      "dataEmissao": "2026-06-17",
+      "status": "emitida"
     }
   ],
   "_exportSeq": 49,
