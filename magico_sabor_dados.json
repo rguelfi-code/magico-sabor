@@ -11722,12 +11722,12 @@
     {
       "prodId": "1775337876560",
       "nome": "Bolo de laranja ZERO",
-      "preco": 75,
-      "precoSugerido": 77.67,
-      "custoUnit": 46.599999999999994,
-      "custoTotal": 93.19999999999999,
-      "lucro": 28.400000000000006,
-      "margem": "37.9",
+      "preco": 55,
+      "precoSugerido": 61.04,
+      "custoUnit": 36.62666666666666,
+      "custoTotal": 73.25333333333332,
+      "lucro": 18.373333333333342,
+      "margem": "33.4",
       "rendimento": 2,
       "rendimentoUn": "porções",
       "qtdEmbalada": 1,
@@ -11785,7 +11785,7 @@
         },
         {
           "id": 1775507889273,
-          "ingId": 1775422519607,
+          "ingId": 1775422603418,
           "qtd": 0.136
         },
         {
