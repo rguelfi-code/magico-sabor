@@ -6279,10 +6279,30 @@
           "nome": "Pão fatiado milho",
           "qtd": 2,
           "preco": 36
+        },
+        {
+          "nome": "Bolo de laranja ZERO",
+          "preco": 75,
+          "qtd": 1
+        },
+        {
+          "nome": "Bolo de fubá ZERO",
+          "preco": 55,
+          "qtd": 1
+        },
+        {
+          "nome": "Bolo de chocolate VEG",
+          "preco": 45,
+          "qtd": 1
+        },
+        {
+          "nome": "Pão fatiado multigrãos",
+          "preco": 36,
+          "qtd": 1
         }
       ],
-      "subtotal": 215,
-      "total": 215,
+      "subtotal": 426,
+      "total": 426,
       "status": "entregue",
       "dataRegistro": "2026-06-18",
       "entregue": false,
