@@ -6296,13 +6296,13 @@
           "qtd": 1
         },
         {
-          "nome": "Bolo caseiro de laranja ZERO",
-          "preco": 35,
+          "nome": "Bolo de laranja ZERO - far. amêndoa",
+          "preco": 75,
           "qtd": 1
         }
       ],
-      "subtotal": 452,
-      "total": 452,
+      "subtotal": 492,
+      "total": 492,
       "status": "entregue",
       "dataRegistro": "2026-06-18",
       "entregue": false,
