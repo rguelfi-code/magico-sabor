@@ -6291,18 +6291,13 @@
           "qtd": 1
         },
         {
-          "nome": "Bolo de chocolate VEG",
-          "preco": 45,
-          "qtd": 1
-        },
-        {
           "nome": "Pão fatiado multigrãos",
           "preco": 36,
           "qtd": 1
         }
       ],
-      "subtotal": 462,
-      "total": 462,
+      "subtotal": 417,
+      "total": 417,
       "status": "entregue",
       "dataRegistro": "2026-06-18",
       "entregue": false,
