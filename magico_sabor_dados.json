@@ -6277,7 +6277,7 @@
         },
         {
           "nome": "Pão fatiado milho",
-          "qtd": 2,
+          "qtd": 3,
           "preco": 36
         },
         {
@@ -6301,8 +6301,8 @@
           "qtd": 1
         }
       ],
-      "subtotal": 426,
-      "total": 426,
+      "subtotal": 462,
+      "total": 462,
       "status": "entregue",
       "dataRegistro": "2026-06-18",
       "entregue": false,
