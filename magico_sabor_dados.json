@@ -783,7 +783,7 @@
     },
     {
       "id": 1775337876560,
-      "nome": "Bolo de laranja ZERO - far. amêndoa",
+      "nome": "Bolo de laranja ZERO",
       "categoria": "bolo",
       "medida": "peso",
       "peso": 650,
@@ -6343,7 +6343,9 @@
       "total": 417,
       "status": "entregue",
       "dataRegistro": "2026-06-18",
-      "entregue": false
+      "entregue": false,
+      "recebido": false,
+      "dataRecebimento": null
     }
   ],
   "precificados": [
@@ -11719,7 +11721,7 @@
     },
     {
       "prodId": "1775337876560",
-      "nome": "Bolo de laranja ZERO - far. amêndoa",
+      "nome": "Bolo de laranja ZERO",
       "preco": 75,
       "precoSugerido": 77.67,
       "custoUnit": 46.599999999999994,
@@ -14024,7 +14026,8 @@
       "subtotal": 417,
       "total": 417,
       "dataEmissao": "2026-06-18",
-      "status": "emitida"
+      "status": "emitida",
+      "enviada": false
     }
   ],
   "_exportSeq": 49,
