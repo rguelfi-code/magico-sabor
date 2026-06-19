@@ -6337,10 +6337,15 @@
           "nome": "Bolo de fubá ZERO",
           "qtd": 1,
           "preco": 55
+        },
+        {
+          "nome": "Disco pizza 100g  (5 un) VEG",
+          "preco": 7,
+          "qtd": 10
         }
       ],
-      "subtotal": 417,
-      "total": 417,
+      "subtotal": 487,
+      "total": 487,
       "status": "entregue",
       "dataRegistro": "2026-06-18",
       "entregue": false,
