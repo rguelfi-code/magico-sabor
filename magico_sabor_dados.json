@@ -13978,6 +13978,65 @@
       "dataEmissao": "2026-06-18",
       "status": "emitida",
       "enviada": false
+    },
+    {
+      "id": 1781872343361,
+      "numero": "FAT-0063",
+      "encId": 1781810600603,
+      "clienteNome": "Monreale - D.C. Turismo Ltda.",
+      "clienteDoc": "01.204.495/0001-33",
+      "clienteTel": "",
+      "clienteEnd": "Av. Leonor Furlaneto Delgado, 3033",
+      "data": "2026-06-18",
+      "vencimento": "2026-06-18",
+      "pagamento": "pix",
+      "itens": [
+        {
+          "nome": "Bolo de banana VEG",
+          "qtd": 1,
+          "preco": 38
+        },
+        {
+          "nome": "Bolo de laranja VEG",
+          "qtd": 1,
+          "preco": 45
+        },
+        {
+          "nome": "Bolo de cenoura C/cob",
+          "qtd": 1,
+          "preco": 60
+        },
+        {
+          "nome": "Pão fatiado milho",
+          "qtd": 3,
+          "preco": 36
+        },
+        {
+          "nome": "Pão fatiado multigrãos",
+          "qtd": 1,
+          "preco": 36
+        },
+        {
+          "nome": "Bolo de laranja ZERO - far. amêndoa",
+          "qtd": 1,
+          "preco": 75
+        },
+        {
+          "nome": "Bolo de fubá ZERO",
+          "qtd": 1,
+          "preco": 55
+        },
+        {
+          "nome": "Disco pizza 100g  (5 un) VEG",
+          "preco": 7,
+          "qtd": 10
+        }
+      ],
+      "frete": 0,
+      "subtotal": 487,
+      "total": 487,
+      "dataEmissao": "2026-06-19",
+      "status": "emitida"
     }
   ],
   "_exportSeq": 49,
