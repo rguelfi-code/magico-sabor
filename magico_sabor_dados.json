@@ -2967,12 +2967,12 @@
       "nome": "Forneável assadeira bolo",
       "tipo": "Outras",
       "unidade": "un",
-      "custo": 2.5,
+      "custo": 3.6,
       "estoque": -1,
       "minimo": 0,
       "fornecedor": "",
       "dataCadastro": "2026-05-07",
-      "dataAtualizacao": "2026-05-21"
+      "dataAtualizacao": "2026-06-22"
     },
     {
       "id": 1775519737966,
