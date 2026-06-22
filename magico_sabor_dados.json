@@ -14077,7 +14077,7 @@
       "total": 180,
       "dataEmissao": "2026-06-18",
       "status": "emitida",
-      "enviada": false
+      "enviada": true
     },
     {
       "id": 1781799417452,
