@@ -6450,6 +6450,36 @@
       "total": 352,
       "status": "aberto",
       "dataRegistro": "2026-06-22"
+    },
+    {
+      "id": 1782134479487,
+      "clienteId": 1782134373416,
+      "clienteNome": "Paty - Pilates",
+      "clienteTel": "(35) 99912 0403",
+      "clienteDoc": "",
+      "data": "2026-06-22",
+      "vencimento": "2026-06-22",
+      "tipo": "entrega",
+      "endereco": "",
+      "frete": 0,
+      "pagamento": "pix",
+      "obs": "",
+      "itens": [
+        {
+          "nome": "Bolo caseiro de banana VEG",
+          "qtd": 1,
+          "preco": 30
+        },
+        {
+          "nome": "Pão fatiado multigrãos",
+          "qtd": 1,
+          "preco": 36
+        }
+      ],
+      "subtotal": 66,
+      "total": 66,
+      "status": "aberto",
+      "dataRegistro": "2026-06-22"
     }
   ],
   "precificados": [
