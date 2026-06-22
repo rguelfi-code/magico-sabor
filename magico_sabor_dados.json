@@ -6486,6 +6486,36 @@
       "entregue": true,
       "recebido": true,
       "dataRecebimento": "2026-06-22"
+    },
+    {
+      "id": 1782157704782,
+      "clienteId": 1775767606839,
+      "clienteNome": "Monreale - D.C. Turismo Ltda.",
+      "clienteTel": "",
+      "clienteDoc": "01.204.495/0001-33",
+      "data": "2026-06-22",
+      "vencimento": "2026-06-22",
+      "tipo": "entrega",
+      "endereco": "Av. Leonor Furlaneto Delgado, 3033",
+      "frete": 0,
+      "pagamento": "pix",
+      "obs": "",
+      "itens": [
+        {
+          "nome": "Bolo de coco ZERO - C/cob",
+          "qtd": 1,
+          "preco": 75
+        },
+        {
+          "nome": "Bolo de chocolate - C/cob",
+          "qtd": 1,
+          "preco": 65
+        }
+      ],
+      "subtotal": 140,
+      "total": 140,
+      "status": "aberto",
+      "dataRegistro": "2026-06-22"
     }
   ],
   "precificados": [
