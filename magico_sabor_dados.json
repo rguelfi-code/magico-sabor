@@ -6448,8 +6448,11 @@
       ],
       "subtotal": 352,
       "total": 352,
-      "status": "aberto",
-      "dataRegistro": "2026-06-22"
+      "status": "entregue",
+      "dataRegistro": "2026-06-22",
+      "entregue": false,
+      "recebido": false,
+      "dataRecebimento": null
     },
     {
       "id": 1782134479487,
@@ -6480,7 +6483,9 @@
       "total": 66,
       "status": "entregue",
       "dataRegistro": "2026-06-22",
-      "entregue": true
+      "entregue": true,
+      "recebido": false,
+      "dataRecebimento": null
     }
   ],
   "precificados": [
@@ -14198,6 +14203,50 @@
       "dataEmissao": "2026-06-22",
       "status": "emitida",
       "enviada": true
+    },
+    {
+      "id": 1782136989214,
+      "numero": "FAT-0065",
+      "encId": 1782134110064,
+      "clienteNome": "Cassino Hotel",
+      "clienteDoc": "—",
+      "clienteTel": "",
+      "clienteEnd": "",
+      "data": "2026-06-22",
+      "vencimento": "2026-06-22",
+      "pagamento": "pix",
+      "itens": [
+        {
+          "nome": "Pão francês (6 un)",
+          "qtd": 30,
+          "preco": 3.8
+        },
+        {
+          "nome": "Torta de maçã & chocolate VEG",
+          "qtd": 5,
+          "preco": 10
+        },
+        {
+          "nome": "Cheesecake c/frutas vermelhas ZERO",
+          "qtd": 5,
+          "preco": 16
+        },
+        {
+          "nome": "Torta de sorvete",
+          "qtd": 5,
+          "preco": 12
+        },
+        {
+          "nome": "Mousse de limão",
+          "qtd": 4,
+          "preco": 12
+        }
+      ],
+      "frete": 0,
+      "subtotal": 352,
+      "total": 352,
+      "dataEmissao": "2026-06-22",
+      "status": "emitida"
     }
   ],
   "_exportSeq": 49,
