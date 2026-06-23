@@ -6516,7 +6516,7 @@
       "total": 140,
       "status": "entregue",
       "dataRegistro": "2026-06-22",
-      "entregue": false,
+      "entregue": true,
       "recebido": false,
       "dataRecebimento": null
     },
