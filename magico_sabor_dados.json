@@ -6544,7 +6544,7 @@
       "total": 42,
       "status": "entregue",
       "dataRegistro": "2026-06-24",
-      "entregue": false,
+      "entregue": true,
       "recebido": false,
       "dataRecebimento": null
     },
@@ -6581,7 +6581,10 @@
       "subtotal": 292,
       "total": 292,
       "status": "aberto",
-      "dataRegistro": "2026-06-24"
+      "dataRegistro": "2026-06-24",
+      "entregue": false,
+      "recebido": false,
+      "dataRecebimento": null
     }
   ],
   "precificados": [
