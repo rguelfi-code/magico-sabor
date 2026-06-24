@@ -6585,8 +6585,9 @@
       ],
       "subtotal": 42,
       "total": 42,
-      "status": "aberto",
-      "dataRegistro": "2026-06-24"
+      "status": "entregue",
+      "dataRegistro": "2026-06-24",
+      "entregue": false
     }
   ],
   "precificados": [
@@ -14418,6 +14419,30 @@
       "dataEmissao": "2026-06-22",
       "status": "emitida",
       "enviada": false
+    },
+    {
+      "id": 1782310710715,
+      "numero": "FAT-0068",
+      "encId": 1782310701078,
+      "clienteNome": "APA - Ana Paula Almeida",
+      "clienteDoc": "—",
+      "clienteTel": "(35) 98800 9693",
+      "clienteEnd": "Rua Jorge Rodrigues Pereira, 390",
+      "data": "2026-06-24",
+      "vencimento": "2026-06-24",
+      "pagamento": "pix",
+      "itens": [
+        {
+          "nome": "Mini-pão 45g (6 un)",
+          "qtd": 12,
+          "preco": 3.5
+        }
+      ],
+      "frete": 0,
+      "subtotal": 42,
+      "total": 42,
+      "dataEmissao": "2026-06-24",
+      "status": "emitida"
     }
   ],
   "_exportSeq": 49,
