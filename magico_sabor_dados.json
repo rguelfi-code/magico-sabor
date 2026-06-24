@@ -6562,6 +6562,31 @@
       "entregue": true,
       "recebido": false,
       "dataRecebimento": null
+    },
+    {
+      "id": 1782310701078,
+      "clienteId": 1775750498424,
+      "clienteNome": "APA - Ana Paula Almeida",
+      "clienteTel": "(35) 98800 9693",
+      "clienteDoc": "",
+      "data": "2026-06-24",
+      "vencimento": "2026-06-24",
+      "tipo": "entrega",
+      "endereco": "Rua Jorge Rodrigues Pereira, 390",
+      "frete": 0,
+      "pagamento": "pix",
+      "obs": "",
+      "itens": [
+        {
+          "nome": "Mini-pão 45g (6 un)",
+          "qtd": 12,
+          "preco": 3.5
+        }
+      ],
+      "subtotal": 42,
+      "total": 42,
+      "status": "aberto",
+      "dataRegistro": "2026-06-24"
     }
   ],
   "precificados": [
