@@ -6615,7 +6615,7 @@
       "total": 66,
       "status": "entregue",
       "dataRegistro": "2026-06-25",
-      "entregue": false
+      "entregue": true
     }
   ],
   "precificados": [
