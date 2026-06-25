@@ -6613,8 +6613,9 @@
       ],
       "subtotal": 66,
       "total": 66,
-      "status": "aberto",
-      "dataRegistro": "2026-06-25"
+      "status": "entregue",
+      "dataRegistro": "2026-06-25",
+      "entregue": false
     }
   ],
   "precificados": [
@@ -14471,6 +14472,35 @@
       "dataEmissao": "2026-06-24",
       "status": "emitida",
       "enviada": true
+    },
+    {
+      "id": 1782345948918,
+      "numero": "FAT-0069",
+      "encId": 1782345931382,
+      "clienteNome": "Nacional Hotel",
+      "clienteDoc": "—",
+      "clienteTel": "(35) 99937 2003",
+      "clienteEnd": "",
+      "data": "2026-06-25",
+      "vencimento": "2026-06-25",
+      "pagamento": "pix",
+      "itens": [
+        {
+          "nome": "Bolo caseiro de laranja VEG",
+          "qtd": 1,
+          "preco": 30
+        },
+        {
+          "nome": "Pão de forma VEG",
+          "qtd": 1,
+          "preco": 36
+        }
+      ],
+      "frete": 0,
+      "subtotal": 66,
+      "total": 66,
+      "dataEmissao": "2026-06-25",
+      "status": "emitida"
     }
   ],
   "_exportSeq": 49,
