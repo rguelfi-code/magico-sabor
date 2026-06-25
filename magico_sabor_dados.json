@@ -6615,7 +6615,39 @@
       "total": 66,
       "status": "entregue",
       "dataRegistro": "2026-06-25",
-      "entregue": true
+      "entregue": true,
+      "recebido": false,
+      "dataRecebimento": null
+    },
+    {
+      "id": 1782407233806,
+      "clienteId": 1775767606839,
+      "clienteNome": "Monreale - D.C. Turismo Ltda.",
+      "clienteTel": "",
+      "clienteDoc": "01.204.495/0001-33",
+      "data": "2026-06-25",
+      "vencimento": "2026-06-25",
+      "tipo": "entrega",
+      "endereco": "Av. Leonor Furlaneto Delgado, 3033",
+      "frete": 0,
+      "pagamento": "pix",
+      "obs": "",
+      "itens": [
+        {
+          "nome": "Bolo de cenoura C/cob",
+          "qtd": 1,
+          "preco": 60
+        },
+        {
+          "nome": "Bolo de laranja VEG",
+          "qtd": 1,
+          "preco": 45
+        }
+      ],
+      "subtotal": 105,
+      "total": 105,
+      "status": "aberto",
+      "dataRegistro": "2026-06-25"
     }
   ],
   "precificados": [
@@ -14500,7 +14532,8 @@
       "subtotal": 66,
       "total": 66,
       "dataEmissao": "2026-06-25",
-      "status": "emitida"
+      "status": "emitida",
+      "enviada": false
     }
   ],
   "_exportSeq": 49,
