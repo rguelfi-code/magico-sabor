@@ -6765,8 +6765,9 @@
       ],
       "subtotal": 106,
       "total": 106,
-      "status": "aberto",
-      "dataRegistro": "2026-06-26"
+      "status": "entregue",
+      "dataRegistro": "2026-06-26",
+      "entregue": false
     }
   ],
   "precificados": [
@@ -14793,6 +14794,40 @@
       "dataEmissao": "2026-06-26",
       "status": "emitida",
       "enviada": false
+    },
+    {
+      "id": 1782514434413,
+      "numero": "FAT-0074",
+      "encId": 1782514429455,
+      "clienteNome": "Carlton Plaza Ltda",
+      "clienteDoc": "71.478.457/0001-54",
+      "clienteTel": "",
+      "clienteEnd": "Rua Junqueiras, 601 Centro",
+      "data": "2026-06-26",
+      "vencimento": "2026-06-26",
+      "pagamento": "pix",
+      "itens": [
+        {
+          "nome": "Bolo caseiro de coco ZERO",
+          "qtd": 1,
+          "preco": 35
+        },
+        {
+          "nome": "Bolo caseiro de chocolate ZERO",
+          "qtd": 1,
+          "preco": 35
+        },
+        {
+          "nome": "Pão fatiado multigrãos",
+          "qtd": 1,
+          "preco": 36
+        }
+      ],
+      "frete": 0,
+      "subtotal": 106,
+      "total": 106,
+      "dataEmissao": "2026-06-26",
+      "status": "emitida"
     }
   ],
   "_exportSeq": 49,
