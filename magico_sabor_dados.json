@@ -5687,8 +5687,8 @@
       "status": "entregue",
       "dataRegistro": "2026-06-08",
       "entregue": true,
-      "recebido": false,
-      "dataRecebimento": null
+      "recebido": true,
+      "dataRecebimento": "2026-06-26"
     },
     {
       "id": 1780956450111,
