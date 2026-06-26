@@ -5915,8 +5915,8 @@
       "status": "entregue",
       "dataRegistro": "2026-06-12",
       "entregue": true,
-      "recebido": false,
-      "dataRecebimento": null
+      "recebido": true,
+      "dataRecebimento": "2026-06-26"
     },
     {
       "id": 1781285075163,
