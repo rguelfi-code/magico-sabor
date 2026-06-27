@@ -782,6 +782,7 @@
       <button class="filtro-btn" data-cor="#2e7d32" style="border-color:#2e7d32;color:#2e7d32;" onclick="setFiltroVenda(this,'recebido')">✅ Recebido</button>
     </div>
     <!-- Filtros de cliente e período (só visível em Todas) -->
+    <!-- Filtros de cliente e período — todas as etapas -->
     <div id="filtrosTodas" style="display:flex;flex-wrap:wrap;gap:8px;align-items:center;padding:8px 0;">
       <select id="filtroTodasCliente" onchange="renderEncomendas()" style="border:2px solid var(--verde-claro);border-radius:8px;padding:6px 12px;font-family:'Jost',sans-serif;font-size:13px;outline:none;background:#fff;">
         <option value="">Todos os clientes</option>
@@ -891,14 +892,22 @@
       <div class="grafico-card" style="grid-column:1/-1;">
         <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;margin-bottom:8px;">
           <h4 style="margin:0;">📈 Evolução do Faturamento Mensal</h4>
-          <button onclick="toggleHistorico()" style="padding:4px 10px;background:#f4f8f0;border:1px solid var(--verde-claro);border-radius:6px;font-family:'Jost',sans-serif;font-size:12px;cursor:pointer;">📊 Dados históricos</button>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;">
+            <input type="date" id="graficoIni" onchange="renderRelatorios()" style="border:2px solid var(--verde-claro);border-radius:8px;padding:5px 10px;font-family:'Jost',sans-serif;font-size:12px;">
+            <span style="font-size:12px;color:var(--texto-ter);">até</span>
+            <input type="date" id="graficoFim" onchange="renderRelatorios()" style="border:2px solid var(--verde-claro);border-radius:8px;padding:5px 10px;font-family:'Jost',sans-serif;font-size:12px;">
+            <button onclick="document.getElementById('graficoIni').value='';document.getElementById('graficoFim').value='';renderRelatorios();" style="padding:5px 10px;background:#eee;border:none;border-radius:8px;cursor:pointer;font-family:'Jost',sans-serif;font-size:12px;">✕</button>
+            <button onclick="toggleHistorico()" style="padding:5px 10px;background:#f4f8f0;border:1px solid var(--verde-claro);border-radius:6px;font-family:'Jost',sans-serif;font-size:12px;cursor:pointer;">📊 Dados históricos</button>
+          </div>
         </div>
         <div id="historicoPanel" style="display:none;margin-bottom:12px;background:#fafdf7;border:1px solid var(--verde-claro);border-radius:8px;padding:12px;">
           <p style="font-size:12px;color:var(--texto-ter);margin-bottom:8px;">Digite os valores mensais históricos (Jan/2024 em diante). Deixe em branco os meses sem dados.</p>
           <div id="historicoGrid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:6px;"></div>
           <button onclick="salvarHistorico()" style="margin-top:8px;padding:6px 14px;background:var(--verde-escuro);color:#fff;border:none;border-radius:6px;font-family:'Jost',sans-serif;font-size:12px;cursor:pointer;">💾 Salvar histórico</button>
         </div>
-        <div id="graficoFat" style="width:100%;"></div>
+        <div id="graficoFat" style="width:100%;position:relative;"></div>
+        <div id="graficoTooltip" style="display:none;position:fixed;background:#1a1a1a;color:#fff;padding:6px 12px;border-radius:6px;font-size:12px;font-family:'Jost',sans-serif;pointer-events:none;z-index:9999;"></div>
+        <div id="tabelaMensal" style="margin-top:16px;"></div>
       </div>
     </div>
   </div>
@@ -1357,7 +1366,7 @@ function _graficoLinhaSVG(divId,labels,series){
   const allVals=series.flatMap(s=>s.vals).filter(v=>v>0);
   const maxV=allVals.length?Math.max(...allVals)*1.1:1;
   const n=labels.length;const xStep=(W-padL-padR)/(n-1||1);
-  let svg=`<svg viewBox="0 0 ${W} ${H}" xmlns="http:\/\/www.w3.org\/2000\/svg" style="width:100%;max-height:300px;">`;
+  let svg=`<svg viewBox="0 0 ${W} ${H}" xmlns="http:\/\/www.w3.org\/2000\/svg" style="width:100%;max-height:300px;overflow:visible;">`;
   for(let i=0;i<=4;i++){
     const y=padT+(H-padT-padB)*(1-i/4);const val=maxV*i/4;
     svg+=`<line x1="${padL}" y1="${y}" x2="${W-padR}" y2="${y}" stroke="#e8e8e8" stroke-width="1"\/>`;
@@ -1374,10 +1383,9 @@ function _graficoLinhaSVG(divId,labels,series){
     s.vals.forEach((v,i)=>{
       if(!v)return;
       const[x,y]=pts[i];
-      svg+=`<circle cx="${x}" cy="${y}" r="3.5" fill="${s.cor}"\/>`;
+      svg+=`<circle cx="${x}" cy="${y}" r="5" fill="${s.cor}" style="cursor:pointer;" onmouseenter="mostrarTooltip(event,\'${labels[i]}\',${v})" onmouseleave="ocultarTooltip()"\/>`;
     });
   });
-  // Legenda
   let lx=padL;
   series.forEach(s=>{
     svg+=`<rect x="${lx}" y="${H-14}" width="12" height="4" fill="${s.cor}" rx="2"\/>`;
@@ -1385,6 +1393,16 @@ function _graficoLinhaSVG(divId,labels,series){
     lx+=s.label.length*7+30;
   });
   svg+='<\/svg>';div.innerHTML=svg;
+}
+function mostrarTooltip(e,label,val){
+  const tip=document.getElementById('graficoTooltip');if(!tip)return;
+  tip.textContent=label+': R$ '+val.toFixed(2).replace('.',',');
+  tip.style.display='block';
+  tip.style.left=(e.clientX+12)+'px';
+  tip.style.top=(e.clientY-36)+'px';
+}
+function ocultarTooltip(){
+  const tip=document.getElementById('graficoTooltip');if(tip)tip.style.display='none';
 }
 function _graficoBarras(divId,vals,cor){
   var div=document.getElementById(divId);if(!div)return;
@@ -2370,17 +2388,13 @@ function setFiltroVenda(btn,f){
   btn.style.color='#fff';
   btn.style.borderColor=cor;
   filtroVenda=f;
-  // Mostrar filtros extras só em Todas
-  const ft=document.getElementById('filtrosTodas');
-  if(ft)ft.style.display=f==='todas'?'flex':'none';
-  // Popular select de clientes
-  if(f==='todas'){
-    const sel=document.getElementById('filtroTodasCliente');
-    if(sel){
-      const cur=sel.value;
-      const nomes=[...new Set(dados.encomendas.map(e=>e.clienteNome))].sort((a,b)=>a.localeCompare(b,'pt-BR'));
-      sel.innerHTML='<option value="">Todos os clientes<\/option>'+nomes.map(n=>`<option value="${n}" ${n===cur?'selected':''}>${n}<\/option>`).join('');
-    }
+  // Popular select de clientes com todos os clientes relevantes
+  const sel=document.getElementById('filtroTodasCliente');
+  if(sel){
+    const cur=sel.value;
+    const encsParaFiltro=f==='todas'?dados.encomendas:dados.encomendas.filter(e=>etapaEncomenda(e)===f);
+    const nomes=[...new Set(encsParaFiltro.map(e=>e.clienteNome))].sort((a,b)=>a.localeCompare(b,'pt-BR'));
+    sel.innerHTML='<option value="">Todos os clientes<\/option>'+nomes.map(n=>`<option value="${n}" ${n===cur?'selected':''}>${n}<\/option>`).join('');
   }
   renderEncomendas();
 }
@@ -2479,19 +2493,17 @@ function renderEncomendas(){
   const lista=document.getElementById('listaEncomendas');
   let encs=[...dados.encomendas].sort((a,b)=>new Date(b.data)-new Date(a.data));
   if(filtroVenda!=='todas') encs=encs.filter(e=>etapaEncomenda(e)===filtroVenda);
-  // Filtros extras para Todas
-  if(filtroVenda==='todas'){
-    const cli=document.getElementById('filtroTodasCliente')?.value;
-    const ini=document.getElementById('filtroTodasIni')?.value;
-    const fim=document.getElementById('filtroTodasFim')?.value;
-    if(cli)encs=encs.filter(e=>e.clienteNome===cli);
-    if(ini)encs=encs.filter(e=>new Date(e.data+'T12:00:00')>=new Date(ini+'T00:00:00'));
-    if(fim)encs=encs.filter(e=>new Date(e.data+'T12:00:00')<=new Date(fim+'T23:59:59'));
-    // Mostrar total filtrado
-    const tot=encs.reduce((s,e)=>s+e.total,0);
-    const telEl=document.getElementById('totalFiltradas');
-    if(telEl)telEl.textContent=(cli||ini||fim)?`Total: ${fmt(tot)} (${encs.length} encomenda${encs.length!==1?'s':''})`:'';
-  }
+  // Filtros de cliente e período — aplicar em todas as etapas
+  const cli=document.getElementById('filtroTodasCliente')?.value;
+  const ini=document.getElementById('filtroTodasIni')?.value;
+  const fim=document.getElementById('filtroTodasFim')?.value;
+  if(cli)encs=encs.filter(e=>e.clienteNome===cli);
+  if(ini)encs=encs.filter(e=>new Date(e.data+'T12:00:00')>=new Date(ini+'T00:00:00'));
+  if(fim)encs=encs.filter(e=>new Date(e.data+'T12:00:00')<=new Date(fim+'T23:59:59'));
+  // Mostrar total filtrado
+  const tot=encs.reduce((s,e)=>s+e.total,0);
+  const telEl=document.getElementById('totalFiltradas');
+  if(telEl)telEl.textContent=(cli||ini||fim)?`Total: ${fmt(tot)} (${encs.length} encomenda${encs.length!==1?'s':''})`:'';
   if(!encs.length){lista.innerHTML='<div class="empty-state"><span>📋<\/span>Nenhuma encomenda nesta etapa.<\/div>';return;}
   lista.innerHTML=encs.map(e=>{
     const fat=dados.faturas.find(f=>f.encId===e.id);
@@ -3107,26 +3119,46 @@ function renderVisaoGeral(enc){
   set('vLuc',fmt(lucroTotal));set('vLucPerc',`${margMedia}% margem média`);
   set('vPend',fmt(pendentes.reduce((s,e)=>s+e.total,0)));set('vPendQtd',`${pendentes.length} pendente${pendentes.length!==1?'s':''}`);
   set('vRec',fmt(pagas.reduce((s,e)=>s+e.total,0)));set('vRecQtd',`${pagas.length} recebida${pagas.length!==1?'s':''}`);
-  const meses=[];const h=new Date();
-  // Incluir histórico desde Jan/2024
+  // Gerar todos os meses desde Jan/2024
   const hist=dados._historico||{};
-  let d=new Date(2024,0,1);
-  while(d<=h){meses.push({ano:d.getFullYear(),mes:d.getMonth()});d=new Date(d.getFullYear(),d.getMonth()+1,1);}
   const nomesMes=['Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez'];
+  const h=new Date();
+  let d=new Date(2024,0,1);
+  const todosMeses=[];
+  while(d<=h){todosMeses.push({ano:d.getFullYear(),mes:d.getMonth()});d=new Date(d.getFullYear(),d.getMonth()+1,1);}
+  // Filtro de período do gráfico
+  const gIni=document.getElementById('graficoIni')?.value;
+  const gFim=document.getElementById('graficoFim')?.value;
+  const meses=todosMeses.filter(m=>{
+    const key=`${m.ano}-${String(m.mes+1).padStart(2,'0')}`;
+    const dM=new Date(m.ano,m.mes,1);
+    if(gIni&&dM<new Date(gIni+'T00:00:00'))return false;
+    if(gFim&&dM>new Date(gFim+'T23:59:59'))return false;
+    return true;
+  });
   const labels=meses.map(m=>`${nomesMes[m.mes]}/${String(m.ano).slice(2)}`);
   const fatMes=meses.map(m=>{
     const key=`${m.ano}-${String(m.mes+1).padStart(2,'0')}`;
-    // Dados do app
     const appVal=dados.encomendas.filter(e=>{const dd=new Date(e.data+'T12:00:00');return dd.getFullYear()===m.ano&&dd.getMonth()===m.mes;}).reduce((s,e)=>s+e.total,0);
-    // Dados históricos (só se não há dados no app)
     return appVal>0?appVal:(hist[key]||0);
   });
-  // Média acumulada
   const media=fatMes.map((_,i)=>{const vals=fatMes.slice(0,i+1).filter(v=>v>0);return vals.length?vals.reduce((s,v)=>s+v,0)/vals.length:0;});
   _graficoLinhaSVG('graficoFat',labels,[
     {label:'Faturamento',vals:fatMes,cor:'#3d5c2a',dashed:false},
     {label:'Média',vals:media,cor:'#a67c20',dashed:true}
   ]);
+  // Tabela mensal
+  const tbl=document.getElementById('tabelaMensal');if(!tbl)return;
+  if(!fatMes.some(v=>v>0)){tbl.innerHTML='';return;}
+  let html='<table class="tabela-rel" style="margin-top:8px;"><thead><tr><th>Mês<\/th><th class="num">Faturamento<\/th><th class="num">Média Acum.<\/th><\/tr><\/thead><tbody>';
+  meses.forEach((m,i)=>{
+    if(!fatMes[i])return;
+    const destaque=fatMes[i]>media[i]*1.1?'color:#2e7d32;font-weight:700;':fatMes[i]<media[i]*0.9?'color:#a93226;':'font-weight:700;';
+    html+=`<tr><td>${nomesMes[m.mes]} ${m.ano}<\/td><td class="num" style="${destaque}">${fmt(fatMes[i])}<\/td><td class="num" style="color:#a67c20;">${fmt(Math.round(media[i]))}<\/td><\/tr>`;
+  });
+  const total=fatMes.reduce((s,v)=>s+v,0);
+  html+=`<\/tbody><tfoot><tr><td><strong>Total<\/strong><\/td><td class="num"><strong>${fmt(total)}<\/strong><\/td><td><\/td><\/tr><\/tfoot><\/table>`;
+  tbl.innerHTML=html;
 }
 function renderRelContas(enc){
   if(!enc)enc=dados.encomendas.filter(encFaturadoNoPeriodo);
