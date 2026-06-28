@@ -14796,6 +14796,40 @@
       "dataEmissao": "2026-06-26",
       "status": "emitida",
       "enviada": false
+    },
+    {
+      "id": 1782617547803,
+      "numero": "FAT-0075",
+      "encId": 1782320228960,
+      "clienteNome": "Monreale - D.C. Turismo Ltda.",
+      "clienteDoc": "01.204.495/0001-33",
+      "clienteTel": "",
+      "clienteEnd": "Av. Leonor Furlaneto Delgado, 3033",
+      "data": "2026-06-24",
+      "vencimento": "2026-06-24",
+      "pagamento": "pix",
+      "itens": [
+        {
+          "nome": "Bolo de chocolate - C/cob",
+          "qtd": 2,
+          "preco": 65
+        },
+        {
+          "nome": "Bolo de laranja ZERO",
+          "preco": 55,
+          "qtd": 2
+        },
+        {
+          "nome": "Pão fatiado multigrãos",
+          "qtd": 2,
+          "preco": 36
+        }
+      ],
+      "frete": 0,
+      "subtotal": 312,
+      "total": 312,
+      "dataEmissao": "2026-06-28",
+      "status": "emitida"
     }
   ],
   "_exportSeq": 49,
