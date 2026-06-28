@@ -6568,9 +6568,9 @@
           "preco": 65
         },
         {
-          "nome": "Bolo de laranja VEG",
-          "qtd": 2,
-          "preco": 45
+          "nome": "Bolo de laranja ZERO",
+          "preco": 55,
+          "qtd": 2
         },
         {
           "nome": "Pão fatiado multigrãos",
@@ -6578,8 +6578,8 @@
           "preco": 36
         }
       ],
-      "subtotal": 292,
-      "total": 292,
+      "subtotal": 312,
+      "total": 312,
       "status": "entregue",
       "dataRegistro": "2026-06-24",
       "entregue": false,
