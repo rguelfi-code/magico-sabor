@@ -6803,8 +6803,9 @@
       ],
       "subtotal": 246,
       "total": 246,
-      "status": "aberto",
-      "dataRegistro": "2026-06-28"
+      "status": "entregue",
+      "dataRegistro": "2026-06-28",
+      "entregue": false
     }
   ],
   "precificados": [
@@ -14866,6 +14867,40 @@
       "dataEmissao": "2026-06-28",
       "status": "emitida",
       "enviada": false
+    },
+    {
+      "id": 1782660109108,
+      "numero": "FAT-0076",
+      "encId": 1782660101465,
+      "clienteNome": "Cassino Hotel",
+      "clienteDoc": "—",
+      "clienteTel": "(35) 99937 2003",
+      "clienteEnd": "",
+      "data": "2026-06-28",
+      "vencimento": "2026-06-28",
+      "pagamento": "pix",
+      "itens": [
+        {
+          "nome": "Bolo caseiro de laranja VEG",
+          "qtd": 3,
+          "preco": 30
+        },
+        {
+          "nome": "Bolo caseiro de chocolate VEG",
+          "qtd": 4,
+          "preco": 30
+        },
+        {
+          "nome": "Pão fatiado abóbora",
+          "qtd": 1,
+          "preco": 36
+        }
+      ],
+      "frete": 0,
+      "subtotal": 246,
+      "total": 246,
+      "dataEmissao": "2026-06-28",
+      "status": "emitida"
     }
   ],
   "_exportSeq": 49,
