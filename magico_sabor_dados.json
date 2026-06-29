@@ -6805,7 +6805,9 @@
       "total": 246,
       "status": "entregue",
       "dataRegistro": "2026-06-28",
-      "entregue": false
+      "entregue": true,
+      "recebido": false,
+      "dataRecebimento": null
     },
     {
       "id": 1782660457411,
@@ -6861,7 +6863,9 @@
       "total": 450,
       "status": "entregue",
       "dataRegistro": "2026-06-28",
-      "entregue": false
+      "entregue": false,
+      "recebido": false,
+      "dataRecebimento": null
     }
   ],
   "precificados": [
@@ -14956,7 +14960,8 @@
       "subtotal": 246,
       "total": 246,
       "dataEmissao": "2026-06-28",
-      "status": "emitida"
+      "status": "emitida",
+      "enviada": false
     },
     {
       "id": 1782660467843,
@@ -15010,7 +15015,8 @@
       "subtotal": 450,
       "total": 450,
       "dataEmissao": "2026-06-28",
-      "status": "emitida"
+      "status": "emitida",
+      "enviada": false
     }
   ],
   "_exportSeq": 49,
