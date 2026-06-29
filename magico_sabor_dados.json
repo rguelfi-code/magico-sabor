@@ -6863,7 +6863,7 @@
       "total": 450,
       "status": "entregue",
       "dataRegistro": "2026-06-28",
-      "entregue": false,
+      "entregue": true,
       "recebido": false,
       "dataRecebimento": null
     }
