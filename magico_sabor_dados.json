@@ -15079,7 +15079,7 @@
       "total": 70,
       "dataEmissao": "2026-06-30",
       "status": "emitida",
-      "enviada": false
+      "enviada": true
     }
   ],
   "_exportSeq": 49,
