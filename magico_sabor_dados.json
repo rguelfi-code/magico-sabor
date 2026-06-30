@@ -15076,7 +15076,8 @@
       "subtotal": 70,
       "total": 70,
       "dataEmissao": "2026-06-30",
-      "status": "emitida"
+      "status": "emitida",
+      "enviada": true
     }
   ],
   "_exportSeq": 49,
