@@ -6896,7 +6896,9 @@
       "total": 70,
       "status": "entregue",
       "dataRegistro": "2026-06-30",
-      "entregue": true
+      "entregue": true,
+      "recebido": false,
+      "dataRecebimento": null
     }
   ],
   "precificados": [
@@ -15077,7 +15079,7 @@
       "total": 70,
       "dataEmissao": "2026-06-30",
       "status": "emitida",
-      "enviada": true
+      "enviada": false
     }
   ],
   "_exportSeq": 49,
