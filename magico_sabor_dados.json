@@ -6866,6 +6866,36 @@
       "entregue": true,
       "recebido": false,
       "dataRecebimento": null
+    },
+    {
+      "id": 1782822025821,
+      "clienteId": 1775764988997,
+      "clienteNome": "Bibiana",
+      "clienteTel": "(35) 99779 0060",
+      "clienteDoc": "",
+      "data": "2026-06-30",
+      "vencimento": "2026-06-30",
+      "tipo": "entrega",
+      "endereco": "Rua Gerváso Antônio Chiminazzo, 87",
+      "frete": 0,
+      "pagamento": "pix",
+      "obs": "",
+      "itens": [
+        {
+          "nome": "Bolo caseiro de coco ZERO",
+          "qtd": 1,
+          "preco": 35
+        },
+        {
+          "nome": "Bolo caseiro de laranja ZERO",
+          "qtd": 1,
+          "preco": 35
+        }
+      ],
+      "subtotal": 70,
+      "total": 70,
+      "status": "aberto",
+      "dataRegistro": "2026-06-30"
     }
   ],
   "precificados": [
