@@ -14889,7 +14889,7 @@
       "total": 212,
       "dataEmissao": "2026-06-26",
       "status": "emitida",
-      "enviada": false
+      "enviada": true
     },
     {
       "id": 1782514434413,
