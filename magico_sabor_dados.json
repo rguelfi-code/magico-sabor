@@ -14659,7 +14659,7 @@
       "total": 352,
       "dataEmissao": "2026-06-22",
       "status": "emitida",
-      "enviada": false
+      "enviada": true
     },
     {
       "id": 1782157887871,
