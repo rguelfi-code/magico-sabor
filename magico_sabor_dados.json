@@ -15169,7 +15169,7 @@
       "total": 450,
       "dataEmissao": "2026-06-28",
       "status": "emitida",
-      "enviada": false
+      "enviada": true
     },
     {
       "id": 1782822039980,
