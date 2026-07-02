@@ -6974,6 +6974,51 @@
       "total": 294,
       "status": "aberto",
       "dataRegistro": "2026-07-02"
+    },
+    {
+      "id": 1783003391224,
+      "clienteId": 1775768243865,
+      "clienteNome": "Nacional Hotel",
+      "clienteTel": "(35) 99937 2003",
+      "clienteDoc": "",
+      "data": "2026-07-02",
+      "vencimento": "2026-07-02",
+      "tipo": "entrega",
+      "endereco": "",
+      "frete": 0,
+      "pagamento": "pix",
+      "obs": "",
+      "itens": [
+        {
+          "nome": "Pão de forma VEG",
+          "qtd": 2,
+          "preco": 36
+        },
+        {
+          "nome": "Pão australiano VEG",
+          "qtd": 1,
+          "preco": 38
+        },
+        {
+          "nome": "Bolo caseiro de banana VEG",
+          "qtd": 2,
+          "preco": 30
+        },
+        {
+          "nome": "Bolo caseiro de laranja VEG",
+          "qtd": 1,
+          "preco": 30
+        },
+        {
+          "nome": "Bolo caseiro de chocolate VEG",
+          "qtd": 1,
+          "preco": 30
+        }
+      ],
+      "subtotal": 230,
+      "total": 230,
+      "status": "aberto",
+      "dataRegistro": "2026-07-02"
     }
   ],
   "precificados": [
