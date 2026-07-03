@@ -15295,35 +15295,6 @@
       "dataEmissao": "2026-06-30",
       "status": "emitida",
       "enviada": true
-    },
-    {
-      "id": 1783088463221,
-      "numero": "FAT-0079",
-      "encId": 1783088251027,
-      "clienteNome": "Monreale - D.C. Turismo Ltda.",
-      "clienteDoc": "01.204.495/0001-33",
-      "clienteTel": "",
-      "clienteEnd": "Av. Leonor Furlaneto Delgado, 3033",
-      "data": "2026-07-03",
-      "vencimento": "2026-07-03",
-      "pagamento": "pix",
-      "itens": [
-        {
-          "nome": "Pão fatiado multigrãos",
-          "qtd": 1,
-          "preco": 36
-        },
-        {
-          "nome": "Pão fatiado milho",
-          "qtd": 1,
-          "preco": 36
-        }
-      ],
-      "frete": 0,
-      "subtotal": 72,
-      "total": 72,
-      "dataEmissao": "2026-07-03",
-      "status": "emitida"
     }
   ],
   "_exportSeq": 49,
