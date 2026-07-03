@@ -7112,8 +7112,9 @@
       ],
       "subtotal": 332,
       "total": 332,
-      "status": "aberto",
-      "dataRegistro": "2026-07-03"
+      "status": "entregue",
+      "dataRegistro": "2026-07-03",
+      "entregue": false
     }
   ],
   "precificados": [
@@ -15322,6 +15323,60 @@
       "frete": 0,
       "subtotal": 72,
       "total": 72,
+      "dataEmissao": "2026-07-03",
+      "status": "emitida"
+    },
+    {
+      "id": 1783088565813,
+      "numero": "FAT-0081",
+      "encId": 1783088442777,
+      "clienteNome": "Monreale - D.C. Turismo Ltda.",
+      "clienteDoc": "01.204.495/0001-33",
+      "clienteTel": "",
+      "clienteEnd": "Av. Leonor Furlaneto Delgado, 3033",
+      "data": "2026-07-03",
+      "vencimento": "2026-07-03",
+      "pagamento": "pix",
+      "itens": [
+        {
+          "nome": "Bolo de banana VEG",
+          "qtd": 1,
+          "preco": 38
+        },
+        {
+          "nome": "Bolo caseiro de cenoura - C/cob",
+          "qtd": 1,
+          "preco": 40
+        },
+        {
+          "nome": "Bolo de laranja VEG",
+          "qtd": 1,
+          "preco": 45
+        },
+        {
+          "nome": "Bolo de chocolate - C/cob",
+          "qtd": 1,
+          "preco": 65
+        },
+        {
+          "nome": "Pão fatiado multigrãos",
+          "qtd": 2,
+          "preco": 36
+        },
+        {
+          "nome": "Pão fatiado milho",
+          "qtd": 1,
+          "preco": 36
+        },
+        {
+          "nome": "Pão de forma VEG",
+          "qtd": 1,
+          "preco": 36
+        }
+      ],
+      "frete": 0,
+      "subtotal": 332,
+      "total": 332,
       "dataEmissao": "2026-07-03",
       "status": "emitida"
     }
