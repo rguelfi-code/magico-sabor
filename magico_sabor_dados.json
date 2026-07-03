@@ -6975,7 +6975,7 @@
       ],
       "subtotal": 294,
       "total": 294,
-      "status": "aberto",
+      "status": "entregue",
       "dataRegistro": "2026-07-02",
       "entregue": false,
       "recebido": false,
@@ -7023,7 +7023,7 @@
       ],
       "subtotal": 230,
       "total": 230,
-      "status": "aberto",
+      "status": "entregue",
       "dataRegistro": "2026-07-02",
       "entregue": false,
       "recebido": false,
@@ -15416,6 +15416,84 @@
       "frete": 0,
       "subtotal": 155,
       "total": 155,
+      "dataEmissao": "2026-07-03",
+      "status": "emitida"
+    },
+    {
+      "id": 1783088767530,
+      "numero": "FAT-0084",
+      "encId": 1783003060861,
+      "clienteNome": "Cassino Hotel",
+      "clienteDoc": "—",
+      "clienteTel": "(35) 99937 2003",
+      "clienteEnd": "",
+      "data": "2026-07-02",
+      "vencimento": "2026-07-02",
+      "pagamento": "pix",
+      "itens": [
+        {
+          "nome": "Pão francês (6 un)",
+          "qtd": 30,
+          "preco": 3.8
+        },
+        {
+          "nome": "Bolo caseiro de laranja VEG",
+          "qtd": 3,
+          "preco": 30
+        },
+        {
+          "nome": "Bolo caseiro de chocolate VEG",
+          "qtd": 3,
+          "preco": 30
+        }
+      ],
+      "frete": 0,
+      "subtotal": 294,
+      "total": 294,
+      "dataEmissao": "2026-07-03",
+      "status": "emitida"
+    },
+    {
+      "id": 1783088807751,
+      "numero": "FAT-0085",
+      "encId": 1783003391224,
+      "clienteNome": "Nacional Hotel",
+      "clienteDoc": "—",
+      "clienteTel": "(35) 99937 2003",
+      "clienteEnd": "",
+      "data": "2026-07-02",
+      "vencimento": "2026-07-02",
+      "pagamento": "pix",
+      "itens": [
+        {
+          "nome": "Pão de forma VEG",
+          "qtd": 2,
+          "preco": 36
+        },
+        {
+          "nome": "Pão australiano VEG",
+          "qtd": 1,
+          "preco": 38
+        },
+        {
+          "nome": "Bolo caseiro de banana VEG",
+          "qtd": 2,
+          "preco": 30
+        },
+        {
+          "nome": "Bolo caseiro de laranja VEG",
+          "qtd": 1,
+          "preco": 30
+        },
+        {
+          "nome": "Bolo caseiro de chocolate VEG",
+          "qtd": 1,
+          "preco": 30
+        }
+      ],
+      "frete": 0,
+      "subtotal": 230,
+      "total": 230,
       "dataEmissao": "2026-07-03",
       "status": "emitida"
     }
