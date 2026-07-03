@@ -6977,7 +6977,7 @@
       "total": 294,
       "status": "entregue",
       "dataRegistro": "2026-07-02",
-      "entregue": false,
+      "entregue": true,
       "recebido": false,
       "dataRecebimento": null
     },
