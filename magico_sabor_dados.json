@@ -7149,7 +7149,7 @@
       "total": 80,
       "status": "entregue",
       "dataRegistro": "2026-07-06",
-      "entregue": false
+      "entregue": true
     }
   ],
   "precificados": [
