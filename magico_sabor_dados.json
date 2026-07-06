@@ -7147,8 +7147,9 @@
       ],
       "subtotal": 80,
       "total": 80,
-      "status": "aberto",
-      "dataRegistro": "2026-07-06"
+      "status": "entregue",
+      "dataRegistro": "2026-07-06",
+      "entregue": false
     }
   ],
   "precificados": [
@@ -15535,6 +15536,35 @@
       "dataEmissao": "2026-07-03",
       "status": "emitida",
       "enviada": false
+    },
+    {
+      "id": 1783360524151,
+      "numero": "FAT-0086",
+      "encId": 1783360512077,
+      "clienteNome": "Letícia",
+      "clienteDoc": "—",
+      "clienteTel": "(35) 99981 3905",
+      "clienteEnd": "Rua Vicente Risola, 283 apt. 31",
+      "data": "2026-07-06",
+      "vencimento": "2026-07-06",
+      "pagamento": "pix",
+      "itens": [
+        {
+          "nome": "Bolo caseiro de cenoura - C/cob",
+          "qtd": 1,
+          "preco": 40
+        },
+        {
+          "nome": "Bolo caseiro de chocolate - C/cob",
+          "qtd": 1,
+          "preco": 40
+        }
+      ],
+      "frete": 0,
+      "subtotal": 80,
+      "total": 80,
+      "dataEmissao": "2026-07-06",
+      "status": "emitida"
     }
   ],
   "_exportSeq": 49,
