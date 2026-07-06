@@ -7119,6 +7119,36 @@
       "entregue": true,
       "recebido": false,
       "dataRecebimento": null
+    },
+    {
+      "id": 1783360512077,
+      "clienteId": 1778607735030,
+      "clienteNome": "Letícia",
+      "clienteTel": "(35) 99981 3905",
+      "clienteDoc": "",
+      "data": "2026-07-06",
+      "vencimento": "2026-07-06",
+      "tipo": "entrega",
+      "endereco": "Rua Vicente Risola, 283 apt. 31",
+      "frete": 0,
+      "pagamento": "pix",
+      "obs": "",
+      "itens": [
+        {
+          "nome": "Bolo caseiro de cenoura - C/cob",
+          "qtd": 1,
+          "preco": 40
+        },
+        {
+          "nome": "Bolo caseiro de chocolate - C/cob",
+          "qtd": 1,
+          "preco": 40
+        }
+      ],
+      "subtotal": 80,
+      "total": 80,
+      "status": "aberto",
+      "dataRegistro": "2026-07-06"
     }
   ],
   "precificados": [
