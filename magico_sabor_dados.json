@@ -7180,8 +7180,9 @@
       ],
       "subtotal": 210,
       "total": 210,
-      "status": "aberto",
-      "dataRegistro": "2026-07-08"
+      "status": "entregue",
+      "dataRegistro": "2026-07-08",
+      "entregue": false
     },
     {
       "id": 1783521559182,
@@ -15683,6 +15684,35 @@
       "dataEmissao": "2026-07-06",
       "status": "emitida",
       "enviada": true
+    },
+    {
+      "id": 1783521755147,
+      "numero": "FAT-0087",
+      "encId": 1783521447583,
+      "clienteNome": "Nacional Hotel",
+      "clienteDoc": "—",
+      "clienteTel": "(35) 99937 2003",
+      "clienteEnd": "",
+      "data": "2026-07-08",
+      "vencimento": "2026-07-08",
+      "pagamento": "pix",
+      "itens": [
+        {
+          "nome": "Bolo caseiro de chocolate VEG",
+          "qtd": 4,
+          "preco": 30
+        },
+        {
+          "nome": "Bolo caseiro de laranja VEG",
+          "qtd": 3,
+          "preco": 30
+        }
+      ],
+      "frete": 0,
+      "subtotal": 210,
+      "total": 210,
+      "dataEmissao": "2026-07-08",
+      "status": "emitida"
     }
   ],
   "_exportSeq": 49,
