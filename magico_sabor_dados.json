@@ -7273,7 +7273,7 @@
       "total": 170,
       "status": "entregue",
       "dataRegistro": "2026-07-08",
-      "entregue": false,
+      "entregue": true,
       "recebido": false,
       "dataRecebimento": null
     }
