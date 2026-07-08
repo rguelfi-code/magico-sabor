@@ -7174,12 +7174,12 @@
         },
         {
           "nome": "Bolo caseiro de laranja VEG",
-          "qtd": 3,
+          "qtd": 2,
           "preco": 30
         }
       ],
-      "subtotal": 210,
-      "total": 210,
+      "subtotal": 180,
+      "total": 180,
       "status": "entregue",
       "dataRegistro": "2026-07-08",
       "entregue": false,
