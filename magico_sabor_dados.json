@@ -7227,6 +7227,46 @@
       "total": 215,
       "status": "aberto",
       "dataRegistro": "2026-07-08"
+    },
+    {
+      "id": 1783521662867,
+      "clienteId": 1775767606839,
+      "clienteNome": "Monreale - D.C. Turismo Ltda.",
+      "clienteTel": "",
+      "clienteDoc": "01.204.495/0001-33",
+      "data": "2026-07-08",
+      "vencimento": "2026-07-08",
+      "tipo": "entrega",
+      "endereco": "Av. Leonor Furlaneto Delgado, 3033",
+      "frete": 0,
+      "pagamento": "pix",
+      "obs": "",
+      "itens": [
+        {
+          "nome": "Bolo de banana VEG",
+          "qtd": 1,
+          "preco": 38
+        },
+        {
+          "nome": "Bolo de cenoura C/cob",
+          "qtd": 1,
+          "preco": 60
+        },
+        {
+          "nome": "Pão fatiado multigrãos",
+          "qtd": 1,
+          "preco": 36
+        },
+        {
+          "nome": "Pão fatiado milho",
+          "qtd": 1,
+          "preco": 36
+        }
+      ],
+      "subtotal": 170,
+      "total": 170,
+      "status": "aberto",
+      "dataRegistro": "2026-07-08"
     }
   ],
   "precificados": [
