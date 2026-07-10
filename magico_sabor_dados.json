@@ -7422,7 +7422,39 @@
       "total": 288,
       "status": "entregue",
       "dataRegistro": "2026-07-10",
-      "entregue": false
+      "entregue": false,
+      "recebido": false,
+      "dataRecebimento": null
+    },
+    {
+      "id": 1783693135913,
+      "clienteId": 1775766933909,
+      "clienteNome": "Jaqueline Passsos",
+      "clienteTel": "(35) 99842 9567",
+      "clienteDoc": "",
+      "data": "2026-07-10",
+      "vencimento": "2026-07-10",
+      "tipo": "entrega",
+      "endereco": "Rua Paraíba, 349",
+      "frete": 0,
+      "pagamento": "pix",
+      "obs": "",
+      "itens": [
+        {
+          "nome": "Bolo caseiro de cenoura - C/cob",
+          "qtd": 1,
+          "preco": 40
+        },
+        {
+          "nome": "Pão fatiado multigrãos",
+          "qtd": 1,
+          "preco": 36
+        }
+      ],
+      "subtotal": 76,
+      "total": 76,
+      "status": "aberto",
+      "dataRegistro": "2026-07-10"
     }
   ],
   "precificados": [
@@ -16092,7 +16124,8 @@
       "subtotal": 288,
       "total": 288,
       "dataEmissao": "2026-07-10",
-      "status": "emitida"
+      "status": "emitida",
+      "enviada": false
     }
   ],
   "_exportSeq": 49,
