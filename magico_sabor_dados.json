@@ -7455,7 +7455,9 @@
       "total": 76,
       "status": "entregue",
       "dataRegistro": "2026-07-10",
-      "entregue": false
+      "entregue": true,
+      "recebido": false,
+      "dataRecebimento": null
     },
     {
       "id": 1783702798359,
@@ -7506,7 +7508,9 @@
       "total": 251,
       "status": "entregue",
       "dataRegistro": "2026-07-10",
-      "entregue": false
+      "entregue": false,
+      "recebido": false,
+      "dataRecebimento": null
     },
     {
       "id": 1783703001201,
@@ -7567,7 +7571,9 @@
       "total": 422,
       "status": "entregue",
       "dataRegistro": "2026-07-10",
-      "entregue": false
+      "entregue": false,
+      "recebido": false,
+      "dataRecebimento": null
     }
   ],
   "precificados": [
@@ -16267,7 +16273,8 @@
       "subtotal": 76,
       "total": 76,
       "dataEmissao": "2026-07-10",
-      "status": "emitida"
+      "status": "emitida",
+      "enviada": false
     },
     {
       "id": 1783703205987,
@@ -16316,7 +16323,8 @@
       "subtotal": 251,
       "total": 251,
       "dataEmissao": "2026-07-10",
-      "status": "emitida"
+      "status": "emitida",
+      "enviada": false
     },
     {
       "id": 1783703480995,
@@ -16375,7 +16383,8 @@
       "subtotal": 422,
       "total": 422,
       "dataEmissao": "2026-07-10",
-      "status": "emitida"
+      "status": "emitida",
+      "enviada": false
     }
   ],
   "_exportSeq": 49,
