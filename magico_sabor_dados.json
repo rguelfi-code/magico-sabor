@@ -6360,8 +6360,8 @@
       "status": "entregue",
       "dataRegistro": "2026-06-18",
       "entregue": true,
-      "recebido": false,
-      "dataRecebimento": null
+      "recebido": true,
+      "dataRecebimento": "2026-07-10"
     },
     {
       "id": 1782134110064,
@@ -6474,8 +6474,8 @@
       "status": "entregue",
       "dataRegistro": "2026-06-22",
       "entregue": true,
-      "recebido": false,
-      "dataRecebimento": null
+      "recebido": true,
+      "dataRecebimento": "2026-07-10"
     },
     {
       "id": 1782157791121,
@@ -6517,8 +6517,8 @@
       "status": "entregue",
       "dataRegistro": "2026-06-22",
       "entregue": true,
-      "recebido": false,
-      "dataRecebimento": null
+      "recebido": true,
+      "dataRecebimento": "2026-07-10"
     },
     {
       "id": 1782310701078,
@@ -6583,8 +6583,8 @@
       "status": "entregue",
       "dataRegistro": "2026-06-24",
       "entregue": true,
-      "recebido": false,
-      "dataRecebimento": null
+      "recebido": true,
+      "dataRecebimento": "2026-07-10"
     },
     {
       "id": 1782345931382,
@@ -6649,8 +6649,8 @@
       "status": "entregue",
       "dataRegistro": "2026-06-25",
       "entregue": true,
-      "recebido": false,
-      "dataRecebimento": null
+      "recebido": true,
+      "dataRecebimento": "2026-07-10"
     },
     {
       "id": 1782407543454,
@@ -6682,8 +6682,8 @@
       "status": "entregue",
       "dataRegistro": "2026-06-25",
       "entregue": true,
-      "recebido": false,
-      "dataRecebimento": null
+      "recebido": true,
+      "dataRecebimento": "2026-07-10"
     },
     {
       "id": 1782470269901,
@@ -6864,8 +6864,8 @@
       "status": "entregue",
       "dataRegistro": "2026-06-28",
       "entregue": true,
-      "recebido": false,
-      "dataRecebimento": null
+      "recebido": true,
+      "dataRecebimento": "2026-07-10"
     },
     {
       "id": 1782822025821,
