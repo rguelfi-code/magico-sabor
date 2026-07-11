@@ -7619,6 +7619,31 @@
       "total": 201,
       "status": "aberto",
       "dataRegistro": "2026-07-11"
+    },
+    {
+      "id": 1783778815060,
+      "clienteId": 1775766527070,
+      "clienteNome": "Carol Tenari",
+      "clienteTel": "",
+      "clienteDoc": "",
+      "data": "2026-07-12",
+      "vencimento": "2026-07-12",
+      "tipo": "retirada",
+      "endereco": "",
+      "frete": 0,
+      "pagamento": "pix",
+      "obs": "",
+      "itens": [
+        {
+          "nome": "Pão francês (6 un)",
+          "qtd": 30,
+          "preco": 3.8
+        }
+      ],
+      "subtotal": 114,
+      "total": 114,
+      "status": "aberto",
+      "dataRegistro": "2026-07-11"
     }
   ],
   "precificados": [
