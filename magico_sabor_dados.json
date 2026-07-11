@@ -7643,8 +7643,9 @@
       ],
       "subtotal": 114,
       "total": 114,
-      "status": "aberto",
-      "dataRegistro": "2026-07-11"
+      "status": "entregue",
+      "dataRegistro": "2026-07-11",
+      "entregue": false
     }
   ],
   "precificados": [
@@ -16498,6 +16499,30 @@
       "frete": 0,
       "subtotal": 201,
       "total": 201,
+      "dataEmissao": "2026-07-11",
+      "status": "emitida"
+    },
+    {
+      "id": 1783778948146,
+      "numero": "FAT-0100",
+      "encId": 1783778815060,
+      "clienteNome": "Carol Tenari",
+      "clienteDoc": "—",
+      "clienteTel": "",
+      "clienteEnd": "",
+      "data": "2026-07-12",
+      "vencimento": "2026-07-12",
+      "pagamento": "pix",
+      "itens": [
+        {
+          "nome": "Pão francês (6 un)",
+          "qtd": 30,
+          "preco": 3.8
+        }
+      ],
+      "frete": 0,
+      "subtotal": 114,
+      "total": 114,
       "dataEmissao": "2026-07-11",
       "status": "emitida"
     }
