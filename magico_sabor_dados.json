@@ -7617,8 +7617,9 @@
       ],
       "subtotal": 201,
       "total": 201,
-      "status": "aberto",
-      "dataRegistro": "2026-07-11"
+      "status": "entregue",
+      "dataRegistro": "2026-07-11",
+      "entregue": false
     },
     {
       "id": 1783778815060,
@@ -16455,6 +16456,50 @@
       "dataEmissao": "2026-07-10",
       "status": "emitida",
       "enviada": false
+    },
+    {
+      "id": 1783778904781,
+      "numero": "FAT-0099",
+      "encId": 1783778732606,
+      "clienteNome": "Aira",
+      "clienteDoc": "—",
+      "clienteTel": "(19) 99240 9965",
+      "clienteEnd": "São João da Boa Vista, 272 Jdm Estados",
+      "data": "2026-07-12",
+      "vencimento": "2026-07-12",
+      "pagamento": "pix",
+      "itens": [
+        {
+          "nome": "Pão de Hamburguer (4 unidades)",
+          "qtd": 6,
+          "preco": 6
+        },
+        {
+          "nome": "Disco pizza 100g  (5 un) VEG",
+          "qtd": 10,
+          "preco": 7
+        },
+        {
+          "nome": "Pão francês (6 un)",
+          "qtd": 10,
+          "preco": 3.8
+        },
+        {
+          "nome": "Mini-pão 45g (6 un)",
+          "qtd": 6,
+          "preco": 3.5
+        },
+        {
+          "nome": "Pão fatiado milho",
+          "qtd": 1,
+          "preco": 36
+        }
+      ],
+      "frete": 0,
+      "subtotal": 201,
+      "total": 201,
+      "dataEmissao": "2026-07-11",
+      "status": "emitida"
     }
   ],
   "_exportSeq": 49,
