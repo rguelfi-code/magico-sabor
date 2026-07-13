@@ -3342,13 +3342,28 @@
       "categoria": "creme",
       "rendimento": 1,
       "rendimentoUn": "kg",
-      "custoUnit": 0,
-      "custoTotal": 0,
+      "custoUnit": 22.7,
+      "custoTotal": 22.7,
       "ings": [
         {
           "id": 1783969758338,
-          "ingId": 0,
-          "qtd": 0
+          "ingId": 1775423430912,
+          "qtd": 0.6
+        },
+        {
+          "id": 1783970052544,
+          "ingId": 1775418578652,
+          "qtd": 0.02
+        },
+        {
+          "id": 1783970071271,
+          "ingId": 1775421297338,
+          "qtd": 0.18
+        },
+        {
+          "id": 1783970102216,
+          "ingId": 1775426032490,
+          "qtd": 0.002
         }
       ],
       "obs": "",
