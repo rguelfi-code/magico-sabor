@@ -7650,6 +7650,36 @@
       "entregue": true,
       "recebido": false,
       "dataRecebimento": null
+    },
+    {
+      "id": 1783952280811,
+      "clienteId": 1775767606839,
+      "clienteNome": "Monreale - D.C. Turismo Ltda.",
+      "clienteTel": "",
+      "clienteDoc": "01.204.495/0001-33",
+      "data": "2026-07-13",
+      "vencimento": "2026-07-13",
+      "tipo": "entrega",
+      "endereco": "Av. Leonor Furlaneto Delgado, 3033",
+      "frete": 0,
+      "pagamento": "pix",
+      "obs": "",
+      "itens": [
+        {
+          "nome": "Bolo de laranja VEG",
+          "qtd": 1,
+          "preco": 45
+        },
+        {
+          "nome": "Pão de forma VEG",
+          "qtd": 1,
+          "preco": 36
+        }
+      ],
+      "subtotal": 81,
+      "total": 81,
+      "status": "aberto",
+      "dataRegistro": "2026-07-13"
     }
   ],
   "precificados": [
