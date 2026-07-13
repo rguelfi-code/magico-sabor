@@ -7678,8 +7678,9 @@
       ],
       "subtotal": 81,
       "total": 81,
-      "status": "aberto",
-      "dataRegistro": "2026-07-13"
+      "status": "entregue",
+      "dataRegistro": "2026-07-13",
+      "entregue": false
     }
   ],
   "precificados": [
@@ -16561,6 +16562,35 @@
       "dataEmissao": "2026-07-11",
       "status": "emitida",
       "enviada": true
+    },
+    {
+      "id": 1783952291214,
+      "numero": "FAT-0101",
+      "encId": 1783952280811,
+      "clienteNome": "Monreale - D.C. Turismo Ltda.",
+      "clienteDoc": "01.204.495/0001-33",
+      "clienteTel": "",
+      "clienteEnd": "Av. Leonor Furlaneto Delgado, 3033",
+      "data": "2026-07-13",
+      "vencimento": "2026-07-13",
+      "pagamento": "pix",
+      "itens": [
+        {
+          "nome": "Bolo de laranja VEG",
+          "qtd": 1,
+          "preco": 45
+        },
+        {
+          "nome": "Pão de forma VEG",
+          "qtd": 1,
+          "preco": 36
+        }
+      ],
+      "frete": 0,
+      "subtotal": 81,
+      "total": 81,
+      "dataEmissao": "2026-07-13",
+      "status": "emitida"
     }
   ],
   "_exportSeq": 49,
