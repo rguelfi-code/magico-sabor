@@ -1655,6 +1655,23 @@
       "dataAtualizacao": "2026-04-27"
     },
     {
+      "id": 1783965798064,
+      "nome": "Torta de maçã & choc veg ZERO",
+      "categoria": "sobremesa",
+      "medida": "peso",
+      "peso": null,
+      "pesoUn": "g",
+      "qtd": null,
+      "qtdUn": "un",
+      "tempo": "",
+      "desc": "",
+      "sg": true,
+      "sl": true,
+      "veg": true,
+      "sd": true,
+      "dataCadastro": "2026-07-13"
+    },
+    {
       "id": 1775413995120,
       "nome": "Torta de maçã & chocolate VEG",
       "categoria": "sobremesa",
