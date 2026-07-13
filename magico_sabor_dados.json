@@ -7680,7 +7680,9 @@
       "total": 81,
       "status": "entregue",
       "dataRegistro": "2026-07-13",
-      "entregue": false
+      "entregue": true,
+      "recebido": false,
+      "dataRecebimento": null
     }
   ],
   "precificados": [
@@ -16590,7 +16592,8 @@
       "subtotal": 81,
       "total": 81,
       "dataEmissao": "2026-07-13",
-      "status": "emitida"
+      "status": "emitida",
+      "enviada": false
     }
   ],
   "_exportSeq": 49,
