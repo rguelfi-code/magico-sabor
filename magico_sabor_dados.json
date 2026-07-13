@@ -3280,30 +3280,6 @@
       "dataCadastro": "2026-04-26"
     },
     {
-      "id": 1776888948382,
-      "nome": "Cobertura de torta de maçã",
-      "categoria": "cobertura",
-      "rendimento": 0.4,
-      "rendimentoUn": "kg",
-      "custoUnit": 110,
-      "custoTotal": 44,
-      "ings": [
-        {
-          "id": 1776888812859,
-          "ingId": 1775419330555,
-          "qtd": 0.2
-        },
-        {
-          "id": 1776888892356,
-          "ingId": 1775423318836,
-          "qtd": 0.2
-        }
-      ],
-      "obs": "",
-      "dataCadastro": "2026-04-22",
-      "dataAtualizacao": "2026-07-13"
-    },
-    {
       "id": 1777315595426,
       "nome": "Cobertura de torta de sorvete",
       "categoria": "",
@@ -3330,6 +3306,35 @@
       ],
       "obs": "",
       "dataCadastro": "2026-04-27"
+    },
+    {
+      "id": 1776888948382,
+      "nome": "Creme de torta de maçã",
+      "categoria": "cobertura",
+      "rendimento": 0.8,
+      "rendimentoUn": "kg",
+      "custoUnit": 12.075,
+      "custoTotal": 9.66,
+      "ings": [
+        {
+          "id": 1783969917711,
+          "ingId": 1775418230108,
+          "qtd": 0.18
+        },
+        {
+          "id": 1783969946608,
+          "ingId": 1775423430912,
+          "qtd": 0.6
+        },
+        {
+          "id": 1783969973337,
+          "ingId": 1775418578652,
+          "qtd": 0.02
+        }
+      ],
+      "obs": "",
+      "dataCadastro": "2026-04-22",
+      "dataAtualizacao": "2026-07-13"
     },
     {
       "id": 1776888597257,
