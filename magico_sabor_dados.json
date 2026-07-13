@@ -7766,8 +7766,9 @@
       ],
       "subtotal": 184,
       "total": 184,
-      "status": "aberto",
-      "dataRegistro": "2026-07-13"
+      "status": "entregue",
+      "dataRegistro": "2026-07-13",
+      "entregue": false
     }
   ],
   "precificados": [
@@ -16732,6 +16733,40 @@
       "dataEmissao": "2026-07-13",
       "status": "emitida",
       "enviada": false
+    },
+    {
+      "id": 1783979416110,
+      "numero": "FAT-0102",
+      "encId": 1783979407920,
+      "clienteNome": "Nacional Hotel",
+      "clienteDoc": "—",
+      "clienteTel": "(35) 99937 2003",
+      "clienteEnd": "",
+      "data": "2026-07-13",
+      "vencimento": "2026-07-13",
+      "pagamento": "pix",
+      "itens": [
+        {
+          "nome": "Cheesecake c/frutas vermelhas ZERO",
+          "qtd": 4,
+          "preco": 16
+        },
+        {
+          "nome": "Torta de chocolate VEG",
+          "qtd": 4,
+          "preco": 18
+        },
+        {
+          "nome": "Mousse de limão",
+          "qtd": 4,
+          "preco": 12
+        }
+      ],
+      "frete": 0,
+      "subtotal": 184,
+      "total": 184,
+      "dataEmissao": "2026-07-13",
+      "status": "emitida"
     }
   ],
   "_exportSeq": 49,
