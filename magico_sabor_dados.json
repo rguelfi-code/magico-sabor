@@ -13206,21 +13206,16 @@
       "prodId": "1775413995120",
       "nome": "Torta de maçã & chocolate VEG",
       "preco": 11,
-      "precoSugerido": 13.89,
-      "custoUnit": 8.33375,
-      "custoTotal": 250.0125,
-      "lucro": 2.66625,
-      "margem": "24.2",
+      "precoSugerido": 13.69,
+      "custoUnit": 8.213750000000001,
+      "custoTotal": 246.41250000000005,
+      "lucro": 2.786249999999999,
+      "margem": "25.3",
       "rendimento": 30,
       "rendimentoUn": "unidades",
       "qtdEmbalada": 1,
       "excecao": false,
       "ingsPrec": [
-        {
-          "id": 1776887997529,
-          "ingId": 1775418230108,
-          "qtd": 0.18
-        },
         {
           "id": 1776888114669,
           "ingId": 1775422603418,
