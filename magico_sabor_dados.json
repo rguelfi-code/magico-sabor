@@ -3283,25 +3283,25 @@
       "id": 1776888948382,
       "nome": "Cobertura de torta de maçã",
       "categoria": "cobertura",
-      "rendimento": 0.35,
+      "rendimento": 0.4,
       "rendimentoUn": "kg",
-      "custoUnit": 148.57142857142858,
-      "custoTotal": 52,
+      "custoUnit": 110,
+      "custoTotal": 44,
       "ings": [
         {
           "id": 1776888812859,
           "ingId": 1775419330555,
-          "qtd": 0.25
+          "qtd": 0.2
         },
         {
           "id": 1776888892356,
           "ingId": 1775423318836,
-          "qtd": 0.1
+          "qtd": 0.2
         }
       ],
       "obs": "",
       "dataCadastro": "2026-04-22",
-      "dataAtualizacao": "2026-04-25"
+      "dataAtualizacao": "2026-07-13"
     },
     {
       "id": 1777315595426,
