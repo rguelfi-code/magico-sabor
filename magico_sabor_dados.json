@@ -7733,6 +7733,41 @@
       "entregue": true,
       "recebido": false,
       "dataRecebimento": null
+    },
+    {
+      "id": 1783979407920,
+      "clienteId": 1775768243865,
+      "clienteNome": "Nacional Hotel",
+      "clienteTel": "(35) 99937 2003",
+      "clienteDoc": "",
+      "data": "2026-07-13",
+      "vencimento": "2026-07-13",
+      "tipo": "entrega",
+      "endereco": "",
+      "frete": 0,
+      "pagamento": "pix",
+      "obs": "",
+      "itens": [
+        {
+          "nome": "Cheesecake c/frutas vermelhas ZERO",
+          "qtd": 4,
+          "preco": 16
+        },
+        {
+          "nome": "Torta de chocolate VEG",
+          "qtd": 4,
+          "preco": 18
+        },
+        {
+          "nome": "Mousse de limão",
+          "qtd": 4,
+          "preco": 12
+        }
+      ],
+      "subtotal": 184,
+      "total": 184,
+      "status": "aberto",
+      "dataRegistro": "2026-07-13"
     }
   ],
   "precificados": [
