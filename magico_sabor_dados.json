@@ -3333,27 +3333,17 @@
     },
     {
       "id": 1776888597257,
-      "nome": "Creme de torta de maçã",
+      "nome": "Creme de torta de maçã ZERO",
       "categoria": "creme",
-      "rendimento": 0.8,
+      "rendimento": 1,
       "rendimentoUn": "kg",
-      "custoUnit": 12.075,
-      "custoTotal": 9.66,
+      "custoUnit": 0,
+      "custoTotal": 0,
       "ings": [
         {
-          "id": 1783966599136,
-          "ingId": 1775418578652,
-          "qtd": 0.02
-        },
-        {
-          "id": 1783966616116,
-          "ingId": 1775423430912,
-          "qtd": 0.6
-        },
-        {
-          "id": 1783968475951,
-          "ingId": 1775418230108,
-          "qtd": 0.18
+          "id": 1783969758338,
+          "ingId": 0,
+          "qtd": 0
         }
       ],
       "obs": "",
