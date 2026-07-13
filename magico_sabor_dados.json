@@ -3308,6 +3308,29 @@
       "dataCadastro": "2026-04-27"
     },
     {
+      "id": 1783970472622,
+      "nome": "Cobertura torta de maçã ZERO",
+      "categoria": "creme",
+      "rendimento": 0.4,
+      "rendimentoUn": "kg",
+      "custoUnit": 110,
+      "custoTotal": 44,
+      "ings": [
+        {
+          "id": 1783970373819,
+          "ingId": 1775419230829,
+          "qtd": 0.2
+        },
+        {
+          "id": 1783970428169,
+          "ingId": 1775423318836,
+          "qtd": 0.2
+        }
+      ],
+      "obs": "",
+      "dataCadastro": "2026-07-13"
+    },
+    {
       "id": 1776888948382,
       "nome": "Creme de torta de maçã",
       "categoria": "cobertura",
