@@ -7809,8 +7809,9 @@
       ],
       "subtotal": 164,
       "total": 164,
-      "status": "aberto",
-      "dataRegistro": "2026-07-14"
+      "status": "entregue",
+      "dataRegistro": "2026-07-14",
+      "entregue": false
     }
   ],
   "precificados": [
@@ -16810,6 +16811,45 @@
       "dataEmissao": "2026-07-13",
       "status": "emitida",
       "enviada": false
+    },
+    {
+      "id": 1784033541003,
+      "numero": "FAT-0103",
+      "encId": 1784033524444,
+      "clienteNome": "Monreale - D.C. Turismo Ltda.",
+      "clienteDoc": "01.204.495/0001-33",
+      "clienteTel": "",
+      "clienteEnd": "Av. Leonor Furlaneto Delgado, 3033",
+      "data": "2026-07-14",
+      "vencimento": "2026-07-14",
+      "pagamento": "pix",
+      "itens": [
+        {
+          "nome": "Torta de sorvete",
+          "qtd": 2,
+          "preco": 12
+        },
+        {
+          "nome": "Cheesecake c/frutas vermelhas ZERO",
+          "qtd": 2,
+          "preco": 16
+        },
+        {
+          "nome": "Mousse de limão",
+          "qtd": 2,
+          "preco": 12
+        },
+        {
+          "nome": "Disco pizza 100g  (5 un) VEG",
+          "qtd": 12,
+          "preco": 7
+        }
+      ],
+      "frete": 0,
+      "subtotal": 164,
+      "total": 164,
+      "dataEmissao": "2026-07-14",
+      "status": "emitida"
     }
   ],
   "_exportSeq": 49,
