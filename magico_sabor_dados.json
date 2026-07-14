@@ -7811,7 +7811,9 @@
       "total": 164,
       "status": "entregue",
       "dataRegistro": "2026-07-14",
-      "entregue": false
+      "entregue": false,
+      "recebido": false,
+      "dataRecebimento": null
     }
   ],
   "precificados": [
@@ -9811,80 +9813,6 @@
           "ingId": 1775510049898,
           "qtd": 2,
           "qtdEmb": 1
-        }
-      ]
-    },
-    {
-      "prodId": "1775414153841",
-      "nome": "Cheesecake c/frutas vermelhas ZERO",
-      "preco": 16,
-      "precoSugerido": 19.18,
-      "custoUnit": 11.506944444444445,
-      "custoTotal": 138.08333333333334,
-      "lucro": 4.493055555555555,
-      "margem": "28.1",
-      "rendimento": 12,
-      "rendimentoUn": "porções",
-      "qtdEmbalada": 1,
-      "excecao": false,
-      "ingsPrec": [
-        {
-          "id": 1776949882318,
-          "ingId": 1775418318405,
-          "qtd": 0.003
-        },
-        {
-          "id": 1776949931861,
-          "ingId": 1775419140927,
-          "qtd": 0.325
-        },
-        {
-          "id": 1776949961096,
-          "ingId": 1775421297338,
-          "qtd": 0.063
-        },
-        {
-          "id": 1776949995049,
-          "ingId": 1775422236822,
-          "qtd": 0.003
-        },
-        {
-          "id": 1776950015927,
-          "ingId": 1775422846280,
-          "qtd": 0.05
-        },
-        {
-          "id": 1776950064722,
-          "ingId": 1775425381715,
-          "qtd": 0.055
-        },
-        {
-          "id": 1776950090057,
-          "ingId": 1775426032490,
-          "qtd": 0.001
-        },
-        {
-          "id": 1776950168132,
-          "ingId": 1775426129052,
-          "qtd": 0.1
-        }
-      ],
-      "compsPrec": [],
-      "embsPrec": [
-        {
-          "id": 1776950263659,
-          "ingId": 1775519983107,
-          "qtd": 1
-        },
-        {
-          "id": 1776950275846,
-          "ingId": 1775519603215,
-          "qtd": 1
-        },
-        {
-          "id": 1776950279447,
-          "ingId": 1775510049898,
-          "qtd": 2
         }
       ]
     },
@@ -13328,6 +13256,83 @@
         },
         {
           "id": 1776889052728,
+          "ingId": 1775510049898,
+          "qtd": 2,
+          "qtdEmb": 1
+        }
+      ]
+    },
+    {
+      "prodId": "1775414153841",
+      "nome": "Cheesecake c/frutas vermelhas ZERO",
+      "preco": 16,
+      "precoSugerido": 17.92,
+      "custoUnit": 10.75138888888889,
+      "custoTotal": 129.01666666666668,
+      "lucro": 5.24861111111111,
+      "margem": "32.8",
+      "rendimento": 12,
+      "rendimentoUn": "porções",
+      "qtdEmbalada": 1,
+      "excecao": false,
+      "ingsPrec": [
+        {
+          "id": 1776949882318,
+          "ingId": 1775418318405,
+          "qtd": 0.003
+        },
+        {
+          "id": 1776949931861,
+          "ingId": 1775419140927,
+          "qtd": 0.325
+        },
+        {
+          "id": 1776949961096,
+          "ingId": 1775421297338,
+          "qtd": 0.063
+        },
+        {
+          "id": 1776949995049,
+          "ingId": 1775422236822,
+          "qtd": 0.003
+        },
+        {
+          "id": 1776950015927,
+          "ingId": 1775422846280,
+          "qtd": 0.05
+        },
+        {
+          "id": 1776950064722,
+          "ingId": 1775425381715,
+          "qtd": 0.055
+        },
+        {
+          "id": 1776950090057,
+          "ingId": 1775426032490,
+          "qtd": 0.001
+        },
+        {
+          "id": 1776950168132,
+          "ingId": 1775426129052,
+          "qtd": 0.1
+        }
+      ],
+      "compsPrec": [],
+      "embsPrec": [
+        {
+          "id": 1776950263659,
+          "ingId": 1775519983107,
+          "qtd": 1,
+          "qtdEmb": 1
+        },
+        {
+          "id": 1776950275846,
+          "ingId": 1775519603215,
+          "qtd": 1,
+          "qtdEmb": 1
+        },
+        {
+          "id": 1776950279447,
           "ingId": 1775510049898,
           "qtd": 2,
           "qtdEmb": 1
@@ -16849,7 +16854,8 @@
       "subtotal": 164,
       "total": 164,
       "dataEmissao": "2026-07-14",
-      "status": "emitida"
+      "status": "emitida",
+      "enviada": false
     }
   ],
   "_exportSeq": 49,
