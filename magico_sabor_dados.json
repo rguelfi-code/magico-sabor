@@ -16400,7 +16400,7 @@
       "total": 180,
       "dataEmissao": "2026-07-08",
       "status": "emitida",
-      "enviada": false
+      "enviada": true
     },
     {
       "id": 1783623130144,
