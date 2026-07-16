@@ -7970,6 +7970,41 @@
       "total": 290,
       "status": "aberto",
       "dataRegistro": "2026-07-16"
+    },
+    {
+      "id": 1784235225842,
+      "clienteId": 1775766590796,
+      "clienteNome": "Cassino Hotel",
+      "clienteTel": "(35) 99937 2003",
+      "clienteDoc": "",
+      "data": "2026-07-16",
+      "vencimento": "2026-07-16",
+      "tipo": "entrega",
+      "endereco": "",
+      "frete": 0,
+      "pagamento": "pix",
+      "obs": "",
+      "itens": [
+        {
+          "nome": "Bolo caseiro de chocolate VEG",
+          "qtd": 4,
+          "preco": 30
+        },
+        {
+          "nome": "Bolo caseiro de laranja VEG",
+          "qtd": 4,
+          "preco": 30
+        },
+        {
+          "nome": "Pão francês vegano",
+          "qtd": 30,
+          "preco": 3.8
+        }
+      ],
+      "subtotal": 354,
+      "total": 354,
+      "status": "aberto",
+      "dataRegistro": "2026-07-16"
     }
   ],
   "precificados": [
