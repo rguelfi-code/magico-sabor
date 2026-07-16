@@ -8016,6 +8016,31 @@
       "total": 354,
       "status": "aberto",
       "dataRegistro": "2026-07-16"
+    },
+    {
+      "id": 1784235398782,
+      "clienteId": 1784235353235,
+      "clienteNome": "Mirian Miglioranzi",
+      "clienteTel": "(35) 98839 4419",
+      "clienteDoc": "",
+      "data": "2026-07-16",
+      "vencimento": "2026-07-16",
+      "tipo": "entrega",
+      "endereco": "Rua João Antônio de Oliveira, 22 ´-  Sta. Augusta",
+      "frete": 0,
+      "pagamento": "pix",
+      "obs": "",
+      "itens": [
+        {
+          "nome": "Bolo caseiro de laranja ZERO",
+          "qtd": 1,
+          "preco": 35
+        }
+      ],
+      "subtotal": 35,
+      "total": 35,
+      "status": "aberto",
+      "dataRegistro": "2026-07-16"
     }
   ],
   "precificados": [
