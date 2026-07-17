@@ -7936,7 +7936,7 @@
       "total": 99,
       "status": "entregue",
       "dataRegistro": "2026-07-16",
-      "entregue": false,
+      "entregue": true,
       "recebido": false,
       "dataRecebimento": null
     },
@@ -8126,7 +8126,7 @@
       "total": 143,
       "status": "entregue",
       "dataRegistro": "2026-07-17",
-      "entregue": false,
+      "entregue": true,
       "recebido": false,
       "dataRecebimento": null
     },
@@ -8169,7 +8169,7 @@
       "total": 179,
       "status": "entregue",
       "dataRegistro": "2026-07-17",
-      "entregue": false,
+      "entregue": true,
       "recebido": false,
       "dataRecebimento": null
     }
