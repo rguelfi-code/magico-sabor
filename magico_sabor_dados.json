@@ -8051,8 +8051,8 @@
       "status": "entregue",
       "dataRegistro": "2026-07-16",
       "entregue": true,
-      "recebido": false,
-      "dataRecebimento": null
+      "recebido": true,
+      "dataRecebimento": "2026-07-17"
     },
     {
       "id": 1784245541458,
