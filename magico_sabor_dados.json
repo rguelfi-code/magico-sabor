@@ -17352,7 +17352,8 @@
       "subtotal": 35,
       "total": 35,
       "dataEmissao": "2026-07-17",
-      "status": "emitida"
+      "status": "emitida",
+      "enviada": true
     },
     {
       "id": 1784291727324,
