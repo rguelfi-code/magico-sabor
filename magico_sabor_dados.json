@@ -8020,7 +8020,7 @@
       ],
       "subtotal": 354,
       "total": 354,
-      "status": "aberto",
+      "status": "entregue",
       "dataRegistro": "2026-07-16",
       "entregue": false,
       "recebido": false,
@@ -17303,6 +17303,40 @@
       "frete": 0,
       "subtotal": 99,
       "total": 99,
+      "dataEmissao": "2026-07-17",
+      "status": "emitida"
+    },
+    {
+      "id": 1784291832390,
+      "numero": "FAT-0109",
+      "encId": 1784235225842,
+      "clienteNome": "Cassino Hotel",
+      "clienteDoc": "—",
+      "clienteTel": "(35) 99937 2003",
+      "clienteEnd": "",
+      "data": "2026-07-16",
+      "vencimento": "2026-07-16",
+      "pagamento": "pix",
+      "itens": [
+        {
+          "nome": "Bolo caseiro de chocolate VEG",
+          "qtd": 4,
+          "preco": 30
+        },
+        {
+          "nome": "Bolo caseiro de laranja VEG",
+          "qtd": 4,
+          "preco": 30
+        },
+        {
+          "nome": "Pão francês vegano",
+          "qtd": 30,
+          "preco": 3.8
+        }
+      ],
+      "frete": 0,
+      "subtotal": 354,
+      "total": 354,
       "dataEmissao": "2026-07-17",
       "status": "emitida"
     }
