@@ -16533,7 +16533,7 @@
       "total": 155,
       "dataEmissao": "2026-07-03",
       "status": "emitida",
-      "enviada": false
+      "enviada": true
     },
     {
       "id": 1783088767530,
