@@ -8172,6 +8172,36 @@
       "entregue": true,
       "recebido": false,
       "dataRecebimento": null
+    },
+    {
+      "id": 1784650808193,
+      "clienteId": 1775765233420,
+      "clienteNome": "Carlton Plaza Ltda",
+      "clienteTel": "",
+      "clienteDoc": "71.478.457/0001-54",
+      "data": "2026-07-21",
+      "vencimento": "2026-07-21",
+      "tipo": "entrega",
+      "endereco": "Rua Junqueiras, 601 Centro",
+      "frete": 0,
+      "pagamento": "pix",
+      "obs": "",
+      "itens": [
+        {
+          "nome": "Bolo caseiro de laranja ZERO",
+          "qtd": 1,
+          "preco": 35
+        },
+        {
+          "nome": "Pão fatiado multigrãos",
+          "qtd": 1,
+          "preco": 36
+        }
+      ],
+      "subtotal": 71,
+      "total": 71,
+      "status": "aberto",
+      "dataRegistro": "2026-07-21"
     }
   ],
   "precificados": [
