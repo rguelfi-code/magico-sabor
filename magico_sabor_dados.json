@@ -8327,7 +8327,7 @@
       "total": 196,
       "status": "entregue",
       "dataRegistro": "2026-07-22",
-      "entregue": false,
+      "entregue": true,
       "recebido": false,
       "dataRecebimento": null
     },
@@ -8493,7 +8493,10 @@
       "subtotal": 162,
       "total": 162,
       "status": "aberto",
-      "dataRegistro": "2026-07-22"
+      "dataRegistro": "2026-07-22",
+      "entregue": false,
+      "recebido": false,
+      "dataRecebimento": null
     },
     {
       "id": 1784756921217,
@@ -8533,7 +8536,10 @@
       "subtotal": 142,
       "total": 142,
       "status": "aberto",
-      "dataRegistro": "2026-07-22"
+      "dataRegistro": "2026-07-22",
+      "entregue": false,
+      "recebido": false,
+      "dataRecebimento": null
     },
     {
       "id": 1784757084737,
@@ -8563,7 +8569,10 @@
       "subtotal": 190,
       "total": 190,
       "status": "aberto",
-      "dataRegistro": "2026-07-22"
+      "dataRegistro": "2026-07-22",
+      "entregue": false,
+      "recebido": false,
+      "dataRecebimento": null
     }
   ],
   "precificados": [
