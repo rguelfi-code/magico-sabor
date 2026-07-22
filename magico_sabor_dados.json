@@ -7388,8 +7388,8 @@
       "status": "entregue",
       "dataRegistro": "2026-07-09",
       "entregue": true,
-      "recebido": false,
-      "dataRecebimento": null
+      "recebido": true,
+      "dataRecebimento": "2026-07-22"
     },
     {
       "id": 1783645532576,
