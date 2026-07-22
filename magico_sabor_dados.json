@@ -8023,8 +8023,8 @@
       "status": "entregue",
       "dataRegistro": "2026-07-16",
       "entregue": true,
-      "recebido": false,
-      "dataRecebimento": null
+      "recebido": true,
+      "dataRecebimento": "2026-07-22"
     },
     {
       "id": 1784235398782,
