@@ -7087,8 +7087,8 @@
       "status": "entregue",
       "dataRegistro": "2026-07-02",
       "entregue": true,
-      "recebido": false,
-      "dataRecebimento": null
+      "recebido": true,
+      "dataRecebimento": "2026-07-22"
     },
     {
       "id": 1783088251027,
