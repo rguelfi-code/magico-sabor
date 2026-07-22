@@ -18070,6 +18070,35 @@
       "dataEmissao": "2026-07-22",
       "status": "emitida",
       "enviada": false
+    },
+    {
+      "id": 1784762325646,
+      "numero": "FAT-0120",
+      "encId": 1784749542936,
+      "clienteNome": "Fernanda (Laura)",
+      "clienteDoc": "—",
+      "clienteTel": "(35) 94822 3309",
+      "clienteEnd": "Rua Jovina Maras, 600 apto 171A",
+      "data": "2026-07-25",
+      "vencimento": "2026-07-22",
+      "pagamento": "pix",
+      "itens": [
+        {
+          "nome": "Pão australiano VEG",
+          "qtd": 1,
+          "preco": 38
+        },
+        {
+          "nome": "Pão fatiado multigrãos",
+          "qtd": 1,
+          "preco": 36
+        }
+      ],
+      "frete": 0,
+      "subtotal": 74,
+      "total": 74,
+      "dataEmissao": "2026-07-22",
+      "status": "emitida"
     }
   ],
   "_exportSeq": 49,
