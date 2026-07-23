@@ -8364,10 +8364,15 @@
           "nome": "Bolo caseiro de fubá VEG",
           "qtd": 2,
           "preco": 30
+        },
+        {
+          "nome": "Pão australiano VEG",
+          "preco": 38,
+          "qtd": 1
         }
       ],
-      "subtotal": 195.6,
-      "total": 195.6,
+      "subtotal": 233.6,
+      "total": 233.6,
       "status": "entregue",
       "dataRegistro": "2026-07-22",
       "entregue": false,
