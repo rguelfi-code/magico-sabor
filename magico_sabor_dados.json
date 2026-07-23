@@ -18220,6 +18220,50 @@
       "dataEmissao": "2026-07-23",
       "status": "emitida",
       "enviada": false
+    },
+    {
+      "id": 1784811459504,
+      "numero": "FAT-0125",
+      "encId": 1784741018482,
+      "clienteNome": "Nacional Hotel",
+      "clienteDoc": "—",
+      "clienteTel": "(35) 99937 2003",
+      "clienteEnd": "",
+      "data": "2026-07-23",
+      "vencimento": "2026-07-22",
+      "pagamento": "pix",
+      "itens": [
+        {
+          "nome": "Pão de forma VEG",
+          "qtd": 1,
+          "preco": 36
+        },
+        {
+          "nome": "Pão australiano VEG",
+          "qtd": 1,
+          "preco": 38
+        },
+        {
+          "nome": "Bolo caseiro de chocolate VEG",
+          "qtd": 2,
+          "preco": 30
+        },
+        {
+          "nome": "Bolo caseiro de laranja VEG",
+          "qtd": 2,
+          "preco": 30
+        },
+        {
+          "nome": "Bolo caseiro de banana VEG",
+          "qtd": 1,
+          "preco": 30
+        }
+      ],
+      "frete": 0,
+      "subtotal": 224,
+      "total": 224,
+      "dataEmissao": "2026-07-23",
+      "status": "emitida"
     }
   ],
   "_exportSeq": 49,
