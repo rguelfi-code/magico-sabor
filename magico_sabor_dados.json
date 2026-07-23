@@ -18229,6 +18229,50 @@
       "total": 224,
       "dataEmissao": "2026-07-23",
       "status": "emitida"
+    },
+    {
+      "id": 1784811516075,
+      "numero": "FAT-0126",
+      "encId": 1784740862424,
+      "clienteNome": "Cassino Hotel",
+      "clienteDoc": "—",
+      "clienteTel": "(35) 99937 2003",
+      "clienteEnd": "",
+      "data": "2026-07-23",
+      "vencimento": "2026-07-22",
+      "pagamento": "pix",
+      "itens": [
+        {
+          "nome": "Pão francês (6 un)",
+          "qtd": 12,
+          "preco": 3.8
+        },
+        {
+          "nome": "Bolo caseiro de laranja VEG",
+          "qtd": 1,
+          "preco": 30
+        },
+        {
+          "nome": "Bolo caseiro de chocolate VEG",
+          "qtd": 2,
+          "preco": 30
+        },
+        {
+          "nome": "Bolo caseiro de fubá VEG",
+          "qtd": 2,
+          "preco": 30
+        },
+        {
+          "nome": "Pão australiano VEG",
+          "preco": 38,
+          "qtd": 1
+        }
+      ],
+      "frete": 0,
+      "subtotal": 233.6,
+      "total": 233.6,
+      "dataEmissao": "2026-07-23",
+      "status": "emitida"
     }
   ],
   "_exportSeq": 49,
