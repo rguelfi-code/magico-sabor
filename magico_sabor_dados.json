@@ -8542,7 +8542,7 @@
       "total": 142,
       "status": "entregue",
       "dataRegistro": "2026-07-22",
-      "entregue": false,
+      "entregue": true,
       "recebido": false,
       "dataRecebimento": null
     },
