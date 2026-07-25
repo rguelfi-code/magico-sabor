@@ -18172,7 +18172,7 @@
       "total": 74,
       "dataEmissao": "2026-07-22",
       "status": "emitida",
-      "enviada": false
+      "enviada": true
     },
     {
       "id": 1784766563845,
