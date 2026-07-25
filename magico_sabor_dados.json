@@ -8457,8 +8457,8 @@
       "status": "entregue",
       "dataRegistro": "2026-07-22",
       "entregue": true,
-      "recebido": false,
-      "dataRecebimento": null
+      "recebido": true,
+      "dataRecebimento": "2026-07-25"
     },
     {
       "id": 1784756800041,
