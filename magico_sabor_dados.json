@@ -8752,8 +8752,9 @@
       ],
       "subtotal": 136.79999999999998,
       "total": 136.79999999999998,
-      "status": "aberto",
-      "dataRegistro": "2026-07-27"
+      "status": "entregue",
+      "dataRegistro": "2026-07-27",
+      "entregue": false
     },
     {
       "id": 1785161892343,
@@ -18637,6 +18638,30 @@
       "frete": 0,
       "subtotal": 57,
       "total": 57,
+      "dataEmissao": "2026-07-27",
+      "status": "emitida"
+    },
+    {
+      "id": 1785178899314,
+      "numero": "FAT-0131",
+      "encId": 1785161690896,
+      "clienteNome": "Cassino Hotel",
+      "clienteDoc": "—",
+      "clienteTel": "(35) 99937 2003",
+      "clienteEnd": "",
+      "data": "2026-07-27",
+      "vencimento": "2026-07-27",
+      "pagamento": "pix",
+      "itens": [
+        {
+          "nome": "Pão francês (6 un)",
+          "qtd": 36,
+          "preco": 3.8
+        }
+      ],
+      "frete": 0,
+      "subtotal": 136.79999999999998,
+      "total": 136.79999999999998,
       "dataEmissao": "2026-07-27",
       "status": "emitida"
     }
