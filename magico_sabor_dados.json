@@ -18700,7 +18700,7 @@
       "total": 45.599999999999994,
       "dataEmissao": "2026-07-27",
       "status": "emitida",
-      "enviada": false
+      "enviada": true
     }
   ],
   "_exportSeq": 49,
