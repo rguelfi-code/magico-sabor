@@ -3793,12 +3793,12 @@
     },
     {
       "id": 1785161562723,
-      "nome": "Giulia",
-      "tel": "(35) ",
+      "nome": "Giulia Majeau",
+      "tel": "(35) 98883 4185",
       "doc": "",
       "email": "",
       "bairro": "Poços de Caldas",
-      "endereco": "",
+      "endereco": "Rua Ponta Porã, 184 - Jardim dos Estados",
       "obs": "",
       "dataCadastro": "2026-07-27"
     },
@@ -8702,8 +8702,8 @@
     {
       "id": 1785161623322,
       "clienteId": 1785161562723,
-      "clienteNome": "Giulia",
-      "clienteTel": "(35) ",
+      "clienteNome": "Giulia Majeau",
+      "clienteTel": "(35) 98883 4185",
       "clienteDoc": "",
       "data": "2026-07-27",
       "vencimento": "2026-07-27",
