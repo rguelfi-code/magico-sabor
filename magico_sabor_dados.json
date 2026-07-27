@@ -8758,7 +8758,7 @@
       "total": 136.79999999999998,
       "status": "entregue",
       "dataRegistro": "2026-07-27",
-      "entregue": false,
+      "entregue": true,
       "recebido": false,
       "dataRecebimento": null
     },
