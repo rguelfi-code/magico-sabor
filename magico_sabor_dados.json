@@ -8726,8 +8726,9 @@
       ],
       "subtotal": 57,
       "total": 57,
-      "status": "aberto",
-      "dataRegistro": "2026-07-27"
+      "status": "entregue",
+      "dataRegistro": "2026-07-27",
+      "entregue": false
     },
     {
       "id": 1785161690896,
@@ -18607,6 +18608,35 @@
       "frete": 0,
       "subtotal": 179,
       "total": 179,
+      "dataEmissao": "2026-07-27",
+      "status": "emitida"
+    },
+    {
+      "id": 1785178822703,
+      "numero": "FAT-0130",
+      "encId": 1785161623322,
+      "clienteNome": "Giulia Majeau",
+      "clienteDoc": "—",
+      "clienteTel": "(35) 98883 4185",
+      "clienteEnd": "",
+      "data": "2026-07-27",
+      "vencimento": "2026-07-27",
+      "pagamento": "pix",
+      "itens": [
+        {
+          "nome": "Pão fatiado multigrãos",
+          "qtd": 1,
+          "preco": 36
+        },
+        {
+          "nome": "Mini-pão 45g (6 un)",
+          "qtd": 6,
+          "preco": 3.5
+        }
+      ],
+      "frete": 0,
+      "subtotal": 57,
+      "total": 57,
       "dataEmissao": "2026-07-27",
       "status": "emitida"
     }
