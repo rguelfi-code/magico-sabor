@@ -8827,8 +8827,9 @@
       ],
       "subtotal": 212,
       "total": 212,
-      "status": "aberto",
-      "dataRegistro": "2026-07-29"
+      "status": "entregue",
+      "dataRegistro": "2026-07-29",
+      "entregue": false
     },
     {
       "id": 1785355530313,
@@ -8882,8 +8883,9 @@
       ],
       "subtotal": 316,
       "total": 316,
-      "status": "aberto",
-      "dataRegistro": "2026-07-29"
+      "status": "entregue",
+      "dataRegistro": "2026-07-29",
+      "entregue": false
     }
   ],
   "precificados": [
@@ -18796,6 +18798,99 @@
       "dataEmissao": "2026-07-27",
       "status": "emitida",
       "enviada": true
+    },
+    {
+      "id": 1785355538736,
+      "numero": "FAT-0133",
+      "encId": 1785355381508,
+      "clienteNome": "Nacional Hotel",
+      "clienteDoc": "—",
+      "clienteTel": "(35) 99937 2003",
+      "clienteEnd": "",
+      "data": "2026-07-29",
+      "vencimento": "2026-07-29",
+      "pagamento": "pix",
+      "itens": [
+        {
+          "nome": "Bolo caseiro de laranja VEG",
+          "qtd": 1,
+          "preco": 30
+        },
+        {
+          "nome": "Bolo caseiro de chocolate - C/cob",
+          "qtd": 2,
+          "preco": 40
+        },
+        {
+          "nome": "Bolo caseiro de banana VEG",
+          "qtd": 1,
+          "preco": 30
+        },
+        {
+          "nome": "Pão de forma VEG",
+          "qtd": 2,
+          "preco": 36
+        }
+      ],
+      "frete": 0,
+      "subtotal": 212,
+      "total": 212,
+      "dataEmissao": "2026-07-29",
+      "status": "emitida"
+    },
+    {
+      "id": 1785355670368,
+      "numero": "FAT-0134",
+      "encId": 1785355530313,
+      "clienteNome": "Monreale - D.C. Turismo Ltda.",
+      "clienteDoc": "01.204.495/0001-33",
+      "clienteTel": "",
+      "clienteEnd": "Av. Leonor Furlaneto Delgado, 3033",
+      "data": "2026-07-29",
+      "vencimento": "2026-07-29",
+      "pagamento": "pix",
+      "itens": [
+        {
+          "nome": "Bolo de chocolate - C/cob",
+          "qtd": 1,
+          "preco": 65
+        },
+        {
+          "nome": "Bolo de cenoura C/cob",
+          "qtd": 1,
+          "preco": 60
+        },
+        {
+          "nome": "Bolo de banana VEG",
+          "qtd": 1,
+          "preco": 38
+        },
+        {
+          "nome": "Bolo de laranja VEG",
+          "qtd": 1,
+          "preco": 45
+        },
+        {
+          "nome": "Pão fatiado milho",
+          "qtd": 1,
+          "preco": 36
+        },
+        {
+          "nome": "Pão fatiado abóbora",
+          "qtd": 1,
+          "preco": 36
+        },
+        {
+          "nome": "Pão fatiado multigrãos",
+          "qtd": 1,
+          "preco": 36
+        }
+      ],
+      "frete": 0,
+      "subtotal": 316,
+      "total": 316,
+      "dataEmissao": "2026-07-29",
+      "status": "emitida"
     }
   ],
   "_exportSeq": 49,
