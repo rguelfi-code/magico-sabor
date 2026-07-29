@@ -8789,6 +8789,46 @@
       "entregue": true,
       "recebido": true,
       "dataRecebimento": "2026-07-27"
+    },
+    {
+      "id": 1785355381508,
+      "clienteId": 1775768243865,
+      "clienteNome": "Nacional Hotel",
+      "clienteTel": "(35) 99937 2003",
+      "clienteDoc": "",
+      "data": "2026-07-29",
+      "vencimento": "2026-07-29",
+      "tipo": "entrega",
+      "endereco": "",
+      "frete": 0,
+      "pagamento": "pix",
+      "obs": "",
+      "itens": [
+        {
+          "nome": "Bolo caseiro de laranja VEG",
+          "qtd": 1,
+          "preco": 30
+        },
+        {
+          "nome": "Bolo caseiro de chocolate - C/cob",
+          "qtd": 2,
+          "preco": 40
+        },
+        {
+          "nome": "Bolo caseiro de banana VEG",
+          "qtd": 1,
+          "preco": 30
+        },
+        {
+          "nome": "Pão de forma VEG",
+          "qtd": 2,
+          "preco": 36
+        }
+      ],
+      "subtotal": 212,
+      "total": 212,
+      "status": "aberto",
+      "dataRegistro": "2026-07-29"
     }
   ],
   "precificados": [
