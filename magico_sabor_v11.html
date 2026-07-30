@@ -392,11 +392,17 @@
   .fatura-acoes { display:flex; gap:10px; }
   @media print {
     header,.dados-bar,nav,.periodo-bar,.rel-tabs,.btn-imprimir,.filtros,.btn-novo,
-    .page-header,.fatura-acoes,.modal-overlay,.cr-saldo-grid,.resumo-grid { display:none !important; }
+    .page-header,.fatura-acoes,.modal-overlay,.cr-saldo-grid,.resumo-grid,
+    #bannerSalvar,#filtrosTodas,.filtro-btn,#historicoPanel,
+    #graficoTooltip,input[type="date"],button:not(.btn-imprimir) { display:none !important; }
     .pagina { display:none !important; padding:0; }
     #pg-relatorios { display:block !important; }
     .rel-section { display:none !important; }
     .rel-section.ativa { display:block !important; }
+    /* Ocultar controles dentro das seções ativas */
+    .rel-section.ativa > div:first-child button,
+    .rel-section.ativa > div:first-child input,
+    .rel-section.ativa > div:first-child select { display:none !important; }
     body { background:#fff; }
     /* Quando modal da fatura estiver aberto: mostrar só a fatura */
     body.imprimindo-nf #blocoResumoCliente { display:none !important; }
@@ -791,6 +797,7 @@
       <span style="font-size:12px;color:var(--texto-ter);">até</span>
       <input type="date" id="filtroTodasFim" onchange="renderEncomendas()" style="border:2px solid var(--verde-claro);border-radius:8px;padding:6px 10px;font-family:'Jost',sans-serif;font-size:13px;">
       <button onclick="document.getElementById('filtroTodasCliente').value='';document.getElementById('filtroTodasIni').value='';document.getElementById('filtroTodasFim').value='';renderEncomendas();" style="padding:6px 12px;background:#eee;border:none;border-radius:8px;cursor:pointer;font-family:'Jost',sans-serif;font-size:12px;">✕ Limpar</button>
+      <button onclick="excluirEmLote()" style="padding:6px 12px;background:#c0392b;color:#fff;border:none;border-radius:8px;cursor:pointer;font-family:'Jost',sans-serif;font-size:12px;">🗑️ Excluir seleção</button>
       <span id="totalFiltradas" style="margin-left:8px;font-weight:700;color:var(--verde-escuro);font-size:14px;"></span>
     </div>
     <div id="listaEncomendas" class="encomendas-lista"></div>
@@ -892,7 +899,11 @@
       <div class="grafico-card" style="grid-column:1/-1;">
         <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;margin-bottom:8px;">
           <h4 style="margin:0;">📈 Evolução do Faturamento Mensal</h4>
-          <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;">
+          <div style="display:flex;gap:6px;flex-wrap:wrap;align-items:center;">
+            <button onclick="setGraficoAgrup('mes')" id="graficoAgrupMes" class="filtro-btn active" style="font-size:11px;padding:4px 8px;">Mês</button>
+            <button onclick="setGraficoAgrup('trim')" id="graficoAgrupTrim" class="filtro-btn" style="font-size:11px;padding:4px 8px;">Trimestre</button>
+            <button onclick="setGraficoAgrup('sem')" id="graficoAgrupSem" class="filtro-btn" style="font-size:11px;padding:4px 8px;">Semestre</button>
+            <button onclick="setGraficoAgrup('ano')" id="graficoAgrupAno" class="filtro-btn" style="font-size:11px;padding:4px 8px;">Ano</button>
             <input type="date" id="graficoIni" onchange="renderRelatorios()" style="border:2px solid var(--verde-claro);border-radius:8px;padding:5px 10px;font-family:'Jost',sans-serif;font-size:12px;">
             <span style="font-size:12px;color:var(--texto-ter);">até</span>
             <input type="date" id="graficoFim" onchange="renderRelatorios()" style="border:2px solid var(--verde-claro);border-radius:8px;padding:5px 10px;font-family:'Jost',sans-serif;font-size:12px;">
@@ -946,11 +957,14 @@
   <div class="rel-section" id="rel-recebido-rel">
     <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-bottom:12px;">
       <div class="secao-titulo" style="margin:0;">✅ Recebido</div>
-      <div style="display:flex;align-items:center;gap:8px;">
-        <label style="font-size:12px;color:var(--texto-ter);">Período:</label>
+      <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;">
+        <button class="filtro-btn" onclick="setRecebidoPreset('mes')" style="font-size:12px;padding:5px 10px;">Este mês</button>
+        <button class="filtro-btn" onclick="setRecebidoPreset('trim')" style="font-size:12px;padding:5px 10px;">Trimestre</button>
+        <button class="filtro-btn" onclick="setRecebidoPreset('ano')" style="font-size:12px;padding:5px 10px;">Este ano</button>
         <input type="date" id="recebidoIni" onchange="renderRelRecebidoStatus()" style="border:2px solid var(--verde-claro);border-radius:8px;padding:5px 10px;font-family:'Jost',sans-serif;font-size:13px;">
         <span style="font-size:12px;color:var(--texto-ter);">até</span>
         <input type="date" id="recebidoFim" onchange="renderRelRecebidoStatus()" style="border:2px solid var(--verde-claro);border-radius:8px;padding:5px 10px;font-family:'Jost',sans-serif;font-size:13px;">
+        <button onclick="document.getElementById('recebidoIni').value='';document.getElementById('recebidoFim').value='';renderRelRecebidoStatus();" style="padding:5px 10px;background:#eee;border:none;border-radius:8px;cursor:pointer;font-family:'Jost',sans-serif;font-size:12px;">✕ Todos</button>
       </div>
     </div>
     <div id="tbRecebidoRel"></div>
@@ -1333,6 +1347,15 @@ const medidaHints={peso:'Ex: bolos, pães — informe o peso total',unidade:'Ex:
 let editarTipo=null,editarId=null,periodoInicio=null,periodoFim=null;
 let encSelecionada=null;
 
+var graficoAgrup='mes';
+function setGraficoAgrup(a){
+  graficoAgrup=a;
+  ['mes','trim','sem','ano'].forEach(x=>{
+    const btn=document.getElementById('graficoAgrup'+x.charAt(0).toUpperCase()+x.slice(1));
+    if(btn)btn.classList.toggle('active',x===a);
+  });
+  renderRelatorios();
+}
 function toggleHistorico(){
   const p=document.getElementById('historicoPanel');if(!p)return;
   if(p.style.display==='none'){p.style.display='block';renderHistoricoGrid();}else{p.style.display='none';}
@@ -2350,6 +2373,8 @@ function salvarEncomenda(){
   if(!itensEnc.length||!itensEnc.some(r=>r.prodId)){alert('Adicione ao menos um produto!');return;}
   const data=document.getElementById('eData').value;if(!data){alert('Informe a data de entrega!');return;}
   const venc=document.getElementById('eVencimento').value;if(!venc){alert('Informe a data de vencimento!');return;}
+  const dataEnc=document.getElementById('eData').value;
+  if(venc<dataEnc){alert('A data de vencimento não pode ser anterior à data da encomenda!');return;}
   if(venc<data){alert('⚠️ Vencimento não pode ser anterior à data de entrega!');return;}
   const c=dados.clientes.find(c=>c.id===cId);
   const tipo=document.getElementById('eTipoEntrega').value;const fr=tipo==='entrega'?(parseFloat(document.getElementById('eFrete').value)||0):0;
@@ -2373,6 +2398,27 @@ function salvarCliente(){
   ['cNome','cDoc','cEmail','cEndereco','cObs'].forEach(id=>document.getElementById(id).value='');
   document.getElementById('cTel').value='(35) ';
   document.getElementById('cBairro').value='Poços de Caldas';
+}
+function excluirEmLote(){
+  const cli=document.getElementById('filtroTodasCliente')?.value;
+  const ini=document.getElementById('filtroTodasIni')?.value;
+  const fim=document.getElementById('filtroTodasFim')?.value;
+  let encs=dados.encomendas;
+  if(filtroVenda!=='todas')encs=encs.filter(e=>etapaEncomenda(e)===filtroVenda);
+  if(cli)encs=encs.filter(e=>e.clienteNome===cli);
+  if(ini)encs=encs.filter(e=>new Date(e.data+'T12:00:00')>=new Date(ini+'T00:00:00'));
+  if(fim)encs=encs.filter(e=>new Date(e.data+'T12:00:00')<=new Date(fim+'T23:59:59'));
+  if(!encs.length){alert('Nenhuma encomenda selecionada para excluir.');return;}
+  const tot=encs.reduce((s,e)=>s+e.total,0);
+  const msg=`⚠️ ATENÇÃO!\n\nVocê está prestes a excluir ${encs.length} encomenda${encs.length!==1?'s':''} (${fmt(tot)}) permanentemente.\n\nEssa ação NÃO pode ser desfeita.\n\nConfirma a exclusão?`;
+  if(!confirm(msg))return;
+  if(!confirm('Tem certeza? Confirme novamente para excluir.'))return;
+  const ids=new Set(encs.map(e=>e.id));
+  // Remover faturas relacionadas
+  dados.faturas=dados.faturas.filter(f=>!ids.has(f.encId));
+  dados.encomendas=dados.encomendas.filter(e=>!ids.has(e.id));
+  _re();mostrarLembreteSalvar();agendarSalvarGitHub();
+  alert(`✅ ${encs.length} encomenda${encs.length!==1?'s':''} excluída${encs.length!==1?'s':''} com sucesso.`);
 }
 function setFiltroVenda(btn,f){
   document.querySelectorAll('#secaoEncomendas .filtro-btn').forEach(b=>{
@@ -2500,10 +2546,11 @@ function renderEncomendas(){
   if(cli)encs=encs.filter(e=>e.clienteNome===cli);
   if(ini)encs=encs.filter(e=>new Date(e.data+'T12:00:00')>=new Date(ini+'T00:00:00'));
   if(fim)encs=encs.filter(e=>new Date(e.data+'T12:00:00')<=new Date(fim+'T23:59:59'));
-  // Mostrar total filtrado
+  // Total e ticket médio — sempre visível
   const tot=encs.reduce((s,e)=>s+e.total,0);
+  const ticket=encs.length?tot/encs.length:0;
   const telEl=document.getElementById('totalFiltradas');
-  if(telEl)telEl.textContent=(cli||ini||fim)?`Total: ${fmt(tot)} (${encs.length} encomenda${encs.length!==1?'s':''})`:'';
+  if(telEl)telEl.textContent=encs.length?`Total: ${fmt(tot)} · ${encs.length} encomenda${encs.length!==1?'s':''} · Ticket médio: ${fmt(Math.round(ticket))}`:'Nenhuma encomenda';
   if(!encs.length){lista.innerHTML='<div class="empty-state"><span>📋<\/span>Nenhuma encomenda nesta etapa.<\/div>';return;}
   lista.innerHTML=encs.map(e=>{
     const fat=dados.faturas.find(f=>f.encId===e.id);
@@ -2704,14 +2751,24 @@ function calcularResumos(){
   set('cRecebido',fmt(recMes.reduce((s,e)=>s+e.total,0)));set('cRecebidoQtd',`${recMes.length} recebida${recMes.length!==1?'s':''}`);
 }
 
-function renderContasTab(){renderContasCompleto();}
-function setFiltroContas(){}
 
 function setFiltroContas(btn,f){document.querySelectorAll('#pg-contas .filtro-btn').forEach(b=>b.classList.remove('active'));btn.classList.add('active');filtroContas=f;renderContasTab();}
 function renderContasTab(){renderContasCompleto();}
 function abrirModal(id){encSelecionadaModal=dados.encomendas.find(e=>e.id===id);if(!encSelecionadaModal)return;const vf=fmtData(encSelecionadaModal.vencimento);document.getElementById('modalInfo').innerHTML=`<span><span>Cliente<\/span><strong>${encSelecionadaModal.clienteNome}<\/strong><\/span><span><span>Valor<\/span><strong>${fmt(encSelecionadaModal.total)}<\/strong><\/span><span><span>Vencimento<\/span><span>${vf}<\/span><\/span>`;document.getElementById('modalData').value=new Date().toISOString().split('T')[0];document.getElementById('modalPag').value=encSelecionadaModal.pagamento;document.getElementById('modalObs').value='';document.getElementById('modalOverlay').classList.add('open');}
 function fecharModal(){document.getElementById('modalOverlay').classList.remove('open');encSelecionadaModal=null;}
-function confirmarRecebimento(){if(!encSelecionadaModal)return;const nome=encSelecionadaModal.clienteNome;const valor=fmt(encSelecionadaModal.total);encSelecionadaModal.status='pago';encSelecionadaModal.dataPagamento=document.getElementById('modalData').value;fecharModal();calcularResumos();renderContasTab();renderContasCompleto();renderEncomendas();alert(`✅ Recebimento de ${valor} de ${nome} registrado!`);}
+function confirmarRecebimento(){
+  if(!encSelecionadaModal)return;
+  const nome=encSelecionadaModal.clienteNome;
+  const valor=fmt(encSelecionadaModal.total);
+  const dataRec=document.getElementById('modalData').value;
+  encSelecionadaModal.status='pago';
+  encSelecionadaModal.recebido=true;
+  encSelecionadaModal.dataRecebimento=dataRec;
+  encSelecionadaModal.dataPagamento=dataRec;
+  fecharModal();
+  _re();mostrarLembreteSalvar();agendarSalvarGitHub();
+  alert(`✅ Recebimento de ${valor} de ${nome} registrado!`);
+}
 
 let encCobranca=null;
 function abrirModalCobrar(id){
@@ -2976,6 +3033,15 @@ function renderRelAReceberStatus(){
   ],(a,b)=>a.clienteNome.localeCompare(b.clienteNome,'pt-BR'));
 }
 
+function setRecebidoPreset(p){
+  const h=new Date();const fl=d=>d.toISOString().split('T')[0];
+  let ini=new Date(h.getFullYear(),h.getMonth(),1);
+  if(p==='trim'){const t=Math.floor(h.getMonth()/3)*3;ini=new Date(h.getFullYear(),t,1);}
+  if(p==='ano'){ini=new Date(h.getFullYear(),0,1);}
+  document.getElementById('recebidoIni').value=fl(ini);
+  document.getElementById('recebidoFim').value=fl(h);
+  renderRelRecebidoStatus();
+}
 function renderRelRecebidoStatus(){
   const div=document.getElementById('tbRecebidoRel');if(!div)return;
   let encs=dados.encomendas.filter(e=>e.recebido&&e.dataRecebimento);
@@ -3116,47 +3182,65 @@ function renderVisaoGeral(enc){
   const margMedia=fat>0?((lucroTotal/fat)*100).toFixed(1):0;
   const set=(id,v)=>{const el=document.getElementById(id);if(el)el.textContent=v;};
   set('vFat',fmt(fat));set('vFatQtd',`${enc.length} encomenda${enc.length!==1?'s':''}`);
-  set('vLuc',fmt(lucroTotal));set('vLucPerc',`${margMedia}% margem média`);
+  set('vLuc',fmt(lucroTotal));set('vLucPerc',`${margMedia}% margem media`);
   set('vPend',fmt(pendentes.reduce((s,e)=>s+e.total,0)));set('vPendQtd',`${pendentes.length} pendente${pendentes.length!==1?'s':''}`);
   set('vRec',fmt(pagas.reduce((s,e)=>s+e.total,0)));set('vRecQtd',`${pagas.length} recebida${pagas.length!==1?'s':''}`);
-  // Gerar todos os meses desde Jan/2024
   const hist=dados._historico||{};
   const nomesMes=['Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez'];
+  const nomesTrim=['T1','T2','T3','T4'];
   const h=new Date();
   let d=new Date(2024,0,1);
   const todosMeses=[];
   while(d<=h){todosMeses.push({ano:d.getFullYear(),mes:d.getMonth()});d=new Date(d.getFullYear(),d.getMonth()+1,1);}
-  // Filtro de período do gráfico
   const gIni=document.getElementById('graficoIni')?.value;
   const gFim=document.getElementById('graficoFim')?.value;
-  const meses=todosMeses.filter(m=>{
-    const key=`${m.ano}-${String(m.mes+1).padStart(2,'0')}`;
+  const mesesFiltrados=todosMeses.filter(m=>{
     const dM=new Date(m.ano,m.mes,1);
     if(gIni&&dM<new Date(gIni+'T00:00:00'))return false;
     if(gFim&&dM>new Date(gFim+'T23:59:59'))return false;
     return true;
   });
-  const labels=meses.map(m=>`${nomesMes[m.mes]}/${String(m.ano).slice(2)}`);
-  const fatMes=meses.map(m=>{
+  // Valor por mês
+  const valMes=mesesFiltrados.map(m=>{
     const key=`${m.ano}-${String(m.mes+1).padStart(2,'0')}`;
     const appVal=dados.encomendas.filter(e=>{const dd=new Date(e.data+'T12:00:00');return dd.getFullYear()===m.ano&&dd.getMonth()===m.mes;}).reduce((s,e)=>s+e.total,0);
     return appVal>0?appVal:(hist[key]||0);
   });
-  const media=fatMes.map((_,i)=>{const vals=fatMes.slice(0,i+1).filter(v=>v>0);return vals.length?vals.reduce((s,v)=>s+v,0)/vals.length:0;});
+  // Agrupamento
+  const agrup=typeof graficoAgrup!=='undefined'?graficoAgrup:'mes';
+  let labels=[];let fatAgrup=[];
+  if(agrup==='mes'){
+    labels=mesesFiltrados.map(m=>`${nomesMes[m.mes]}/${String(m.ano).slice(2)}`);
+    fatAgrup=valMes;
+  } else if(agrup==='trim'){
+    const mapa={};
+    mesesFiltrados.forEach((m,i)=>{const t=Math.floor(m.mes/3);const k=`${m.ano}-T${t+1}`;if(!mapa[k])mapa[k]=0;mapa[k]+=valMes[i];});
+    Object.entries(mapa).forEach(([k,v])=>{labels.push(k);fatAgrup.push(v);});
+  } else if(agrup==='sem'){
+    const mapa={};
+    mesesFiltrados.forEach((m,i)=>{const s=m.mes<6?'S1':'S2';const k=`${m.ano}-${s}`;if(!mapa[k])mapa[k]=0;mapa[k]+=valMes[i];});
+    Object.entries(mapa).forEach(([k,v])=>{labels.push(k);fatAgrup.push(v);});
+  } else {
+    const mapa={};
+    mesesFiltrados.forEach((m,i)=>{const k=String(m.ano);if(!mapa[k])mapa[k]=0;mapa[k]+=valMes[i];});
+    Object.entries(mapa).forEach(([k,v])=>{labels.push(k);fatAgrup.push(v);});
+  }
+  const media=fatAgrup.map((_,i)=>{const vals=fatAgrup.slice(0,i+1).filter(v=>v>0);return vals.length?vals.reduce((s,v)=>s+v,0)/vals.length:0;});
   _graficoLinhaSVG('graficoFat',labels,[
-    {label:'Faturamento',vals:fatMes,cor:'#3d5c2a',dashed:false},
-    {label:'Média',vals:media,cor:'#a67c20',dashed:true}
+    {label:'Faturamento',vals:fatAgrup,cor:'#3d5c2a',dashed:false},
+    {label:'Media',vals:media,cor:'#a67c20',dashed:true}
   ]);
   // Tabela mensal
   const tbl=document.getElementById('tabelaMensal');if(!tbl)return;
-  if(!fatMes.some(v=>v>0)){tbl.innerHTML='';return;}
-  let html='<table class="tabela-rel" style="margin-top:8px;"><thead><tr><th>Mês<\/th><th class="num">Faturamento<\/th><th class="num">Média Acum.<\/th><\/tr><\/thead><tbody>';
-  meses.forEach((m,i)=>{
-    if(!fatMes[i])return;
-    const destaque=fatMes[i]>media[i]*1.1?'color:#2e7d32;font-weight:700;':fatMes[i]<media[i]*0.9?'color:#a93226;':'font-weight:700;';
-    html+=`<tr><td>${nomesMes[m.mes]} ${m.ano}<\/td><td class="num" style="${destaque}">${fmt(fatMes[i])}<\/td><td class="num" style="color:#a67c20;">${fmt(Math.round(media[i]))}<\/td><\/tr>`;
+  if(!fatAgrup.some(v=>v>0)){tbl.innerHTML='';return;}
+  const lbPeriodo=agrup==='mes'?'Mes':agrup==='trim'?'Trimestre':agrup==='sem'?'Semestre':'Ano';
+  let html=`<table class="tabela-rel" style="margin-top:8px;"><thead><tr><th>${lbPeriodo}<\/th><th class="num">Faturamento<\/th><th class="num">Media Acum.<\/th><\/tr><\/thead><tbody>`;
+  labels.forEach((lbl,i)=>{
+    if(!fatAgrup[i])return;
+    const destaque=fatAgrup[i]>media[i]*1.1?'color:#2e7d32;font-weight:700;':fatAgrup[i]<media[i]*0.9?'color:#a93226;':'font-weight:700;';
+    html+=`<tr><td>${lbl}<\/td><td class="num" style="${destaque}">${fmt(fatAgrup[i])}<\/td><td class="num" style="color:#a67c20;">${fmt(Math.round(media[i]))}<\/td><\/tr>`;
   });
-  const total=fatMes.reduce((s,v)=>s+v,0);
+  const total=fatAgrup.reduce((s,v)=>s+v,0);
   html+=`<\/tbody><tfoot><tr><td><strong>Total<\/strong><\/td><td class="num"><strong>${fmt(total)}<\/strong><\/td><td><\/td><\/tr><\/tfoot><\/table>`;
   tbl.innerHTML=html;
 }
