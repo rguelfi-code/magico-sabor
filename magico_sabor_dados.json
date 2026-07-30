@@ -8887,7 +8887,7 @@
       "total": 316,
       "status": "entregue",
       "dataRegistro": "2026-07-29",
-      "entregue": false,
+      "entregue": true,
       "recebido": false,
       "dataRecebimento": null
     },
@@ -8930,7 +8930,7 @@
       "total": 179,
       "status": "entregue",
       "dataRegistro": "2026-07-29",
-      "entregue": false,
+      "entregue": true,
       "recebido": false,
       "dataRecebimento": null
     },
@@ -9006,7 +9006,9 @@
       "total": 106,
       "status": "entregue",
       "dataRegistro": "2026-07-30",
-      "entregue": false
+      "entregue": false,
+      "recebido": false,
+      "dataRecebimento": null
     }
   ],
   "precificados": [
@@ -19122,7 +19124,8 @@
       "subtotal": 106,
       "total": 106,
       "dataEmissao": "2026-07-30",
-      "status": "emitida"
+      "status": "emitida",
+      "enviada": false
     }
   ],
   "_exportSeq": 49,
