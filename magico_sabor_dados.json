@@ -18269,7 +18269,7 @@
       "total": 290,
       "dataEmissao": "2026-07-17",
       "status": "emitida",
-      "enviada": false
+      "enviada": true
     },
     {
       "id": 1784291489824,
@@ -18759,7 +18759,7 @@
       "total": 224,
       "dataEmissao": "2026-07-23",
       "status": "emitida",
-      "enviada": false
+      "enviada": true
     },
     {
       "id": 1784811516075,
