@@ -9105,7 +9105,9 @@
       "total": 137,
       "status": "entregue",
       "dataRegistro": "2026-07-31",
-      "entregue": false
+      "entregue": false,
+      "recebido": false,
+      "dataRecebimento": null
     }
   ],
   "precificados": [
@@ -19187,7 +19189,7 @@
       "total": 180,
       "dataEmissao": "2026-07-30",
       "status": "emitida",
-      "enviada": false
+      "enviada": true
     },
     {
       "id": 1785416159962,
@@ -19311,7 +19313,8 @@
       "subtotal": 137,
       "total": 137,
       "dataEmissao": "2026-07-31",
-      "status": "emitida"
+      "status": "emitida",
+      "enviada": false
     }
   ],
   "_exportSeq": 49,
