@@ -18352,7 +18352,7 @@
       "total": 99,
       "dataEmissao": "2026-07-17",
       "status": "emitida",
-      "enviada": false
+      "enviada": true
     },
     {
       "id": 1784291832390,
@@ -18457,7 +18457,7 @@
       "total": 143,
       "dataEmissao": "2026-07-17",
       "status": "emitida",
-      "enviada": false
+      "enviada": true
     },
     {
       "id": 1784299054079,
@@ -18497,7 +18497,7 @@
       "total": 179,
       "dataEmissao": "2026-07-17",
       "status": "emitida",
-      "enviada": false
+      "enviada": true
     },
     {
       "id": 1784651360306,
@@ -18562,7 +18562,7 @@
       "total": 161,
       "dataEmissao": "2026-07-21",
       "status": "emitida",
-      "enviada": false
+      "enviada": true
     },
     {
       "id": 1784656467284,
@@ -18602,7 +18602,7 @@
       "total": 170,
       "dataEmissao": "2026-07-21",
       "status": "emitida",
-      "enviada": false
+      "enviada": true
     },
     {
       "id": 1784741401300,
@@ -18632,7 +18632,7 @@
       "total": 196,
       "dataEmissao": "2026-07-22",
       "status": "emitida",
-      "enviada": false
+      "enviada": true
     },
     {
       "id": 1784762325646,
@@ -18867,7 +18867,7 @@
       "total": 143,
       "dataEmissao": "2026-07-23",
       "status": "emitida",
-      "enviada": false
+      "enviada": true
     },
     {
       "id": 1784816682642,
@@ -18927,7 +18927,7 @@
       "total": 501,
       "dataEmissao": "2026-07-23",
       "status": "emitida",
-      "enviada": false
+      "enviada": true
     },
     {
       "id": 1785178411603,
@@ -18967,7 +18967,7 @@
       "total": 179,
       "dataEmissao": "2026-07-27",
       "status": "emitida",
-      "enviada": false
+      "enviada": true
     },
     {
       "id": 1785178822703,
