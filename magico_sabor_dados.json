@@ -19059,7 +19059,7 @@
       "total": 212,
       "dataEmissao": "2026-07-29",
       "status": "emitida",
-      "enviada": false
+      "enviada": true
     },
     {
       "id": 1785355670368,
