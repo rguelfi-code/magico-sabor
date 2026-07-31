@@ -9039,7 +9039,7 @@
       "total": 114,
       "status": "entregue",
       "dataRegistro": "2026-07-31",
-      "entregue": false,
+      "entregue": true,
       "recebido": false,
       "dataRecebimento": null
     },
