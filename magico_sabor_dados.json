@@ -19157,6 +19157,35 @@
       "dataEmissao": "2026-07-30",
       "status": "emitida",
       "enviada": false
+    },
+    {
+      "id": 1785500980835,
+      "numero": "FAT-0139",
+      "encId": 1785500771470,
+      "clienteNome": "Giulia Majeau",
+      "clienteDoc": "—",
+      "clienteTel": "(35) 98883 4185",
+      "clienteEnd": "Rua Ponta Porã, 184 - Jardim dos Estados",
+      "data": "2026-07-31",
+      "vencimento": "2026-07-31",
+      "pagamento": "pix",
+      "itens": [
+        {
+          "nome": "Pão fatiado multigrãos",
+          "qtd": 2,
+          "preco": 36
+        },
+        {
+          "nome": "Mini-pão 45g (6 un)",
+          "qtd": 12,
+          "preco": 3.5
+        }
+      ],
+      "frete": 0,
+      "subtotal": 114,
+      "total": 114,
+      "dataEmissao": "2026-07-31",
+      "status": "emitida"
     }
   ],
   "_exportSeq": 49,
