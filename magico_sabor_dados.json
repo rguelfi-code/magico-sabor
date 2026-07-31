@@ -18804,7 +18804,7 @@
       "total": 233.6,
       "dataEmissao": "2026-07-23",
       "status": "emitida",
-      "enviada": false
+      "enviada": true
     },
     {
       "id": 1784814277874,
