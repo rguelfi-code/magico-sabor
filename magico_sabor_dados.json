@@ -9237,6 +9237,46 @@
       "entregue": false,
       "recebido": false,
       "dataRecebimento": null
+    },
+    {
+      "id": 1785778585840,
+      "clienteId": 1775766590796,
+      "clienteNome": "Cassino Hotel",
+      "clienteTel": "(35) 99937 2003",
+      "clienteDoc": "",
+      "data": "2026-08-03",
+      "vencimento": "2026-08-03",
+      "tipo": "entrega",
+      "endereco": "",
+      "frete": 0,
+      "pagamento": "pix",
+      "obs": "",
+      "itens": [
+        {
+          "nome": "Bolo caseiro de chocolate ZERO",
+          "qtd": 5,
+          "preco": 35
+        },
+        {
+          "nome": "Bolo caseiro de fubá",
+          "qtd": 3,
+          "preco": 30
+        },
+        {
+          "nome": "Bolo caseiro de banana VEG",
+          "qtd": 3,
+          "preco": 30
+        },
+        {
+          "nome": "Bolo caseiro de laranja VEG",
+          "qtd": 3,
+          "preco": 30
+        }
+      ],
+      "subtotal": 445,
+      "total": 445,
+      "status": "aberto",
+      "dataRegistro": "2026-08-03"
     }
   ],
   "precificados": [
@@ -19562,7 +19602,8 @@
       "subtotal": 450,
       "total": 450,
       "dataEmissao": "2026-08-03",
-      "status": "emitida"
+      "status": "emitida",
+      "enviada": false
     }
   ],
   "_exportSeq": 49,
