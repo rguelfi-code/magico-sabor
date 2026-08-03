@@ -18798,7 +18798,7 @@
       "total": 162,
       "dataEmissao": "2026-07-23",
       "status": "emitida",
-      "enviada": false
+      "enviada": true
     },
     {
       "id": 1784766838522,
@@ -19512,7 +19512,8 @@
       "subtotal": 331,
       "total": 331,
       "dataEmissao": "2026-08-03",
-      "status": "emitida"
+      "status": "emitida",
+      "enviada": false
     },
     {
       "id": 1785765897835,
@@ -19551,7 +19552,8 @@
       "subtotal": 199,
       "total": 199,
       "dataEmissao": "2026-08-03",
-      "status": "emitida"
+      "status": "emitida",
+      "enviada": false
     }
   ],
   "_exportSeq": 49,
