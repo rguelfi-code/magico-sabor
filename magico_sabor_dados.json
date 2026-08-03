@@ -19559,6 +19559,40 @@
       "dataEmissao": "2026-08-03",
       "status": "emitida",
       "enviada": false
+    },
+    {
+      "id": 1785778810674,
+      "numero": "FAT-0146",
+      "encId": 1785764723612,
+      "clienteNome": "Monreale - D.C. Turismo Ltda.",
+      "clienteDoc": "01.204.495/0001-33",
+      "clienteTel": "",
+      "clienteEnd": "Av. Leonor Furlaneto Delgado, 3033",
+      "data": "2026-08-03",
+      "vencimento": "2026-08-03",
+      "pagamento": "pix",
+      "itens": [
+        {
+          "nome": "Bolo de laranja VEG",
+          "preco": 45,
+          "qtd": 1
+        },
+        {
+          "nome": "Bolo de chocolate - C/cob",
+          "qtd": 1,
+          "preco": 65
+        },
+        {
+          "nome": "Bolo de banana VEG",
+          "qtd": 1,
+          "preco": 38
+        }
+      ],
+      "frete": 0,
+      "subtotal": 148,
+      "total": 148,
+      "dataEmissao": "2026-08-03",
+      "status": "emitida"
     }
   ],
   "_exportSeq": 49,
