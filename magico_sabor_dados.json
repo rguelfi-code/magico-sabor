@@ -9335,6 +9335,36 @@
       "entregue": true,
       "recebido": false,
       "dataRecebimento": null
+    },
+    {
+      "id": 1785855413983,
+      "clienteId": 1775765233420,
+      "clienteNome": "Carlton Plaza Ltda",
+      "clienteTel": "",
+      "clienteDoc": "71.478.457/0001-54",
+      "data": "2026-08-04",
+      "vencimento": "2026-08-04",
+      "tipo": "entrega",
+      "endereco": "Rua Junqueiras, 601 Centro",
+      "frete": 0,
+      "pagamento": "pix",
+      "obs": "",
+      "itens": [
+        {
+          "nome": "Bolo caseiro de fubá VEG",
+          "qtd": 1,
+          "preco": 30
+        },
+        {
+          "nome": "Pão de forma VEG",
+          "qtd": 1,
+          "preco": 36
+        }
+      ],
+      "subtotal": 66,
+      "total": 66,
+      "status": "aberto",
+      "dataRegistro": "2026-08-04"
     }
   ],
   "precificados": [
