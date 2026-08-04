@@ -217,6 +217,23 @@
       "dataAtualizacao": "2026-04-27"
     },
     {
+      "id": 1785855286949,
+      "nome": "Bolo caseiro de coco VEG",
+      "categoria": "bolo",
+      "medida": "peso",
+      "peso": null,
+      "pesoUn": "g",
+      "qtd": null,
+      "qtdUn": "un",
+      "tempo": "",
+      "desc": "",
+      "sg": true,
+      "sl": true,
+      "veg": true,
+      "sd": false,
+      "dataCadastro": "2026-08-04"
+    },
+    {
       "id": 1775404199149,
       "nome": "Bolo caseiro de coco ZERO",
       "categoria": "bolo",
