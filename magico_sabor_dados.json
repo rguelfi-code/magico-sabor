@@ -9452,9 +9452,9 @@
           "preco": 36
         },
         {
-          "nome": "Torta de sorvete ZERO",
-          "qtd": 4,
-          "preco": 17
+          "nome": "Torta de sorvete",
+          "preco": 14,
+          "qtd": 4
         },
         {
           "nome": "Torta de maçã & choc veg ZERO",
@@ -9462,8 +9462,8 @@
           "qtd": 10
         }
       ],
-      "subtotal": 413,
-      "total": 413,
+      "subtotal": 401,
+      "total": 401,
       "status": "aberto",
       "dataRegistro": "2026-08-07",
       "entregue": false,
