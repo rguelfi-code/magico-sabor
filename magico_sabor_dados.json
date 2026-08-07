@@ -9536,10 +9536,15 @@
           "nome": "Torta de sorvete ZERO",
           "qtd": 4,
           "preco": 17
+        },
+        {
+          "nome": "Bolo de chocolate VEG",
+          "preco": 45,
+          "qtd": 10
         }
       ],
-      "subtotal": 283,
-      "total": 283,
+      "subtotal": 733,
+      "total": 733,
       "status": "aberto",
       "dataRegistro": "2026-08-07"
     }
