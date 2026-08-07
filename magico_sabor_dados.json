@@ -9403,6 +9403,41 @@
       "total": 148,
       "status": "aberto",
       "dataRegistro": "2026-08-07"
+    },
+    {
+      "id": 1786108804070,
+      "clienteId": 1775768243865,
+      "clienteNome": "Nacional Hotel",
+      "clienteTel": "(35) 99937 2003",
+      "clienteDoc": "",
+      "data": "2026-08-07",
+      "vencimento": "2026-08-07",
+      "tipo": "entrega",
+      "endereco": "",
+      "frete": 0,
+      "pagamento": "pix",
+      "obs": "",
+      "itens": [
+        {
+          "nome": "Pão de forma VEG",
+          "qtd": 3,
+          "preco": 36
+        },
+        {
+          "nome": "Pão australiano VEG",
+          "qtd": 3,
+          "preco": 38
+        },
+        {
+          "nome": "Pão francês (6 un)",
+          "qtd": 10,
+          "preco": 3.8
+        }
+      ],
+      "subtotal": 260,
+      "total": 260,
+      "status": "aberto",
+      "dataRegistro": "2026-08-07"
     }
   ],
   "precificados": [
