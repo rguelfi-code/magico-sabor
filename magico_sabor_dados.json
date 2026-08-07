@@ -9430,12 +9430,12 @@
         },
         {
           "nome": "Pão francês (6 un)",
-          "qtd": 10,
+          "qtd": 20,
           "preco": 3.8
         }
       ],
-      "subtotal": 260,
-      "total": 260,
+      "subtotal": 298,
+      "total": 298,
       "status": "aberto",
       "dataRegistro": "2026-08-07"
     },
