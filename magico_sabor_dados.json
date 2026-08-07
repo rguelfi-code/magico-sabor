@@ -9546,7 +9546,10 @@
       "subtotal": 413,
       "total": 413,
       "status": "aberto",
-      "dataRegistro": "2026-08-07"
+      "dataRegistro": "2026-08-07",
+      "entregue": false,
+      "recebido": false,
+      "dataRecebimento": null
     }
   ],
   "precificados": [
