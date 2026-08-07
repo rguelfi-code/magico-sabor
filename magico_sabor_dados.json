@@ -9522,8 +9522,9 @@
       ],
       "subtotal": 990,
       "total": 990,
-      "status": "aberto",
-      "dataRegistro": "2026-08-07"
+      "status": "entregue",
+      "dataRegistro": "2026-08-07",
+      "entregue": false
     }
   ],
   "precificados": [
@@ -20047,6 +20048,60 @@
       "frete": 0,
       "subtotal": 401,
       "total": 401,
+      "dataEmissao": "2026-08-07",
+      "status": "emitida"
+    },
+    {
+      "id": 1786143320397,
+      "numero": "FAT-0153",
+      "encId": 1786131464130,
+      "clienteNome": "Nacional Hotel",
+      "clienteDoc": "—",
+      "clienteTel": "(35) 99937 2003",
+      "clienteEnd": "",
+      "data": "2026-08-07",
+      "vencimento": "2026-08-07",
+      "pagamento": "pix",
+      "itens": [
+        {
+          "nome": "Pão australiano VEG",
+          "qtd": 3,
+          "preco": 38
+        },
+        {
+          "nome": "Pão de forma VEG",
+          "qtd": 3,
+          "preco": 36
+        },
+        {
+          "nome": "Pão francês (6 un)",
+          "qtd": 20,
+          "preco": 3.8
+        },
+        {
+          "nome": "Bolo de chocolate VEG",
+          "qtd": 4,
+          "preco": 45
+        },
+        {
+          "nome": "Bolo de laranja VEG",
+          "qtd": 4,
+          "preco": 45
+        },
+        {
+          "nome": "Bolo de banana VEG",
+          "qtd": 4,
+          "preco": 38
+        },
+        {
+          "nome": "Bolo de fubá VEG",
+          "qtd": 4,
+          "preco": 45
+        }
+      ],
+      "frete": 0,
+      "subtotal": 990,
+      "total": 990,
       "dataEmissao": "2026-08-07",
       "status": "emitida"
     }
