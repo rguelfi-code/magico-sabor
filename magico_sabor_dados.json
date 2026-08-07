@@ -9538,13 +9538,13 @@
           "preco": 17
         },
         {
-          "nome": "Bolo de chocolate VEG",
-          "preco": 45,
+          "nome": "Torta de maçã & choc veg ZERO",
+          "preco": 13,
           "qtd": 10
         }
       ],
-      "subtotal": 733,
-      "total": 733,
+      "subtotal": 413,
+      "total": 413,
       "status": "aberto",
       "dataRegistro": "2026-08-07"
     }
