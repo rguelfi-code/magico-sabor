@@ -8528,8 +8528,8 @@
       "status": "entregue",
       "dataRegistro": "2026-07-22",
       "entregue": true,
-      "recebido": false,
-      "dataRecebimento": null
+      "recebido": true,
+      "dataRecebimento": "2026-08-10"
     },
     {
       "id": 1784756921217,
