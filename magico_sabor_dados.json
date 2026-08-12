@@ -9638,7 +9638,9 @@
       "total": 98,
       "status": "entregue",
       "dataRegistro": "2026-08-12",
-      "entregue": false
+      "entregue": false,
+      "recebido": false,
+      "dataRecebimento": null
     }
   ],
   "precificados": [
@@ -20253,35 +20255,6 @@
       "enviada": false
     },
     {
-      "id": 1786530730172,
-      "numero": "FAT-0155",
-      "encId": 1786530692500,
-      "clienteNome": "Monreale - D.C. Turismo Ltda.",
-      "clienteDoc": "01.204.495/0001-33",
-      "clienteTel": "",
-      "clienteEnd": "Av. Leonor Furlaneto Delgado, 3033",
-      "data": "2026-08-12",
-      "vencimento": "2026-08-12",
-      "pagamento": "pix",
-      "itens": [
-        {
-          "nome": "Bolo de banana VEG",
-          "qtd": 1,
-          "preco": 38
-        },
-        {
-          "nome": "Bolo de cenoura C/cob",
-          "qtd": 1,
-          "preco": 60
-        }
-      ],
-      "frete": 0,
-      "subtotal": 98,
-      "total": 98,
-      "dataEmissao": "2026-08-12",
-      "status": "emitida"
-    },
-    {
       "id": 1786530801210,
       "numero": "FAT-0156",
       "encId": 1786478854389,
@@ -20323,7 +20296,8 @@
       "subtotal": 206,
       "total": 206,
       "dataEmissao": "2026-08-12",
-      "status": "emitida"
+      "status": "emitida",
+      "enviada": false
     }
   ],
   "_exportSeq": 49,
