@@ -9632,10 +9632,20 @@
           "nome": "Bolo de cenoura C/cob",
           "qtd": 1,
           "preco": 60
+        },
+        {
+          "nome": "Pão fatiado abóbora",
+          "preco": 36,
+          "qtd": 1
+        },
+        {
+          "nome": "Pão fatiado multigrãos",
+          "preco": 36,
+          "qtd": 1
         }
       ],
-      "subtotal": 98,
-      "total": 98,
+      "subtotal": 170,
+      "total": 170,
       "status": "entregue",
       "dataRegistro": "2026-08-12",
       "entregue": false,
