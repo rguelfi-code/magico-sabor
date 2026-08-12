@@ -9557,7 +9557,7 @@
       "total": 208.79999999999998,
       "status": "entregue",
       "dataRegistro": "2026-08-11",
-      "entregue": false,
+      "entregue": true,
       "recebido": false,
       "dataRecebimento": null
     },
@@ -9648,7 +9648,7 @@
       "total": 170,
       "status": "entregue",
       "dataRegistro": "2026-08-12",
-      "entregue": false,
+      "entregue": true,
       "recebido": false,
       "dataRecebimento": null
     }
@@ -20346,7 +20346,8 @@
       "subtotal": 170,
       "total": 170,
       "dataEmissao": "2026-08-12",
-      "status": "emitida"
+      "status": "emitida",
+      "enviada": false
     }
   ],
   "_exportSeq": 49,
