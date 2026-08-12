@@ -20308,6 +20308,45 @@
       "dataEmissao": "2026-08-12",
       "status": "emitida",
       "enviada": false
+    },
+    {
+      "id": 1786533787072,
+      "numero": "FAT-0157",
+      "encId": 1786530692500,
+      "clienteNome": "Monreale - D.C. Turismo Ltda.",
+      "clienteDoc": "01.204.495/0001-33",
+      "clienteTel": "",
+      "clienteEnd": "Av. Leonor Furlaneto Delgado, 3033",
+      "data": "2026-08-12",
+      "vencimento": "2026-08-12",
+      "pagamento": "pix",
+      "itens": [
+        {
+          "nome": "Bolo de banana VEG",
+          "qtd": 1,
+          "preco": 38
+        },
+        {
+          "nome": "Bolo de cenoura C/cob",
+          "qtd": 1,
+          "preco": 60
+        },
+        {
+          "nome": "Pão fatiado abóbora",
+          "preco": 36,
+          "qtd": 1
+        },
+        {
+          "nome": "Pão fatiado multigrãos",
+          "preco": 36,
+          "qtd": 1
+        }
+      ],
+      "frete": 0,
+      "subtotal": 170,
+      "total": 170,
+      "dataEmissao": "2026-08-12",
+      "status": "emitida"
     }
   ],
   "_exportSeq": 49,
