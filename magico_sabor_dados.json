@@ -20232,7 +20232,7 @@
       "total": 990,
       "dataEmissao": "2026-08-07",
       "status": "emitida",
-      "enviada": false
+      "enviada": true
     },
     {
       "id": 1786462659037,
