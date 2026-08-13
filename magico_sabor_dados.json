@@ -9525,8 +9525,8 @@
       "status": "entregue",
       "dataRegistro": "2026-08-07",
       "entregue": true,
-      "recebido": false,
-      "dataRecebimento": null
+      "recebido": true,
+      "dataRecebimento": "2026-08-13"
     },
     {
       "id": 1786462215711,
