@@ -1858,14 +1858,14 @@
       "nome": "agar agar",
       "unidade": "kg",
       "estoque": 0,
-      "custo": 800,
+      "custo": 1900,
       "minimo": 0,
       "fornecedor": "",
       "sg": true,
       "sl": true,
       "veg": true,
       "dataCadastro": "2026-04-05",
-      "dataAtualizacao": null
+      "dataAtualizacao": "2026-08-14"
     },
     {
       "id": 1775418461007,
