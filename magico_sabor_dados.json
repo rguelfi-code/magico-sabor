@@ -2208,14 +2208,14 @@
       "nome": "damasco",
       "unidade": "kg",
       "estoque": 0,
-      "custo": 150,
+      "custo": 180,
       "minimo": 0,
       "fornecedor": "",
       "sg": false,
       "sl": false,
       "veg": false,
       "dataCadastro": "2026-04-05",
-      "dataAtualizacao": null
+      "dataAtualizacao": "2026-08-14"
     },
     {
       "id": 1775421297338,
