@@ -2194,14 +2194,14 @@
       "nome": "Cremor de tártaro",
       "unidade": "kg",
       "estoque": 0,
-      "custo": 255,
+      "custo": 500,
       "minimo": 0,
       "fornecedor": "",
       "sg": true,
       "sl": true,
       "veg": true,
       "dataCadastro": "2026-04-05",
-      "dataAtualizacao": "2026-04-06"
+      "dataAtualizacao": "2026-08-14"
     },
     {
       "id": 1775419539113,
