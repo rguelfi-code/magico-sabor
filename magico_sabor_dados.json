@@ -2082,14 +2082,14 @@
       "nome": "cenoura,",
       "unidade": "kg",
       "estoque": 0,
-      "custo": 5,
+      "custo": 7,
       "minimo": 0,
       "fornecedor": "",
       "sg": true,
       "sl": true,
       "veg": true,
       "dataCadastro": "2026-04-05",
-      "dataAtualizacao": null
+      "dataAtualizacao": "2026-08-14"
     },
     {
       "id": 1775419192099,
