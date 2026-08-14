@@ -2124,14 +2124,14 @@
       "nome": "Choc. Branco Vegano c/ Demerara",
       "unidade": "kg",
       "estoque": 0,
-      "custo": 200,
+      "custo": 250,
       "minimo": 0,
       "fornecedor": "",
       "sg": true,
       "sl": true,
       "veg": true,
       "dataCadastro": "2026-04-05",
-      "dataAtualizacao": null
+      "dataAtualizacao": "2026-08-14"
     },
     {
       "id": 1775419365910,
