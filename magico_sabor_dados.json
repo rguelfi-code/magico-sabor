@@ -2292,14 +2292,14 @@
       "nome": "Farinha de arroz integral",
       "unidade": "kg",
       "estoque": 0,
-      "custo": 17,
+      "custo": 18,
       "minimo": 0,
       "fornecedor": "local",
       "sg": true,
       "sl": true,
       "veg": true,
       "dataCadastro": "2026-04-21",
-      "dataAtualizacao": "2026-05-30"
+      "dataAtualizacao": "2026-08-14"
     },
     {
       "id": 1775418700307,
