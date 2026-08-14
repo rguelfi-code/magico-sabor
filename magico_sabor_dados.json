@@ -2320,14 +2320,14 @@
       "nome": "Farinha de coco",
       "unidade": "kg",
       "estoque": 0,
-      "custo": 30,
+      "custo": 40,
       "minimo": 0,
       "fornecedor": "",
       "sg": true,
       "sl": true,
       "veg": true,
       "dataCadastro": "2026-04-05",
-      "dataAtualizacao": "2026-05-30"
+      "dataAtualizacao": "2026-08-14"
     },
     {
       "id": 1775422565858,
