@@ -9745,6 +9745,36 @@
       "entregue": false,
       "recebido": false,
       "dataRecebimento": null
+    },
+    {
+      "id": 1786804152528,
+      "clienteId": 1775768615785,
+      "clienteNome": "Palace Hotel",
+      "clienteTel": "",
+      "clienteDoc": "20.971.621/0003-91",
+      "data": "2026-08-15",
+      "vencimento": "2026-08-15",
+      "tipo": "entrega",
+      "endereco": "Praça Dr. Pedro Sanches, SN",
+      "frete": 0,
+      "pagamento": "pix",
+      "obs": "",
+      "itens": [
+        {
+          "nome": "Pão fatiado milho",
+          "qtd": 1,
+          "preco": 36
+        },
+        {
+          "nome": "Bolo de laranja ZERO",
+          "qtd": 1,
+          "preco": 55
+        }
+      ],
+      "subtotal": 91,
+      "total": 91,
+      "status": "aberto",
+      "dataRegistro": "2026-08-15"
     }
   ],
   "precificados": [
