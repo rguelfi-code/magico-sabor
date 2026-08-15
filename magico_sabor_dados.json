@@ -9758,7 +9758,7 @@
       "total": 91,
       "status": "entregue",
       "dataRegistro": "2026-08-15",
-      "entregue": false,
+      "entregue": true,
       "recebido": false,
       "dataRecebimento": null
     },
