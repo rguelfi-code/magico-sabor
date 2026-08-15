@@ -20776,7 +20776,7 @@
       "total": 76,
       "dataEmissao": "2026-08-15",
       "status": "emitida",
-      "enviada": false
+      "enviada": true
     }
   ],
   "_exportSeq": 49,
