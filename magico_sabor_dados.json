@@ -20281,7 +20281,7 @@
       "total": 81,
       "dataEmissao": "2026-08-03",
       "status": "emitida",
-      "enviada": false
+      "enviada": true
     },
     {
       "id": 1785871050298,
@@ -20611,7 +20611,7 @@
       "total": 112,
       "dataEmissao": "2026-08-13",
       "status": "emitida",
-      "enviada": false
+      "enviada": true
     },
     {
       "id": 1786659113619,
