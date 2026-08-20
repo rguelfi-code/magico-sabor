@@ -15390,12 +15390,12 @@
     {
       "prodId": "1775339336605",
       "nome": "Bolo caseiro de cenoura ZERO",
-      "preco": 40,
-      "precoSugerido": 45.58,
-      "custoUnit": 27.346666666666668,
-      "custoTotal": 54.693333333333335,
-      "lucro": 12.653333333333332,
-      "margem": "31.6",
+      "preco": 35,
+      "precoSugerido": 37.8,
+      "custoUnit": 22.679999999999996,
+      "custoTotal": 45.35999999999999,
+      "lucro": 12.320000000000004,
+      "margem": "35.2",
       "rendimento": 2,
       "rendimentoUn": "unidades",
       "qtdEmbalada": 1,
@@ -15460,11 +15460,6 @@
           "id": 1775501512897,
           "ingId": 1775422763534,
           "qtd": 0.015
-        },
-        {
-          "id": 1775501534009,
-          "ingId": 1775425337569,
-          "qtd": 0.08
         }
       ],
       "compsPrec": [],
