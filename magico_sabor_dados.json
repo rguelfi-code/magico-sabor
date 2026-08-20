@@ -2976,12 +2976,12 @@
       "nome": "Embalagem à vácuo",
       "tipo": "",
       "unidade": "un",
-      "custo": 0.5,
+      "custo": 0.55,
       "estoque": 0,
       "minimo": 0,
       "fornecedor": "ML",
       "dataCadastro": "2026-04-06",
-      "dataAtualizacao": "2026-04-06"
+      "dataAtualizacao": "2026-08-20"
     },
     {
       "id": 1775510049898,
