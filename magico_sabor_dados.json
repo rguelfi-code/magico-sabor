@@ -2586,7 +2586,7 @@
       "nome": "Leite de coco",
       "unidade": "kg",
       "estoque": 0,
-      "custo": 40,
+      "custo": 20,
       "minimo": 0,
       "fornecedor": "",
       "sg": true,
