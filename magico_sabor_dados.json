@@ -20397,7 +20397,7 @@
       "total": 562.6,
       "dataEmissao": "2026-08-03",
       "status": "emitida",
-      "enviada": false
+      "enviada": true
     },
     {
       "id": 1785795451481,
