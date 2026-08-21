@@ -9920,7 +9920,7 @@
       "total": 179,
       "status": "entregue",
       "dataRegistro": "2026-08-18",
-      "entregue": false,
+      "entregue": true,
       "recebido": false,
       "dataRecebimento": null
     },
@@ -9963,7 +9963,7 @@
       "total": 193,
       "status": "entregue",
       "dataRegistro": "2026-08-18",
-      "entregue": false,
+      "entregue": true,
       "recebido": false,
       "dataRecebimento": null
     }
