@@ -20552,7 +20552,7 @@
       "total": 401,
       "dataEmissao": "2026-08-07",
       "status": "emitida",
-      "enviada": false
+      "enviada": true
     },
     {
       "id": 1786143320397,
