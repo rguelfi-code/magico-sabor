@@ -20312,7 +20312,7 @@
       "total": 450,
       "dataEmissao": "2026-08-03",
       "status": "emitida",
-      "enviada": false
+      "enviada": true
     },
     {
       "id": 1785778810674,
