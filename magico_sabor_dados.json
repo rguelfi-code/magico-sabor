@@ -1942,14 +1942,14 @@
       "nome": "Banana",
       "unidade": "kg",
       "estoque": 0,
-      "custo": 8,
+      "custo": 20,
       "minimo": 0,
       "fornecedor": "",
       "sg": true,
       "sl": true,
       "veg": true,
       "dataCadastro": "2026-04-05",
-      "dataAtualizacao": "2026-08-14"
+      "dataAtualizacao": "2026-08-23"
     },
     {
       "id": 1775418766727,
