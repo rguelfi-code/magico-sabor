@@ -10083,7 +10083,9 @@
       "total": 76,
       "status": "entregue",
       "dataRegistro": "2026-08-23",
-      "entregue": true
+      "entregue": true,
+      "recebido": true,
+      "dataRecebimento": "2026-08-23"
     }
   ],
   "precificados": [
