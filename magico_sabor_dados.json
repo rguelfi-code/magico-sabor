@@ -10006,7 +10006,9 @@
       "total": 170,
       "status": "entregue",
       "dataRegistro": "2026-08-21",
-      "entregue": false
+      "entregue": false,
+      "recebido": false,
+      "dataRecebimento": null
     },
     {
       "id": 1787344262837,
@@ -10037,7 +10039,9 @@
       "total": 158,
       "status": "entregue",
       "dataRegistro": "2026-08-21",
-      "entregue": false
+      "entregue": false,
+      "recebido": false,
+      "dataRecebimento": null
     }
   ],
   "precificados": [
@@ -12749,109 +12753,6 @@
       ]
     },
     {
-      "prodId": "1775337460811",
-      "nome": "Bolo de chocolate ZERO",
-      "preco": 55,
-      "precoSugerido": 78.38,
-      "custoUnit": 47.029999999999994,
-      "custoTotal": 94.05999999999999,
-      "lucro": 7.970000000000006,
-      "margem": "14.5",
-      "rendimento": 2,
-      "rendimentoUn": "porções",
-      "qtdEmbalada": 1,
-      "excecao": false,
-      "ingsPrec": [
-        {
-          "id": 1775502022065,
-          "ingId": 1775425512902,
-          "qtd": 6
-        },
-        {
-          "id": 1775502036766,
-          "ingId": 1775425432436,
-          "qtd": 0.24
-        },
-        {
-          "id": 1775502062244,
-          "ingId": 1775426158434,
-          "qtd": 0.32
-        },
-        {
-          "id": 1775502075998,
-          "ingId": 1775423430912,
-          "qtd": 0.25
-        },
-        {
-          "id": 1775502103784,
-          "ingId": 1775423318836,
-          "qtd": 0.12
-        },
-        {
-          "id": 1775502201705,
-          "ingId": 1775422236822,
-          "qtd": 0.01
-        },
-        {
-          "id": 1775502224819,
-          "ingId": 1775426252613,
-          "qtd": 0.03
-        },
-        {
-          "id": 1775502247094,
-          "ingId": 1775418700307,
-          "qtd": 0.12
-        },
-        {
-          "id": 1775502274753,
-          "ingId": 1775425647375,
-          "qtd": 0.12
-        },
-        {
-          "id": 1775502299653,
-          "ingId": 1775422603418,
-          "qtd": 0.068
-        },
-        {
-          "id": 1775502324304,
-          "ingId": 1775418835786,
-          "qtd": 0.064
-        },
-        {
-          "id": 1775502340085,
-          "ingId": 1775422763534,
-          "qtd": 0.03
-        }
-      ],
-      "compsPrec": [],
-      "embsPrec": [
-        {
-          "id": 1775570068025,
-          "ingId": 1775519983107,
-          "qtd": 4,
-          "qtdEmb": 1
-        },
-        {
-          "id": 1775570089337,
-          "ingId": 1775519603215,
-          "qtd": 2,
-          "qtdEmb": 1
-        },
-        {
-          "id": 1775570094887,
-          "ingId": 1775510049898,
-          "qtd": 2,
-          "qtdEmb": 1
-        },
-        {
-          "id": 1775570105628,
-          "ingId": 1775509791820,
-          "qtd": 6,
-          "qtdEmb": 1
-        }
-      ]
-    },
-    {
       "prodId": "1775413645611",
       "nome": "Trufa de tâmara ( 6 un) ZERO",
       "preco": 3.5,
@@ -15548,6 +15449,102 @@
         },
         {
           "id": 1787244959985,
+          "ingId": 1778116016052,
+          "qtd": 1
+        }
+      ]
+    },
+    {
+      "prodId": "1775337460811",
+      "nome": "Bolo de chocolate ZERO",
+      "preco": 55,
+      "precoSugerido": 76.27,
+      "custoUnit": 45.76333333333333,
+      "custoTotal": 91.52666666666666,
+      "lucro": 9.236666666666672,
+      "margem": "16.8",
+      "rendimento": 2,
+      "rendimentoUn": "porções",
+      "qtdEmbalada": 1,
+      "excecao": false,
+      "ingsPrec": [
+        {
+          "id": 1775502022065,
+          "ingId": 1775425512902,
+          "qtd": 0.3
+        },
+        {
+          "id": 1775502036766,
+          "ingId": 1775425432436,
+          "qtd": 0.24
+        },
+        {
+          "id": 1775502062244,
+          "ingId": 1775426158434,
+          "qtd": 0.32
+        },
+        {
+          "id": 1775502075998,
+          "ingId": 1775423430912,
+          "qtd": 0.25
+        },
+        {
+          "id": 1775502103784,
+          "ingId": 1775423318836,
+          "qtd": 0.12
+        },
+        {
+          "id": 1775502201705,
+          "ingId": 1775422236822,
+          "qtd": 0.01
+        },
+        {
+          "id": 1775502224819,
+          "ingId": 1775426252613,
+          "qtd": 0.03
+        },
+        {
+          "id": 1775502247094,
+          "ingId": 1775418700307,
+          "qtd": 0.12
+        },
+        {
+          "id": 1775502274753,
+          "ingId": 1775425647375,
+          "qtd": 0.12
+        },
+        {
+          "id": 1775502299653,
+          "ingId": 1775422603418,
+          "qtd": 0.068
+        },
+        {
+          "id": 1775502324304,
+          "ingId": 1775418835786,
+          "qtd": 0.064
+        },
+        {
+          "id": 1775502340085,
+          "ingId": 1775422763534,
+          "qtd": 0.03
+        }
+      ],
+      "compsPrec": [],
+      "embsPrec": [
+        {
+          "id": 1775570089337,
+          "ingId": 1775519603215,
+          "qtd": 1,
+          "qtdEmb": 1
+        },
+        {
+          "id": 1775570094887,
+          "ingId": 1775510049898,
+          "qtd": 2,
+          "qtdEmb": 1
+        },
+        {
+          "id": 1787499294601,
           "ingId": 1778116016052,
           "qtd": 1
         }
@@ -21043,7 +21040,8 @@
       "subtotal": 170,
       "total": 170,
       "dataEmissao": "2026-08-21",
-      "status": "emitida"
+      "status": "emitida",
+      "enviada": false
     },
     {
       "id": 1787345450755,
@@ -21072,7 +21070,8 @@
       "subtotal": 158,
       "total": 158,
       "dataEmissao": "2026-08-21",
-      "status": "emitida"
+      "status": "emitida",
+      "enviada": false
     }
   ],
   "_exportSeq": 49,
