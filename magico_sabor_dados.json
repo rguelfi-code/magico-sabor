@@ -15464,12 +15464,12 @@
     {
       "prodId": "1775337425494",
       "nome": "Bolo de chocolate VEG",
-      "preco": 45,
-      "precoSugerido": 56.32,
-      "custoUnit": 33.79388888888889,
-      "custoTotal": 101.38166666666666,
-      "lucro": 11.206111111111113,
-      "margem": "24.9",
+      "preco": 40,
+      "precoSugerido": 40.07,
+      "custoUnit": 24.043888888888887,
+      "custoTotal": 72.13166666666666,
+      "lucro": 15.956111111111113,
+      "margem": "39.9",
       "rendimento": 3,
       "rendimentoUn": "porções",
       "qtdEmbalada": 1,
@@ -15529,28 +15529,21 @@
       "compsPrec": [],
       "embsPrec": [
         {
-          "id": 1775521600005,
-          "ingId": 1775519983107,
-          "qtd": 6,
-          "qtdEmb": 1
-        },
-        {
           "id": 1775521614128,
           "ingId": 1775519603215,
-          "qtd": 3,
+          "qtd": 1,
           "qtdEmb": 1
         },
         {
           "id": 1775521619895,
           "ingId": 1775510049898,
-          "qtd": 3,
+          "qtd": 2,
           "qtdEmb": 1
         },
         {
-          "id": 1775521630065,
-          "ingId": 1775509791820,
-          "qtd": 9,
-          "qtdEmb": 1
+          "id": 1787499893639,
+          "ingId": 1778116016052,
+          "qtd": 1
         }
       ]
     }
