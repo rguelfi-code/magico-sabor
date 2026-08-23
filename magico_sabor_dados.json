@@ -1942,7 +1942,7 @@
       "nome": "Banana",
       "unidade": "kg",
       "estoque": 0,
-      "custo": 20,
+      "custo": 8,
       "minimo": 0,
       "fornecedor": "",
       "sg": true,
