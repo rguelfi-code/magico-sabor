@@ -15430,12 +15430,12 @@
     {
       "prodId": "1775338742147",
       "nome": "Bolo indiano VEG",
-      "preco": 65,
-      "precoSugerido": 67.51,
-      "custoUnit": 40.508809523809525,
-      "custoTotal": 40.508809523809525,
-      "lucro": 24.491190476190475,
-      "margem": "37.7",
+      "preco": 50,
+      "precoSugerido": 45.25,
+      "custoUnit": 27.151666666666674,
+      "custoTotal": 27.151666666666674,
+      "lucro": 22.848333333333326,
+      "margem": "45.7",
       "rendimento": 1,
       "rendimentoUn": "porções",
       "qtdEmbalada": 1,
@@ -15496,7 +15496,7 @@
         {
           "id": 1781138197550,
           "compId": 1781138624063,
-          "qtd": 0.15
+          "qtd": 0
         }
       ],
       "embsPrec": [
