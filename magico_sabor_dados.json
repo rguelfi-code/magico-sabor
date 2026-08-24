@@ -15679,11 +15679,11 @@
     {
       "prodId": "1777245071751",
       "nome": "Bolo de chocolate - C/cob",
-      "preco": 64.99,
+      "preco": 65,
       "precoSugerido": 71.24,
       "custoUnit": 42.7447602581835,
       "custoTotal": 128.23428077455048,
-      "lucro": 22.245239741816498,
+      "lucro": 22.255239741816503,
       "margem": "34.2",
       "rendimento": 3,
       "rendimentoUn": "unidades",
