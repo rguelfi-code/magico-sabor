@@ -10135,10 +10135,15 @@
           "nome": "Pão fatiado abóbora",
           "qtd": 1,
           "preco": 36
+        },
+        {
+          "nome": "Torta de maçã & choc veg ZERO",
+          "preco": 13,
+          "qtd": 10
         }
       ],
-      "subtotal": 352,
-      "total": 352,
+      "subtotal": 482,
+      "total": 482,
       "status": "entregue",
       "dataRegistro": "2026-08-24",
       "entregue": false,
