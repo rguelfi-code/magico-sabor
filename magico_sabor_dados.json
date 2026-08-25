@@ -21442,30 +21442,6 @@
       "dataEmissao": "2026-08-24",
       "status": "emitida",
       "enviada": false
-    },
-    {
-      "id": 1787688123194,
-      "numero": "FAT-0175",
-      "encId": 1787687083865,
-      "clienteNome": "Aira",
-      "clienteDoc": "—",
-      "clienteTel": "(19) 99240 9965",
-      "clienteEnd": "São João da Boa Vista, 272 Jdm Estados",
-      "data": "2026-08-25",
-      "vencimento": "2026-08-25",
-      "pagamento": "pix",
-      "itens": [
-        {
-          "nome": "Bolo caseiro de banana VEG",
-          "qtd": 1,
-          "preco": 30
-        }
-      ],
-      "frete": 0,
-      "subtotal": 30,
-      "total": 30,
-      "dataEmissao": "2026-08-25",
-      "status": "emitida"
     }
   ],
   "_movEstoque": [
