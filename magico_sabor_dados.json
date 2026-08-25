@@ -179,7 +179,7 @@
       "sd": false,
       "dataCadastro": "2026-04-27",
       "dataAtualizacao": "2026-04-27",
-      "estoque": 3
+      "estoque": 8
     },
     {
       "id": 1775403101020,
@@ -21435,6 +21435,15 @@
       "ref": "Ajuste (Contagem física)",
       "obs": "Saldo anterior: 4 un → 3 un",
       "clienteNome": ""
+    },
+    {
+      "tipo": "entrada",
+      "data": "2026-08-25",
+      "prodId": 1777298281878,
+      "prodNome": "Bolo caseiro de chocolate VEG -  C/cob",
+      "qtd": 5,
+      "obs": "",
+      "ref": "Produção"
     }
   ],
   "_exportSeq": 49,
