@@ -2814,18 +2814,25 @@ function excluirFatura(id){
   // Reverter status da encomenda
   const enc=dados.encomendas.find(e=>e.id===f.encId);
   if(enc){enc.status='entregue';enc.entregue=true;}
-  // Estornar estoque — sempre tenta, independente do status
+  // Estornar estoque
   const itensEstorno=f.itens||(enc&&enc.itens)||[];
+  console.log('Estorno fatura:', f.numero);
+  console.log('Itens para estornar:', JSON.stringify(itensEstorno));
+  console.log('Produtos no sistema:', dados.produtos.map(p=>p.nome));
   if(itensEstorno.length){
     const dataEstorno=new Date().toISOString().split('T')[0];
     itensEstorno.forEach(it=>{
       const prod=dados.produtos.find(p=>p.nome===it.nome);
+      console.log('Item:', it.nome, '-> Produto encontrado:', prod?prod.nome:'NÃO ENCONTRADO');
       if(!prod)return;
       const qtd=it.qtd||1;
       prod.estoque=(prod.estoque||0)+qtd;
+      console.log('Novo estoque de', prod.nome, ':', prod.estoque);
       if(!dados._movEstoque)dados._movEstoque=[];
       dados._movEstoque.push({tipo:'entrada',subtipo:'estorno',data:dataEstorno,prodId:prod.id,prodNome:prod.nome,qtd,ref:`Estorno ${f.numero}`,obs:'Cancelamento de fatura',clienteNome:f.clienteNome});
     });
+  } else {
+    console.log('NENHUM ITEM para estornar!');
   }
   dados.faturas=dados.faturas.filter(f=>f.id!==id);
   _re();mostrarLembreteSalvar();agendarSalvarGitHub();
