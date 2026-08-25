@@ -2573,11 +2573,25 @@ function acaoConfirmarEntrega(id){
 }
 // Etapa 3←: Cancelar Fatura (volta para A Faturar)
 function acaoExcluirFatura(fatId,encId){
-  if(!confirm('⚠️ Cancelar esta fatura? A encomenda voltará para "A Faturar".'))return;
-  dados.faturas=dados.faturas.filter(f=>f.id!==fatId);
+  if(!confirm('⚠️ Cancelar esta fatura? A encomenda voltará para "A Faturar" e o estoque será estornado.'))return;
+  const f=dados.faturas.find(f=>f.id===fatId);
   const enc=dados.encomendas.find(e=>e.id===encId);
+  // Estornar estoque
+  const itensEstorno=f?.itens||(enc?.itens)||[];
+  if(itensEstorno.length){
+    const dataEstorno=new Date().toISOString().split('T')[0];
+    itensEstorno.forEach(it=>{
+      const prod=dados.produtos.find(p=>p.nome===it.nome);
+      if(!prod)return;
+      const qtd=it.qtd||1;
+      prod.estoque=(prod.estoque||0)+qtd;
+      if(!dados._movEstoque)dados._movEstoque=[];
+      dados._movEstoque.push({tipo:'entrada',subtipo:'estorno',data:dataEstorno,prodId:prod.id,prodNome:prod.nome,qtd,ref:`Estorno ${f?.numero||'s/n'}`,obs:'Cancelamento de fatura',clienteNome:enc?.clienteNome||''});
+    });
+  }
+  dados.faturas=dados.faturas.filter(f=>f.id!==fatId);
   if(enc){enc.entregue=false;}
-  _re();
+  _re();mostrarLembreteSalvar();agendarSalvarGitHub();
 }
 // Etapa 4←: Reverter Entrega (volta para A Entregar)
 function acaoReverterEntrega(id){
