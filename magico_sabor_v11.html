@@ -518,6 +518,8 @@
           <label class="check-label"><input type="checkbox" id="pSD"> 🍬 Sem Açúcar</label>
         </div>
       </div>
+      <div class="form-group"><label>Estoque Atual (un)</label><input type="number" id="pEstoque" placeholder="0" min="0" step="1"></div>
+      <div class="form-group"><label>Estoque Mínimo (un)</label><input type="number" id="pMinimo" placeholder="0" min="0" step="1"></div>
     </div>
     <div class="form-actions"><button class="btn-cancelar" onclick="toggleFormCad()">✕ Cancelar</button><button class="btn-salvar" onclick="salvarProduto()">💾 Salvar Produto</button></div>
   </div>
@@ -724,6 +726,7 @@
     <button class="inner-tab active" onclick="setTabVenda(this,'encomendas')">📋 Encomendas</button>
     <button class="inner-tab" onclick="setTabVenda(this,'clientes')">👥 Clientes</button>
     <button class="inner-tab" onclick="setTabVenda(this,'faturas')">🧾 Faturas Emitidas</button>
+    <button class="inner-tab" onclick="setTabVenda(this,'estoque')">📦 Estoque</button>
   </div>
 
   <!-- FORM NOVA ENCOMENDA -->
@@ -814,6 +817,75 @@
     <div class="search-bar"><input type="text" id="searchFaturas" placeholder="🔍 Buscar fatura..." oninput="renderFaturas()"></div>
     <div id="listaFaturas"></div>
   </div>
+
+  <!-- SEÇÃO ESTOQUE -->
+  <div id="secaoEstoque" style="display:none;">
+    <!-- Saldo atual de estoque -->
+    <div id="alertasEstoque"></div>
+    <div style="margin-bottom:16px;">
+      <h3 style="font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--verde-escuro);margin-bottom:12px;">📊 Saldo Atual</h3>
+      <div id="tabelaSaldoEstoque"></div>
+    </div>
+    <!-- Registrar ajuste -->
+    <div style="background:#fff8f0;border:1.5px solid var(--dourado);border-radius:12px;padding:20px;margin-bottom:16px;">
+      <h3 style="font-family:'Cormorant Garamond',serif;font-size:18px;color:var(--marrom);margin-bottom:14px;">⚖️ Ajuste de Estoque</h3>
+      <div class="form-grid">
+        <div class="form-group">
+          <label>Produto</label>
+          <select id="ajProduto" onchange="renderSaldoAtual()" style="border:2px solid var(--dourado);border-radius:8px;padding:8px 12px;font-family:'Jost',sans-serif;font-size:14px;width:100%;">
+            <option value="">Selecione o produto...</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Quantidade Real (un)</label>
+          <input type="number" id="ajQtd" min="0" step="1" placeholder="Ex: 3" style="border:2px solid var(--dourado);border-radius:8px;padding:8px 12px;font-family:'Jost',sans-serif;font-size:14px;width:100%;">
+        </div>
+        <div class="form-group">
+          <label>Data do Ajuste</label>
+          <input type="date" id="ajData" style="border:2px solid var(--dourado);border-radius:8px;padding:8px 12px;font-family:'Jost',sans-serif;font-size:14px;width:100%;">
+        </div>
+        <div class="form-group">
+          <label>Motivo</label>
+          <select id="ajMotivo" style="border:2px solid var(--dourado);border-radius:8px;padding:8px 12px;font-family:'Jost',sans-serif;font-size:14px;width:100%;">
+            <option value="Contagem física">Contagem física</option>
+            <option value="Perda">Perda</option>
+            <option value="Quebra">Quebra</option>
+            <option value="Estoque inicial">Estoque inicial</option>
+            <option value="Outro">Outro</option>
+          </select>
+        </div>
+        <div class="form-group full">
+          <label>Observação (opcional)</label>
+          <input type="text" id="ajObs" placeholder="Ex: Contagem realizada em 10/06" style="border:2px solid var(--dourado);border-radius:8px;padding:8px 12px;font-family:'Jost',sans-serif;font-size:14px;width:100%;">
+        </div>
+      </div>
+      <div id="ajSaldoAtual" style="font-size:13px;color:var(--texto-ter);margin-bottom:10px;"></div>
+      <button class="btn-salvar" onclick="registrarAjuste()" style="background:var(--dourado);">⚖️ Confirmar Ajuste</button>
+    </div>
+      <h3 style="font-family:'Cormorant Garamond',serif;font-size:18px;color:var(--verde-escuro);margin-bottom:14px;">➕ Registrar Entrada por Produção</h3>
+      <div class="form-grid">
+        <div class="form-group">
+          <label>Produto</label>
+          <select id="estProduto" style="border:2px solid var(--verde-claro);border-radius:8px;padding:8px 12px;font-family:'Jost',sans-serif;font-size:14px;width:100%;">
+            <option value="">Selecione o produto...</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Quantidade Produzida (un)</label>
+          <input type="number" id="estQtd" min="1" step="1" placeholder="Ex: 5" style="border:2px solid var(--verde-claro);border-radius:8px;padding:8px 12px;font-family:'Jost',sans-serif;font-size:14px;width:100%;">
+        </div>
+        <div class="form-group">
+          <label>Data de Produção</label>
+          <input type="date" id="estData" style="border:2px solid var(--verde-claro);border-radius:8px;padding:8px 12px;font-family:'Jost',sans-serif;font-size:14px;width:100%;">
+        </div>
+        <div class="form-group">
+          <label>Observação (opcional)</label>
+          <input type="text" id="estObs" placeholder="Ex: Lote especial, data validade..." style="border:2px solid var(--verde-claro);border-radius:8px;padding:8px 12px;font-family:'Jost',sans-serif;font-size:14px;width:100%;">
+        </div>
+      </div>
+      <button class="btn-salvar" onclick="registrarProducao()" style="margin-top:4px;">✅ Registrar Entrada</button>
+    </div>
+  </div>
 </div>
 
 <!-- ========== CONTAS A RECEBER ========== -->
@@ -885,6 +957,7 @@
     <button class="rel-tab" onclick="setRelTab(this,'ingredientes')">🌿 Ingredientes</button>
     <button class="rel-tab" onclick="setRelTab(this,'componentes-rel')">🧪 Componentes</button>
     <button class="rel-tab" onclick="setRelTab(this,'romaneio')">📄 Romaneio</button>
+    <button class="rel-tab" onclick="setRelTab(this,'estoque-rel')">📦 Estoque</button>
   </div>
 
   <!-- VISÃO GERAL -->
@@ -1055,6 +1128,23 @@
 
   <!-- FATURAS RECEBIDAS -->
 
+  <!-- ESTOQUE -->
+  <div class="rel-section" id="rel-estoque-rel">
+    <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-bottom:12px;">
+      <div class="secao-titulo" style="margin:0;">📦 Movimentação de Estoque</div>
+      <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;">
+        <button class="filtro-btn" onclick="setEstoqueRelPreset('mes')" style="font-size:12px;padding:5px 10px;">Este mês</button>
+        <button class="filtro-btn" onclick="setEstoqueRelPreset('trim')" style="font-size:12px;padding:5px 10px;">Trimestre</button>
+        <button class="filtro-btn" onclick="setEstoqueRelPreset('ano')" style="font-size:12px;padding:5px 10px;">Este ano</button>
+        <input type="date" id="estoqueRelIni" onchange="renderRelEstoque()" style="border:2px solid var(--verde-claro);border-radius:8px;padding:5px 10px;font-family:'Jost',sans-serif;font-size:13px;">
+        <span style="font-size:12px;color:var(--texto-ter);">até</span>
+        <input type="date" id="estoqueRelFim" onchange="renderRelEstoque()" style="border:2px solid var(--verde-claro);border-radius:8px;padding:5px 10px;font-family:'Jost',sans-serif;font-size:13px;">
+        <button onclick="document.getElementById('estoqueRelIni').value='';document.getElementById('estoqueRelFim').value='';renderRelEstoque();" style="padding:5px 10px;background:#eee;border:none;border-radius:8px;cursor:pointer;font-family:'Jost',sans-serif;font-size:12px;">✕ Todos</button>
+      </div>
+    </div>
+    <div id="tbEstoqueRel"></div>
+  </div>
+
 </div><!-- fim pg-relatorios -->
 
 <!-- MODAIS -->
@@ -1125,7 +1215,7 @@
 </div>
 
 <script>
-var dados = {produtos:[], ingredientes:[], embalagens:[], componentes:[], clientes:[], encomendas:[], precificados:[], faturas:[]};
+var dados = {produtos:[], ingredientes:[], embalagens:[], componentes:[], clientes:[], encomendas:[], precificados:[], faturas:[], _movEstoque:[]};
 var crSaldosIni = {};
 var crParciais = {};
 
@@ -1177,6 +1267,7 @@ async function carregarDoGitHub(){
     if(imp._exportSeq)dados._exportSeq=imp._exportSeq;
     if(imp._crSaldosIni){crSaldosIni={};Object.entries(imp._crSaldosIni).forEach(function(kv){crSaldosIni[Number(kv[0])]=kv[1];});}
     if(imp._historico)dados._historico=imp._historico;
+    if(imp._movEstoque)dados._movEstoque=imp._movEstoque;
     if(imp._crParciais){crParciais={};Object.entries(imp._crParciais).forEach(function(kv){crParciais[Number(kv[0])]=kv[1];});}
     try{if(typeof migrarDadosInPlace==='function')migrarDadosInPlace();}catch(e){}
     try{if(typeof ordenarAlfa==='function')['produtos','ingredientes','embalagens','componentes','clientes'].forEach(ordenarAlfa);}catch(e){}
@@ -1782,8 +1873,8 @@ function salvarProduto(){
   const nome=document.getElementById('pNome').value.trim();
   if(!nome){alert('Informe o nome do produto!');return;}
   if(checarDuplicado('produtos',nome,null)){if(!confirm(`⚠️ Já existe um produto chamado "${nome}". Deseja cadastrar mesmo assim?`))return;}
-  dados.produtos.push({id:Date.now(),nome,categoria:document.getElementById('pCategoria').value,medida:medidaAtiva,peso:parseFloat(document.getElementById('pPeso').value)||null,pesoUn:document.getElementById('pPesoUn').value,qtd:parseInt(document.getElementById('pQtd').value)||null,qtdUn:document.getElementById('pQtdUn').value,tempo:document.getElementById('pTempo').value,desc:document.getElementById('pDesc').value,sg:document.getElementById('pSG').checked,sl:document.getElementById('pSL').checked,veg:document.getElementById('pVeg').checked,sd:document.getElementById('pSD').checked,dataCadastro:new Date().toISOString().split('T')[0]});
-  ordenarAlfa('produtos');fecharFormCad();renderListaCad();mostrarLembreteSalvar();agendarAutoSave();agendarSalvarGitHub();
+  dados.produtos.push({id:Date.now(),nome,categoria:document.getElementById('pCategoria').value,medida:medidaAtiva,peso:parseFloat(document.getElementById('pPeso').value)||null,pesoUn:document.getElementById('pPesoUn').value,qtd:parseInt(document.getElementById('pQtd').value)||null,qtdUn:document.getElementById('pQtdUn').value,tempo:document.getElementById('pTempo').value,desc:document.getElementById('pDesc').value,sg:document.getElementById('pSG').checked,sl:document.getElementById('pSL').checked,veg:document.getElementById('pVeg').checked,sd:document.getElementById('pSD').checked,estoque:parseInt(document.getElementById('pEstoque').value)||0,estoqueMin:parseInt(document.getElementById('pMinimo').value)||0,dataCadastro:new Date().toISOString().split('T')[0]});
+  ['pNome','pPeso','pQtd','pTempo','pDesc','pEstoque','pMinimo'].forEach(id=>document.getElementById(id).value='');document.getElementById('pCategoria').value='';['pSG','pSL','pVeg','pSD'].forEach(id=>document.getElementById(id).checked=false);
   ['pNome','pPeso','pQtd','pTempo','pDesc'].forEach(id=>document.getElementById(id).value='');document.getElementById('pCategoria').value='';['pSG','pSL','pVeg','pSD'].forEach(id=>document.getElementById(id).checked=false);
 }
 function salvarIngrediente(){
@@ -2318,6 +2409,8 @@ function setTabVenda(btn,aba){
   document.getElementById('secaoEncomendas').style.display=aba==='encomendas'?'block':'none';
   document.getElementById('secaoClientes').style.display=aba==='clientes'?'block':'none';
   document.getElementById('secaoFaturas').style.display=aba==='faturas'?'block':'none';
+  document.getElementById('secaoEstoque').style.display=aba==='estoque'?'block':'none';
+  if(aba==='estoque')renderEstoque();
   document.getElementById('vendaLabel').textContent=aba==='encomendas'?'Nova Encomenda':aba==='clientes'?'Novo Cliente':'';
   document.getElementById('vendaIcon').textContent=aba==='faturas'?'':' ＋';
   fecharFormVenda();
@@ -2621,6 +2714,20 @@ function emitirFaturaSimples(encId){
   const dataEmissao=new Date().toISOString().split('T')[0];
   const fatura={id:Date.now(),numero:numFatura,encId,clienteNome:enc.clienteNome,clienteDoc:enc.clienteDoc||c.doc||'—',clienteTel:enc.clienteTel,clienteEnd:enc.endereco||'',data:enc.data,vencimento:enc.vencimento,pagamento:enc.pagamento,itens:enc.itens,frete:enc.frete,subtotal:enc.subtotal,total:enc.total,dataEmissao,status:'emitida'};
   dados.faturas.push(fatura);
+  // Baixa automática de estoque
+  const dataEmissaoStr=dataEmissao;
+  enc.itens.forEach(it=>{
+    const prod=dados.produtos.find(p=>p.nome===it.nome);
+    if(!prod)return;
+    const qtdBaixar=it.qtd||1;
+    prod.estoque=(prod.estoque||0)-qtdBaixar;
+    if(!dados._movEstoque)dados._movEstoque=[];
+    dados._movEstoque.push({tipo:'saida',data:dataEmissaoStr,prodId:prod.id,prodNome:prod.nome,qtd:qtdBaixar,ref:fatura.numero,clienteNome:enc.clienteNome});
+    // Alerta estoque mínimo
+    if(prod.estoqueMin>0&&prod.estoque<=prod.estoqueMin){
+      setTimeout(()=>alert(`⚠️ Estoque baixo!\n\n"${prod.nome}" atingiu o estoque mínimo.\nEstoque atual: ${prod.estoque} un\nMínimo: ${prod.estoqueMin} un`),500);
+    }
+  });
   // Não sobrescrever status — entrega e fatura são independentes
   // Apenas marcar entregue se ainda estava em aberto (compatibilidade)
   if(enc.status==='aberto')enc.status='entregue';
@@ -2884,6 +2991,7 @@ function renderRelatorios(){
   renderRelIngredientes();
   renderRelComponentes();
   renderRelRomaneio();
+  renderRelEstoque();
 }
 
 function renderRelClienteProduto(enc){
@@ -3058,6 +3166,174 @@ function renderRelRecebidoStatus(){
     {label:'Data Pagamento',fn:e=>fmtData(e.dataRecebimento)||'—'},
     {label:'Valor (R$)',num:true,fn:e=>fmtN(e.total)}
   ],(a,b)=>new Date(b.dataRecebimento)-new Date(a.dataRecebimento)||a.clienteNome.localeCompare(b.clienteNome,'pt-BR'));
+}
+
+function renderEstoque(){
+  if(!dados._movEstoque)dados._movEstoque=[];
+  // Popular selects de produtos (produção e ajuste)
+  const prodOpts='<option value="">Selecione o produto...<\/option>'+
+    [...dados.produtos].sort((a,b)=>a.nome.localeCompare(b.nome,'pt-BR'))
+    .map(p=>`<option value="${p.id}">${p.nome} (saldo: ${p.estoque||0} un)<\/option>`).join('');
+  const sel=document.getElementById('estProduto');
+  if(sel){const cur=sel.value;sel.innerHTML=prodOpts;if(cur)sel.value=cur;}
+  const selAj=document.getElementById('ajProduto');
+  if(selAj){const cur=selAj.value;selAj.innerHTML=prodOpts;if(cur){selAj.value=cur;renderSaldoAtual();}}
+  // Data padrão = hoje
+  const dt=document.getElementById('estData');
+  if(dt&&!dt.value)dt.value=new Date().toISOString().split('T')[0];
+  const dtAj=document.getElementById('ajData');
+  if(dtAj&&!dtAj.value)dtAj.value=new Date().toISOString().split('T')[0];
+  // Alertas de estoque mínimo
+  const alertDiv=document.getElementById('alertasEstoque');
+  if(alertDiv){
+    const baixos=dados.produtos.filter(p=>p.estoqueMin>0&&(p.estoque||0)<=p.estoqueMin);
+    alertDiv.innerHTML=baixos.length?`<div style="background:#fdf2f2;border:1.5px solid #e74c3c;border-radius:8px;padding:10px 16px;margin-bottom:12px;font-size:13px;color:#a93226;">
+      ⚠️ <strong>Estoque mínimo atingido:<\/strong> ${baixos.map(p=>`${p.nome} (${p.estoque||0} un)`).join(' · ')}
+    <\/div>`:'';
+  }
+  // Tabela de saldo atual
+  const tbl=document.getElementById('tabelaSaldoEstoque');
+  if(tbl){
+    const prods=[...dados.produtos].sort((a,b)=>a.nome.localeCompare(b.nome,'pt-BR'));
+    if(!prods.length){tbl.innerHTML='<div class="empty-state"><span>📦<\/span>Nenhum produto cadastrado.<\/div>';return;}
+    let html=`<table class="tabela-rel"><thead><tr>
+      <th>Produto<\/th><th class="num">Saldo Atual<\/th><th class="num">Mínimo<\/th><th class="num">Status<\/th>
+    <\/tr><\/thead><tbody>`;
+    prods.forEach(p=>{
+      const est=p.estoque||0;const min=p.estoqueMin||0;
+      const status=min>0&&est<=min?'<span style="color:#a93226;font-weight:700;">⚠️ Baixo<\/span>':est===0?'<span style="color:#888;">📭 Zerado<\/span>':'<span style="color:#2e7d32;">✅ Ok<\/span>';
+      const cor=min>0&&est<=min?'color:#a93226;font-weight:700;':'';
+      html+=`<tr><td class="dest">${p.nome}<\/td><td class="num" style="${cor}">${est} un<\/td><td class="num">${min>0?min+' un':'—'}<\/td><td class="num">${status}<\/td><\/tr>`;
+    });
+    html+=`<\/tbody><\/table>`;
+    tbl.innerHTML=html;
+  }
+}
+
+function renderSaldoAtual(){
+  const prodId=parseInt(document.getElementById('ajProduto')?.value);
+  const div=document.getElementById('ajSaldoAtual');if(!div)return;
+  if(!prodId){div.textContent='';return;}
+  const prod=dados.produtos.find(p=>p.id===prodId);
+  if(!prod){div.textContent='';return;}
+  div.innerHTML=`Saldo atual no sistema: <strong>${prod.estoque||0} un<\/strong>`;
+}
+
+function registrarAjuste(){
+  const prodId=parseInt(document.getElementById('ajProduto').value);
+  const qtdReal=parseInt(document.getElementById('ajQtd').value);
+  const data=document.getElementById('ajData').value;
+  const motivo=document.getElementById('ajMotivo').value;
+  const obs=document.getElementById('ajObs').value.trim();
+  if(!prodId){alert('Selecione o produto!');return;}
+  if(isNaN(qtdReal)||qtdReal<0){alert('Informe a quantidade real!');return;}
+  if(!data){alert('Informe a data do ajuste!');return;}
+  const prod=dados.produtos.find(p=>p.id===prodId);
+  if(!prod){alert('Produto não encontrado!');return;}
+  const saldoAnterior=prod.estoque||0;
+  const diff=qtdReal-saldoAnterior;
+  if(diff===0){alert('Quantidade igual ao saldo atual. Nenhum ajuste necessário.');return;}
+  if(!confirm(`Ajuste de estoque:\n\n${prod.nome}\nSaldo atual: ${saldoAnterior} un\nQuantidade real: ${qtdReal} un\nDiferença: ${diff>0?'+':''}${diff} un\nMotivo: ${motivo}\n\nConfirmar?`))return;
+  prod.estoque=qtdReal;
+  if(!dados._movEstoque)dados._movEstoque=[];
+  dados._movEstoque.push({
+    tipo:diff>0?'entrada':'saida',
+    subtipo:'ajuste',
+    data,prodId:prod.id,prodNome:prod.nome,
+    qtd:Math.abs(diff),
+    ref:`Ajuste (${motivo})`,
+    obs:obs||`Saldo anterior: ${saldoAnterior} un → ${qtdReal} un`,
+    clienteNome:''
+  });
+  document.getElementById('ajQtd').value='';
+  document.getElementById('ajObs').value='';
+  mostrarLembreteSalvar();agendarSalvarGitHub();
+  renderEstoque();
+  alert(`✅ Ajuste registrado!\n${prod.nome}: ${saldoAnterior} → ${qtdReal} un (${diff>0?'+':''}${diff})`);
+}
+
+function registrarProducao(){
+  const prodId=parseInt(document.getElementById('estProduto').value);
+  const qtd=parseInt(document.getElementById('estQtd').value);
+  const data=document.getElementById('estData').value;
+  const obs=document.getElementById('estObs').value.trim();
+  if(!prodId){alert('Selecione o produto!');return;}
+  if(!qtd||qtd<1){alert('Informe a quantidade produzida!');return;}
+  if(!data){alert('Informe a data de produção!');return;}
+  const prod=dados.produtos.find(p=>p.id===prodId);
+  if(!prod){alert('Produto não encontrado!');return;}
+  prod.estoque=(prod.estoque||0)+qtd;
+  if(!dados._movEstoque)dados._movEstoque=[];
+  dados._movEstoque.push({tipo:'entrada',data,prodId,prodNome:prod.nome,qtd,obs,ref:'Produção'});
+  document.getElementById('estQtd').value='';
+  document.getElementById('estObs').value='';
+  mostrarLembreteSalvar();agendarSalvarGitHub();
+  renderEstoque();
+  alert(`✅ Entrada registrada!\n${prod.nome}: +${qtd} un\nNovo saldo: ${prod.estoque} un`);
+}
+
+function setEstoqueRelPreset(p){
+  const h=new Date();const fl=d=>d.toISOString().split('T')[0];
+  let ini=new Date(h.getFullYear(),h.getMonth(),1);
+  if(p==='trim'){const t=Math.floor(h.getMonth()/3)*3;ini=new Date(h.getFullYear(),t,1);}
+  if(p==='ano'){ini=new Date(h.getFullYear(),0,1);}
+  document.getElementById('estoqueRelIni').value=fl(ini);
+  document.getElementById('estoqueRelFim').value=fl(h);
+  renderRelEstoque();
+}
+
+function renderRelEstoque(){
+  const div=document.getElementById('tbEstoqueRel');if(!div)return;
+  if(!dados._movEstoque)dados._movEstoque=[];
+  let movs=[...dados._movEstoque].sort((a,b)=>new Date(b.data)-new Date(a.data));
+  const ini=document.getElementById('estoqueRelIni')?.value;
+  const fim=document.getElementById('estoqueRelFim')?.value;
+  if(ini)movs=movs.filter(m=>m.data>=ini);
+  if(fim)movs=movs.filter(m=>m.data<=fim);
+  if(!movs.length){div.innerHTML='<div class="empty-state" style="padding:24px;text-align:center;color:var(--texto-ter);">Nenhuma movimentação no período.<\/div>';return;}
+  // Agrupar por produto
+  const mapa={};
+  movs.forEach(m=>{if(!mapa[m.prodNome])mapa[m.prodNome]={entradas:0,saidas:0,movs:[]};
+    if(m.tipo==='entrada')mapa[m.prodNome].entradas+=m.qtd;
+    else mapa[m.prodNome].saidas+=m.qtd;
+    mapa[m.prodNome].movs.push(m);
+  });
+  let html=`<table class="tabela-rel"><thead><tr>
+    <th>Data<\/th><th>Produto<\/th><th>Tipo<\/th><th class="num">Qtd<\/th><th>Referência<\/th><th>Obs<\/th>
+  <\/tr><\/thead><tbody>`;
+  movs.forEach(m=>{
+    const isAjuste=m.subtipo==='ajuste';
+    const cor=m.tipo==='entrada'?'color:#2e7d32;':'color:#a93226;';
+    const icon=isAjuste?'⚖️':m.tipo==='entrada'?'📥':'📤';
+    const label=isAjuste?`Ajuste ${m.tipo==='entrada'?'+':'−'}`:m.tipo==='entrada'?'Entrada':'Saída';
+    html+=`<tr ${isAjuste?'style="background:#fffdf5;"':''}>
+      <td>${fmtData(m.data)}<\/td>
+      <td class="dest">${m.prodNome}<\/td>
+      <td style="${cor};font-weight:600;">${icon} ${label}<\/td>
+      <td class="num" style="${cor};font-weight:700;">${m.tipo==='entrada'?'+':'−'}${m.qtd} un<\/td>
+      <td>${m.ref||'—'}<\/td>
+      <td style="font-size:11px;color:var(--texto-ter);">${m.obs||m.clienteNome||'—'}<\/td>
+    <\/tr>`;
+  });
+  // Totais
+  const totEnt=movs.filter(m=>m.tipo==='entrada').reduce((s,m)=>s+m.qtd,0);
+  const totSai=movs.filter(m=>m.tipo==='saida').reduce((s,m)=>s+m.qtd,0);
+  html+=`<\/tbody><tfoot><tr>
+    <td colspan="3"><strong>Total no período<\/strong><\/td>
+    <td class="num"><span style="color:#2e7d32;">+${totEnt}<\/span> \/ <span style="color:#a93226;">−${totSai}<\/span><\/td>
+    <td colspan="2"><\/td>
+  <\/tr><\/tfoot><\/table>
+  <div style="margin-top:16px;">
+    <h4 style="font-family:'Cormorant Garamond',serif;font-size:16px;color:var(--verde-escuro);margin-bottom:8px;">Resumo por Produto<\/h4>
+    <table class="tabela-rel"><thead><tr><th>Produto<\/th><th class="num">Entradas<\/th><th class="num">Saídas<\/th><th class="num">Saldo Atual<\/th><\/tr><\/thead><tbody>`;
+  Object.entries(mapa).sort((a,b)=>a[0].localeCompare(b[0],'pt-BR')).forEach(([nome,v])=>{
+    const prod=dados.produtos.find(p=>p.nome===nome);
+    const saldo=prod?(prod.estoque||0):'—';
+    const cor=prod&&prod.estoqueMin>0&&prod.estoque<=prod.estoqueMin?'color:#a93226;font-weight:700;':'';
+    html+=`<tr><td class="dest">${nome}<\/td><td class="num" style="color:#2e7d32;">+${v.entradas} un<\/td><td class="num" style="color:#a93226;">−${v.saidas} un<\/td><td class="num" style="${cor}">${typeof saldo==='number'?saldo+' un':saldo}<\/td><\/tr>`;
+  });
+  html+=`<\/tbody><\/table><\/div>`;
+  div.innerHTML=html;
 }
 
 function renderRelRomaneio(){
