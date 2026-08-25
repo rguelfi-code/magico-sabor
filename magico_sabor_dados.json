@@ -17,7 +17,7 @@
       "sd": false,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-05-28",
-      "estoque": 6
+      "estoque": 4
     },
     {
       "id": 1775404145290,
@@ -10207,8 +10207,9 @@
       ],
       "subtotal": 60,
       "total": 60,
-      "status": "aberto",
-      "dataRegistro": "2026-08-25"
+      "status": "entregue",
+      "dataRegistro": "2026-08-25",
+      "entregue": false
     }
   ],
   "precificados": [
@@ -21439,6 +21440,30 @@
       "dataEmissao": "2026-08-24",
       "status": "emitida",
       "enviada": false
+    },
+    {
+      "id": 1787682775239,
+      "numero": "FAT-0172",
+      "encId": 1787682768782,
+      "clienteNome": "Aira-amiga",
+      "clienteDoc": "—",
+      "clienteTel": "",
+      "clienteEnd": "",
+      "data": "2026-08-25",
+      "vencimento": "2026-08-25",
+      "pagamento": "pix",
+      "itens": [
+        {
+          "nome": "Bolo caseiro de banana VEG",
+          "qtd": 2,
+          "preco": 30
+        }
+      ],
+      "frete": 0,
+      "subtotal": 60,
+      "total": 60,
+      "dataEmissao": "2026-08-25",
+      "status": "emitida"
     }
   ],
   "_movEstoque": [
@@ -21528,6 +21553,15 @@
       "qtd": 5,
       "obs": "",
       "ref": "Produção"
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-08-25",
+      "prodId": 1775404101559,
+      "prodNome": "Bolo caseiro de banana VEG",
+      "qtd": 2,
+      "ref": "FAT-0172",
+      "clienteNome": "Aira-amiga"
     }
   ],
   "_exportSeq": 49,
