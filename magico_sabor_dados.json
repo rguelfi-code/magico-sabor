@@ -17,7 +17,7 @@
       "sd": false,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-05-28",
-      "estoque": 3
+      "estoque": 0
     },
     {
       "id": 1775404145290,
@@ -21688,6 +21688,17 @@
       "ref": "Estorno FAT-0172",
       "obs": "Cancelamento de fatura",
       "clienteNome": "Aira"
+    },
+    {
+      "tipo": "saida",
+      "subtipo": "ajuste",
+      "data": "2026-08-25",
+      "prodId": 1775404101559,
+      "prodNome": "Bolo caseiro de banana VEG",
+      "qtd": 3,
+      "ref": "Ajuste (Estoque inicial)",
+      "obs": "Saldo anterior: 3 un → 0 un",
+      "clienteNome": ""
     }
   ],
   "_exportSeq": 49,
