@@ -2810,12 +2810,24 @@ function renderClientes(){
 }
 function excluirFatura(id){
   const f=dados.faturas.find(f=>f.id===id);if(!f)return;
-  if(!confirm(`Cancelar fatura ${f.numero} de ${f.clienteNome}?\n\nA encomenda voltará para o status "Entregue".`))return;
-  // Reverter status da encomenda para entregue
+  if(!confirm(`Cancelar fatura ${f.numero} de ${f.clienteNome}?\n\nA encomenda voltará para o status "Entregue" e o estoque será estornado.`))return;
+  // Reverter status da encomenda
   const enc=dados.encomendas.find(e=>e.id===f.encId);
   if(enc&&enc.status==='faturado')enc.status='entregue';
+  // Estornar estoque
+  if(enc&&enc.itens){
+    const dataEstorno=new Date().toISOString().split('T')[0];
+    enc.itens.forEach(it=>{
+      const prod=dados.produtos.find(p=>p.nome===it.nome);
+      if(!prod)return;
+      const qtd=it.qtd||1;
+      prod.estoque=(prod.estoque||0)+qtd;
+      if(!dados._movEstoque)dados._movEstoque=[];
+      dados._movEstoque.push({tipo:'entrada',subtipo:'estorno',data:dataEstorno,prodId:prod.id,prodNome:prod.nome,qtd,ref:`Estorno ${f.numero}`,obs:`Cancelamento de fatura`,clienteNome:enc.clienteNome});
+    });
+  }
   dados.faturas=dados.faturas.filter(f=>f.id!==id);
-  renderFaturas();renderEncomendas();calcularResumos();renderContasTab();renderContasCompleto();
+  _re();mostrarLembreteSalvar();agendarSalvarGitHub();
 }
 function renderFaturas(){
   const busca=document.getElementById('searchFaturas').value.toLowerCase();
