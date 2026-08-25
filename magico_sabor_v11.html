@@ -2813,17 +2813,18 @@ function excluirFatura(id){
   if(!confirm(`Cancelar fatura ${f.numero} de ${f.clienteNome}?\n\nA encomenda voltará para o status "Entregue" e o estoque será estornado.`))return;
   // Reverter status da encomenda
   const enc=dados.encomendas.find(e=>e.id===f.encId);
-  if(enc&&enc.status==='faturado')enc.status='entregue';
-  // Estornar estoque
-  if(enc&&enc.itens){
+  if(enc){enc.status='entregue';enc.entregue=true;}
+  // Estornar estoque — sempre tenta, independente do status
+  const itensEstorno=f.itens||(enc&&enc.itens)||[];
+  if(itensEstorno.length){
     const dataEstorno=new Date().toISOString().split('T')[0];
-    enc.itens.forEach(it=>{
+    itensEstorno.forEach(it=>{
       const prod=dados.produtos.find(p=>p.nome===it.nome);
       if(!prod)return;
       const qtd=it.qtd||1;
       prod.estoque=(prod.estoque||0)+qtd;
       if(!dados._movEstoque)dados._movEstoque=[];
-      dados._movEstoque.push({tipo:'entrada',subtipo:'estorno',data:dataEstorno,prodId:prod.id,prodNome:prod.nome,qtd,ref:`Estorno ${f.numero}`,obs:`Cancelamento de fatura`,clienteNome:enc.clienteNome});
+      dados._movEstoque.push({tipo:'entrada',subtipo:'estorno',data:dataEstorno,prodId:prod.id,prodNome:prod.nome,qtd,ref:`Estorno ${f.numero}`,obs:'Cancelamento de fatura',clienteNome:f.clienteNome});
     });
   }
   dados.faturas=dados.faturas.filter(f=>f.id!==id);
