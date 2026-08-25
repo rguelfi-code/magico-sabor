@@ -16,7 +16,8 @@
       "veg": true,
       "sd": false,
       "dataCadastro": "2026-04-05",
-      "dataAtualizacao": "2026-05-28"
+      "dataAtualizacao": "2026-05-28",
+      "estoque": 5
     },
     {
       "id": 1775404145290,
@@ -21444,6 +21445,17 @@
       "qtd": 5,
       "obs": "",
       "ref": "Produção"
+    },
+    {
+      "tipo": "entrada",
+      "subtipo": "ajuste",
+      "data": "2026-08-25",
+      "prodId": 1775404101559,
+      "prodNome": "Bolo caseiro de banana VEG",
+      "qtd": 5,
+      "ref": "Ajuste (Contagem física)",
+      "obs": "Saldo anterior: 0 un → 5 un",
+      "clienteNome": ""
     }
   ],
   "_exportSeq": 49,
