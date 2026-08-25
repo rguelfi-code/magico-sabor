@@ -10184,32 +10184,6 @@
       "entregue": true,
       "recebido": false,
       "dataRecebimento": null
-    },
-    {
-      "id": 1787682768782,
-      "clienteId": 1775764553733,
-      "clienteNome": "Aira-amiga",
-      "clienteTel": "",
-      "clienteDoc": "",
-      "data": "2026-08-25",
-      "vencimento": "2026-08-25",
-      "tipo": "entrega",
-      "endereco": "",
-      "frete": 0,
-      "pagamento": "pix",
-      "obs": "",
-      "itens": [
-        {
-          "nome": "Bolo caseiro de banana VEG",
-          "qtd": 2,
-          "preco": 30
-        }
-      ],
-      "subtotal": 60,
-      "total": 60,
-      "status": "entregue",
-      "dataRegistro": "2026-08-25",
-      "entregue": false
     }
   ],
   "precificados": [
