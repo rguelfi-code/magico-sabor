@@ -1543,7 +1543,8 @@
       "sl": true,
       "veg": false,
       "sd": false,
-      "dataCadastro": "2026-04-05"
+      "dataCadastro": "2026-04-05",
+      "estoque": 3
     },
     {
       "id": 1775412736500,
@@ -21877,6 +21878,15 @@
       "prodId": 1775412736500,
       "prodNome": "Pão fatiado multigrãos",
       "qtd": 2,
+      "obs": "",
+      "ref": "Produção"
+    },
+    {
+      "tipo": "entrada",
+      "data": "2026-08-26",
+      "prodId": 1775412700553,
+      "prodNome": "Pão fatiado milho",
+      "qtd": 3,
       "obs": "",
       "ref": "Produção"
     }
