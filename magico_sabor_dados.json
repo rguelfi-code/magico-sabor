@@ -17,7 +17,7 @@
       "sd": false,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-05-28",
-      "estoque": 0
+      "estoque": 11
     },
     {
       "id": 1775404145290,
@@ -21748,6 +21748,15 @@
       "prodId": 1775414249914,
       "prodNome": "Mousse de limão",
       "qtd": 10,
+      "obs": "",
+      "ref": "Produção"
+    },
+    {
+      "tipo": "entrada",
+      "data": "2026-08-26",
+      "prodId": 1775404101559,
+      "prodNome": "Bolo caseiro de banana VEG",
+      "qtd": 11,
       "obs": "",
       "ref": "Produção"
     }
