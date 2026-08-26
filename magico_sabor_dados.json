@@ -1389,7 +1389,8 @@
       "sl": true,
       "veg": false,
       "sd": false,
-      "dataCadastro": "2026-04-05"
+      "dataCadastro": "2026-04-05",
+      "estoque": 10
     },
     {
       "id": 1775414902376,
@@ -21738,6 +21739,15 @@
       "prodId": 1775414153841,
       "prodNome": "Cheesecake c/frutas vermelhas ZERO",
       "qtd": 3,
+      "obs": "",
+      "ref": "Produção"
+    },
+    {
+      "tipo": "entrada",
+      "data": "2026-08-26",
+      "prodId": 1775414249914,
+      "prodNome": "Mousse de limão",
+      "qtd": 10,
       "obs": "",
       "ref": "Produção"
     }
