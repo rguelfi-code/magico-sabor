@@ -888,7 +888,8 @@
       "veg": false,
       "sd": true,
       "dataCadastro": "2026-04-05",
-      "dataAtualizacao": "2026-04-27"
+      "dataAtualizacao": "2026-04-27",
+      "estoque": 3
     },
     {
       "id": 1775414426629,
@@ -21728,6 +21729,15 @@
       "prodId": 1775413947923,
       "prodNome": "Torta de sorvete ZERO",
       "qtd": 5,
+      "obs": "",
+      "ref": "Produção"
+    },
+    {
+      "tipo": "entrada",
+      "data": "2026-08-26",
+      "prodId": 1775414153841,
+      "prodNome": "Cheesecake c/frutas vermelhas ZERO",
+      "qtd": 3,
       "obs": "",
       "ref": "Produção"
     }
