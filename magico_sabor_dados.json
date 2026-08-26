@@ -1526,7 +1526,8 @@
       "veg": false,
       "sd": false,
       "dataCadastro": "2026-04-05",
-      "dataAtualizacao": "2026-04-24"
+      "dataAtualizacao": "2026-04-24",
+      "estoque": 1
     },
     {
       "id": 1775412700553,
@@ -21887,6 +21888,15 @@
       "prodId": 1775412700553,
       "prodNome": "Pão fatiado milho",
       "qtd": 3,
+      "obs": "",
+      "ref": "Produção"
+    },
+    {
+      "tipo": "entrada",
+      "data": "2026-08-26",
+      "prodId": 1775412765571,
+      "prodNome": "Pão fatiado  abóbora",
+      "qtd": 1,
       "obs": "",
       "ref": "Produção"
     }
