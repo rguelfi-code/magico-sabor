@@ -635,7 +635,7 @@
       "sd": true,
       "dataCadastro": "2026-04-04",
       "dataAtualizacao": "2026-04-27",
-      "estoque": 3
+      "estoque": 2
     },
     {
       "id": 1777304108502,
@@ -21978,6 +21978,17 @@
       "qtd": 2,
       "obs": "",
       "ref": "Produção"
+    },
+    {
+      "tipo": "saida",
+      "subtipo": "ajuste",
+      "data": "2026-08-26",
+      "prodId": 1775337460811,
+      "prodNome": "Bolo de chocolate ZERO",
+      "qtd": 1,
+      "ref": "Ajuste (Contagem física)",
+      "obs": "Saldo anterior: 3 un → 2 un",
+      "clienteNome": ""
     }
   ],
   "_exportSeq": 49,
