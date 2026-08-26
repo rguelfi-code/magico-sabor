@@ -202,7 +202,8 @@
       "veg": false,
       "sd": true,
       "dataCadastro": "2026-04-05",
-      "dataAtualizacao": "2026-04-27"
+      "dataAtualizacao": "2026-04-27",
+      "estoque": 2
     },
     {
       "id": 1777298070981,
@@ -22000,6 +22001,15 @@
       "ref": "Ajuste (Contagem física)",
       "obs": "Saldo anterior: 2 un → 1 un",
       "clienteNome": ""
+    },
+    {
+      "tipo": "entrada",
+      "data": "2026-08-26",
+      "prodId": 1775403101020,
+      "prodNome": "Bolo caseiro de chocolate ZERO",
+      "qtd": 2,
+      "obs": "",
+      "ref": "Produção"
     }
   ],
   "_exportSeq": 49,
