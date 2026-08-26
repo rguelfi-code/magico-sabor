@@ -525,7 +525,8 @@
       "sl": true,
       "veg": false,
       "sd": true,
-      "dataCadastro": "2026-04-04"
+      "dataCadastro": "2026-04-04",
+      "estoque": 2
     },
     {
       "id": 1777303927116,
@@ -21947,6 +21948,15 @@
       "prodId": 1775337460811,
       "prodNome": "Bolo de chocolate ZERO",
       "qtd": 1,
+      "obs": "",
+      "ref": "Produção"
+    },
+    {
+      "tipo": "entrada",
+      "data": "2026-08-26",
+      "prodId": 1775337315853,
+      "prodNome": "Bolo de cenoura ZERO",
+      "qtd": 2,
       "obs": "",
       "ref": "Produção"
     }
