@@ -1767,7 +1767,8 @@
       "veg": false,
       "sd": false,
       "dataCadastro": "2026-04-05",
-      "dataAtualizacao": "2026-04-12"
+      "dataAtualizacao": "2026-04-12",
+      "estoque": 5
     },
     {
       "id": 1775413947923,
@@ -22027,6 +22028,15 @@
       "prodId": 1775413947923,
       "prodNome": "Torta de sorvete ZERO",
       "qtd": 6,
+      "obs": "",
+      "ref": "Produção"
+    },
+    {
+      "tipo": "entrada",
+      "data": "2026-08-26",
+      "prodId": 1775413913223,
+      "prodNome": "Torta de sorvete",
+      "qtd": 5,
       "obs": "",
       "ref": "Produção"
     }
