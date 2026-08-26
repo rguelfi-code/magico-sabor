@@ -506,7 +506,8 @@
       "veg": false,
       "sd": false,
       "dataCadastro": "2026-04-04",
-      "dataAtualizacao": "2026-04-27"
+      "dataAtualizacao": "2026-04-27",
+      "estoque": 2
     },
     {
       "id": 1775337315853,
@@ -21827,6 +21828,15 @@
       "prodId": 1775404199149,
       "prodNome": "Bolo caseiro de coco ZERO",
       "qtd": 3,
+      "obs": "",
+      "ref": "Produção"
+    },
+    {
+      "tipo": "entrada",
+      "data": "2026-08-26",
+      "prodId": 1775337237472,
+      "prodNome": "Bolo de cenoura C/cob",
+      "qtd": 2,
       "obs": "",
       "ref": "Produção"
     }
