@@ -71,7 +71,8 @@
       "veg": false,
       "sd": false,
       "dataCadastro": "2026-04-04",
-      "dataAtualizacao": "2026-04-27"
+      "dataAtualizacao": "2026-04-27",
+      "estoque": 2
     },
     {
       "id": 1775339336605,
@@ -21777,6 +21778,15 @@
       "prodId": 1775402992789,
       "prodNome": "Bolo caseiro de chocolate - C/cob",
       "qtd": 5,
+      "obs": "",
+      "ref": "Produção"
+    },
+    {
+      "tipo": "entrada",
+      "data": "2026-08-26",
+      "prodId": 1775338934233,
+      "prodNome": "Bolo caseiro de cenoura - C/cob",
+      "qtd": 2,
       "obs": "",
       "ref": "Produção"
     }
