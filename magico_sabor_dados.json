@@ -1706,7 +1706,8 @@
       "veg": true,
       "sd": false,
       "dataCadastro": "2026-04-05",
-      "dataAtualizacao": "2026-04-27"
+      "dataAtualizacao": "2026-04-27",
+      "estoque": 10
     },
     {
       "id": 1775413867450,
@@ -21710,6 +21711,15 @@
       "ref": "Ajuste (Estoque inicial)",
       "obs": "Saldo anterior: 8 un → 0 un",
       "clienteNome": ""
+    },
+    {
+      "tipo": "entrada",
+      "data": "2026-08-26",
+      "prodId": 1775413995120,
+      "prodNome": "Torta de maçã & chocolate VEG",
+      "qtd": 10,
+      "obs": "",
+      "ref": "Produção"
     }
   ],
   "_exportSeq": 49,
