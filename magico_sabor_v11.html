@@ -1228,6 +1228,9 @@ async function carregarDoGitHub(){
     try{if(typeof renderFaturas==='function')renderFaturas();}catch(e){}
     try{if(typeof calcularResumos==='function')calcularResumos();}catch(e){}
     try{if(typeof initCrPeriodo==='function')initCrPeriodo();}catch(e){}
+    try{if(typeof renderContasCompleto==='function')renderContasCompleto();}catch(e){}
+    try{if(typeof renderRelatorios==='function')renderRelatorios();}catch(e){}
+    try{if(typeof popularSelectEstoque==='function')popularSelectEstoque();}catch(e){}
     try{if(typeof initFaturaContador==='function')initFaturaContador();}catch(e){}
     var hora = new Date().toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'});
     setStatus('GitHub conectado — dados carregados '+hora, '#3d5c2a');
@@ -1256,6 +1259,9 @@ async function carregarDoGitHub(){
       try{if(typeof renderFaturas==="function")renderFaturas();}catch(e){}
       try{if(typeof calcularResumos==="function")calcularResumos();}catch(e){}
       try{if(typeof initCrPeriodo==="function")initCrPeriodo();}catch(e){}
+      try{if(typeof renderContasCompleto==="function")renderContasCompleto();}catch(e){}
+      try{if(typeof renderRelatorios==="function")renderRelatorios();}catch(e){}
+      try{if(typeof popularSelectEstoque==="function")popularSelectEstoque();}catch(e){}
       try{if(typeof initFaturaContador==="function")initFaturaContador();}catch(e){}
       var hora2=new Date().toLocaleTimeString("pt-BR",{hour:"2-digit",minute:"2-digit"});
       setStatus("Dados carregados (somente leitura) "+hora2,"#a67c20");
@@ -1277,6 +1283,9 @@ async function carregarDoGitHub(){
           try{if(typeof renderFaturas==="function")renderFaturas();}catch(e){}
           try{if(typeof calcularResumos==="function")calcularResumos();}catch(e){}
           try{if(typeof initCrPeriodo==="function")initCrPeriodo();}catch(e){}
+      try{if(typeof renderContasCompleto==="function")renderContasCompleto();}catch(e){}
+      try{if(typeof renderRelatorios==="function")renderRelatorios();}catch(e){}
+      try{if(typeof popularSelectEstoque==="function")popularSelectEstoque();}catch(e){}
           var backupHora=localStorage.getItem('msDadosBackupHora');
           setStatus("Dados do backup local carregados"+(backupHora?" ("+new Date(backupHora).toLocaleString('pt-BR')+")":'')+" — GitHub indisponível","#a67c20");
         } else {
