@@ -1760,7 +1760,8 @@
       "veg": false,
       "sd": true,
       "dataCadastro": "2026-04-05",
-      "dataAtualizacao": "2026-04-27"
+      "dataAtualizacao": "2026-04-27",
+      "estoque": 5
     },
     {
       "id": 1775413645611,
@@ -21718,6 +21719,15 @@
       "prodId": 1775413995120,
       "prodNome": "Torta de maçã & chocolate VEG",
       "qtd": 10,
+      "obs": "",
+      "ref": "Produção"
+    },
+    {
+      "tipo": "entrada",
+      "data": "2026-08-26",
+      "prodId": 1775413947923,
+      "prodNome": "Torta de sorvete ZERO",
+      "qtd": 5,
       "obs": "",
       "ref": "Produção"
     }
