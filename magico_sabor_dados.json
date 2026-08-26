@@ -143,7 +143,8 @@
       "veg": false,
       "sd": false,
       "dataCadastro": "2026-04-05",
-      "dataAtualizacao": "2026-04-27"
+      "dataAtualizacao": "2026-04-27",
+      "estoque": 5
     },
     {
       "id": 1775403049458,
@@ -21767,6 +21768,15 @@
       "prodId": 1775403940822,
       "prodNome": "Bolo caseiro de fubá VEG",
       "qtd": 8,
+      "obs": "",
+      "ref": "Produção"
+    },
+    {
+      "tipo": "entrada",
+      "data": "2026-08-26",
+      "prodId": 1775402992789,
+      "prodNome": "Bolo caseiro de chocolate - C/cob",
+      "qtd": 5,
       "obs": "",
       "ref": "Produção"
     }
