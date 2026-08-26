@@ -1258,7 +1258,8 @@
       "veg": true,
       "sd": false,
       "dataCadastro": "2026-04-05",
-      "dataAtualizacao": "2026-04-27"
+      "dataAtualizacao": "2026-04-27",
+      "estoque": 22
     },
     {
       "id": 1775338784416,
@@ -21927,6 +21928,15 @@
       "prodId": 1775412983271,
       "prodNome": "Pão francês (6 un)",
       "qtd": 54,
+      "obs": "",
+      "ref": "Produção"
+    },
+    {
+      "tipo": "entrada",
+      "data": "2026-08-26",
+      "prodId": 1775413148538,
+      "prodNome": "Disco pizza 100g  (5 un) VEG",
+      "qtd": 22,
       "obs": "",
       "ref": "Produção"
     }
