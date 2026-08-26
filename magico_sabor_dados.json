@@ -1583,7 +1583,8 @@
       "veg": false,
       "sd": false,
       "dataCadastro": "2026-04-05",
-      "dataAtualizacao": "2026-06-12"
+      "dataAtualizacao": "2026-06-12",
+      "estoque": 54
     },
     {
       "id": 1776807915677,
@@ -21917,6 +21918,15 @@
       "prodId": 1775412822023,
       "prodNome": "Pão australiano VEG",
       "qtd": 2,
+      "obs": "",
+      "ref": "Produção"
+    },
+    {
+      "tipo": "entrada",
+      "data": "2026-08-26",
+      "prodId": 1775412983271,
+      "prodNome": "Pão francês (6 un)",
+      "qtd": 54,
       "obs": "",
       "ref": "Produção"
     }
