@@ -635,7 +635,7 @@
       "sd": true,
       "dataCadastro": "2026-04-04",
       "dataAtualizacao": "2026-04-27",
-      "estoque": 1
+      "estoque": 3
     },
     {
       "id": 1777304108502,
@@ -21967,6 +21967,15 @@
       "prodId": 1775337876560,
       "prodNome": "Bolo de laranja ZERO",
       "qtd": 1,
+      "obs": "",
+      "ref": "Produção"
+    },
+    {
+      "tipo": "entrada",
+      "data": "2026-08-26",
+      "prodId": 1775337460811,
+      "prodNome": "Bolo de chocolate ZERO",
+      "qtd": 2,
       "obs": "",
       "ref": "Produção"
     }
