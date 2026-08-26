@@ -91,7 +91,7 @@
       "sd": true,
       "dataCadastro": "2026-04-04",
       "dataAtualizacao": "2026-05-11",
-      "estoque": 1
+      "estoque": 2
     },
     {
       "id": 1778510458992,
@@ -22037,6 +22037,15 @@
       "prodId": 1775413913223,
       "prodNome": "Torta de sorvete",
       "qtd": 5,
+      "obs": "",
+      "ref": "Produção"
+    },
+    {
+      "tipo": "entrada",
+      "data": "2026-08-26",
+      "prodId": 1775339336605,
+      "prodNome": "Bolo caseiro de cenoura ZERO",
+      "qtd": 1,
       "obs": "",
       "ref": "Produção"
     }
