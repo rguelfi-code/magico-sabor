@@ -727,7 +727,6 @@
     <button class="inner-tab active" onclick="setTabVenda(this,'encomendas')">📋 Encomendas</button>
     <button class="inner-tab" onclick="setTabVenda(this,'clientes')">👥 Clientes</button>
     <button class="inner-tab" onclick="setTabVenda(this,'faturas')">🧾 Faturas Emitidas</button>
-    <button class="inner-tab" onclick="setTabVenda(this,'estoque')">📦 Estoque</button>
   </div>
 
   <!-- FORM NOVA ENCOMENDA -->
@@ -820,74 +819,6 @@
   </div>
 
   <!-- SEÇÃO ESTOQUE -->
-  <div id="secaoEstoque" style="display:none;">
-    <!-- Saldo atual de estoque -->
-    <div id="alertasEstoque"></div>
-    <div style="margin-bottom:16px;">
-      <h3 style="font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--verde-escuro);margin-bottom:12px;">📊 Saldo Atual</h3>
-      <div id="tabelaSaldoEstoque"></div>
-    </div>
-    <!-- Registrar ajuste -->
-    <div style="background:#fff8f0;border:1.5px solid var(--dourado);border-radius:12px;padding:20px;margin-bottom:16px;">
-      <h3 style="font-family:'Cormorant Garamond',serif;font-size:18px;color:var(--marrom);margin-bottom:14px;">⚖️ Ajuste de Estoque</h3>
-      <div class="form-grid">
-        <div class="form-group">
-          <label>Produto</label>
-          <select id="ajProduto" onchange="renderSaldoAtual()" style="border:2px solid var(--dourado);border-radius:8px;padding:8px 12px;font-family:'Jost',sans-serif;font-size:14px;width:100%;">
-            <option value="">Selecione o produto...</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label>Quantidade Real (un)</label>
-          <input type="number" id="ajQtd" min="0" step="1" placeholder="Ex: 3" style="border:2px solid var(--dourado);border-radius:8px;padding:8px 12px;font-family:'Jost',sans-serif;font-size:14px;width:100%;">
-        </div>
-        <div class="form-group">
-          <label>Data do Ajuste</label>
-          <input type="date" id="ajData" style="border:2px solid var(--dourado);border-radius:8px;padding:8px 12px;font-family:'Jost',sans-serif;font-size:14px;width:100%;">
-        </div>
-        <div class="form-group">
-          <label>Motivo</label>
-          <select id="ajMotivo" style="border:2px solid var(--dourado);border-radius:8px;padding:8px 12px;font-family:'Jost',sans-serif;font-size:14px;width:100%;">
-            <option value="Contagem física">Contagem física</option>
-            <option value="Perda">Perda</option>
-            <option value="Quebra">Quebra</option>
-            <option value="Estoque inicial">Estoque inicial</option>
-            <option value="Outro">Outro</option>
-          </select>
-        </div>
-        <div class="form-group full">
-          <label>Observação (opcional)</label>
-          <input type="text" id="ajObs" placeholder="Ex: Contagem realizada em 10/06" style="border:2px solid var(--dourado);border-radius:8px;padding:8px 12px;font-family:'Jost',sans-serif;font-size:14px;width:100%;">
-        </div>
-      </div>
-      <div id="ajSaldoAtual" style="font-size:13px;color:var(--texto-ter);margin-bottom:10px;"></div>
-      <button class="btn-salvar" onclick="registrarAjuste()" style="background:var(--dourado);">⚖️ Confirmar Ajuste</button>
-    </div>
-      <h3 style="font-family:'Cormorant Garamond',serif;font-size:18px;color:var(--verde-escuro);margin-bottom:14px;">➕ Registrar Entrada por Produção</h3>
-      <div class="form-grid">
-        <div class="form-group">
-          <label>Produto</label>
-          <select id="estProduto" style="border:2px solid var(--verde-claro);border-radius:8px;padding:8px 12px;font-family:'Jost',sans-serif;font-size:14px;width:100%;">
-            <option value="">Selecione o produto...</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label>Quantidade Produzida (un)</label>
-          <input type="number" id="estQtd" min="1" step="1" placeholder="Ex: 5" style="border:2px solid var(--verde-claro);border-radius:8px;padding:8px 12px;font-family:'Jost',sans-serif;font-size:14px;width:100%;">
-        </div>
-        <div class="form-group">
-          <label>Data de Produção</label>
-          <input type="date" id="estData" style="border:2px solid var(--verde-claro);border-radius:8px;padding:8px 12px;font-family:'Jost',sans-serif;font-size:14px;width:100%;">
-        </div>
-        <div class="form-group">
-          <label>Observação (opcional)</label>
-          <input type="text" id="estObs" placeholder="Ex: Lote especial, data validade..." style="border:2px solid var(--verde-claro);border-radius:8px;padding:8px 12px;font-family:'Jost',sans-serif;font-size:14px;width:100%;">
-        </div>
-      </div>
-      <button class="btn-salvar" onclick="registrarProducao()" style="margin-top:4px;">✅ Registrar Entrada</button>
-    </div>
-  </div>
-</div>
 
 <!-- ========== CONTAS A RECEBER ========== -->
 <div class="pagina" id="pg-contas">
@@ -931,6 +862,11 @@
   <div class="page-header">
     <h2>Controle de <span>Estoques</span></h2>
   </div>
+
+  <!-- ALERTAS -->
+  <div id="alertasEstoque"></div>
+
+  <!-- SELETOR DE PRODUTO E PERÍODO -->
   <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-bottom:16px;">
     <select id="estProdutoSel" onchange="renderEstoqueProduto()" style="border:2px solid var(--verde-claro);border-radius:8px;padding:8px 14px;font-family:'Jost',sans-serif;font-size:14px;min-width:280px;outline:none;">
       <option value="">Selecione um produto...</option>
@@ -945,6 +881,8 @@
       <button onclick="document.getElementById('estIni').value='';document.getElementById('estFim').value='';renderEstoqueProduto();" style="padding:6px 10px;background:#eee;border:none;border-radius:8px;cursor:pointer;font-family:'Jost',sans-serif;font-size:12px;">✕</button>
     </div>
   </div>
+
+  <!-- CONTEÚDO DO PRODUTO (formulários + extrato) -->
   <div id="estoqueProdutoConteudo"></div>
 </div>
 
@@ -2422,8 +2360,6 @@ function setTabVenda(btn,aba){
   document.getElementById('secaoEncomendas').style.display=aba==='encomendas'?'block':'none';
   document.getElementById('secaoClientes').style.display=aba==='clientes'?'block':'none';
   document.getElementById('secaoFaturas').style.display=aba==='faturas'?'block':'none';
-  document.getElementById('secaoEstoque').style.display=aba==='estoque'?'block':'none';
-  if(aba==='estoque')renderEstoque();
   document.getElementById('vendaLabel').textContent=aba==='encomendas'?'Nova Encomenda':aba==='clientes'?'Novo Cliente':'';
   document.getElementById('vendaIcon').textContent=aba==='faturas'?'':' ＋';
   fecharFormVenda();
@@ -3257,11 +3193,11 @@ function renderSaldoAtual(){
 }
 
 function registrarAjuste(){
-  const prodId=parseInt(document.getElementById('ajProduto').value);
-  const qtdReal=parseInt(document.getElementById('ajQtd').value);
-  const data=document.getElementById('ajData').value;
-  const motivo=document.getElementById('ajMotivo').value;
-  const obs=document.getElementById('ajObs').value.trim();
+  const prodId=parseInt(document.getElementById('ajProduto')?.value);
+  const qtdReal=parseInt(document.getElementById('ajQtd')?.value);
+  const data=document.getElementById('ajData')?.value;
+  const motivo=document.getElementById('ajMotivo')?.value;
+  const obs=document.getElementById('ajObs')?.value.trim();
   if(!prodId){alert('Selecione o produto!');return;}
   if(isNaN(qtdReal)||qtdReal<0){alert('Informe a quantidade real!');return;}
   if(!data){alert('Informe a data do ajuste!');return;}
@@ -3285,15 +3221,16 @@ function registrarAjuste(){
   document.getElementById('ajQtd').value='';
   document.getElementById('ajObs').value='';
   mostrarLembreteSalvar();agendarSalvarGitHub();
-  renderEstoque();
+  popularSelectEstoque();
+  renderEstoqueProduto();
   alert(`✅ Ajuste registrado!\n${prod.nome}: ${saldoAnterior} → ${qtdReal} un (${diff>0?'+':''}${diff})`);
 }
 
 function registrarProducao(){
-  const prodId=parseInt(document.getElementById('estProduto').value);
-  const qtd=parseInt(document.getElementById('estQtd').value);
-  const data=document.getElementById('estData').value;
-  const obs=document.getElementById('estObs').value.trim();
+  const prodId=parseInt(document.getElementById('estProduto')?.value);
+  const qtd=parseInt(document.getElementById('estQtd')?.value);
+  const data=document.getElementById('estData')?.value;
+  const obs=document.getElementById('estObs')?.value.trim();
   if(!prodId){alert('Selecione o produto!');return;}
   if(!qtd||qtd<1){alert('Informe a quantidade produzida!');return;}
   if(!data){alert('Informe a data de produção!');return;}
@@ -3305,7 +3242,8 @@ function registrarProducao(){
   document.getElementById('estQtd').value='';
   document.getElementById('estObs').value='';
   mostrarLembreteSalvar();agendarSalvarGitHub();
-  renderEstoque();
+  popularSelectEstoque();
+  renderEstoqueProduto();
   alert(`✅ Entrada registrada!\n${prod.nome}: +${qtd} un\nNovo saldo: ${prod.estoque} un`);
 }
 
@@ -3320,12 +3258,28 @@ function setEstoquePreset(p){
 }
 
 function popularSelectEstoque(){
-  const sel=document.getElementById('estProdutoSel');if(!sel)return;
-  const cur=sel.value;
-  const prods=[...dados.produtos].sort((a,b)=>a.nome.localeCompare(b.nome,'pt-BR'));
-  sel.innerHTML='<option value="">Selecione um produto...<\/option>'+
-    prods.map(p=>`<option value="${p.id}">${p.nome}<\/option>`).join('');
-  if(cur)sel.value=cur;
+  const opts='<option value="">Selecione...<\/option>'+
+    [...dados.produtos].sort((a,b)=>a.nome.localeCompare(b.nome,'pt-BR'))
+    .map(p=>`<option value="${p.id}">${p.nome} (${p.estoque||0} un)<\/option>`).join('');
+  ['estProduto','ajProduto'].forEach(id=>{
+    const sel=document.getElementById(id);if(!sel)return;
+    const cur=sel.value;sel.innerHTML=opts;if(cur)sel.value=cur;
+  });
+  const selExt=document.getElementById('estProdutoSel');
+  if(selExt){
+    const cur=selExt.value;
+    selExt.innerHTML='<option value="">Selecione um produto para ver o extrato...<\/option>'+
+      [...dados.produtos].sort((a,b)=>a.nome.localeCompare(b.nome,'pt-BR'))
+      .map(p=>`<option value="${p.id}">${p.nome} (saldo: ${p.estoque||0} un)<\/option>`).join('');
+    if(cur)selExt.value=cur;
+  }
+  const today=new Date().toISOString().split('T')[0];
+  ['estData','ajData'].forEach(id=>{const el=document.getElementById(id);if(el&&!el.value)el.value=today;});
+  const alertDiv=document.getElementById('alertasEstoque');
+  if(alertDiv){
+    const baixos=dados.produtos.filter(p=>p.estoqueMin>0&&(p.estoque||0)<=p.estoqueMin);
+    alertDiv.innerHTML=baixos.length?`<div style="background:#fdf2f2;border:1.5px solid #e74c3c;border-radius:8px;padding:10px 16px;margin-bottom:12px;font-size:13px;color:#a93226;">⚠️ <strong>Estoque mínimo atingido:<\/strong> ${baixos.map(p=>p.nome+' ('+( p.estoque||0)+' un)').join(' · ')}<\/div>`:'';
+  }
 }
 
 function calcSaldoAntesDe(prodId, dataStr){
@@ -3347,6 +3301,33 @@ function renderEstoqueProduto(){
   if(!dados._movEstoque)dados._movEstoque=[];
   const ini=document.getElementById('estIni')?.value||'';
   const fim=document.getElementById('estFim')?.value||'';
+  const today=new Date().toISOString().split('T')[0];
+  // Formulários pré-preenchidos com o produto
+  const formHtml=`<div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:20px;">
+    <div style="background:#fafdf7;border:1.5px solid var(--verde-claro);border-radius:12px;padding:16px;">
+      <h3 style="font-family:'Cormorant Garamond',serif;font-size:16px;color:var(--verde-escuro);margin-bottom:10px;">🏭 P — Registrar Produção<\/h3>
+      <div style="font-size:13px;font-weight:600;color:var(--verde-escuro);margin-bottom:8px;">${prod.nome}<\/div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+        <div><label style="font-size:11px;color:var(--texto-ter);">Quantidade<\/label><input type="number" id="estQtd" min="1" step="1" placeholder="Ex: 5" style="border:2px solid var(--verde-claro);border-radius:8px;padding:7px 10px;font-family:'Jost',sans-serif;font-size:13px;width:100%;"><\/div>
+        <div><label style="font-size:11px;color:var(--texto-ter);">Data<\/label><input type="date" id="estData" value="${today}" style="border:2px solid var(--verde-claro);border-radius:8px;padding:7px 10px;font-family:'Jost',sans-serif;font-size:13px;width:100%;"><\/div>
+        <div style="grid-column:1/-1;"><label style="font-size:11px;color:var(--texto-ter);">Observação<\/label><input type="text" id="estObs" placeholder="Opcional..." style="border:2px solid var(--verde-claro);border-radius:8px;padding:7px 10px;font-family:'Jost',sans-serif;font-size:13px;width:100%;"><\/div>
+      <\/div>
+      <input type="hidden" id="estProduto" value="${prodId}">
+      <button class="btn-salvar" onclick="registrarProducao()" style="margin-top:10px;font-size:13px;padding:8px 16px;">✅ Registrar Entrada<\/button>
+    <\/div>
+    <div style="background:#fff8f0;border:1.5px solid var(--dourado);border-radius:12px;padding:16px;">
+      <h3 style="font-family:'Cormorant Garamond',serif;font-size:16px;color:var(--marrom);margin-bottom:10px;">⚖️ A — Ajuste de Estoque<\/h3>
+      <div style="font-size:13px;font-weight:600;color:var(--marrom);margin-bottom:8px;">${prod.nome} &nbsp;·&nbsp; Saldo atual: <strong>${prod.estoque||0} un<\/strong><\/div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+        <div><label style="font-size:11px;color:var(--texto-ter);">Quantidade Real<\/label><input type="number" id="ajQtd" min="0" step="1" placeholder="Ex: 3" style="border:2px solid var(--dourado);border-radius:8px;padding:7px 10px;font-family:'Jost',sans-serif;font-size:13px;width:100%;"><\/div>
+        <div><label style="font-size:11px;color:var(--texto-ter);">Data<\/label><input type="date" id="ajData" value="${today}" style="border:2px solid var(--dourado);border-radius:8px;padding:7px 10px;font-family:'Jost',sans-serif;font-size:13px;width:100%;"><\/div>
+        <div><label style="font-size:11px;color:var(--texto-ter);">Motivo<\/label><select id="ajMotivo" style="border:2px solid var(--dourado);border-radius:8px;padding:7px 10px;font-family:'Jost',sans-serif;font-size:13px;width:100%;"><option>Contagem física<\/option><option>Estoque inicial<\/option><option>Perda<\/option><option>Quebra<\/option><option>Outro<\/option><\/select><\/div>
+        <div><label style="font-size:11px;color:var(--texto-ter);">Observação<\/label><input type="text" id="ajObs" placeholder="Opcional..." style="border:2px solid var(--dourado);border-radius:8px;padding:7px 10px;font-family:'Jost',sans-serif;font-size:13px;width:100%;"><\/div>
+      <\/div>
+      <input type="hidden" id="ajProduto" value="${prodId}">
+      <button class="btn-salvar" onclick="registrarAjuste()" style="background:var(--dourado);margin-top:10px;font-size:13px;padding:8px 16px;">⚖️ Confirmar Ajuste<\/button>
+    <\/div>
+  <\/div>`;
   // Todas as movs do produto
   let movs=dados._movEstoque.filter(m=>m.prodId===prodId).sort((a,b)=>a.data.localeCompare(b.data));
   // Saldo inicial do período = saldo acumulado antes da data inicial
@@ -3364,7 +3345,7 @@ function renderEstoqueProduto(){
   const datas=Object.keys(porData).sort();
   // Alerta estoque mínimo
   const baixo=prod.estoqueMin>0&&(prod.estoque||0)<=prod.estoqueMin;
-  let html=`<div style="display:flex;align-items:center;gap:16px;margin-bottom:12px;flex-wrap:wrap;">
+  let html=formHtml+`<div style="display:flex;align-items:center;gap:16px;margin-bottom:12px;flex-wrap:wrap;">
     <div style="font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:600;color:var(--verde-escuro);">${prod.nome}<\/div>
     <div style="font-size:13px;color:${baixo?'#a93226':'#2e7d32'};font-weight:${baixo?'700':'400'};">
       ${baixo?'⚠️':'✅'} Saldo atual: <strong>${prod.estoque||0} un<\/strong>${prod.estoqueMin>0?` (mín: ${prod.estoqueMin} un)`:''}
