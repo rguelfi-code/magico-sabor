@@ -464,6 +464,7 @@
   <button onclick="irPara('precificacao',this)">💰 Precificação</button>
   <button onclick="irPara('vendas',this)">🛒 Vendas</button>
   <button onclick="irPara('contas',this)">📊 Contas a Receber</button>
+  <button onclick="irPara('estoques',this)">📦 Estoques</button>
   <button onclick="irPara('relatorios',this)">📈 Relatórios</button>
 </nav>
 
@@ -925,6 +926,28 @@
   </div>
 </div>
 
+<!-- ========== ESTOQUES ========== -->
+<div class="pagina" id="pg-estoques">
+  <div class="page-header">
+    <h2>Controle de <span>Estoques</span></h2>
+  </div>
+  <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-bottom:16px;">
+    <select id="estProdutoSel" onchange="renderEstoqueProduto()" style="border:2px solid var(--verde-claro);border-radius:8px;padding:8px 14px;font-family:'Jost',sans-serif;font-size:14px;min-width:280px;outline:none;">
+      <option value="">Selecione um produto...</option>
+    </select>
+    <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
+      <button class="filtro-btn" onclick="setEstoquePreset('mes')" style="font-size:12px;padding:5px 10px;">Este mês</button>
+      <button class="filtro-btn" onclick="setEstoquePreset('trim')" style="font-size:12px;padding:5px 10px;">Trimestre</button>
+      <button class="filtro-btn" onclick="setEstoquePreset('ano')" style="font-size:12px;padding:5px 10px;">Este ano</button>
+      <input type="date" id="estIni" onchange="renderEstoqueProduto()" style="border:2px solid var(--verde-claro);border-radius:8px;padding:6px 10px;font-family:'Jost',sans-serif;font-size:13px;">
+      <span style="font-size:12px;color:var(--texto-ter);">até</span>
+      <input type="date" id="estFim" onchange="renderEstoqueProduto()" style="border:2px solid var(--verde-claro);border-radius:8px;padding:6px 10px;font-family:'Jost',sans-serif;font-size:13px;">
+      <button onclick="document.getElementById('estIni').value='';document.getElementById('estFim').value='';renderEstoqueProduto();" style="padding:6px 10px;background:#eee;border:none;border-radius:8px;cursor:pointer;font-family:'Jost',sans-serif;font-size:12px;">✕</button>
+    </div>
+  </div>
+  <div id="estoqueProdutoConteudo"></div>
+</div>
+
 <!-- ========== RELATÓRIOS ========== -->
 <div class="pagina" id="pg-relatorios">
   <div class="page-header">
@@ -1128,21 +1151,10 @@
 
   <!-- FATURAS RECEBIDAS -->
 
-  <!-- ESTOQUE -->
+  <!-- ESTOQUES -->
   <div class="rel-section" id="rel-estoque-rel">
-    <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-bottom:12px;">
-      <div class="secao-titulo" style="margin:0;">📦 Movimentação de Estoque</div>
-      <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;">
-        <button class="filtro-btn" onclick="setEstoqueRelPreset('mes')" style="font-size:12px;padding:5px 10px;">Este mês</button>
-        <button class="filtro-btn" onclick="setEstoqueRelPreset('trim')" style="font-size:12px;padding:5px 10px;">Trimestre</button>
-        <button class="filtro-btn" onclick="setEstoqueRelPreset('ano')" style="font-size:12px;padding:5px 10px;">Este ano</button>
-        <input type="date" id="estoqueRelIni" onchange="renderRelEstoque()" style="border:2px solid var(--verde-claro);border-radius:8px;padding:5px 10px;font-family:'Jost',sans-serif;font-size:13px;">
-        <span style="font-size:12px;color:var(--texto-ter);">até</span>
-        <input type="date" id="estoqueRelFim" onchange="renderRelEstoque()" style="border:2px solid var(--verde-claro);border-radius:8px;padding:5px 10px;font-family:'Jost',sans-serif;font-size:13px;">
-        <button onclick="document.getElementById('estoqueRelIni').value='';document.getElementById('estoqueRelFim').value='';renderRelEstoque();" style="padding:5px 10px;background:#eee;border:none;border-radius:8px;cursor:pointer;font-family:'Jost',sans-serif;font-size:12px;">✕ Todos</button>
-      </div>
-    </div>
-    <div id="tbEstoqueRel"></div>
+    <div class="secao-titulo">📦 Saldo de Estoque por Produto</div>
+    <div id="tbEstoqueRelSimples"></div>
   </div>
 
 </div><!-- fim pg-relatorios -->
@@ -1636,6 +1648,7 @@ function irPara(p,btn){
   document.querySelectorAll('nav button').forEach(b=>b.classList.remove('active'));
   document.getElementById('pg-'+p).classList.add('ativa');btn.classList.add('active');
   if(p==='precificacao')atualizarSelProduto();
+  if(p==='estoques'){popularSelectEstoque();renderEstoqueProduto();}
   if(p==='contas'){calcularResumos();renderContasCompleto();}
   if(p==='relatorios'){
     // Sincronizar período dos relatórios com o de contas a receber
@@ -3016,8 +3029,7 @@ function renderRelatorios(){
   renderRelIngredientes();
   renderRelComponentes();
   renderRelRomaneio();
-  renderRelEstoque();
-}
+  renderRelEstoque();}
 
 function renderRelClienteProduto(enc){
   const div=document.getElementById('tbClienteProduto');if(!div)return;
@@ -3297,6 +3309,161 @@ function registrarProducao(){
   alert(`✅ Entrada registrada!\n${prod.nome}: +${qtd} un\nNovo saldo: ${prod.estoque} un`);
 }
 
+function setEstoquePreset(p){
+  const h=new Date();const fl=d=>d.toISOString().split('T')[0];
+  let ini=new Date(h.getFullYear(),h.getMonth(),1);
+  if(p==='trim'){const t=Math.floor(h.getMonth()/3)*3;ini=new Date(h.getFullYear(),t,1);}
+  if(p==='ano'){ini=new Date(h.getFullYear(),0,1);}
+  document.getElementById('estIni').value=fl(ini);
+  document.getElementById('estFim').value=fl(h);
+  renderEstoqueProduto();
+}
+
+function popularSelectEstoque(){
+  const sel=document.getElementById('estProdutoSel');if(!sel)return;
+  const cur=sel.value;
+  const prods=[...dados.produtos].sort((a,b)=>a.nome.localeCompare(b.nome,'pt-BR'));
+  sel.innerHTML='<option value="">Selecione um produto...<\/option>'+
+    prods.map(p=>`<option value="${p.id}">${p.nome}<\/option>`).join('');
+  if(cur)sel.value=cur;
+}
+
+function calcSaldoAntesDe(prodId, dataStr){
+  // Calcula saldo do produto em determinada data baseado nas movimentações
+  if(!dados._movEstoque)return 0;
+  const movs=dados._movEstoque.filter(m=>m.prodId===prodId&&m.data<dataStr);
+  let saldo=0;
+  movs.forEach(m=>{if(m.tipo==='entrada')saldo+=m.qtd;else saldo-=m.qtd;});
+  return saldo;
+}
+
+function renderEstoqueProduto(){
+  const div=document.getElementById('estoqueProdutoConteudo');if(!div)return;
+  popularSelectEstoque();
+  const prodId=parseInt(document.getElementById('estProdutoSel')?.value);
+  if(!prodId){div.innerHTML='<div class="empty-state"><span>📦<\/span>Selecione um produto para ver o extrato.<\/div>';return;}
+  const prod=dados.produtos.find(p=>p.id===prodId);
+  if(!prod){div.innerHTML='';return;}
+  if(!dados._movEstoque)dados._movEstoque=[];
+  const ini=document.getElementById('estIni')?.value||'';
+  const fim=document.getElementById('estFim')?.value||'';
+  // Todas as movs do produto
+  let movs=dados._movEstoque.filter(m=>m.prodId===prodId).sort((a,b)=>a.data.localeCompare(b.data));
+  // Saldo inicial do período = saldo acumulado antes da data inicial
+  const saldoIniPeriodo=ini?calcSaldoAntesDe(prodId,ini):0;
+  // Filtrar movs pelo período
+  if(ini)movs=movs.filter(m=>m.data>=ini);
+  if(fim)movs=movs.filter(m=>m.data<=fim);
+  // Agrupar por data
+  const porData={};
+  movs.forEach(m=>{
+    if(!porData[m.data])porData[m.data]={entradas:[],saidas:[]};
+    if(m.tipo==='entrada')porData[m.data].entradas.push(m);
+    else porData[m.data].saidas.push(m);
+  });
+  const datas=Object.keys(porData).sort();
+  // Alerta estoque mínimo
+  const baixo=prod.estoqueMin>0&&(prod.estoque||0)<=prod.estoqueMin;
+  let html=`<div style="display:flex;align-items:center;gap:16px;margin-bottom:12px;flex-wrap:wrap;">
+    <div style="font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:600;color:var(--verde-escuro);">${prod.nome}<\/div>
+    <div style="font-size:13px;color:${baixo?'#a93226':'#2e7d32'};font-weight:${baixo?'700':'400'};">
+      ${baixo?'⚠️':'✅'} Saldo atual: <strong>${prod.estoque||0} un<\/strong>${prod.estoqueMin>0?` (mín: ${prod.estoqueMin} un)`:''}
+    <\/div>
+  <\/div>`;
+  if(!datas.length){
+    html+=`<div style="padding:24px;text-align:center;color:var(--texto-ter);">Nenhuma movimentação no período.<\/div>`;
+    div.innerHTML=html;return;
+  }
+  html+=`<table class="tabela-rel">
+    <thead><tr>
+      <th style="width:100px;">Data<\/th>
+      <th class="num" style="width:90px;">Saldo Inicial<\/th>
+      <th class="num" style="width:80px;">Entradas<\/th>
+      <th class="num" style="width:80px;">Saídas<\/th>
+      <th class="num" style="width:90px;">Saldo Final<\/th>
+      <th>Detalhes<\/th>
+    <\/tr><\/thead><tbody>`;
+  let saldoCorrido=saldoIniPeriodo;
+  // Linha saldo inicial do período
+  if(ini){
+    html+=`<tr style="background:#f4f8f0;font-style:italic;">
+      <td style="color:var(--texto-ter);font-size:12px;">Saldo anterior<\/td>
+      <td class="num" style="font-weight:700;">${saldoIniPeriodo} un<\/td>
+      <td class="num">—<\/td><td class="num">—<\/td>
+      <td class="num" style="font-weight:700;">${saldoIniPeriodo} un<\/td>
+      <td style="font-size:11px;color:var(--texto-ter);">Período anterior a ${ini}<\/td>
+    <\/tr>`;
+  }
+  datas.forEach(data=>{
+    const g=porData[data];
+    const totEnt=g.entradas.reduce((s,m)=>s+m.qtd,0);
+    const totSai=g.saidas.reduce((s,m)=>s+m.qtd,0);
+    const saldoFinal=saldoCorrido+totEnt-totSai;
+    // Detalhes: ícone+inicial para cada movimento
+    const detalhes=[
+      ...g.entradas.map(m=>{
+        const icon=m.subtipo==='estorno'?'↩ D':m.subtipo==='ajuste'?'⚖️ A':'🏭 P';
+        return`<span style="color:#2e7d32;margin-right:6px;" title="${m.ref||m.obs||''}">${icon} +${m.qtd}<\/span>`;
+      }),
+      ...g.saidas.map(m=>{
+        const icon=m.subtipo==='ajuste'?'⚖️ A':'📤 F';
+        return`<span style="color:#a93226;margin-right:6px;" title="${m.ref||m.obs||''}">${icon} −${m.qtd}<\/span>`;
+      })
+    ].join('');
+    const corSaldo=saldoFinal<saldoCorrido?'color:#a93226;':saldoFinal>saldoCorrido?'color:#2e7d32;':'';
+    html+=`<tr>
+      <td>${fmtData(data)}<\/td>
+      <td class="num">${saldoCorrido} un<\/td>
+      <td class="num" style="color:#2e7d32;">${totEnt>0?'+'+totEnt+' un':'—'}<\/td>
+      <td class="num" style="color:#a93226;">${totSai>0?'−'+totSai+' un':'—'}<\/td>
+      <td class="num" style="font-weight:700;${corSaldo}">${saldoFinal} un<\/td>
+      <td style="font-size:12px;">${detalhes}<\/td>
+    <\/tr>`;
+    saldoCorrido=saldoFinal;
+  });
+  html+=`<\/tbody><tfoot><tr>
+    <td colspan="4" style="font-weight:700;">Saldo Final do Período<\/td>
+    <td class="num" style="font-weight:700;font-size:15px;">${saldoCorrido} un<\/td>
+    <td><\/td>
+  <\/tr><\/tfoot><\/table>
+  <div style="font-size:11px;color:var(--texto-ter);margin-top:6px;">
+    🏭 P = Produção &nbsp;·&nbsp; ↩ D = Devolução (estorno fatura) &nbsp;·&nbsp; ⚖️ A = Ajuste &nbsp;·&nbsp; 📤 F = Faturamento
+  <\/div>`;
+  div.innerHTML=html;
+}
+
+function renderRelEstoque(){
+  const div=document.getElementById('tbEstoqueRelSimples');if(!div)return;
+  const prods=[...dados.produtos].sort((a,b)=>a.nome.localeCompare(b.nome,'pt-BR'));
+  if(!prods.length){div.innerHTML='<div class="empty-state" style="padding:24px;text-align:center;">Nenhum produto cadastrado.<\/div>';return;}
+  let html=`<table class="tabela-rel"><thead><tr>
+    <th>Produto<\/th>
+    <th class="num">Entradas<\/th>
+    <th class="num">Saídas<\/th>
+    <th class="num">Saldo Atual<\/th>
+    <th class="num">Mínimo<\/th>
+    <th class="num">Status<\/th>
+  <\/tr><\/thead><tbody>`;
+  prods.forEach(p=>{
+    const movs=dados._movEstoque?.filter(m=>m.prodId===p.id)||[];
+    const totEnt=movs.filter(m=>m.tipo==='entrada').reduce((s,m)=>s+m.qtd,0);
+    const totSai=movs.filter(m=>m.tipo==='saida').reduce((s,m)=>s+m.qtd,0);
+    const est=p.estoque||0;const min=p.estoqueMin||0;
+    const status=min>0&&est<=min?'<span style="color:#a93226;font-weight:700;">⚠️ Baixo<\/span>':est===0?'<span style="color:#888;">📭 Zero<\/span>':'<span style="color:#2e7d32;">✅ Ok<\/span>';
+    const cor=min>0&&est<=min?'color:#a93226;font-weight:700;':'font-weight:700;';
+    html+=`<tr>
+      <td class="dest">${p.nome}<\/td>
+      <td class="num" style="color:#2e7d32;">${totEnt>0?'+'+totEnt+' un':'—'}<\/td>
+      <td class="num" style="color:#a93226;">${totSai>0?'−'+totSai+' un':'—'}<\/td>
+      <td class="num" style="${cor}">${est} un<\/td>
+      <td class="num">${min>0?min+' un':'—'}<\/td>
+      <td class="num">${status}<\/td>
+    <\/tr>`;
+  });
+  html+=`<\/tbody><\/table>`;
+  div.innerHTML=html;
+}
+
 function setEstoqueRelPreset(p){
   const h=new Date();const fl=d=>d.toISOString().split('T')[0];
   let ini=new Date(h.getFullYear(),h.getMonth(),1);
@@ -3305,60 +3472,6 @@ function setEstoqueRelPreset(p){
   document.getElementById('estoqueRelIni').value=fl(ini);
   document.getElementById('estoqueRelFim').value=fl(h);
   renderRelEstoque();
-}
-
-function renderRelEstoque(){
-  const div=document.getElementById('tbEstoqueRel');if(!div)return;
-  if(!dados._movEstoque)dados._movEstoque=[];
-  let movs=[...dados._movEstoque].sort((a,b)=>new Date(b.data)-new Date(a.data));
-  const ini=document.getElementById('estoqueRelIni')?.value;
-  const fim=document.getElementById('estoqueRelFim')?.value;
-  if(ini)movs=movs.filter(m=>m.data>=ini);
-  if(fim)movs=movs.filter(m=>m.data<=fim);
-  if(!movs.length){div.innerHTML='<div class="empty-state" style="padding:24px;text-align:center;color:var(--texto-ter);">Nenhuma movimentação no período.<\/div>';return;}
-  // Agrupar por produto
-  const mapa={};
-  movs.forEach(m=>{if(!mapa[m.prodNome])mapa[m.prodNome]={entradas:0,saidas:0,movs:[]};
-    if(m.tipo==='entrada')mapa[m.prodNome].entradas+=m.qtd;
-    else mapa[m.prodNome].saidas+=m.qtd;
-    mapa[m.prodNome].movs.push(m);
-  });
-  let html=`<table class="tabela-rel"><thead><tr>
-    <th>Data<\/th><th>Produto<\/th><th>Tipo<\/th><th class="num">Qtd<\/th><th>Referência<\/th><th>Obs<\/th>
-  <\/tr><\/thead><tbody>`;
-  movs.forEach(m=>{
-    const isAjuste=m.subtipo==='ajuste';
-    const cor=m.tipo==='entrada'?'color:#2e7d32;':'color:#a93226;';
-    const icon=isAjuste?'⚖️':m.tipo==='entrada'?'📥':'📤';
-    const label=isAjuste?`Ajuste ${m.tipo==='entrada'?'+':'−'}`:m.tipo==='entrada'?'Entrada':'Saída';
-    html+=`<tr ${isAjuste?'style="background:#fffdf5;"':''}>
-      <td>${fmtData(m.data)}<\/td>
-      <td class="dest">${m.prodNome}<\/td>
-      <td style="${cor};font-weight:600;">${icon} ${label}<\/td>
-      <td class="num" style="${cor};font-weight:700;">${m.tipo==='entrada'?'+':'−'}${m.qtd} un<\/td>
-      <td>${m.ref||'—'}<\/td>
-      <td style="font-size:11px;color:var(--texto-ter);">${m.obs||m.clienteNome||'—'}<\/td>
-    <\/tr>`;
-  });
-  // Totais
-  const totEnt=movs.filter(m=>m.tipo==='entrada').reduce((s,m)=>s+m.qtd,0);
-  const totSai=movs.filter(m=>m.tipo==='saida').reduce((s,m)=>s+m.qtd,0);
-  html+=`<\/tbody><tfoot><tr>
-    <td colspan="3"><strong>Total no período<\/strong><\/td>
-    <td class="num"><span style="color:#2e7d32;">+${totEnt}<\/span> \/ <span style="color:#a93226;">−${totSai}<\/span><\/td>
-    <td colspan="2"><\/td>
-  <\/tr><\/tfoot><\/table>
-  <div style="margin-top:16px;">
-    <h4 style="font-family:'Cormorant Garamond',serif;font-size:16px;color:var(--verde-escuro);margin-bottom:8px;">Resumo por Produto<\/h4>
-    <table class="tabela-rel"><thead><tr><th>Produto<\/th><th class="num">Entradas<\/th><th class="num">Saídas<\/th><th class="num">Saldo Atual<\/th><\/tr><\/thead><tbody>`;
-  Object.entries(mapa).sort((a,b)=>a[0].localeCompare(b[0],'pt-BR')).forEach(([nome,v])=>{
-    const prod=dados.produtos.find(p=>p.nome===nome);
-    const saldo=prod?(prod.estoque||0):'—';
-    const cor=prod&&prod.estoqueMin>0&&prod.estoque<=prod.estoqueMin?'color:#a93226;font-weight:700;':'';
-    html+=`<tr><td class="dest">${nome}<\/td><td class="num" style="color:#2e7d32;">+${v.entradas} un<\/td><td class="num" style="color:#a93226;">−${v.saidas} un<\/td><td class="num" style="${cor}">${typeof saldo==='number'?saldo+' un':saldo}<\/td><\/tr>`;
-  });
-  html+=`<\/tbody><\/table><\/div>`;
-  div.innerHTML=html;
 }
 
 function renderRelRomaneio(){
