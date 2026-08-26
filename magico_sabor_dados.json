@@ -1491,7 +1491,8 @@
       "veg": true,
       "sd": false,
       "dataCadastro": "2026-04-05",
-      "dataAtualizacao": "2026-04-27"
+      "dataAtualizacao": "2026-04-27",
+      "estoque": 3
     },
     {
       "id": 1779109491117,
@@ -21897,6 +21898,15 @@
       "prodId": 1775412765571,
       "prodNome": "Pão fatiado  abóbora",
       "qtd": 1,
+      "obs": "",
+      "ref": "Produção"
+    },
+    {
+      "tipo": "entrada",
+      "data": "2026-08-26",
+      "prodId": 1775412797431,
+      "prodNome": "Pão de forma VEG",
+      "qtd": 3,
       "obs": "",
       "ref": "Produção"
     }
