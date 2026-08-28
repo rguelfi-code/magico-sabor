@@ -1264,7 +1264,7 @@
       "sd": false,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-04-27",
-      "estoque": 22
+      "estoque": 21
     },
     {
       "id": 1775338784416,
@@ -22280,6 +22280,17 @@
       "qtd": 1,
       "ref": "FAT-0173",
       "clienteNome": "Monreale - D.C. Turismo Ltda."
+    },
+    {
+      "tipo": "saida",
+      "subtipo": "ajuste",
+      "data": "2026-08-28",
+      "prodId": 1775413148538,
+      "prodNome": "Disco pizza 100g  (5 un) VEG",
+      "qtd": 1,
+      "ref": "Ajuste (Contagem física)",
+      "obs": "Saldo anterior: 22 un → 21 un",
+      "clienteNome": ""
     }
   ],
   "_exportSeq": 49,
