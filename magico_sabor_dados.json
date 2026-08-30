@@ -1827,7 +1827,7 @@
     },
     {
       "id": 1788115879112,
-      "nome": "Bolo de chocolate (1)",
+      "nome": "Bolo de chocolate (1) - C/cob",
       "categoria": "bolo",
       "medida": "peso",
       "peso": 700,
@@ -1842,7 +1842,8 @@
       "sd": false,
       "estoque": 8,
       "estoqueMin": 0,
-      "dataCadastro": "2026-08-30"
+      "dataCadastro": "2026-08-30",
+      "dataAtualizacao": "2026-08-30"
     }
   ],
   "ingredientes": [
@@ -15963,7 +15964,7 @@
     },
     {
       "prodId": "1788115879112",
-      "nome": "Bolo de chocolate (1)",
+      "nome": "Bolo de chocolate (1) - C/cob",
       "preco": 65,
       "precoSugerido": 65.9,
       "custoUnit": 39.5408713692946,
