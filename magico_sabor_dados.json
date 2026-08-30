@@ -1824,6 +1824,25 @@
       "sd": false,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-04-27"
+    },
+    {
+      "id": 1788115879112,
+      "nome": "Bolo de chocolate (1)",
+      "categoria": "bolo",
+      "medida": "peso",
+      "peso": 700,
+      "pesoUn": "g",
+      "qtd": null,
+      "qtdUn": "un",
+      "tempo": "",
+      "desc": "",
+      "sg": true,
+      "sl": true,
+      "veg": false,
+      "sd": false,
+      "estoque": 8,
+      "estoqueMin": 0,
+      "dataCadastro": "2026-08-30"
     }
   ],
   "ingredientes": [
@@ -15941,6 +15960,75 @@
           "qtdEmb": 1
         }
       ]
+    },
+    {
+      "prodId": "1788115879112",
+      "nome": "Bolo de chocolate (1)",
+      "preco": 10.25,
+      "precoSugerido": 46.65,
+      "custoUnit": 27.991666666666667,
+      "custoTotal": 55.983333333333334,
+      "lucro": -17.741666666666667,
+      "margem": "-173.1",
+      "rendimento": 2,
+      "rendimentoUn": "porções",
+      "qtdEmbalada": 1,
+      "excecao": false,
+      "ingsPrec": [
+        {
+          "id": 1788115928701,
+          "ingId": 1775418835786,
+          "qtd": 0.077
+        },
+        {
+          "id": 1788115955889,
+          "ingId": 1775418700307,
+          "qtd": 0.162
+        },
+        {
+          "id": 1788115979813,
+          "ingId": 1775425647375,
+          "qtd": 0.12
+        },
+        {
+          "id": 1788116008125,
+          "ingId": 1775422763534,
+          "qtd": 0.03
+        },
+        {
+          "id": 1788116033581,
+          "ingId": 1775425512902,
+          "qtd": 0.4
+        },
+        {
+          "id": 1788116051685,
+          "ingId": 1775418230108,
+          "qtd": 0.4
+        },
+        {
+          "id": 1788116102572,
+          "ingId": 1775425432436,
+          "qtd": 0.36
+        },
+        {
+          "id": 1788116158259,
+          "ingId": 1775425677495,
+          "qtd": 0.004
+        }
+      ],
+      "compsPrec": [
+        {
+          "id": 1788116183923,
+          "compId": 0,
+          "qtd": 1
+        },
+        {
+          "id": 1788116191609,
+          "compId": 0,
+          "qtd": 1
+        }
+      ],
+      "embsPrec": []
     }
   ],
   "faturas": [
