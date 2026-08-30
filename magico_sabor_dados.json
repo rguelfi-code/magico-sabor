@@ -1840,7 +1840,7 @@
       "sl": true,
       "veg": false,
       "sd": false,
-      "estoque": 8,
+      "estoque": 16,
       "estoqueMin": 0,
       "dataCadastro": "2026-08-30",
       "dataAtualizacao": "2026-08-30"
@@ -22496,6 +22496,15 @@
       "qtd": 1,
       "ref": "FAT-0175",
       "clienteNome": "Monreale - D.C. Turismo Ltda."
+    },
+    {
+      "tipo": "entrada",
+      "data": "2026-08-30",
+      "prodId": 1788115879112,
+      "prodNome": "Bolo de chocolate (1) - C/cob",
+      "qtd": 8,
+      "obs": "",
+      "ref": "Produção"
     }
   ],
   "_exportSeq": 49,
