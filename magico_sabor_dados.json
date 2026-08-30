@@ -15964,12 +15964,12 @@
     {
       "prodId": "1788115879112",
       "nome": "Bolo de chocolate (1)",
-      "preco": 10.25,
-      "precoSugerido": 46.65,
-      "custoUnit": 27.991666666666667,
-      "custoTotal": 55.983333333333334,
-      "lucro": -17.741666666666667,
-      "margem": "-173.1",
+      "preco": 65,
+      "precoSugerido": 73.01,
+      "custoUnit": 43.80753803596127,
+      "custoTotal": 87.61507607192254,
+      "lucro": 21.192461964038728,
+      "margem": "32.6",
       "rendimento": 2,
       "rendimentoUn": "porções",
       "qtdEmbalada": 1,
@@ -16019,16 +16019,27 @@
       "compsPrec": [
         {
           "id": 1788116183923,
-          "compId": 0,
+          "compId": 1777043120864,
+          "qtd": 0.15
+        }
+      ],
+      "embsPrec": [
+        {
+          "id": 1788116349356,
+          "ingId": 1775519603215,
           "qtd": 1
         },
         {
-          "id": 1788116191609,
-          "compId": 0,
+          "id": 1788116380938,
+          "ingId": 1775510049898,
+          "qtd": 2
+        },
+        {
+          "id": 1788116395944,
+          "ingId": 1778116016052,
           "qtd": 1
         }
-      ],
-      "embsPrec": []
+      ]
     }
   ],
   "faturas": [
