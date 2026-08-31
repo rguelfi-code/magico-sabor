@@ -21908,7 +21908,8 @@
       "subtotal": 302,
       "total": 302,
       "dataEmissao": "2026-08-31",
-      "status": "emitida"
+      "status": "emitida",
+      "enviada": true
     }
   ],
   "_movEstoque": [
