@@ -21504,7 +21504,7 @@
       "total": 179,
       "dataEmissao": "2026-08-18",
       "status": "emitida",
-      "enviada": false
+      "enviada": true
     },
     {
       "id": 1787083053914,
@@ -21544,7 +21544,7 @@
       "total": 193,
       "dataEmissao": "2026-08-18",
       "status": "emitida",
-      "enviada": false
+      "enviada": true
     },
     {
       "id": 1787345354261,
@@ -21584,7 +21584,7 @@
       "total": 170,
       "dataEmissao": "2026-08-21",
       "status": "emitida",
-      "enviada": false
+      "enviada": true
     },
     {
       "id": 1787345450755,
@@ -21614,7 +21614,7 @@
       "total": 158,
       "dataEmissao": "2026-08-21",
       "status": "emitida",
-      "enviada": false
+      "enviada": true
     },
     {
       "id": 1787517239953,
