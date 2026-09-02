@@ -10492,7 +10492,7 @@
       "total": 76,
       "status": "entregue",
       "dataRegistro": "2026-09-02",
-      "entregue": false
+      "entregue": true
     }
   ],
   "precificados": [
