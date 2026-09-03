@@ -10498,6 +10498,71 @@
       "entregue": true,
       "recebido": true,
       "dataRecebimento": "2026-09-03"
+    },
+    {
+      "id": 1788469006711,
+      "clienteId": 1775766590796,
+      "clienteNome": "Cassino Hotel",
+      "clienteTel": "(35) 99937 2003",
+      "clienteDoc": "",
+      "data": "2026-09-03",
+      "vencimento": "2026-09-03",
+      "tipo": "entrega",
+      "endereco": "",
+      "frete": 0,
+      "pagamento": "pix",
+      "obs": "",
+      "itens": [
+        {
+          "nome": "Torta de maçã & chocolate VEG",
+          "qtd": 8,
+          "preco": 13
+        },
+        {
+          "nome": "Torta de sorvete",
+          "qtd": 5,
+          "preco": 14
+        },
+        {
+          "nome": "Torta de sorvete ZERO",
+          "qtd": 5,
+          "preco": 17
+        },
+        {
+          "nome": "Cheesecake c/frutas vermelhas ZERO",
+          "qtd": 10,
+          "preco": 16
+        },
+        {
+          "nome": "Bolo caseiro de chocolate ZERO",
+          "qtd": 1,
+          "preco": 35
+        },
+        {
+          "nome": "Bolo caseiro de cenoura ZERO",
+          "qtd": 1,
+          "preco": 35
+        },
+        {
+          "nome": "Bolo caseiro de chocolate VEG",
+          "qtd": 3,
+          "preco": 30
+        },
+        {
+          "nome": "Bolo caseiro de laranja VEG",
+          "qtd": 3,
+          "preco": 30
+        },
+        {
+          "nome": "Bolo caseiro de banana VEG",
+          "qtd": 3,
+          "preco": 30
+        }
+      ],
+      "subtotal": 759,
+      "total": 759,
+      "status": "aberto",
+      "dataRegistro": "2026-09-03"
     }
   ],
   "precificados": [
