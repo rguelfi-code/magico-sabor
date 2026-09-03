@@ -17,7 +17,7 @@
       "sd": false,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-08-30",
-      "estoque": 9
+      "estoque": 6
     },
     {
       "id": 1775404145290,
@@ -91,7 +91,7 @@
       "sd": true,
       "dataCadastro": "2026-04-04",
       "dataAtualizacao": "2026-05-11",
-      "estoque": 2
+      "estoque": 1
     },
     {
       "id": 1778510458992,
@@ -165,7 +165,7 @@
       "sd": false,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-04-27",
-      "estoque": 4
+      "estoque": 1
     },
     {
       "id": 1777298281878,
@@ -203,7 +203,7 @@
       "sd": true,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-04-27",
-      "estoque": 2
+      "estoque": 1
     },
     {
       "id": 1777298070981,
@@ -383,7 +383,7 @@
       "sd": false,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-04-27",
-      "estoque": 4
+      "estoque": 1
     },
     {
       "id": 1775403738474,
@@ -925,7 +925,7 @@
       "sd": true,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-04-27",
-      "estoque": 3
+      "estoque": -7
     },
     {
       "id": 1775414426629,
@@ -1752,7 +1752,7 @@
       "sd": false,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-04-27",
-      "estoque": 10
+      "estoque": 2
     },
     {
       "id": 1775413867450,
@@ -1788,7 +1788,7 @@
       "sd": false,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-04-12",
-      "estoque": 5
+      "estoque": 0
     },
     {
       "id": 1775413947923,
@@ -1807,7 +1807,7 @@
       "sd": true,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-04-27",
-      "estoque": 11
+      "estoque": 6
     },
     {
       "id": 1775413645611,
@@ -10561,8 +10561,11 @@
       ],
       "subtotal": 759,
       "total": 759,
-      "status": "aberto",
-      "dataRegistro": "2026-09-03"
+      "status": "entregue",
+      "dataRegistro": "2026-09-03",
+      "entregue": false,
+      "recebido": false,
+      "dataRecebimento": null
     }
   ],
   "precificados": [
@@ -22121,6 +22124,70 @@
       "dataEmissao": "2026-09-02",
       "status": "emitida",
       "enviada": false
+    },
+    {
+      "id": 1788470447296,
+      "numero": "FAT-0179",
+      "encId": 1788469006711,
+      "clienteNome": "Cassino Hotel",
+      "clienteDoc": "—",
+      "clienteTel": "(35) 99937 2003",
+      "clienteEnd": "",
+      "data": "2026-09-03",
+      "vencimento": "2026-09-03",
+      "pagamento": "pix",
+      "itens": [
+        {
+          "nome": "Torta de maçã & chocolate VEG",
+          "qtd": 8,
+          "preco": 13
+        },
+        {
+          "nome": "Torta de sorvete",
+          "qtd": 5,
+          "preco": 14
+        },
+        {
+          "nome": "Torta de sorvete ZERO",
+          "qtd": 5,
+          "preco": 17
+        },
+        {
+          "nome": "Cheesecake c/frutas vermelhas ZERO",
+          "qtd": 10,
+          "preco": 16
+        },
+        {
+          "nome": "Bolo caseiro de chocolate ZERO",
+          "qtd": 1,
+          "preco": 35
+        },
+        {
+          "nome": "Bolo caseiro de cenoura ZERO",
+          "qtd": 1,
+          "preco": 35
+        },
+        {
+          "nome": "Bolo caseiro de chocolate VEG",
+          "qtd": 3,
+          "preco": 30
+        },
+        {
+          "nome": "Bolo caseiro de laranja VEG",
+          "qtd": 3,
+          "preco": 30
+        },
+        {
+          "nome": "Bolo caseiro de banana VEG",
+          "qtd": 3,
+          "preco": 30
+        }
+      ],
+      "frete": 0,
+      "subtotal": 759,
+      "total": 759,
+      "dataEmissao": "2026-09-03",
+      "status": "emitida"
     }
   ],
   "_movEstoque": [
@@ -22899,6 +22966,87 @@
       "qtd": 1,
       "ref": "FAT-0178",
       "clienteNome": "Monreale - D.C. Turismo Ltda."
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-09-03",
+      "prodId": 1775413995120,
+      "prodNome": "Torta de maçã & chocolate VEG",
+      "qtd": 8,
+      "ref": "FAT-0179",
+      "clienteNome": "Cassino Hotel"
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-09-03",
+      "prodId": 1775413913223,
+      "prodNome": "Torta de sorvete",
+      "qtd": 5,
+      "ref": "FAT-0179",
+      "clienteNome": "Cassino Hotel"
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-09-03",
+      "prodId": 1775413947923,
+      "prodNome": "Torta de sorvete ZERO",
+      "qtd": 5,
+      "ref": "FAT-0179",
+      "clienteNome": "Cassino Hotel"
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-09-03",
+      "prodId": 1775414153841,
+      "prodNome": "Cheesecake c/frutas vermelhas ZERO",
+      "qtd": 10,
+      "ref": "FAT-0179",
+      "clienteNome": "Cassino Hotel"
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-09-03",
+      "prodId": 1775403101020,
+      "prodNome": "Bolo caseiro de chocolate ZERO",
+      "qtd": 1,
+      "ref": "FAT-0179",
+      "clienteNome": "Cassino Hotel"
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-09-03",
+      "prodId": 1775339336605,
+      "prodNome": "Bolo caseiro de cenoura ZERO",
+      "qtd": 1,
+      "ref": "FAT-0179",
+      "clienteNome": "Cassino Hotel"
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-09-03",
+      "prodId": 1775403049458,
+      "prodNome": "Bolo caseiro de chocolate VEG",
+      "qtd": 3,
+      "ref": "FAT-0179",
+      "clienteNome": "Cassino Hotel"
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-09-03",
+      "prodId": 1775403653171,
+      "prodNome": "Bolo caseiro de laranja VEG",
+      "qtd": 3,
+      "ref": "FAT-0179",
+      "clienteNome": "Cassino Hotel"
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-09-03",
+      "prodId": 1775404101559,
+      "prodNome": "Bolo caseiro de banana VEG",
+      "qtd": 3,
+      "ref": "FAT-0179",
+      "clienteNome": "Cassino Hotel"
     }
   ],
   "_exportSeq": 49,
