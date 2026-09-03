@@ -10496,8 +10496,8 @@
       "status": "entregue",
       "dataRegistro": "2026-09-02",
       "entregue": true,
-      "recebido": false,
-      "dataRecebimento": null
+      "recebido": true,
+      "dataRecebimento": "2026-09-03"
     }
   ],
   "precificados": [
@@ -22054,7 +22054,8 @@
       "subtotal": 179,
       "total": 179,
       "dataEmissao": "2026-09-02",
-      "status": "emitida"
+      "status": "emitida",
+      "enviada": false
     }
   ],
   "_movEstoque": [
