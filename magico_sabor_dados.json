@@ -22439,7 +22439,7 @@
       "total": 56,
       "dataEmissao": "2026-09-04",
       "status": "emitida",
-      "enviada": false
+      "enviada": true
     }
   ],
   "_movEstoque": [
