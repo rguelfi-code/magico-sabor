@@ -203,7 +203,7 @@
       "sd": true,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-04-27",
-      "estoque": 1
+      "estoque": 0
     },
     {
       "id": 1777298070981,
@@ -1391,7 +1391,8 @@
       "veg": false,
       "sd": false,
       "dataCadastro": "2026-04-05",
-      "dataAtualizacao": "2026-04-23"
+      "dataAtualizacao": "2026-04-23",
+      "estoque": -6
     },
     {
       "id": 1775414190628,
@@ -10594,8 +10595,11 @@
       ],
       "subtotal": 56,
       "total": 56,
-      "status": "aberto",
-      "dataRegistro": "2026-09-04"
+      "status": "entregue",
+      "dataRegistro": "2026-09-04",
+      "entregue": false,
+      "recebido": false,
+      "dataRecebimento": null
     },
     {
       "id": 1788534758531,
@@ -10635,7 +10639,10 @@
       "subtotal": 182,
       "total": 182,
       "status": "aberto",
-      "dataRegistro": "2026-09-04"
+      "dataRegistro": "2026-09-04",
+      "entregue": false,
+      "recebido": false,
+      "dataRecebimento": null
     },
     {
       "id": 1788534852493,
@@ -10670,7 +10677,10 @@
       "subtotal": 106,
       "total": 106,
       "status": "aberto",
-      "dataRegistro": "2026-09-04"
+      "dataRegistro": "2026-09-04",
+      "entregue": false,
+      "recebido": false,
+      "dataRecebimento": null
     },
     {
       "id": 1788535056835,
@@ -10730,7 +10740,10 @@
       "subtotal": 354,
       "total": 354,
       "status": "aberto",
-      "dataRegistro": "2026-09-04"
+      "dataRegistro": "2026-09-04",
+      "entregue": false,
+      "recebido": false,
+      "dataRecebimento": null
     },
     {
       "id": 1788535177306,
@@ -10770,7 +10783,10 @@
       "subtotal": 204,
       "total": 204,
       "status": "aberto",
-      "dataRegistro": "2026-09-04"
+      "dataRegistro": "2026-09-04",
+      "entregue": false,
+      "recebido": false,
+      "dataRecebimento": null
     }
   ],
   "precificados": [
@@ -22394,6 +22410,35 @@
       "dataEmissao": "2026-09-03",
       "status": "emitida",
       "enviada": false
+    },
+    {
+      "id": 1788536084381,
+      "numero": "FAT-0180",
+      "encId": 1788534533608,
+      "clienteNome": "Ana Lúcia Rosico",
+      "clienteDoc": "—",
+      "clienteTel": "(35) 99126 2053",
+      "clienteEnd": "Rua Sapucaí, 68 apt 31 - S.Benedito",
+      "data": "2026-09-04",
+      "vencimento": "2026-09-04",
+      "pagamento": "pix",
+      "itens": [
+        {
+          "nome": "Mini-pão 45g (6 un)",
+          "qtd": 6,
+          "preco": 3.5
+        },
+        {
+          "nome": "Bolo caseiro de chocolate ZERO",
+          "qtd": 1,
+          "preco": 35
+        }
+      ],
+      "frete": 0,
+      "subtotal": 56,
+      "total": 56,
+      "dataEmissao": "2026-09-04",
+      "status": "emitida"
     }
   ],
   "_movEstoque": [
@@ -23253,6 +23298,24 @@
       "qtd": 3,
       "ref": "FAT-0179",
       "clienteNome": "Cassino Hotel"
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-09-04",
+      "prodId": 1775412948951,
+      "prodNome": "Mini-pão 45g (6 un)",
+      "qtd": 6,
+      "ref": "FAT-0180",
+      "clienteNome": "Ana Lúcia Rosico"
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-09-04",
+      "prodId": 1775403101020,
+      "prodNome": "Bolo caseiro de chocolate ZERO",
+      "qtd": 1,
+      "ref": "FAT-0180",
+      "clienteNome": "Ana Lúcia Rosico"
     }
   ],
   "_exportSeq": 49,
