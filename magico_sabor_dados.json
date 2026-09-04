@@ -1592,7 +1592,7 @@
       "veg": false,
       "sd": false,
       "dataCadastro": "2026-04-05",
-      "estoque": 1
+      "estoque": 4
     },
     {
       "id": 1775412983271,
@@ -22438,7 +22438,8 @@
       "subtotal": 56,
       "total": 56,
       "dataEmissao": "2026-09-04",
-      "status": "emitida"
+      "status": "emitida",
+      "enviada": false
     }
   ],
   "_movEstoque": [
@@ -23316,6 +23317,15 @@
       "qtd": 1,
       "ref": "FAT-0180",
       "clienteNome": "Ana Lúcia Rosico"
+    },
+    {
+      "tipo": "entrada",
+      "data": "2026-09-04",
+      "prodId": 1775412736500,
+      "prodNome": "Pão fatiado multigrãos",
+      "qtd": 3,
+      "obs": "",
+      "ref": "Produção"
     }
   ],
   "_exportSeq": 49,
