@@ -528,7 +528,7 @@
       "veg": false,
       "sd": true,
       "dataCadastro": "2026-04-04",
-      "estoque": 2
+      "estoque": 1
     },
     {
       "id": 1777303927116,
@@ -833,7 +833,7 @@
       "sd": false,
       "dataCadastro": "2026-04-04",
       "dataAtualizacao": "2026-04-27",
-      "estoque": 2
+      "estoque": 1
     },
     {
       "id": 1775337876560,
@@ -1574,7 +1574,7 @@
       "veg": false,
       "sd": false,
       "dataCadastro": "2026-04-05",
-      "estoque": 2
+      "estoque": 1
     },
     {
       "id": 1775412736500,
@@ -10638,7 +10638,7 @@
       ],
       "subtotal": 182,
       "total": 182,
-      "status": "aberto",
+      "status": "entregue",
       "dataRegistro": "2026-09-04",
       "entregue": false,
       "recebido": false,
@@ -22440,6 +22440,45 @@
       "dataEmissao": "2026-09-04",
       "status": "emitida",
       "enviada": true
+    },
+    {
+      "id": 1788546929953,
+      "numero": "FAT-0181",
+      "encId": 1788534758531,
+      "clienteNome": "Palace Hotel",
+      "clienteDoc": "20.971.621/0003-91",
+      "clienteTel": "",
+      "clienteEnd": "Praça Dr. Pedro Sanches, SN",
+      "data": "2026-09-04",
+      "vencimento": "2026-09-04",
+      "pagamento": "pix",
+      "itens": [
+        {
+          "nome": "Bolo de laranja VEG",
+          "qtd": 1,
+          "preco": 45
+        },
+        {
+          "nome": "Bolo de cenoura ZERO",
+          "qtd": 1,
+          "preco": 65
+        },
+        {
+          "nome": "Pão fatiado milho",
+          "qtd": 1,
+          "preco": 36
+        },
+        {
+          "nome": "Pão fatiado abóbora",
+          "qtd": 1,
+          "preco": 36
+        }
+      ],
+      "frete": 0,
+      "subtotal": 182,
+      "total": 182,
+      "dataEmissao": "2026-09-04",
+      "status": "emitida"
     }
   ],
   "_movEstoque": [
@@ -23344,6 +23383,33 @@
       "qtd": 5,
       "obs": "",
       "ref": "Produção"
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-09-04",
+      "prodId": 1775337842248,
+      "prodNome": "Bolo de laranja VEG",
+      "qtd": 1,
+      "ref": "FAT-0181",
+      "clienteNome": "Palace Hotel"
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-09-04",
+      "prodId": 1775337315853,
+      "prodNome": "Bolo de cenoura ZERO",
+      "qtd": 1,
+      "ref": "FAT-0181",
+      "clienteNome": "Palace Hotel"
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-09-04",
+      "prodId": 1775412700553,
+      "prodNome": "Pão fatiado milho",
+      "qtd": 1,
+      "ref": "FAT-0181",
+      "clienteNome": "Palace Hotel"
     }
   ],
   "_exportSeq": 49,
