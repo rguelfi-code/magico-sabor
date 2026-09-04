@@ -10564,7 +10564,7 @@
       "total": 759,
       "status": "entregue",
       "dataRegistro": "2026-09-03",
-      "entregue": false,
+      "entregue": true,
       "recebido": false,
       "dataRecebimento": null
     },
