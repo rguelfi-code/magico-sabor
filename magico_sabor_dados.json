@@ -1520,7 +1520,7 @@
       "sd": false,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-04-27",
-      "estoque": 1
+      "estoque": 6
     },
     {
       "id": 1779109491117,
@@ -23333,6 +23333,15 @@
       "prodId": 1775412948951,
       "prodNome": "Mini-pão 45g (6 un)",
       "qtd": 6,
+      "obs": "",
+      "ref": "Produção"
+    },
+    {
+      "tipo": "entrada",
+      "data": "2026-09-04",
+      "prodId": 1775412797431,
+      "prodNome": "Pão de forma VEG",
+      "qtd": 5,
       "obs": "",
       "ref": "Produção"
     }
