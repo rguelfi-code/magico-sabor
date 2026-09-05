@@ -91,7 +91,7 @@
       "sd": true,
       "dataCadastro": "2026-04-04",
       "dataAtualizacao": "2026-05-11",
-      "estoque": 1
+      "estoque": 0
     },
     {
       "id": 1778510458992,
@@ -23719,6 +23719,17 @@
       "qtd": 1,
       "obs": "",
       "ref": "Produção"
+    },
+    {
+      "tipo": "saida",
+      "subtipo": "ajuste",
+      "data": "2026-09-05",
+      "prodId": 1775339336605,
+      "prodNome": "Bolo caseiro de cenoura ZERO",
+      "qtd": 1,
+      "ref": "Ajuste (Contagem física)",
+      "obs": "Saldo anterior: 1 un → 0 un",
+      "clienteNome": ""
     }
   ],
   "_exportSeq": 50,
