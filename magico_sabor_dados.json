@@ -1574,7 +1574,7 @@
       "veg": false,
       "sd": false,
       "dataCadastro": "2026-04-05",
-      "estoque": -1
+      "estoque": 0
     },
     {
       "id": 1775412736500,
@@ -23740,6 +23740,17 @@
       "qtd": 1,
       "ref": "Ajuste (Contagem física)",
       "obs": "Saldo anterior: 3 un → 2 un",
+      "clienteNome": ""
+    },
+    {
+      "tipo": "entrada",
+      "subtipo": "ajuste",
+      "data": "2026-09-05",
+      "prodId": 1775412700553,
+      "prodNome": "Pão fatiado milho",
+      "qtd": 1,
+      "ref": "Ajuste (Contagem física)",
+      "obs": "Saldo anterior: -1 un → 0 un",
       "clienteNome": ""
     }
   ],
