@@ -1556,7 +1556,7 @@
       "sd": false,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-04-24",
-      "estoque": 1
+      "estoque": 2
     },
     {
       "id": 1775412700553,
@@ -23688,6 +23688,15 @@
       "prodId": 1775337237472,
       "prodNome": "Bolo de cenoura C/cob",
       "qtd": 8,
+      "obs": "",
+      "ref": "Produção"
+    },
+    {
+      "tipo": "entrada",
+      "data": "2026-09-05",
+      "prodId": 1775412765571,
+      "prodNome": "Pão fatiado  abóbora",
+      "qtd": 1,
       "obs": "",
       "ref": "Produção"
     }
