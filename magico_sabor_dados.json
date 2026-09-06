@@ -10827,7 +10827,7 @@
       "total": 162.1,
       "status": "entregue",
       "dataRegistro": "2026-09-06",
-      "entregue": false
+      "entregue": true
     },
     {
       "id": 1788717290867,
@@ -10853,7 +10853,7 @@
       "total": 114,
       "status": "entregue",
       "dataRegistro": "2026-09-06",
-      "entregue": false
+      "entregue": true
     }
   ],
   "precificados": [
