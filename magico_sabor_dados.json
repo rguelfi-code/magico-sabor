@@ -22720,7 +22720,8 @@
       "subtotal": 162.1,
       "total": 162.1,
       "dataEmissao": "2026-09-06",
-      "status": "emitida"
+      "status": "emitida",
+      "enviada": true
     },
     {
       "id": 1788717672282,
