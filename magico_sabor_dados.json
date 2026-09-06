@@ -1284,7 +1284,7 @@
       "sd": false,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-04-27",
-      "estoque": 21
+      "estoque": 11
     },
     {
       "id": 1775338784416,
@@ -1392,7 +1392,7 @@
       "sd": false,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-04-23",
-      "estoque": 0
+      "estoque": -3
     },
     {
       "id": 1775414190628,
@@ -1520,7 +1520,7 @@
       "sd": false,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-04-27",
-      "estoque": 2
+      "estoque": 1
     },
     {
       "id": 1779109491117,
@@ -1611,7 +1611,7 @@
       "sd": false,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-06-12",
-      "estoque": 60
+      "estoque": 48
     },
     {
       "id": 1776807915677,
@@ -10825,8 +10825,9 @@
       ],
       "subtotal": 162.1,
       "total": 162.1,
-      "status": "aberto",
-      "dataRegistro": "2026-09-06"
+      "status": "entregue",
+      "dataRegistro": "2026-09-06",
+      "entregue": false
     },
     {
       "id": 1788717290867,
@@ -22680,6 +22681,45 @@
       "dataEmissao": "2026-09-04",
       "status": "emitida",
       "enviada": false
+    },
+    {
+      "id": 1788717568160,
+      "numero": "FAT-0185",
+      "encId": 1788717247630,
+      "clienteNome": "Aira",
+      "clienteDoc": "—",
+      "clienteTel": "(19) 99240 9965",
+      "clienteEnd": "São João da Boa Vista, 272 Jdm Estados",
+      "data": "2026-09-06",
+      "vencimento": "2026-09-06",
+      "pagamento": "pix",
+      "itens": [
+        {
+          "nome": "Disco pizza 100g  (5 un) VEG",
+          "qtd": 10,
+          "preco": 7
+        },
+        {
+          "nome": "Pão francês (6 un)",
+          "qtd": 12,
+          "preco": 3.8
+        },
+        {
+          "nome": "Mini-pão 45g (6 un)",
+          "qtd": 3,
+          "preco": 3.5
+        },
+        {
+          "nome": "Pão de forma VEG",
+          "qtd": 1,
+          "preco": 36
+        }
+      ],
+      "frete": 0,
+      "subtotal": 162.1,
+      "total": 162.1,
+      "dataEmissao": "2026-09-06",
+      "status": "emitida"
     }
   ],
   "_movEstoque": [
@@ -23873,6 +23913,42 @@
       "qtd": 4,
       "obs": "",
       "ref": "Produção"
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-09-06",
+      "prodId": 1775413148538,
+      "prodNome": "Disco pizza 100g  (5 un) VEG",
+      "qtd": 10,
+      "ref": "FAT-0185",
+      "clienteNome": "Aira"
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-09-06",
+      "prodId": 1775412983271,
+      "prodNome": "Pão francês (6 un)",
+      "qtd": 12,
+      "ref": "FAT-0185",
+      "clienteNome": "Aira"
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-09-06",
+      "prodId": 1775412948951,
+      "prodNome": "Mini-pão 45g (6 un)",
+      "qtd": 3,
+      "ref": "FAT-0185",
+      "clienteNome": "Aira"
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-09-06",
+      "prodId": 1775412797431,
+      "prodNome": "Pão de forma VEG",
+      "qtd": 1,
+      "ref": "FAT-0185",
+      "clienteNome": "Aira"
     }
   ],
   "_exportSeq": 50,
