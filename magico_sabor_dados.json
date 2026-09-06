@@ -1611,7 +1611,7 @@
       "sd": false,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-06-12",
-      "estoque": 48
+      "estoque": 18
     },
     {
       "id": 1776807915677,
@@ -10851,8 +10851,9 @@
       ],
       "subtotal": 114,
       "total": 114,
-      "status": "aberto",
-      "dataRegistro": "2026-09-06"
+      "status": "entregue",
+      "dataRegistro": "2026-09-06",
+      "entregue": false
     }
   ],
   "precificados": [
@@ -22720,6 +22721,30 @@
       "total": 162.1,
       "dataEmissao": "2026-09-06",
       "status": "emitida"
+    },
+    {
+      "id": 1788717672282,
+      "numero": "FAT-0186",
+      "encId": 1788717290867,
+      "clienteNome": "Carol Tenari",
+      "clienteDoc": "—",
+      "clienteTel": "",
+      "clienteEnd": "",
+      "data": "2026-09-06",
+      "vencimento": "2026-09-06",
+      "pagamento": "pix",
+      "itens": [
+        {
+          "nome": "Pão francês (6 un)",
+          "qtd": 30,
+          "preco": 3.8
+        }
+      ],
+      "frete": 0,
+      "subtotal": 114,
+      "total": 114,
+      "dataEmissao": "2026-09-06",
+      "status": "emitida"
     }
   ],
   "_movEstoque": [
@@ -23949,6 +23974,15 @@
       "qtd": 1,
       "ref": "FAT-0185",
       "clienteNome": "Aira"
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-09-06",
+      "prodId": 1775412983271,
+      "prodNome": "Pão francês (6 un)",
+      "qtd": 30,
+      "ref": "FAT-0186",
+      "clienteNome": "Carol Tenari"
     }
   ],
   "_exportSeq": 50,
