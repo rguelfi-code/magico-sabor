@@ -833,7 +833,7 @@
       "sd": false,
       "dataCadastro": "2026-04-04",
       "dataAtualizacao": "2026-04-27",
-      "estoque": 0
+      "estoque": 4
     },
     {
       "id": 1775337876560,
@@ -23788,6 +23788,15 @@
       "prodId": 1775404101559,
       "prodNome": "Bolo caseiro de banana VEG",
       "qtd": 1,
+      "obs": "",
+      "ref": "Produção"
+    },
+    {
+      "tipo": "entrada",
+      "data": "2026-09-06",
+      "prodId": 1775337842248,
+      "prodNome": "Bolo de laranja VEG",
+      "qtd": 4,
       "obs": "",
       "ref": "Produção"
     }
