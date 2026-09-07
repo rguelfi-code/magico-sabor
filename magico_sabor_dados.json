@@ -10857,8 +10857,8 @@
       "status": "entregue",
       "dataRegistro": "2026-09-06",
       "entregue": true,
-      "recebido": false,
-      "dataRecebimento": null
+      "recebido": true,
+      "dataRecebimento": "2026-09-07"
     },
     {
       "id": 1788790141277,
