@@ -473,7 +473,7 @@
       "sd": false,
       "dataCadastro": "2026-04-04",
       "dataAtualizacao": "2026-04-27",
-      "estoque": 2
+      "estoque": 1
     },
     {
       "id": 1775338584762,
@@ -510,7 +510,7 @@
       "sd": false,
       "dataCadastro": "2026-04-04",
       "dataAtualizacao": "2026-04-27",
-      "estoque": 6
+      "estoque": 5
     },
     {
       "id": 1775337315853,
@@ -833,7 +833,7 @@
       "sd": false,
       "dataCadastro": "2026-04-04",
       "dataAtualizacao": "2026-04-27",
-      "estoque": 3
+      "estoque": 2
     },
     {
       "id": 1775337876560,
@@ -1592,7 +1592,7 @@
       "veg": false,
       "sd": false,
       "dataCadastro": "2026-04-05",
-      "estoque": 1
+      "estoque": 0
     },
     {
       "id": 1775412983271,
@@ -1734,7 +1734,8 @@
       "sl": true,
       "veg": true,
       "sd": true,
-      "dataCadastro": "2026-07-13"
+      "dataCadastro": "2026-07-13",
+      "estoque": -5
     },
     {
       "id": 1775413995120,
@@ -1808,7 +1809,7 @@
       "sd": true,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-04-27",
-      "estoque": 6
+      "estoque": 1
     },
     {
       "id": 1775413645611,
@@ -10947,8 +10948,9 @@
       ],
       "subtotal": 329,
       "total": 329,
-      "status": "aberto",
-      "dataRegistro": "2026-09-07"
+      "status": "entregue",
+      "dataRegistro": "2026-09-07",
+      "entregue": false
     }
   ],
   "precificados": [
@@ -22881,6 +22883,55 @@
       "total": 208,
       "dataEmissao": "2026-09-07",
       "status": "emitida"
+    },
+    {
+      "id": 1788792678237,
+      "numero": "FAT-0188",
+      "encId": 1788792669743,
+      "clienteNome": "Monreale - D.C. Turismo Ltda.",
+      "clienteDoc": "01.204.495/0001-33",
+      "clienteTel": "",
+      "clienteEnd": "Av. Leonor Furlaneto Delgado, 3033",
+      "data": "2026-09-07",
+      "vencimento": "2026-09-07",
+      "pagamento": "pix",
+      "itens": [
+        {
+          "nome": "Bolo de cenoura C/cob",
+          "qtd": 1,
+          "preco": 60
+        },
+        {
+          "nome": "Bolo de banana VEG",
+          "qtd": 1,
+          "preco": 38
+        },
+        {
+          "nome": "Bolo de laranja VEG",
+          "qtd": 1,
+          "preco": 45
+        },
+        {
+          "nome": "Pão fatiado multigrãos",
+          "qtd": 1,
+          "preco": 36
+        },
+        {
+          "nome": "Torta de maçã & choc veg ZERO",
+          "qtd": 5,
+          "preco": 13
+        },
+        {
+          "nome": "Torta de sorvete ZERO",
+          "qtd": 5,
+          "preco": 17
+        }
+      ],
+      "frete": 0,
+      "subtotal": 329,
+      "total": 329,
+      "dataEmissao": "2026-09-07",
+      "status": "emitida"
     }
   ],
   "_movEstoque": [
@@ -24154,6 +24205,60 @@
       "prodNome": "Bolo de banana VEG",
       "qtd": 1,
       "ref": "FAT-0187",
+      "clienteNome": "Monreale - D.C. Turismo Ltda."
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-09-07",
+      "prodId": 1775337237472,
+      "prodNome": "Bolo de cenoura C/cob",
+      "qtd": 1,
+      "ref": "FAT-0188",
+      "clienteNome": "Monreale - D.C. Turismo Ltda."
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-09-07",
+      "prodId": 1775338517548,
+      "prodNome": "Bolo de banana VEG",
+      "qtd": 1,
+      "ref": "FAT-0188",
+      "clienteNome": "Monreale - D.C. Turismo Ltda."
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-09-07",
+      "prodId": 1775337842248,
+      "prodNome": "Bolo de laranja VEG",
+      "qtd": 1,
+      "ref": "FAT-0188",
+      "clienteNome": "Monreale - D.C. Turismo Ltda."
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-09-07",
+      "prodId": 1775412736500,
+      "prodNome": "Pão fatiado multigrãos",
+      "qtd": 1,
+      "ref": "FAT-0188",
+      "clienteNome": "Monreale - D.C. Turismo Ltda."
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-09-07",
+      "prodId": 1783965798064,
+      "prodNome": "Torta de maçã & choc veg ZERO",
+      "qtd": 5,
+      "ref": "FAT-0188",
+      "clienteNome": "Monreale - D.C. Turismo Ltda."
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-09-07",
+      "prodId": 1775413947923,
+      "prodNome": "Torta de sorvete ZERO",
+      "qtd": 5,
+      "ref": "FAT-0188",
       "clienteNome": "Monreale - D.C. Turismo Ltda."
     }
   ],
