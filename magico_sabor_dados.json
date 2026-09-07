@@ -10829,8 +10829,8 @@
       "status": "entregue",
       "dataRegistro": "2026-09-06",
       "entregue": true,
-      "recebido": false,
-      "dataRecebimento": null
+      "recebido": true,
+      "dataRecebimento": "2026-09-07"
     },
     {
       "id": 1788717290867,
@@ -10899,7 +10899,9 @@
       "total": 208,
       "status": "entregue",
       "dataRegistro": "2026-09-07",
-      "entregue": false
+      "entregue": false,
+      "recebido": false,
+      "dataRecebimento": null
     },
     {
       "id": 1788792669743,
@@ -10950,7 +10952,9 @@
       "total": 329,
       "status": "entregue",
       "dataRegistro": "2026-09-07",
-      "entregue": false
+      "entregue": false,
+      "recebido": false,
+      "dataRecebimento": null
     }
   ],
   "precificados": [
@@ -22882,7 +22886,8 @@
       "subtotal": 208,
       "total": 208,
       "dataEmissao": "2026-09-07",
-      "status": "emitida"
+      "status": "emitida",
+      "enviada": false
     },
     {
       "id": 1788792678237,
@@ -22931,7 +22936,8 @@
       "subtotal": 329,
       "total": 329,
       "dataEmissao": "2026-09-07",
-      "status": "emitida"
+      "status": "emitida",
+      "enviada": false
     }
   ],
   "_movEstoque": [
