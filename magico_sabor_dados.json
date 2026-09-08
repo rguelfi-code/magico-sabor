@@ -3762,6 +3762,17 @@
       "dataCadastro": "2026-04-09"
     },
     {
+      "id": 1788906425260,
+      "nome": "Cláudia Flotres",
+      "tel": "(35) 98817 5729",
+      "doc": "",
+      "email": "",
+      "bairro": "Poços de Caldas",
+      "endereco": "",
+      "obs": "",
+      "dataCadastro": "2026-09-08"
+    },
+    {
       "id": 1775766684515,
       "nome": "Dani Faria",
       "tel": "(35) 99241 0412",
@@ -11000,7 +11011,9 @@
       "total": 277,
       "status": "entregue",
       "dataRegistro": "2026-09-08",
-      "entregue": false
+      "entregue": false,
+      "recebido": false,
+      "dataRecebimento": null
     }
   ],
   "precificados": [
@@ -23027,7 +23040,8 @@
       "subtotal": 277,
       "total": 277,
       "dataEmissao": "2026-09-08",
-      "status": "emitida"
+      "status": "emitida",
+      "enviada": false
     }
   ],
   "_movEstoque": [
