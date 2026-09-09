@@ -3266,12 +3266,12 @@
       "categoria": "cobertura",
       "rendimento": 0.075,
       "rendimentoUn": "kg",
-      "custoUnit": 70,
-      "custoTotal": 5.25,
+      "custoUnit": 50,
+      "custoTotal": 3.75,
       "ings": [
         {
           "id": 1780504812973,
-          "ingId": 1775422192699,
+          "ingId": 1775423013252,
           "qtd": 0.075
         }
       ],
