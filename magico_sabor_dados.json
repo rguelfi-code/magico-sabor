@@ -1854,14 +1854,14 @@
       "nome": "Abóbora japonesa",
       "unidade": "kg",
       "estoque": 0,
-      "custo": 13,
+      "custo": 14,
       "minimo": 0,
       "fornecedor": "local",
       "sg": true,
       "sl": true,
       "veg": true,
       "dataCadastro": "2026-04-21",
-      "dataAtualizacao": "2026-06-01"
+      "dataAtualizacao": "2026-09-09"
     },
     {
       "id": 1775418046120,
@@ -11119,7 +11119,10 @@
       "subtotal": 105,
       "total": 105,
       "status": "aberto",
-      "dataRegistro": "2026-09-09"
+      "dataRegistro": "2026-09-09",
+      "entregue": false,
+      "recebido": false,
+      "dataRecebimento": null
     }
   ],
   "precificados": [
