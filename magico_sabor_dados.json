@@ -3264,19 +3264,20 @@
       "id": 1780504854184,
       "nome": "Cobertura de goiabada 75g",
       "categoria": "cobertura",
-      "rendimento": 0.75,
+      "rendimento": 0.075,
       "rendimentoUn": "kg",
-      "custoUnit": 2,
-      "custoTotal": 1.5,
+      "custoUnit": 70,
+      "custoTotal": 5.25,
       "ings": [
         {
           "id": 1780504812973,
-          "ingId": 1775423013252,
+          "ingId": 1775422192699,
           "qtd": 0.075
         }
       ],
       "obs": "",
-      "dataCadastro": "2026-06-03"
+      "dataCadastro": "2026-06-03",
+      "dataAtualizacao": "2026-09-09"
     },
     {
       "id": 1777230070255,
