@@ -11043,8 +11043,8 @@
       "status": "entregue",
       "dataRegistro": "2026-09-08",
       "entregue": true,
-      "recebido": false,
-      "dataRecebimento": null
+      "recebido": true,
+      "dataRecebimento": "2026-09-10"
     },
     {
       "id": 1788906674827,
