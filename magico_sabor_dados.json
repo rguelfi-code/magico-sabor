@@ -1594,7 +1594,7 @@
       "veg": false,
       "sd": false,
       "dataCadastro": "2026-04-05",
-      "estoque": 0
+      "estoque": 6
     },
     {
       "id": 1775412983271,
@@ -24591,6 +24591,15 @@
       "qtd": 10,
       "ref": "FAT-0190",
       "clienteNome": "Monreale - D.C. Turismo Ltda."
+    },
+    {
+      "tipo": "entrada",
+      "data": "2026-09-10",
+      "prodId": 1775412736500,
+      "prodNome": "Pão fatiado multigrãos",
+      "qtd": 6,
+      "obs": "",
+      "ref": "Produção"
     }
   ],
   "_exportSeq": 50,
