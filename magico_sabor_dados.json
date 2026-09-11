@@ -1756,7 +1756,7 @@
       "sd": false,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-04-27",
-      "estoque": 2
+      "estoque": 36
     },
     {
       "id": 1775413867450,
@@ -24726,6 +24726,15 @@
       "prodId": 1775412797431,
       "prodNome": "Pão de forma VEG",
       "qtd": 5,
+      "obs": "",
+      "ref": "Produção"
+    },
+    {
+      "tipo": "entrada",
+      "data": "2026-09-11",
+      "prodId": 1775413995120,
+      "prodNome": "Torta de maçã & chocolate VEG",
+      "qtd": 34,
       "obs": "",
       "ref": "Produção"
     }
