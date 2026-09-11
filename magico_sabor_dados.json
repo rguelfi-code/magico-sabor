@@ -834,7 +834,7 @@
       "sd": false,
       "dataCadastro": "2026-04-04",
       "dataAtualizacao": "2026-04-27",
-      "estoque": 0
+      "estoque": 8
     },
     {
       "id": 1775337876560,
@@ -23254,7 +23254,8 @@
       "subtotal": 187,
       "total": 187,
       "dataEmissao": "2026-09-10",
-      "status": "emitida"
+      "status": "emitida",
+      "enviada": false
     }
   ],
   "_movEstoque": [
@@ -24709,6 +24710,15 @@
       "qtd": 1,
       "ref": "FAT-0192",
       "clienteNome": "Palace Hotel"
+    },
+    {
+      "tipo": "entrada",
+      "data": "2026-09-11",
+      "prodId": 1775337842248,
+      "prodNome": "Bolo de laranja VEG",
+      "qtd": 8,
+      "obs": "",
+      "ref": "Produção"
     }
   ],
   "_exportSeq": 50,
