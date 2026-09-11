@@ -11189,7 +11189,7 @@
       "total": 203,
       "status": "entregue",
       "dataRegistro": "2026-09-11",
-      "entregue": false,
+      "entregue": true,
       "recebido": false,
       "dataRecebimento": null
     },
@@ -11232,7 +11232,7 @@
       "total": 199,
       "status": "entregue",
       "dataRegistro": "2026-09-11",
-      "entregue": false,
+      "entregue": true,
       "recebido": false,
       "dataRecebimento": null
     }
