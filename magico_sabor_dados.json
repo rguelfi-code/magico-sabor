@@ -10388,8 +10388,8 @@
       "status": "entregue",
       "dataRegistro": "2026-08-28",
       "entregue": true,
-      "recebido": false,
-      "dataRecebimento": null
+      "recebido": true,
+      "dataRecebimento": "2026-09-11"
     },
     {
       "id": 1788185244753,
@@ -10436,8 +10436,8 @@
       "status": "entregue",
       "dataRegistro": "2026-08-31",
       "entregue": true,
-      "recebido": false,
-      "dataRecebimento": null
+      "recebido": true,
+      "dataRecebimento": "2026-09-11"
     },
     {
       "id": 1788362201664,
