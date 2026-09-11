@@ -473,7 +473,7 @@
       "sd": false,
       "dataCadastro": "2026-04-04",
       "dataAtualizacao": "2026-04-27",
-      "estoque": 0
+      "estoque": -1
     },
     {
       "id": 1775338584762,
@@ -510,7 +510,7 @@
       "sd": false,
       "dataCadastro": "2026-04-04",
       "dataAtualizacao": "2026-04-27",
-      "estoque": 3
+      "estoque": 2
     },
     {
       "id": 1775337315853,
@@ -600,7 +600,7 @@
       "sl": true,
       "veg": false,
       "sd": false,
-      "estoque": 0,
+      "estoque": -1,
       "estoqueMin": 0,
       "dataCadastro": "2026-08-30",
       "dataAtualizacao": "2026-08-30"
@@ -11230,8 +11230,9 @@
       ],
       "subtotal": 199,
       "total": 199,
-      "status": "aberto",
-      "dataRegistro": "2026-09-11"
+      "status": "entregue",
+      "dataRegistro": "2026-09-11",
+      "entregue": false
     }
   ],
   "precificados": [
@@ -23397,6 +23398,45 @@
       "dataEmissao": "2026-09-11",
       "status": "emitida",
       "enviada": false
+    },
+    {
+      "id": 1789153096053,
+      "numero": "FAT-0194",
+      "encId": 1789153073583,
+      "clienteNome": "Monreale - D.C. Turismo Ltda.",
+      "clienteDoc": "01.204.495/0001-33",
+      "clienteTel": "",
+      "clienteEnd": "Av. Leonor Furlaneto Delgado, 3033",
+      "data": "2026-09-11",
+      "vencimento": "2026-09-11",
+      "pagamento": "pix",
+      "itens": [
+        {
+          "nome": "Pão fatiado abóbora",
+          "qtd": 1,
+          "preco": 36
+        },
+        {
+          "nome": "Bolo de cenoura C/cob",
+          "qtd": 1,
+          "preco": 60
+        },
+        {
+          "nome": "Bolo de banana VEG",
+          "qtd": 1,
+          "preco": 38
+        },
+        {
+          "nome": "Bolo de chocolate (1) - C/cob",
+          "qtd": 1,
+          "preco": 65
+        }
+      ],
+      "frete": 0,
+      "subtotal": 199,
+      "total": 199,
+      "dataEmissao": "2026-09-11",
+      "status": "emitida"
     }
   ],
   "_movEstoque": [
@@ -24916,6 +24956,33 @@
       "ref": "Ajuste (Contagem física)",
       "obs": "Saldo anterior: 36 un → 26 un",
       "clienteNome": ""
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-09-11",
+      "prodId": 1775337237472,
+      "prodNome": "Bolo de cenoura C/cob",
+      "qtd": 1,
+      "ref": "FAT-0194",
+      "clienteNome": "Monreale - D.C. Turismo Ltda."
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-09-11",
+      "prodId": 1775338517548,
+      "prodNome": "Bolo de banana VEG",
+      "qtd": 1,
+      "ref": "FAT-0194",
+      "clienteNome": "Monreale - D.C. Turismo Ltda."
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-09-11",
+      "prodId": 1788115879112,
+      "prodNome": "Bolo de chocolate (1) - C/cob",
+      "qtd": 1,
+      "ref": "FAT-0194",
+      "clienteNome": "Monreale - D.C. Turismo Ltda."
     }
   ],
   "_exportSeq": 50,
