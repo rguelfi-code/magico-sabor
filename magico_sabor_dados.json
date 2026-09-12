@@ -1613,7 +1613,7 @@
       "sd": false,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-06-12",
-      "estoque": 18
+      "estoque": 42
     },
     {
       "id": 1776807915677,
@@ -25036,6 +25036,15 @@
       "prodId": 1775412765571,
       "prodNome": "Pão fatiado  abóbora",
       "qtd": 5,
+      "obs": "",
+      "ref": "Produção"
+    },
+    {
+      "tipo": "entrada",
+      "data": "2026-09-12",
+      "prodId": 1775412983271,
+      "prodNome": "Pão francês (6 un)",
+      "qtd": 24,
       "obs": "",
       "ref": "Produção"
     }
