@@ -1285,7 +1285,7 @@
       "sd": false,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-04-27",
-      "estoque": 2
+      "estoque": 12
     },
     {
       "id": 1775338784416,
@@ -25054,6 +25054,15 @@
       "prodId": 1775412700553,
       "prodNome": "Pão fatiado milho",
       "qtd": 6,
+      "obs": "",
+      "ref": "Produção"
+    },
+    {
+      "tipo": "entrada",
+      "data": "2026-09-12",
+      "prodId": 1775413148538,
+      "prodNome": "Disco pizza 100g  (5 un) VEG",
+      "qtd": 10,
       "obs": "",
       "ref": "Produção"
     }
