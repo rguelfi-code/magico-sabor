@@ -1576,7 +1576,7 @@
       "veg": false,
       "sd": false,
       "dataCadastro": "2026-04-05",
-      "estoque": 0
+      "estoque": 6
     },
     {
       "id": 1775412736500,
@@ -25045,6 +25045,15 @@
       "prodId": 1775412983271,
       "prodNome": "Pão francês (6 un)",
       "qtd": 24,
+      "obs": "",
+      "ref": "Produção"
+    },
+    {
+      "tipo": "entrada",
+      "data": "2026-09-12",
+      "prodId": 1775412700553,
+      "prodNome": "Pão fatiado milho",
+      "qtd": 6,
       "obs": "",
       "ref": "Produção"
     }
