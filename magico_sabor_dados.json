@@ -1558,7 +1558,7 @@
       "sd": false,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-04-24",
-      "estoque": 7
+      "estoque": 3
     },
     {
       "id": 1775412700553,
@@ -25176,6 +25176,17 @@
       "qtd": 55,
       "obs": "",
       "ref": "Produção"
+    },
+    {
+      "tipo": "saida",
+      "subtipo": "ajuste",
+      "data": "2026-09-13",
+      "prodId": 1775412765571,
+      "prodNome": "Pão fatiado  abóbora",
+      "qtd": 4,
+      "ref": "Ajuste (Contagem física)",
+      "obs": "Saldo anterior: 7 un → 3 un",
+      "clienteNome": ""
     }
   ],
   "_exportSeq": 50,
