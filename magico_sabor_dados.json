@@ -1737,7 +1737,7 @@
       "veg": true,
       "sd": true,
       "dataCadastro": "2026-07-13",
-      "estoque": -5
+      "estoque": 0
     },
     {
       "id": 1775413995120,
@@ -25197,6 +25197,17 @@
       "qtd": 6,
       "ref": "Ajuste (Contagem física)",
       "obs": "Saldo anterior: 42 un → 36 un",
+      "clienteNome": ""
+    },
+    {
+      "tipo": "entrada",
+      "subtipo": "ajuste",
+      "data": "2026-09-13",
+      "prodId": 1783965798064,
+      "prodNome": "Torta de maçã & choc veg ZERO",
+      "qtd": 5,
+      "ref": "Ajuste (Contagem física)",
+      "obs": "Saldo anterior: -5 un → 0 un",
       "clienteNome": ""
     }
   ],
