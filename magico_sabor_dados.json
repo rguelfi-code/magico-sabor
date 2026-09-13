@@ -1503,7 +1503,7 @@
       "sd": false,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-04-27",
-      "estoque": -10
+      "estoque": 45
     },
     {
       "id": 1775412797431,
@@ -25167,6 +25167,15 @@
       "ref": "Ajuste (Contagem física)",
       "obs": "Saldo anterior: 5 un → 4 un",
       "clienteNome": ""
+    },
+    {
+      "tipo": "entrada",
+      "data": "2026-09-13",
+      "prodId": 1775413066535,
+      "prodNome": "Pão de \"queijo\" (10) un",
+      "qtd": 55,
+      "obs": "",
+      "ref": "Produção"
     }
   ],
   "_exportSeq": 50,
