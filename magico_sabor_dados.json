@@ -1285,7 +1285,7 @@
       "sd": false,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-04-27",
-      "estoque": 12
+      "estoque": 22
     },
     {
       "id": 1775338784416,
@@ -25136,6 +25136,15 @@
       "prodId": 1775337425494,
       "prodNome": "Bolo de chocolate VEG",
       "qtd": 2,
+      "obs": "",
+      "ref": "Produção"
+    },
+    {
+      "tipo": "entrada",
+      "data": "2026-09-13",
+      "prodId": 1775413148538,
+      "prodNome": "Disco pizza 100g  (5 un) VEG",
+      "qtd": 10,
       "obs": "",
       "ref": "Produção"
     }
