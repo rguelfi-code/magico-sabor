@@ -600,7 +600,7 @@
       "sl": true,
       "veg": false,
       "sd": false,
-      "estoque": -1,
+      "estoque": 0,
       "estoqueMin": 0,
       "dataCadastro": "2026-08-30",
       "dataAtualizacao": "2026-08-30"
@@ -25117,6 +25117,17 @@
       "qtd": 6,
       "ref": "Ajuste (Contagem física)",
       "obs": "Saldo anterior: -1 un → 5 un",
+      "clienteNome": ""
+    },
+    {
+      "tipo": "entrada",
+      "subtipo": "ajuste",
+      "data": "2026-09-13",
+      "prodId": 1788115879112,
+      "prodNome": "Bolo de chocolate (1) - C/cob",
+      "qtd": 1,
+      "ref": "Ajuste (Contagem física)",
+      "obs": "Saldo anterior: -1 un → 0 un",
       "clienteNome": ""
     }
   ],
