@@ -926,7 +926,7 @@
       "sd": true,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-04-27",
-      "estoque": 0
+      "estoque": 17
     },
     {
       "id": 1775414426629,
@@ -25063,6 +25063,15 @@
       "prodId": 1775413148538,
       "prodNome": "Disco pizza 100g  (5 un) VEG",
       "qtd": 10,
+      "obs": "",
+      "ref": "Produção"
+    },
+    {
+      "tipo": "entrada",
+      "data": "2026-09-13",
+      "prodId": 1775414153841,
+      "prodNome": "Cheesecake c/frutas vermelhas ZERO",
+      "qtd": 17,
       "obs": "",
       "ref": "Produção"
     }
