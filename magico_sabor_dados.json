@@ -21946,7 +21946,7 @@
       "total": 66,
       "dataEmissao": "2026-08-04",
       "status": "emitida",
-      "enviada": false
+      "enviada": true
     },
     {
       "id": 1786141407456,
