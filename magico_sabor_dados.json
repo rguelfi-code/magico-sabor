@@ -1558,7 +1558,7 @@
       "sd": false,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-04-24",
-      "estoque": 3
+      "estoque": 5
     },
     {
       "id": 1775412700553,
@@ -25533,6 +25533,15 @@
       "qtd": 12,
       "ref": "FAT-0199",
       "clienteNome": "APA - Ana Paula Almeida"
+    },
+    {
+      "tipo": "entrada",
+      "data": "2026-09-15",
+      "prodId": 1775412765571,
+      "prodNome": "Pão fatiado  abóbora",
+      "qtd": 2,
+      "obs": "",
+      "ref": "Produção"
     }
   ],
   "_exportSeq": 50,
