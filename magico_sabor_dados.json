@@ -1594,7 +1594,7 @@
       "veg": false,
       "sd": false,
       "dataCadastro": "2026-04-05",
-      "estoque": 2
+      "estoque": 5
     },
     {
       "id": 1775412983271,
@@ -25540,6 +25540,15 @@
       "prodId": 1775412765571,
       "prodNome": "Pão fatiado  abóbora",
       "qtd": 2,
+      "obs": "",
+      "ref": "Produção"
+    },
+    {
+      "tipo": "entrada",
+      "data": "2026-09-15",
+      "prodId": 1775412736500,
+      "prodNome": "Pão fatiado multigrãos",
+      "qtd": 3,
       "obs": "",
       "ref": "Produção"
     }
