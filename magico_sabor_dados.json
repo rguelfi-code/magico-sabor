@@ -22781,7 +22781,7 @@
       "total": 81,
       "dataEmissao": "2026-08-28",
       "status": "emitida",
-      "enviada": false
+      "enviada": true
     },
     {
       "id": 1787940504917,
@@ -23061,7 +23061,7 @@
       "total": 182,
       "dataEmissao": "2026-09-04",
       "status": "emitida",
-      "enviada": false
+      "enviada": true
     },
     {
       "id": 1788547023672,
@@ -23496,7 +23496,7 @@
       "total": 187,
       "dataEmissao": "2026-09-10",
       "status": "emitida",
-      "enviada": false
+      "enviada": true
     },
     {
       "id": 1789147640696,
