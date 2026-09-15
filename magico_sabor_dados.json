@@ -1613,7 +1613,7 @@
       "sd": false,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-06-12",
-      "estoque": 36
+      "estoque": 24
     },
     {
       "id": 1776807915677,
@@ -11334,8 +11334,9 @@
       ],
       "subtotal": 45.599999999999994,
       "total": 45.599999999999994,
-      "status": "aberto",
-      "dataRegistro": "2026-09-15"
+      "status": "entregue",
+      "dataRegistro": "2026-09-15",
+      "entregue": false
     },
     {
       "id": 1789498967701,
@@ -23661,6 +23662,30 @@
       "dataEmissao": "2026-09-14",
       "status": "emitida",
       "enviada": false
+    },
+    {
+      "id": 1789498978336,
+      "numero": "FAT-0198",
+      "encId": 1789498891832,
+      "clienteNome": "Márcia Garcia",
+      "clienteDoc": "—",
+      "clienteTel": "(35) 98876 5855",
+      "clienteEnd": "Rua Sta. Catarina 550 apto 161",
+      "data": "2026-09-15",
+      "vencimento": "2026-09-15",
+      "pagamento": "pix",
+      "itens": [
+        {
+          "nome": "Pão francês (6 un)",
+          "qtd": 12,
+          "preco": 3.8
+        }
+      ],
+      "frete": 0,
+      "subtotal": 45.599999999999994,
+      "total": 45.599999999999994,
+      "dataEmissao": "2026-09-15",
+      "status": "emitida"
     }
   ],
   "_movEstoque": [
@@ -25459,6 +25484,15 @@
       "qtd": 1,
       "ref": "FAT-0197",
       "clienteNome": "Monreale - D.C. Turismo Ltda."
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-09-15",
+      "prodId": 1775412983271,
+      "prodNome": "Pão francês (6 un)",
+      "qtd": 12,
+      "ref": "FAT-0198",
+      "clienteNome": "Márcia Garcia"
     }
   ],
   "_exportSeq": 50,
