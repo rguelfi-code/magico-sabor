@@ -22926,7 +22926,7 @@
       "total": 179,
       "dataEmissao": "2026-09-02",
       "status": "emitida",
-      "enviada": false
+      "enviada": true
     },
     {
       "id": 1788470447296,
