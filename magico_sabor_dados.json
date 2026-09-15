@@ -23571,7 +23571,7 @@
       "total": 199,
       "dataEmissao": "2026-09-11",
       "status": "emitida",
-      "enviada": false
+      "enviada": true
     },
     {
       "id": 1789157264243,
