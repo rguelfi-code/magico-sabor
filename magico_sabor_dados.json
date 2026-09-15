@@ -22991,7 +22991,7 @@
       "total": 759,
       "dataEmissao": "2026-09-03",
       "status": "emitida",
-      "enviada": false
+      "enviada": true
     },
     {
       "id": 1788536084381,
