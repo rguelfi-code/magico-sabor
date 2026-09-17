@@ -1393,7 +1393,7 @@
       "sd": false,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-04-23",
-      "estoque": 0
+      "estoque": -6
     },
     {
       "id": 1775414190628,
@@ -1613,7 +1613,7 @@
       "sd": false,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-06-12",
-      "estoque": 24
+      "estoque": 18
     },
     {
       "id": 1776807915677,
@@ -11476,8 +11476,9 @@
       ],
       "subtotal": 43.8,
       "total": 43.8,
-      "status": "aberto",
-      "dataRegistro": "2026-09-17"
+      "status": "entregue",
+      "dataRegistro": "2026-09-17",
+      "entregue": false
     },
     {
       "id": 1789656249042,
@@ -23878,6 +23879,35 @@
       "dataEmissao": "2026-09-15",
       "status": "emitida",
       "enviada": true
+    },
+    {
+      "id": 1789656386972,
+      "numero": "FAT-0200",
+      "encId": 1789654805093,
+      "clienteNome": "Ana Lúcia Rosico",
+      "clienteDoc": "—",
+      "clienteTel": "(35) 99126 2053",
+      "clienteEnd": "Rua Sapucaí, 68 apt 31 - S.Benedito",
+      "data": "2026-09-17",
+      "vencimento": "2026-09-17",
+      "pagamento": "pix",
+      "itens": [
+        {
+          "nome": "Mini-pão 45g (6 un)",
+          "qtd": 6,
+          "preco": 3.5
+        },
+        {
+          "nome": "Pão francês (6 un)",
+          "qtd": 6,
+          "preco": 3.8
+        }
+      ],
+      "frete": 0,
+      "subtotal": 43.8,
+      "total": 43.8,
+      "dataEmissao": "2026-09-17",
+      "status": "emitida"
     }
   ],
   "_movEstoque": [
@@ -25730,6 +25760,24 @@
       "qtd": 12,
       "obs": "",
       "ref": "Produção"
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-09-17",
+      "prodId": 1775412948951,
+      "prodNome": "Mini-pão 45g (6 un)",
+      "qtd": 6,
+      "ref": "FAT-0200",
+      "clienteNome": "Ana Lúcia Rosico"
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-09-17",
+      "prodId": 1775412983271,
+      "prodNome": "Pão francês (6 un)",
+      "qtd": 6,
+      "ref": "FAT-0200",
+      "clienteNome": "Ana Lúcia Rosico"
     }
   ],
   "_exportSeq": 50,
