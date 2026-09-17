@@ -17,7 +17,7 @@
       "sd": false,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-08-30",
-      "estoque": 9
+      "estoque": 6
     },
     {
       "id": 1775404145290,
@@ -146,7 +146,7 @@
       "sd": false,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-04-27",
-      "estoque": 6
+      "estoque": 2
     },
     {
       "id": 1775403049458,
@@ -383,7 +383,7 @@
       "sd": false,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-04-27",
-      "estoque": 1
+      "estoque": -3
     },
     {
       "id": 1775403738474,
@@ -1393,7 +1393,7 @@
       "sd": false,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-04-23",
-      "estoque": -6
+      "estoque": -24
     },
     {
       "id": 1775414190628,
@@ -1648,7 +1648,8 @@
       "veg": true,
       "sd": false,
       "dataCadastro": "2026-06-11",
-      "dataAtualizacao": "2026-06-12"
+      "dataAtualizacao": "2026-06-12",
+      "estoque": -24
     },
     {
       "id": 1775413711563,
@@ -11410,7 +11411,7 @@
       ],
       "subtotal": 524.2,
       "total": 524.2,
-      "status": "aberto",
+      "status": "entregue",
       "dataRegistro": "2026-09-17",
       "entregue": false,
       "recebido": false,
@@ -23938,6 +23939,50 @@
       "total": 43.8,
       "dataEmissao": "2026-09-17",
       "status": "emitida"
+    },
+    {
+      "id": 1789657891325,
+      "numero": "FAT-0201",
+      "encId": 1789652794033,
+      "clienteNome": "Cassino Hotel",
+      "clienteDoc": "—",
+      "clienteTel": "(35) 99937 2003",
+      "clienteEnd": "",
+      "data": "2026-09-17",
+      "vencimento": "2026-09-17",
+      "pagamento": "pix",
+      "itens": [
+        {
+          "nome": "Pão francês vegano",
+          "qtd": 24,
+          "preco": 3.8
+        },
+        {
+          "nome": "Mini-pão 45g (6 un)",
+          "qtd": 18,
+          "preco": 3.5
+        },
+        {
+          "nome": "Bolo caseiro de banana VEG",
+          "qtd": 3,
+          "preco": 30
+        },
+        {
+          "nome": "Bolo caseiro de chocolate - C/cob",
+          "qtd": 4,
+          "preco": 40
+        },
+        {
+          "nome": "Bolo caseiro de laranja VEG",
+          "qtd": 4,
+          "preco": 30
+        }
+      ],
+      "frete": 0,
+      "subtotal": 524.2,
+      "total": 524.2,
+      "dataEmissao": "2026-09-17",
+      "status": "emitida"
     }
   ],
   "_movEstoque": [
@@ -25808,6 +25853,51 @@
       "qtd": 6,
       "ref": "FAT-0200",
       "clienteNome": "Ana Lúcia Rosico"
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-09-17",
+      "prodId": 1781188398351,
+      "prodNome": "Pão francês vegano",
+      "qtd": 24,
+      "ref": "FAT-0201",
+      "clienteNome": "Cassino Hotel"
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-09-17",
+      "prodId": 1775412948951,
+      "prodNome": "Mini-pão 45g (6 un)",
+      "qtd": 18,
+      "ref": "FAT-0201",
+      "clienteNome": "Cassino Hotel"
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-09-17",
+      "prodId": 1775404101559,
+      "prodNome": "Bolo caseiro de banana VEG",
+      "qtd": 3,
+      "ref": "FAT-0201",
+      "clienteNome": "Cassino Hotel"
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-09-17",
+      "prodId": 1775402992789,
+      "prodNome": "Bolo caseiro de chocolate - C/cob",
+      "qtd": 4,
+      "ref": "FAT-0201",
+      "clienteNome": "Cassino Hotel"
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-09-17",
+      "prodId": 1775403653171,
+      "prodNome": "Bolo caseiro de laranja VEG",
+      "qtd": 4,
+      "ref": "FAT-0201",
+      "clienteNome": "Cassino Hotel"
     }
   ],
   "_exportSeq": 50,
