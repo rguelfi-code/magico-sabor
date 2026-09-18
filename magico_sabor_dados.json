@@ -1649,7 +1649,7 @@
       "sd": false,
       "dataCadastro": "2026-06-11",
       "dataAtualizacao": "2026-06-12",
-      "estoque": 1
+      "estoque": 25
     },
     {
       "id": 1775413711563,
@@ -26126,6 +26126,15 @@
       "prodId": 1781188398351,
       "prodNome": "Pão francês vegano",
       "qtd": 25,
+      "obs": "",
+      "ref": "Produção"
+    },
+    {
+      "tipo": "entrada",
+      "data": "2026-09-18",
+      "prodId": 1781188398351,
+      "prodNome": "Pão francês vegano",
+      "qtd": 24,
       "obs": "",
       "ref": "Produção"
     }
