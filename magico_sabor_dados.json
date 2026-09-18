@@ -1393,7 +1393,7 @@
       "sd": false,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-04-23",
-      "estoque": -24
+      "estoque": -12
     },
     {
       "id": 1775414190628,
@@ -26148,6 +26148,15 @@
       "ref": "Ajuste (Contagem física)",
       "obs": "Saldo anterior: 25 un → 24 un",
       "clienteNome": ""
+    },
+    {
+      "tipo": "entrada",
+      "data": "2026-09-18",
+      "prodId": 1775412948951,
+      "prodNome": "Mini-pão 45g (6 un)",
+      "qtd": 12,
+      "obs": "",
+      "ref": "Produção"
     }
   ],
   "_exportSeq": 50,
