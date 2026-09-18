@@ -1393,7 +1393,7 @@
       "sd": false,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-04-23",
-      "estoque": -12
+      "estoque": 12
     },
     {
       "id": 1775414190628,
@@ -26164,6 +26164,15 @@
       "prodId": 1775412736500,
       "prodNome": "Pão fatiado multigrãos",
       "qtd": 1,
+      "obs": "",
+      "ref": "Produção"
+    },
+    {
+      "tipo": "entrada",
+      "data": "2026-09-18",
+      "prodId": 1775412948951,
+      "prodNome": "Mini-pão 45g (6 un)",
+      "qtd": 24,
       "obs": "",
       "ref": "Produção"
     }
