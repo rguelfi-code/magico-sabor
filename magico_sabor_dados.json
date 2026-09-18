@@ -1613,7 +1613,7 @@
       "sd": false,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-06-12",
-      "estoque": 18
+      "estoque": 0
     },
     {
       "id": 1776807915677,
@@ -26108,6 +26108,17 @@
       "qtd": 3,
       "obs": "",
       "ref": "Produção"
+    },
+    {
+      "tipo": "saida",
+      "subtipo": "ajuste",
+      "data": "2026-09-18",
+      "prodId": 1775412983271,
+      "prodNome": "Pão francês (6 un)",
+      "qtd": 18,
+      "ref": "Ajuste (Contagem física)",
+      "obs": "Saldo anterior: 18 un → 0 un",
+      "clienteNome": ""
     }
   ],
   "_exportSeq": 50,
