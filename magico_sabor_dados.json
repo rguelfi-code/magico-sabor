@@ -35,7 +35,8 @@
       "veg": true,
       "sd": true,
       "dataCadastro": "2026-04-05",
-      "dataAtualizacao": "2026-04-27"
+      "dataAtualizacao": "2026-04-27",
+      "estoque": -1
     },
     {
       "id": 1777236241520,
@@ -91,7 +92,7 @@
       "sd": true,
       "dataCadastro": "2026-04-04",
       "dataAtualizacao": "2026-05-11",
-      "estoque": 0
+      "estoque": -1
     },
     {
       "id": 1778510458992,
@@ -402,7 +403,7 @@
       "sd": true,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-04-27",
-      "estoque": 1
+      "estoque": 0
     },
     {
       "id": 1775404301425,
@@ -11687,8 +11688,9 @@
       ],
       "subtotal": 105,
       "total": 105,
-      "status": "aberto",
-      "dataRegistro": "2026-09-22"
+      "status": "entregue",
+      "dataRegistro": "2026-09-22",
+      "entregue": false
     }
   ],
   "precificados": [
@@ -24149,6 +24151,40 @@
       "dataEmissao": "2026-09-21",
       "status": "emitida",
       "enviada": false
+    },
+    {
+      "id": 1790035810044,
+      "numero": "FAT-0208",
+      "encId": 1790035774465,
+      "clienteNome": "Monreale - D.C. Turismo Ltda.",
+      "clienteDoc": "01.204.495/0001-33",
+      "clienteTel": "",
+      "clienteEnd": "Av. Leonor Furlaneto Delgado, 3033",
+      "data": "2026-09-22",
+      "vencimento": "2026-09-22",
+      "pagamento": "pix",
+      "itens": [
+        {
+          "nome": "Bolo caseiro de banana ZERO",
+          "qtd": 1,
+          "preco": 35
+        },
+        {
+          "nome": "Bolo caseiro de cenoura ZERO",
+          "qtd": 1,
+          "preco": 35
+        },
+        {
+          "nome": "Bolo caseiro de laranja ZERO",
+          "qtd": 1,
+          "preco": 35
+        }
+      ],
+      "frete": 0,
+      "subtotal": 105,
+      "total": 105,
+      "dataEmissao": "2026-09-22",
+      "status": "emitida"
     }
   ],
   "_movEstoque": [
@@ -26352,6 +26388,33 @@
       "prodNome": "Pão fatiado milho",
       "qtd": 2,
       "ref": "FAT-0207",
+      "clienteNome": "Monreale - D.C. Turismo Ltda."
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-09-22",
+      "prodId": 1775404145290,
+      "prodNome": "Bolo caseiro de banana ZERO",
+      "qtd": 1,
+      "ref": "FAT-0208",
+      "clienteNome": "Monreale - D.C. Turismo Ltda."
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-09-22",
+      "prodId": 1775339336605,
+      "prodNome": "Bolo caseiro de cenoura ZERO",
+      "qtd": 1,
+      "ref": "FAT-0208",
+      "clienteNome": "Monreale - D.C. Turismo Ltda."
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-09-22",
+      "prodId": 1775403738474,
+      "prodNome": "Bolo caseiro de laranja ZERO",
+      "qtd": 1,
+      "ref": "FAT-0208",
       "clienteNome": "Monreale - D.C. Turismo Ltda."
     }
   ],
