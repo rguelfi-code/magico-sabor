@@ -11843,6 +11843,41 @@
       "entregue": false,
       "recebido": false,
       "dataRecebimento": null
+    },
+    {
+      "id": 1790293560601,
+      "clienteId": 1775766590796,
+      "clienteNome": "Cassino Hotel",
+      "clienteTel": "(35) 99937 2003",
+      "clienteDoc": "",
+      "data": "2026-09-24",
+      "vencimento": "2026-09-24",
+      "tipo": "entrega",
+      "endereco": "",
+      "frete": 0,
+      "pagamento": "pix",
+      "obs": "",
+      "itens": [
+        {
+          "nome": "Mini-pão 45g (6 un)",
+          "qtd": 24,
+          "preco": 3.5
+        },
+        {
+          "nome": "Cheesecake c/frutas vermelhas ZERO",
+          "qtd": 4,
+          "preco": 16
+        },
+        {
+          "nome": "Mousse de limão",
+          "qtd": 4,
+          "preco": 12
+        }
+      ],
+      "subtotal": 196,
+      "total": 196,
+      "status": "aberto",
+      "dataRegistro": "2026-09-24"
     }
   ],
   "precificados": [
@@ -24466,7 +24501,8 @@
       "subtotal": 211.6,
       "total": 211.6,
       "dataEmissao": "2026-09-24",
-      "status": "emitida"
+      "status": "emitida",
+      "enviada": false
     }
   ],
   "_movEstoque": [
