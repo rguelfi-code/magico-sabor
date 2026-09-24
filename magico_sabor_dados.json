@@ -9467,8 +9467,8 @@
       "status": "entregue",
       "dataRegistro": "2026-08-04",
       "entregue": true,
-      "recebido": false,
-      "dataRecebimento": null
+      "recebido": true,
+      "dataRecebimento": "2026-09-24"
     },
     {
       "id": 1786108607396,
