@@ -835,7 +835,7 @@
       "sd": false,
       "dataCadastro": "2026-04-04",
       "dataAtualizacao": "2026-04-27",
-      "estoque": 3
+      "estoque": 2
     },
     {
       "id": 1775337876560,
@@ -1524,7 +1524,7 @@
       "sd": false,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-04-27",
-      "estoque": 2
+      "estoque": 1
     },
     {
       "id": 1779109491117,
@@ -11969,8 +11969,9 @@
       ],
       "subtotal": 81,
       "total": 81,
-      "status": "aberto",
-      "dataRegistro": "2026-09-25"
+      "status": "entregue",
+      "dataRegistro": "2026-09-25",
+      "entregue": false
     }
   ],
   "precificados": [
@@ -24676,6 +24677,35 @@
       "dataEmissao": "2026-09-25",
       "status": "emitida",
       "enviada": false
+    },
+    {
+      "id": 1790379707267,
+      "numero": "FAT-0214",
+      "encId": 1790379701005,
+      "clienteNome": "Palace Hotel",
+      "clienteDoc": "20.971.621/0003-91",
+      "clienteTel": "",
+      "clienteEnd": "Praça Dr. Pedro Sanches, SN",
+      "data": "2026-09-25",
+      "vencimento": "2026-09-25",
+      "pagamento": "pix",
+      "itens": [
+        {
+          "nome": "Pão de forma VEG",
+          "qtd": 1,
+          "preco": 36
+        },
+        {
+          "nome": "Bolo de laranja VEG",
+          "qtd": 1,
+          "preco": 45
+        }
+      ],
+      "frete": 0,
+      "subtotal": 81,
+      "total": 81,
+      "dataEmissao": "2026-09-25",
+      "status": "emitida"
     }
   ],
   "_movEstoque": [
@@ -27123,6 +27153,24 @@
       "qtd": 10,
       "ref": "FAT-0213",
       "clienteNome": "Guilherme"
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-09-25",
+      "prodId": 1775412797431,
+      "prodNome": "Pão de forma VEG",
+      "qtd": 1,
+      "ref": "FAT-0214",
+      "clienteNome": "Palace Hotel"
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-09-25",
+      "prodId": 1775337842248,
+      "prodNome": "Bolo de laranja VEG",
+      "qtd": 1,
+      "ref": "FAT-0214",
+      "clienteNome": "Palace Hotel"
     }
   ],
   "_exportSeq": 50,
