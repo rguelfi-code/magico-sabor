@@ -147,7 +147,7 @@
       "sd": false,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-04-27",
-      "estoque": 2
+      "estoque": 1
     },
     {
       "id": 1775403049458,
@@ -927,7 +927,7 @@
       "sd": true,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-04-27",
-      "estoque": 13
+      "estoque": 11
     },
     {
       "id": 1775414426629,
@@ -1231,7 +1231,8 @@
       "veg": false,
       "sd": false,
       "dataCadastro": "2026-04-05",
-      "dataAtualizacao": "2026-04-12"
+      "dataAtualizacao": "2026-04-12",
+      "estoque": -10
     },
     {
       "id": 1775414964281,
@@ -1286,7 +1287,7 @@
       "sd": false,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-04-27",
-      "estoque": 22
+      "estoque": 17
     },
     {
       "id": 1775338784416,
@@ -11935,8 +11936,9 @@
       ],
       "subtotal": 163,
       "total": 163,
-      "status": "aberto",
-      "dataRegistro": "2026-09-25"
+      "status": "entregue",
+      "dataRegistro": "2026-09-25",
+      "entregue": false
     }
   ],
   "precificados": [
@@ -24597,6 +24599,50 @@
       "dataEmissao": "2026-09-25",
       "status": "emitida",
       "enviada": false
+    },
+    {
+      "id": 1790372004436,
+      "numero": "FAT-0213",
+      "encId": 1790371994147,
+      "clienteNome": "Guilherme",
+      "clienteDoc": "—",
+      "clienteTel": "(35) ",
+      "clienteEnd": "",
+      "data": "2026-09-25",
+      "vencimento": "2026-09-25",
+      "pagamento": "pix",
+      "itens": [
+        {
+          "nome": "Bolo caseiro de chocolate - C/cob",
+          "qtd": 1,
+          "preco": 40
+        },
+        {
+          "nome": "Disco pizza 100g  (5 un) VEG",
+          "qtd": 5,
+          "preco": 7
+        },
+        {
+          "nome": "Cheesecake c/frutas vermelhas ZERO",
+          "qtd": 2,
+          "preco": 16
+        },
+        {
+          "nome": "Pão fatiado abóbora",
+          "qtd": 1,
+          "preco": 36
+        },
+        {
+          "nome": "Cookie de chocolate/baunilha (10 un)",
+          "qtd": 10,
+          "preco": 2
+        }
+      ],
+      "frete": 0,
+      "subtotal": 163,
+      "total": 163,
+      "dataEmissao": "2026-09-25",
+      "status": "emitida"
     }
   ],
   "_movEstoque": [
@@ -27008,6 +27054,42 @@
       "qtd": 4,
       "ref": "FAT-0212",
       "clienteNome": "Cassino Hotel"
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-09-25",
+      "prodId": 1775402992789,
+      "prodNome": "Bolo caseiro de chocolate - C/cob",
+      "qtd": 1,
+      "ref": "FAT-0213",
+      "clienteNome": "Guilherme"
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-09-25",
+      "prodId": 1775413148538,
+      "prodNome": "Disco pizza 100g  (5 un) VEG",
+      "qtd": 5,
+      "ref": "FAT-0213",
+      "clienteNome": "Guilherme"
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-09-25",
+      "prodId": 1775414153841,
+      "prodNome": "Cheesecake c/frutas vermelhas ZERO",
+      "qtd": 2,
+      "ref": "FAT-0213",
+      "clienteNome": "Guilherme"
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-09-25",
+      "prodId": 1775413246795,
+      "prodNome": "Cookie de chocolate/baunilha (10 un)",
+      "qtd": 10,
+      "ref": "FAT-0213",
+      "clienteNome": "Guilherme"
     }
   ],
   "_exportSeq": 50,
