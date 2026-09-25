@@ -24505,7 +24505,7 @@
       "total": 211.6,
       "dataEmissao": "2026-09-24",
       "status": "emitida",
-      "enviada": false
+      "enviada": true
     },
     {
       "id": 1790334883219,
