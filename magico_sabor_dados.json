@@ -11892,6 +11892,51 @@
       "entregue": true,
       "recebido": false,
       "dataRecebimento": null
+    },
+    {
+      "id": 1790371994147,
+      "clienteId": 1790371804661,
+      "clienteNome": "Guilherme",
+      "clienteTel": "(35) ",
+      "clienteDoc": "",
+      "data": "2026-09-25",
+      "vencimento": "2026-09-25",
+      "tipo": "entrega",
+      "endereco": "",
+      "frete": 0,
+      "pagamento": "pix",
+      "obs": "",
+      "itens": [
+        {
+          "nome": "Bolo caseiro de chocolate - C/cob",
+          "qtd": 1,
+          "preco": 40
+        },
+        {
+          "nome": "Disco pizza 100g  (5 un) VEG",
+          "qtd": 5,
+          "preco": 7
+        },
+        {
+          "nome": "Cheesecake c/frutas vermelhas ZERO",
+          "qtd": 2,
+          "preco": 16
+        },
+        {
+          "nome": "Pão fatiado abóbora",
+          "qtd": 1,
+          "preco": 36
+        },
+        {
+          "nome": "Cookie de chocolate/baunilha (10 un)",
+          "qtd": 10,
+          "preco": 2
+        }
+      ],
+      "subtotal": 163,
+      "total": 163,
+      "status": "aberto",
+      "dataRegistro": "2026-09-25"
     }
   ],
   "precificados": [
