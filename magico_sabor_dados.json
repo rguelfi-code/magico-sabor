@@ -927,7 +927,7 @@
       "sd": true,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-04-27",
-      "estoque": 17
+      "estoque": 13
     },
     {
       "id": 1775414426629,
@@ -1394,7 +1394,7 @@
       "sd": false,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-04-23",
-      "estoque": 12
+      "estoque": -12
     },
     {
       "id": 1775414190628,
@@ -1430,7 +1430,7 @@
       "veg": false,
       "sd": false,
       "dataCadastro": "2026-04-05",
-      "estoque": 4
+      "estoque": 0
     },
     {
       "id": 1775414902376,
@@ -11876,8 +11876,11 @@
       ],
       "subtotal": 196,
       "total": 196,
-      "status": "aberto",
-      "dataRegistro": "2026-09-24"
+      "status": "entregue",
+      "dataRegistro": "2026-09-24",
+      "entregue": false,
+      "recebido": false,
+      "dataRecebimento": null
     }
   ],
   "precificados": [
@@ -24503,6 +24506,40 @@
       "dataEmissao": "2026-09-24",
       "status": "emitida",
       "enviada": false
+    },
+    {
+      "id": 1790334883219,
+      "numero": "FAT-0212",
+      "encId": 1790293560601,
+      "clienteNome": "Cassino Hotel",
+      "clienteDoc": "—",
+      "clienteTel": "(35) 99937 2003",
+      "clienteEnd": "",
+      "data": "2026-09-24",
+      "vencimento": "2026-09-24",
+      "pagamento": "pix",
+      "itens": [
+        {
+          "nome": "Mini-pão 45g (6 un)",
+          "qtd": 24,
+          "preco": 3.5
+        },
+        {
+          "nome": "Cheesecake c/frutas vermelhas ZERO",
+          "qtd": 4,
+          "preco": 16
+        },
+        {
+          "nome": "Mousse de limão",
+          "qtd": 4,
+          "preco": 12
+        }
+      ],
+      "frete": 0,
+      "subtotal": 196,
+      "total": 196,
+      "dataEmissao": "2026-09-25",
+      "status": "emitida"
     }
   ],
   "_movEstoque": [
@@ -26887,6 +26924,33 @@
       "qtd": 1,
       "ref": "FAT-0211",
       "clienteNome": "Preiscila (Vet)"
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-09-25",
+      "prodId": 1775412948951,
+      "prodNome": "Mini-pão 45g (6 un)",
+      "qtd": 24,
+      "ref": "FAT-0212",
+      "clienteNome": "Cassino Hotel"
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-09-25",
+      "prodId": 1775414153841,
+      "prodNome": "Cheesecake c/frutas vermelhas ZERO",
+      "qtd": 4,
+      "ref": "FAT-0212",
+      "clienteNome": "Cassino Hotel"
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-09-25",
+      "prodId": 1775414249914,
+      "prodNome": "Mousse de limão",
+      "qtd": 4,
+      "ref": "FAT-0212",
+      "clienteNome": "Cassino Hotel"
     }
   ],
   "_exportSeq": 50,
