@@ -1596,7 +1596,7 @@
       "veg": false,
       "sd": false,
       "dataCadastro": "2026-04-05",
-      "estoque": 0
+      "estoque": 4
     },
     {
       "id": 1775412983271,
@@ -11971,7 +11971,9 @@
       "total": 81,
       "status": "entregue",
       "dataRegistro": "2026-09-25",
-      "entregue": false
+      "entregue": false,
+      "recebido": false,
+      "dataRecebimento": null
     }
   ],
   "precificados": [
@@ -24705,7 +24707,8 @@
       "subtotal": 81,
       "total": 81,
       "dataEmissao": "2026-09-25",
-      "status": "emitida"
+      "status": "emitida",
+      "enviada": false
     }
   ],
   "_movEstoque": [
@@ -27171,6 +27174,15 @@
       "qtd": 1,
       "ref": "FAT-0214",
       "clienteNome": "Palace Hotel"
+    },
+    {
+      "tipo": "entrada",
+      "data": "2026-09-26",
+      "prodId": 1775412736500,
+      "prodNome": "Pão fatiado multigrãos",
+      "qtd": 4,
+      "obs": "",
+      "ref": "Produção"
     }
   ],
   "_exportSeq": 50,
