@@ -1615,7 +1615,7 @@
       "sd": false,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-06-12",
-      "estoque": -12
+      "estoque": 12
     },
     {
       "id": 1776807915677,
@@ -27190,6 +27190,15 @@
       "prodId": 1775337460811,
       "prodNome": "Bolo de chocolate ZERO",
       "qtd": 2,
+      "obs": "",
+      "ref": "Produção"
+    },
+    {
+      "tipo": "entrada",
+      "data": "2026-09-26",
+      "prodId": 1775412983271,
+      "prodNome": "Pão francês (6 un)",
+      "qtd": 24,
       "obs": "",
       "ref": "Produção"
     }
