@@ -659,7 +659,7 @@
       "sd": true,
       "dataCadastro": "2026-04-04",
       "dataAtualizacao": "2026-04-27",
-      "estoque": -1
+      "estoque": 1
     },
     {
       "id": 1777304108502,
@@ -27181,6 +27181,15 @@
       "prodId": 1775412736500,
       "prodNome": "Pão fatiado multigrãos",
       "qtd": 4,
+      "obs": "",
+      "ref": "Produção"
+    },
+    {
+      "tipo": "entrada",
+      "data": "2026-09-26",
+      "prodId": 1775337460811,
+      "prodNome": "Bolo de chocolate ZERO",
+      "qtd": 2,
       "obs": "",
       "ref": "Produção"
     }
