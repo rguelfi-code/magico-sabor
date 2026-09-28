@@ -11939,8 +11939,8 @@
       "status": "entregue",
       "dataRegistro": "2026-09-25",
       "entregue": true,
-      "recebido": false,
-      "dataRecebimento": null
+      "recebido": true,
+      "dataRecebimento": "2026-09-28"
     },
     {
       "id": 1790379701005,
