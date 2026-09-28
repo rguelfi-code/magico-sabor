@@ -12024,7 +12024,7 @@
       "total": 251,
       "status": "entregue",
       "dataRegistro": "2026-09-28",
-      "entregue": false,
+      "entregue": true,
       "recebido": false,
       "dataRecebimento": null
     }
@@ -24810,7 +24810,8 @@
       "subtotal": 251,
       "total": 251,
       "dataEmissao": "2026-09-28",
-      "status": "emitida"
+      "status": "emitida",
+      "enviada": false
     }
   ],
   "_movEstoque": [
