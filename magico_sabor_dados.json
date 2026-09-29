@@ -147,7 +147,7 @@
       "sd": false,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-04-27",
-      "estoque": 1
+      "estoque": 2
     },
     {
       "id": 1775403049458,
@@ -27392,6 +27392,15 @@
       "prodId": 1777245071751,
       "prodNome": "Bolo de chocolate - C/cob",
       "qtd": 3,
+      "obs": "",
+      "ref": "Produção"
+    },
+    {
+      "tipo": "entrada",
+      "data": "2026-09-29",
+      "prodId": 1775402992789,
+      "prodNome": "Bolo caseiro de chocolate - C/cob",
+      "qtd": 1,
       "obs": "",
       "ref": "Produção"
     }
