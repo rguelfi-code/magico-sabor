@@ -584,7 +584,7 @@
       "sd": false,
       "dataCadastro": "2026-04-26",
       "dataAtualizacao": "2026-08-30",
-      "estoque": 2
+      "estoque": 5
     },
     {
       "id": 1788115879112,
@@ -27383,6 +27383,15 @@
       "prodId": 1775337237472,
       "prodNome": "Bolo de cenoura C/cob",
       "qtd": 4,
+      "obs": "",
+      "ref": "Produção"
+    },
+    {
+      "tipo": "entrada",
+      "data": "2026-09-29",
+      "prodId": 1777245071751,
+      "prodNome": "Bolo de chocolate - C/cob",
+      "qtd": 3,
       "obs": "",
       "ref": "Produção"
     }
