@@ -511,7 +511,7 @@
       "sd": false,
       "dataCadastro": "2026-04-04",
       "dataAtualizacao": "2026-04-27",
-      "estoque": 1
+      "estoque": 5
     },
     {
       "id": 1775337315853,
@@ -27376,6 +27376,15 @@
       "qtd": 1,
       "ref": "FAT-0215",
       "clienteNome": "Monreale - D.C. Turismo Ltda."
+    },
+    {
+      "tipo": "entrada",
+      "data": "2026-09-29",
+      "prodId": 1775337237472,
+      "prodNome": "Bolo de cenoura C/cob",
+      "qtd": 4,
+      "obs": "",
+      "ref": "Produção"
     }
   ],
   "_exportSeq": 50,
