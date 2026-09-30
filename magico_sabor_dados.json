@@ -12038,6 +12038,31 @@
       "entregue": true,
       "recebido": false,
       "dataRecebimento": null
+    },
+    {
+      "id": 1790780082662,
+      "clienteId": 1790779968528,
+      "clienteNome": "Renata Gabriela",
+      "clienteTel": "(35) ",
+      "clienteDoc": "",
+      "data": "2026-09-30",
+      "vencimento": "2026-09-30",
+      "tipo": "entrega",
+      "endereco": "Rua Araguaia, 43",
+      "frete": 0,
+      "pagamento": "pix",
+      "obs": "Endereço 1 - Rua Fernanda Cerávalo Fazzi, 335 - Jd Ipê",
+      "itens": [
+        {
+          "nome": "Pão de Hamburguer (4 unidades)",
+          "qtd": 8,
+          "preco": 6
+        }
+      ],
+      "subtotal": 48,
+      "total": 48,
+      "status": "aberto",
+      "dataRegistro": "2026-09-30"
     }
   ],
   "precificados": [
