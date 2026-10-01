@@ -17761,11 +17761,11 @@
       "prodId": "1790861610222",
       "nome": "Torta de Abacaxi",
       "preco": 1.39,
-      "precoSugerido": 2.07,
-      "custoUnit": 1.2445833333333334,
-      "custoTotal": 29.87,
-      "lucro": 0.14541666666666653,
-      "margem": "10.5",
+      "precoSugerido": 3.72,
+      "custoUnit": 2.2306944444444445,
+      "custoTotal": 53.53666666666667,
+      "lucro": -0.8406944444444446,
+      "margem": "-60.5",
       "rendimento": 24,
       "rendimentoUn": "porções",
       "qtdEmbalada": 1,
@@ -17788,8 +17788,13 @@
         },
         {
           "id": 1790861909141,
-          "ingId": 0,
-          "qtd": 0
+          "ingId": 1790862290212,
+          "qtd": 0.06
+        },
+        {
+          "id": 1790862463391,
+          "ingId": 1775423280075,
+          "qtd": 0.4
         }
       ],
       "compsPrec": [],
