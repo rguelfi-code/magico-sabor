@@ -17867,12 +17867,12 @@
     {
       "prodId": "1790863807225",
       "nome": "Mousse de chocolate",
-      "preco": 2.17,
-      "precoSugerido": 35.37,
-      "custoUnit": 21.222222222222225,
-      "custoTotal": 127.33333333333334,
-      "lucro": -19.052222222222227,
-      "margem": "-878.0",
+      "preco": 20,
+      "precoSugerido": 28.89,
+      "custoUnit": 17.333333333333336,
+      "custoTotal": 104.00000000000001,
+      "lucro": 2.6666666666666643,
+      "margem": "13.3",
       "rendimento": 6,
       "rendimentoUn": "porções",
       "qtdEmbalada": 1,
@@ -17900,7 +17900,13 @@
         }
       ],
       "compsPrec": [],
-      "embsPrec": []
+      "embsPrec": [
+        {
+          "id": 1790864277392,
+          "ingId": 1775519983107,
+          "qtd": 1
+        }
+      ]
     }
   ],
   "faturas": [
