@@ -1872,6 +1872,25 @@
       "sd": false,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-04-27"
+    },
+    {
+      "id": 1790863807225,
+      "nome": "Mousse de chocolate",
+      "categoria": "sobremesa",
+      "medida": "unidade",
+      "peso": null,
+      "pesoUn": "g",
+      "qtd": 1,
+      "qtdUn": "un",
+      "tempo": "",
+      "desc": "",
+      "sg": true,
+      "sl": true,
+      "veg": false,
+      "sd": false,
+      "estoque": 0,
+      "estoqueMin": 0,
+      "dataCadastro": "2026-10-01"
     }
   ],
   "ingredientes": [
@@ -17844,6 +17863,44 @@
           "qtd": 1
         }
       ]
+    },
+    {
+      "prodId": "1790863807225",
+      "nome": "Mousse de chocolate",
+      "preco": 2.17,
+      "precoSugerido": 35.37,
+      "custoUnit": 21.222222222222225,
+      "custoTotal": 127.33333333333334,
+      "lucro": -19.052222222222227,
+      "margem": "-878.0",
+      "rendimento": 6,
+      "rendimentoUn": "porções",
+      "qtdEmbalada": 1,
+      "excecao": false,
+      "ingsPrec": [
+        {
+          "id": 1790863858606,
+          "ingId": 1775419230829,
+          "qtd": 0.2
+        },
+        {
+          "id": 1790863933807,
+          "ingId": 1775425512902,
+          "qtd": 0.2
+        },
+        {
+          "id": 1790864022035,
+          "ingId": 1775421297338,
+          "qtd": 0.03
+        },
+        {
+          "id": 1790864039600,
+          "ingId": 1775426032490,
+          "qtd": 0.003
+        }
+      ],
+      "compsPrec": [],
+      "embsPrec": []
     }
   ],
   "faturas": [
