@@ -1692,6 +1692,25 @@
       "dataAtualizacao": "2026-04-12"
     },
     {
+      "id": 1790861610222,
+      "nome": "Torta de Abacaxi",
+      "categoria": "sobremesa",
+      "medida": "unidade",
+      "peso": null,
+      "pesoUn": "g",
+      "qtd": 1,
+      "qtdUn": "un",
+      "tempo": "",
+      "desc": "",
+      "sg": true,
+      "sl": true,
+      "veg": false,
+      "sd": false,
+      "estoque": 0,
+      "estoqueMin": 0,
+      "dataCadastro": "2026-10-01"
+    },
+    {
       "id": 1775414033310,
       "nome": "Torta de caramelo salgado",
       "categoria": "sobremesa",
@@ -1853,25 +1872,6 @@
       "sd": false,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-04-27"
-    },
-    {
-      "id": 1790861610222,
-      "nome": "Torta de Abacaxi",
-      "categoria": "sobremesa",
-      "medida": "unidade",
-      "peso": null,
-      "pesoUn": "g",
-      "qtd": 1,
-      "qtdUn": "un",
-      "tempo": "",
-      "desc": "",
-      "sg": true,
-      "sl": true,
-      "veg": false,
-      "sd": false,
-      "estoque": 0,
-      "estoqueMin": 0,
-      "dataCadastro": "2026-10-01"
     }
   ],
   "ingredientes": [
@@ -2531,6 +2531,20 @@
       "sl": true,
       "veg": true,
       "dataCadastro": "2026-04-05",
+      "dataAtualizacao": null
+    },
+    {
+      "id": 1790862290212,
+      "nome": "gelatina",
+      "unidade": "kg",
+      "estoque": 0,
+      "custo": 70,
+      "minimo": 0,
+      "fornecedor": "",
+      "sg": true,
+      "sl": true,
+      "veg": true,
+      "dataCadastro": "2026-10-01",
       "dataAtualizacao": null
     },
     {
