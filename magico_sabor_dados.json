@@ -17774,21 +17774,21 @@
     {
       "prodId": "1790861610222",
       "nome": "Torta de Abacaxi",
-      "preco": 1.39,
-      "precoSugerido": 3.72,
-      "custoUnit": 2.2306944444444445,
-      "custoTotal": 53.53666666666667,
-      "lucro": -0.8406944444444446,
-      "margem": "-60.5",
-      "rendimento": 24,
+      "preco": 15,
+      "precoSugerido": 10.22,
+      "custoUnit": 5.1104,
+      "custoTotal": 102.208,
+      "lucro": 9.8896,
+      "margem": "65.9",
+      "rendimento": 20,
       "rendimentoUn": "porções",
       "qtdEmbalada": 1,
-      "excecao": false,
+      "excecao": true,
       "ingsPrec": [
         {
           "id": 1790861819089,
           "ingId": 1790861725712,
-          "qtd": 1.5
+          "qtd": 1.8
         },
         {
           "id": 1790861842736,
@@ -17809,10 +17809,41 @@
           "id": 1790862463391,
           "ingId": 1775423280075,
           "qtd": 0.4
+        },
+        {
+          "id": 1790862954583,
+          "ingId": 1790862901971,
+          "qtd": 0.79
+        },
+        {
+          "id": 1790862991601,
+          "ingId": 1775418578652,
+          "qtd": 0.03
+        },
+        {
+          "id": 1790863015661,
+          "ingId": 1775419504764,
+          "qtd": 0.2
+        },
+        {
+          "id": 1790863050626,
+          "ingId": 1775425512902,
+          "qtd": 0.15
+        },
+        {
+          "id": 1790863094816,
+          "ingId": 1775419365910,
+          "qtd": 0.03
         }
       ],
       "compsPrec": [],
-      "embsPrec": []
+      "embsPrec": [
+        {
+          "id": 1790863123134,
+          "ingId": 1775510049898,
+          "qtd": 1
+        }
+      ]
     }
   ],
   "faturas": [
