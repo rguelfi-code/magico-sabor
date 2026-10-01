@@ -1853,9 +1853,42 @@
       "sd": false,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-04-27"
+    },
+    {
+      "id": 1790861610222,
+      "nome": "Torta de Abacaxi",
+      "categoria": "sobremesa",
+      "medida": "unidade",
+      "peso": null,
+      "pesoUn": "g",
+      "qtd": 1,
+      "qtdUn": "un",
+      "tempo": "",
+      "desc": "",
+      "sg": true,
+      "sl": true,
+      "veg": false,
+      "sd": false,
+      "estoque": 0,
+      "estoqueMin": 0,
+      "dataCadastro": "2026-10-01"
     }
   ],
   "ingredientes": [
+    {
+      "id": 1790861725712,
+      "nome": "Abacaxi",
+      "unidade": "kg",
+      "estoque": 0,
+      "custo": 8,
+      "minimo": 0,
+      "fornecedor": "",
+      "sg": true,
+      "sl": true,
+      "veg": true,
+      "dataCadastro": "2026-10-01",
+      "dataAtualizacao": null
+    },
     {
       "id": 1776786967383,
       "nome": "Abóbora japonesa",
@@ -25090,7 +25123,8 @@
       "subtotal": 170,
       "total": 170,
       "dataEmissao": "2026-10-01",
-      "status": "emitida"
+      "status": "emitida",
+      "enviada": false
     }
   ],
   "_movEstoque": [
