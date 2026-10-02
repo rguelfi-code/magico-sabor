@@ -17839,18 +17839,62 @@
       ]
     },
     {
+      "prodId": "1790863807225",
+      "nome": "Mousse de chocolate",
+      "preco": 22,
+      "precoSugerido": 28.89,
+      "custoUnit": 17.333333333333336,
+      "custoTotal": 104.00000000000001,
+      "lucro": 4.666666666666664,
+      "margem": "21.2",
+      "rendimento": 6,
+      "rendimentoUn": "porções",
+      "qtdEmbalada": 1,
+      "excecao": false,
+      "ingsPrec": [
+        {
+          "id": 1790863858606,
+          "ingId": 1775419230829,
+          "qtd": 0.2
+        },
+        {
+          "id": 1790863933807,
+          "ingId": 1775425512902,
+          "qtd": 0.2
+        },
+        {
+          "id": 1790864022035,
+          "ingId": 1775421297338,
+          "qtd": 0.03
+        },
+        {
+          "id": 1790864039600,
+          "ingId": 1775426032490,
+          "qtd": 0.003
+        }
+      ],
+      "compsPrec": [],
+      "embsPrec": [
+        {
+          "id": 1790864277392,
+          "ingId": 1775519983107,
+          "qtd": 1
+        }
+      ]
+    },
+    {
       "prodId": "1790861610222",
       "nome": "Torta de Abacaxi",
       "preco": 15,
-      "precoSugerido": 10.22,
-      "custoUnit": 5.1104,
-      "custoTotal": 102.208,
-      "lucro": 9.8896,
-      "margem": "65.9",
-      "rendimento": 20,
+      "precoSugerido": 11.62,
+      "custoUnit": 6.971481481481482,
+      "custoTotal": 125.48666666666668,
+      "lucro": 8.028518518518517,
+      "margem": "53.5",
+      "rendimento": 18,
       "rendimentoUn": "porções",
       "qtdEmbalada": 1,
-      "excecao": true,
+      "excecao": false,
       "ingsPrec": [
         {
           "id": 1790861819089,
@@ -17908,49 +17952,11 @@
         {
           "id": 1790863123134,
           "ingId": 1775510049898,
-          "qtd": 1
-        }
-      ]
-    },
-    {
-      "prodId": "1790863807225",
-      "nome": "Mousse de chocolate",
-      "preco": 22,
-      "precoSugerido": 28.89,
-      "custoUnit": 17.333333333333336,
-      "custoTotal": 104.00000000000001,
-      "lucro": 4.666666666666664,
-      "margem": "21.2",
-      "rendimento": 6,
-      "rendimentoUn": "porções",
-      "qtdEmbalada": 1,
-      "excecao": false,
-      "ingsPrec": [
-        {
-          "id": 1790863858606,
-          "ingId": 1775419230829,
-          "qtd": 0.2
+          "qtd": 1,
+          "qtdEmb": 1
         },
         {
-          "id": 1790863933807,
-          "ingId": 1775425512902,
-          "qtd": 0.2
-        },
-        {
-          "id": 1790864022035,
-          "ingId": 1775421297338,
-          "qtd": 0.03
-        },
-        {
-          "id": 1790864039600,
-          "ingId": 1775426032490,
-          "qtd": 0.003
-        }
-      ],
-      "compsPrec": [],
-      "embsPrec": [
-        {
-          "id": 1790864277392,
+          "id": 1790940471231,
           "ingId": 1775519983107,
           "qtd": 1
         }
@@ -25381,7 +25387,8 @@
       "subtotal": 177,
       "total": 177,
       "dataEmissao": "2026-10-01",
-      "status": "emitida"
+      "status": "emitida",
+      "enviada": false
     }
   ],
   "_movEstoque": [
