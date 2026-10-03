@@ -641,7 +641,8 @@
       "sl": true,
       "veg": true,
       "sd": false,
-      "dataCadastro": "2026-04-27"
+      "dataCadastro": "2026-04-27",
+      "estoque": 4
     },
     {
       "id": 1775337460811,
@@ -28191,6 +28192,15 @@
       "prodId": 1775337842248,
       "prodNome": "Bolo de laranja VEG",
       "qtd": 3,
+      "obs": "",
+      "ref": "Produção"
+    },
+    {
+      "tipo": "entrada",
+      "data": "2026-10-03",
+      "prodId": 1777304054271,
+      "prodNome": "Bolo de chocolate VEG - C/cob",
+      "qtd": 4,
       "obs": "",
       "ref": "Produção"
     }
