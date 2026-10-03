@@ -1415,7 +1415,7 @@
       "sl": true,
       "veg": false,
       "sd": false,
-      "estoque": 0,
+      "estoque": 6,
       "estoqueMin": 0,
       "dataCadastro": "2026-10-01"
     },
@@ -28210,6 +28210,15 @@
       "prodId": 1775403049458,
       "prodNome": "Bolo caseiro de chocolate VEG",
       "qtd": 4,
+      "obs": "",
+      "ref": "Produção"
+    },
+    {
+      "tipo": "entrada",
+      "data": "2026-10-03",
+      "prodId": 1790863807225,
+      "prodNome": "Mousse de chocolate",
+      "qtd": 6,
       "obs": "",
       "ref": "Produção"
     }
