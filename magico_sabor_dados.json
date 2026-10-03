@@ -24903,7 +24903,7 @@
       "total": 251,
       "dataEmissao": "2026-09-21",
       "status": "emitida",
-      "enviada": false
+      "enviada": true
     },
     {
       "id": 1790035810044,
