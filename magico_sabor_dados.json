@@ -384,7 +384,7 @@
       "sd": false,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-04-27",
-      "estoque": 4
+      "estoque": 5
     },
     {
       "id": 1775403738474,
@@ -28175,6 +28175,15 @@
       "qtd": 1,
       "ref": "FAT-0220",
       "clienteNome": "Monreale - D.C. Turismo Ltda."
+    },
+    {
+      "tipo": "entrada",
+      "data": "2026-10-03",
+      "prodId": 1775403653171,
+      "prodNome": "Bolo caseiro de laranja VEG",
+      "qtd": 1,
+      "obs": "",
+      "ref": "Produção"
     }
   ],
   "_exportSeq": 50,
