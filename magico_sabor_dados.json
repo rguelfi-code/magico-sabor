@@ -474,7 +474,7 @@
       "sd": false,
       "dataCadastro": "2026-04-04",
       "dataAtualizacao": "2026-04-27",
-      "estoque": 2
+      "estoque": 1
     },
     {
       "id": 1775338584762,
@@ -642,7 +642,7 @@
       "veg": true,
       "sd": false,
       "dataCadastro": "2026-04-27",
-      "estoque": 4
+      "estoque": 3
     },
     {
       "id": 1775337460811,
@@ -784,7 +784,8 @@
       "veg": true,
       "sd": false,
       "dataCadastro": "2026-04-04",
-      "dataAtualizacao": "2026-04-27"
+      "dataAtualizacao": "2026-04-27",
+      "estoque": -1
     },
     {
       "id": 1777304262670,
@@ -1508,7 +1509,7 @@
       "sd": false,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-04-27",
-      "estoque": 1
+      "estoque": 0
     },
     {
       "id": 1775413066535,
@@ -12397,8 +12398,9 @@
       ],
       "subtotal": 181,
       "total": 181,
-      "status": "aberto",
-      "dataRegistro": "2026-10-04"
+      "status": "entregue",
+      "dataRegistro": "2026-10-04",
+      "entregue": false
     }
   ],
   "precificados": [
@@ -25596,6 +25598,45 @@
       "dataEmissao": "2026-10-03",
       "status": "emitida",
       "enviada": false
+    },
+    {
+      "id": 1791147380989,
+      "numero": "FAT-0222",
+      "encId": 1791147360918,
+      "clienteNome": "Monreale - D.C. Turismo Ltda.",
+      "clienteDoc": "01.204.495/0001-33",
+      "clienteTel": "",
+      "clienteEnd": "Av. Leonor Furlaneto Delgado, 3033",
+      "data": "2026-10-04",
+      "vencimento": "2026-10-04",
+      "pagamento": "pix",
+      "itens": [
+        {
+          "nome": "Bolo de chocolate VEG - C/cob",
+          "qtd": 1,
+          "preco": 60
+        },
+        {
+          "nome": "Bolo de fubá VEG",
+          "qtd": 1,
+          "preco": 45
+        },
+        {
+          "nome": "Bolo de banana VEG",
+          "qtd": 1,
+          "preco": 38
+        },
+        {
+          "nome": "Pão australiano VEG",
+          "qtd": 1,
+          "preco": 38
+        }
+      ],
+      "frete": 0,
+      "subtotal": 181,
+      "total": 181,
+      "dataEmissao": "2026-10-04",
+      "status": "emitida"
     }
   ],
   "_movEstoque": [
@@ -28480,6 +28521,42 @@
       "prodNome": "Pão australiano VEG",
       "qtd": 1,
       "ref": "FAT-0221",
+      "clienteNome": "Monreale - D.C. Turismo Ltda."
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-10-04",
+      "prodId": 1777304054271,
+      "prodNome": "Bolo de chocolate VEG - C/cob",
+      "qtd": 1,
+      "ref": "FAT-0222",
+      "clienteNome": "Monreale - D.C. Turismo Ltda."
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-10-04",
+      "prodId": 1775338141847,
+      "prodNome": "Bolo de fubá VEG",
+      "qtd": 1,
+      "ref": "FAT-0222",
+      "clienteNome": "Monreale - D.C. Turismo Ltda."
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-10-04",
+      "prodId": 1775338517548,
+      "prodNome": "Bolo de banana VEG",
+      "qtd": 1,
+      "ref": "FAT-0222",
+      "clienteNome": "Monreale - D.C. Turismo Ltda."
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-10-04",
+      "prodId": 1775412822023,
+      "prodNome": "Pão australiano VEG",
+      "qtd": 1,
+      "ref": "FAT-0222",
       "clienteNome": "Monreale - D.C. Turismo Ltda."
     }
   ],
