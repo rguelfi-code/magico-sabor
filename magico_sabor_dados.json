@@ -347,7 +347,7 @@
       "sd": false,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-04-27",
-      "estoque": 6
+      "estoque": 7
     },
     {
       "id": 1775403973138,
@@ -28568,6 +28568,15 @@
       "prodId": 1775338141847,
       "prodNome": "Bolo de fubá VEG",
       "qtd": 2,
+      "obs": "",
+      "ref": "Produção"
+    },
+    {
+      "tipo": "entrada",
+      "data": "2026-10-05",
+      "prodId": 1775403940822,
+      "prodNome": "Bolo caseiro de fubá VEG",
+      "qtd": 1,
       "obs": "",
       "ref": "Produção"
     }
