@@ -474,7 +474,7 @@
       "sd": false,
       "dataCadastro": "2026-04-04",
       "dataAtualizacao": "2026-04-27",
-      "estoque": 1
+      "estoque": 0
     },
     {
       "id": 1775338584762,
@@ -585,7 +585,7 @@
       "sd": false,
       "dataCadastro": "2026-04-26",
       "dataAtualizacao": "2026-08-30",
-      "estoque": 5
+      "estoque": 4
     },
     {
       "id": 1788115879112,
@@ -785,7 +785,7 @@
       "sd": false,
       "dataCadastro": "2026-04-04",
       "dataAtualizacao": "2026-04-27",
-      "estoque": 1
+      "estoque": 0
     },
     {
       "id": 1777304262670,
@@ -1547,7 +1547,7 @@
       "sd": false,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-04-27",
-      "estoque": 4
+      "estoque": 3
     },
     {
       "id": 1779109491117,
@@ -1601,7 +1601,7 @@
       "veg": false,
       "sd": false,
       "dataCadastro": "2026-04-05",
-      "estoque": 3
+      "estoque": 2
     },
     {
       "id": 1775412736500,
@@ -1801,7 +1801,7 @@
       "sd": false,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-04-27",
-      "estoque": 26
+      "estoque": 20
     },
     {
       "id": 1775413867450,
@@ -12451,8 +12451,11 @@
       ],
       "subtotal": 298,
       "total": 298,
-      "status": "aberto",
-      "dataRegistro": "2026-10-05"
+      "status": "entregue",
+      "dataRegistro": "2026-10-05",
+      "entregue": false,
+      "recebido": false,
+      "dataRecebimento": null
     }
   ],
   "precificados": [
@@ -25690,6 +25693,55 @@
       "dataEmissao": "2026-10-04",
       "status": "emitida",
       "enviada": false
+    },
+    {
+      "id": 1791213879736,
+      "numero": "FAT-0223",
+      "encId": 1791213439298,
+      "clienteNome": "Monreale - D.C. Turismo Ltda.",
+      "clienteDoc": "01.204.495/0001-33",
+      "clienteTel": "",
+      "clienteEnd": "Av. Leonor Furlaneto Delgado, 3033",
+      "data": "2026-10-05",
+      "vencimento": "2026-10-05",
+      "pagamento": "pix",
+      "itens": [
+        {
+          "nome": "Bolo de fubá VEG",
+          "qtd": 1,
+          "preco": 45
+        },
+        {
+          "nome": "Bolo de banana VEG",
+          "qtd": 1,
+          "preco": 38
+        },
+        {
+          "nome": "Bolo de chocolate - C/cob",
+          "qtd": 1,
+          "preco": 65
+        },
+        {
+          "nome": "Pão fatiado milho",
+          "qtd": 1,
+          "preco": 36
+        },
+        {
+          "nome": "Pão de forma VEG",
+          "qtd": 1,
+          "preco": 36
+        },
+        {
+          "nome": "Torta de maçã & chocolate VEG",
+          "qtd": 6,
+          "preco": 13
+        }
+      ],
+      "frete": 0,
+      "subtotal": 298,
+      "total": 298,
+      "dataEmissao": "2026-10-05",
+      "status": "emitida"
     }
   ],
   "_movEstoque": [
@@ -28629,6 +28681,60 @@
       "qtd": 1,
       "obs": "",
       "ref": "Produção"
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-10-05",
+      "prodId": 1775338141847,
+      "prodNome": "Bolo de fubá VEG",
+      "qtd": 1,
+      "ref": "FAT-0223",
+      "clienteNome": "Monreale - D.C. Turismo Ltda."
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-10-05",
+      "prodId": 1775338517548,
+      "prodNome": "Bolo de banana VEG",
+      "qtd": 1,
+      "ref": "FAT-0223",
+      "clienteNome": "Monreale - D.C. Turismo Ltda."
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-10-05",
+      "prodId": 1777245071751,
+      "prodNome": "Bolo de chocolate - C/cob",
+      "qtd": 1,
+      "ref": "FAT-0223",
+      "clienteNome": "Monreale - D.C. Turismo Ltda."
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-10-05",
+      "prodId": 1775412700553,
+      "prodNome": "Pão fatiado milho",
+      "qtd": 1,
+      "ref": "FAT-0223",
+      "clienteNome": "Monreale - D.C. Turismo Ltda."
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-10-05",
+      "prodId": 1775412797431,
+      "prodNome": "Pão de forma VEG",
+      "qtd": 1,
+      "ref": "FAT-0223",
+      "clienteNome": "Monreale - D.C. Turismo Ltda."
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-10-05",
+      "prodId": 1775413995120,
+      "prodNome": "Torta de maçã & chocolate VEG",
+      "qtd": 6,
+      "ref": "FAT-0223",
+      "clienteNome": "Monreale - D.C. Turismo Ltda."
     }
   ],
   "_exportSeq": 50,
