@@ -18219,6 +18219,23 @@
           "qtdEmb": 1
         }
       ]
+    },
+    {
+      "prodId": "1775414785229",
+      "nome": "Bolo de aniversário 500g",
+      "preco": 55,
+      "precoSugerido": 55,
+      "custoUnit": 0,
+      "custoTotal": 0,
+      "lucro": 55,
+      "margem": "100.0",
+      "rendimento": 1,
+      "rendimentoUn": "porções",
+      "qtdEmbalada": 1,
+      "excecao": false,
+      "ingsPrec": [],
+      "compsPrec": [],
+      "embsPrec": []
     }
   ],
   "faturas": [
