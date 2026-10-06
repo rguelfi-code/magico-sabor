@@ -12485,6 +12485,31 @@
       "entregue": true,
       "recebido": false,
       "dataRecebimento": null
+    },
+    {
+      "id": 1791323941699,
+      "clienteId": 1778161807723,
+      "clienteNome": "Fernanda França",
+      "clienteTel": "(35) 99958 3655",
+      "clienteDoc": "",
+      "data": "2026-10-08",
+      "vencimento": "2026-10-08",
+      "tipo": "entrega",
+      "endereco": "Rua Assis Figueiredo 1920, apto. 31",
+      "frete": 0,
+      "pagamento": "pix",
+      "obs": "",
+      "itens": [
+        {
+          "nome": "Bolo de aniversário 500g",
+          "qtd": 1,
+          "preco": 55
+        }
+      ],
+      "subtotal": 55,
+      "total": 55,
+      "status": "aberto",
+      "dataRegistro": "2026-10-06"
     }
   ],
   "precificados": [
