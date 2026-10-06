@@ -425,10 +425,10 @@
     },
     {
       "id": 1775414785229,
-      "nome": "Bolo de aniversário",
+      "nome": "Bolo de aniversário 500g",
       "categoria": "bolo",
       "medida": "peso",
-      "peso": null,
+      "peso": 500,
       "pesoUn": "g",
       "qtd": null,
       "qtdUn": "un",
@@ -438,7 +438,8 @@
       "sl": true,
       "veg": false,
       "sd": false,
-      "dataCadastro": "2026-04-05"
+      "dataCadastro": "2026-04-05",
+      "dataAtualizacao": "2026-10-06"
     },
     {
       "id": 1780618422679,
