@@ -12510,6 +12510,46 @@
       "total": 55,
       "status": "aberto",
       "dataRegistro": "2026-10-06"
+    },
+    {
+      "id": 1791324079860,
+      "clienteId": 1775766590796,
+      "clienteNome": "Cassino Hotel",
+      "clienteTel": "(35) 99937 2003",
+      "clienteDoc": "",
+      "data": "2026-10-06",
+      "vencimento": "2026-10-06",
+      "tipo": "entrega",
+      "endereco": "",
+      "frete": 0,
+      "pagamento": "pix",
+      "obs": "",
+      "itens": [
+        {
+          "nome": "Cheesecake c/frutas vermelhas ZERO",
+          "qtd": 6,
+          "preco": 16
+        },
+        {
+          "nome": "Mousse de limão",
+          "qtd": 5,
+          "preco": 12
+        },
+        {
+          "nome": "Torta de sorvete",
+          "qtd": 3,
+          "preco": 14
+        },
+        {
+          "nome": "Torta de maçã & choc veg ZERO",
+          "qtd": 4,
+          "preco": 13
+        }
+      ],
+      "subtotal": 250,
+      "total": 250,
+      "status": "aberto",
+      "dataRegistro": "2026-10-06"
     }
   ],
   "precificados": [
