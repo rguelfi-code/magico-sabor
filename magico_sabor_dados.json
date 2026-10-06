@@ -12544,10 +12544,20 @@
           "nome": "Torta de maçã & choc veg ZERO",
           "qtd": 4,
           "preco": 13
+        },
+        {
+          "nome": "Pão francês (6 un)",
+          "preco": 3.8,
+          "qtd": 18
+        },
+        {
+          "nome": "Mini-pão 45g (6 un)",
+          "preco": 3.5,
+          "qtd": 24
         }
       ],
-      "subtotal": 250,
-      "total": 250,
+      "subtotal": 402.4,
+      "total": 402.4,
       "status": "aberto",
       "dataRegistro": "2026-10-06"
     }
