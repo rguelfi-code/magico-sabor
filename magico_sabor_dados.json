@@ -1837,7 +1837,7 @@
       "sd": false,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-04-12",
-      "estoque": 9
+      "estoque": 3
     },
     {
       "id": 1775413947923,
@@ -12479,8 +12479,9 @@
       ],
       "subtotal": 84,
       "total": 84,
-      "status": "aberto",
-      "dataRegistro": "2026-10-06"
+      "status": "entregue",
+      "dataRegistro": "2026-10-06",
+      "entregue": false
     }
   ],
   "precificados": [
@@ -25768,6 +25769,30 @@
       "dataEmissao": "2026-10-05",
       "status": "emitida",
       "enviada": false
+    },
+    {
+      "id": 1791300136014,
+      "numero": "FAT-0224",
+      "encId": 1791300127823,
+      "clienteNome": "Monreale - D.C. Turismo Ltda.",
+      "clienteDoc": "01.204.495/0001-33",
+      "clienteTel": "",
+      "clienteEnd": "Av. Leonor Furlaneto Delgado, 3033",
+      "data": "2026-10-06",
+      "vencimento": "2026-10-06",
+      "pagamento": "pix",
+      "itens": [
+        {
+          "nome": "Torta de sorvete",
+          "qtd": 6,
+          "preco": 14
+        }
+      ],
+      "frete": 0,
+      "subtotal": 84,
+      "total": 84,
+      "dataEmissao": "2026-10-06",
+      "status": "emitida"
     }
   ],
   "_movEstoque": [
@@ -28760,6 +28785,15 @@
       "prodNome": "Torta de maçã & chocolate VEG",
       "qtd": 6,
       "ref": "FAT-0223",
+      "clienteNome": "Monreale - D.C. Turismo Ltda."
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-10-06",
+      "prodId": 1775413913223,
+      "prodNome": "Torta de sorvete",
+      "qtd": 6,
+      "ref": "FAT-0224",
       "clienteNome": "Monreale - D.C. Turismo Ltda."
     }
   ],
