@@ -840,7 +840,7 @@
       "sd": false,
       "dataCadastro": "2026-04-04",
       "dataAtualizacao": "2026-04-27",
-      "estoque": 0
+      "estoque": -3
     },
     {
       "id": 1775337876560,
@@ -932,7 +932,7 @@
       "sd": true,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-04-27",
-      "estoque": 11
+      "estoque": 5
     },
     {
       "id": 1775414426629,
@@ -1400,7 +1400,7 @@
       "sd": false,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-04-23",
-      "estoque": -12
+      "estoque": -36
     },
     {
       "id": 1790863807225,
@@ -1455,7 +1455,7 @@
       "veg": false,
       "sd": false,
       "dataCadastro": "2026-04-05",
-      "estoque": 18
+      "estoque": 13
     },
     {
       "id": 1775414902376,
@@ -1639,7 +1639,7 @@
       "sd": false,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-06-12",
-      "estoque": 12
+      "estoque": -6
     },
     {
       "id": 1776807915677,
@@ -1783,7 +1783,7 @@
       "veg": true,
       "sd": true,
       "dataCadastro": "2026-07-13",
-      "estoque": 0
+      "estoque": -4
     },
     {
       "id": 1775413995120,
@@ -1838,7 +1838,7 @@
       "sd": false,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-04-12",
-      "estoque": 3
+      "estoque": 0
     },
     {
       "id": 1775413947923,
@@ -12563,8 +12563,9 @@
       ],
       "subtotal": 537.4,
       "total": 537.4,
-      "status": "aberto",
-      "dataRegistro": "2026-10-06"
+      "status": "entregue",
+      "dataRegistro": "2026-10-06",
+      "entregue": false
     }
   ],
   "precificados": [
@@ -25894,6 +25895,60 @@
       "dataEmissao": "2026-10-06",
       "status": "emitida",
       "enviada": false
+    },
+    {
+      "id": 1791324264613,
+      "numero": "FAT-0225",
+      "encId": 1791324079860,
+      "clienteNome": "Cassino Hotel",
+      "clienteDoc": "—",
+      "clienteTel": "(35) 99937 2003",
+      "clienteEnd": "",
+      "data": "2026-10-06",
+      "vencimento": "2026-10-06",
+      "pagamento": "pix",
+      "itens": [
+        {
+          "nome": "Cheesecake c/frutas vermelhas ZERO",
+          "qtd": 6,
+          "preco": 16
+        },
+        {
+          "nome": "Mousse de limão",
+          "qtd": 5,
+          "preco": 12
+        },
+        {
+          "nome": "Torta de sorvete",
+          "qtd": 3,
+          "preco": 14
+        },
+        {
+          "nome": "Torta de maçã & choc veg ZERO",
+          "qtd": 4,
+          "preco": 13
+        },
+        {
+          "nome": "Pão francês (6 un)",
+          "preco": 3.8,
+          "qtd": 18
+        },
+        {
+          "nome": "Mini-pão 45g (6 un)",
+          "preco": 3.5,
+          "qtd": 24
+        },
+        {
+          "nome": "Bolo de laranja VEG",
+          "preco": 45,
+          "qtd": 3
+        }
+      ],
+      "frete": 0,
+      "subtotal": 537.4,
+      "total": 537.4,
+      "dataEmissao": "2026-10-06",
+      "status": "emitida"
     }
   ],
   "_movEstoque": [
@@ -28896,6 +28951,69 @@
       "qtd": 6,
       "ref": "FAT-0224",
       "clienteNome": "Monreale - D.C. Turismo Ltda."
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-10-06",
+      "prodId": 1775414153841,
+      "prodNome": "Cheesecake c/frutas vermelhas ZERO",
+      "qtd": 6,
+      "ref": "FAT-0225",
+      "clienteNome": "Cassino Hotel"
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-10-06",
+      "prodId": 1775414249914,
+      "prodNome": "Mousse de limão",
+      "qtd": 5,
+      "ref": "FAT-0225",
+      "clienteNome": "Cassino Hotel"
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-10-06",
+      "prodId": 1775413913223,
+      "prodNome": "Torta de sorvete",
+      "qtd": 3,
+      "ref": "FAT-0225",
+      "clienteNome": "Cassino Hotel"
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-10-06",
+      "prodId": 1783965798064,
+      "prodNome": "Torta de maçã & choc veg ZERO",
+      "qtd": 4,
+      "ref": "FAT-0225",
+      "clienteNome": "Cassino Hotel"
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-10-06",
+      "prodId": 1775412983271,
+      "prodNome": "Pão francês (6 un)",
+      "qtd": 18,
+      "ref": "FAT-0225",
+      "clienteNome": "Cassino Hotel"
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-10-06",
+      "prodId": 1775412948951,
+      "prodNome": "Mini-pão 45g (6 un)",
+      "qtd": 24,
+      "ref": "FAT-0225",
+      "clienteNome": "Cassino Hotel"
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-10-06",
+      "prodId": 1775337842248,
+      "prodNome": "Bolo de laranja VEG",
+      "qtd": 3,
+      "ref": "FAT-0225",
+      "clienteNome": "Cassino Hotel"
     }
   ],
   "_exportSeq": 50,
