@@ -12554,10 +12554,15 @@
           "nome": "Mini-pão 45g (6 un)",
           "preco": 3.5,
           "qtd": 24
+        },
+        {
+          "nome": "Bolo de laranja VEG",
+          "preco": 45,
+          "qtd": 3
         }
       ],
-      "subtotal": 402.4,
-      "total": 402.4,
+      "subtotal": 537.4,
+      "total": 537.4,
       "status": "aberto",
       "dataRegistro": "2026-10-06"
     }
