@@ -12454,7 +12454,7 @@
       "total": 298,
       "status": "entregue",
       "dataRegistro": "2026-10-05",
-      "entregue": false,
+      "entregue": true,
       "recebido": false,
       "dataRecebimento": null
     },
