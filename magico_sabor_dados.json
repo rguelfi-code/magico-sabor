@@ -17,7 +17,7 @@
       "sd": false,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-08-30",
-      "estoque": 8
+      "estoque": 10
     },
     {
       "id": 1775404145290,
@@ -29027,6 +29027,15 @@
       "prodId": 1775338517548,
       "prodNome": "Bolo de banana VEG",
       "qtd": 6,
+      "obs": "",
+      "ref": "Produção"
+    },
+    {
+      "tipo": "entrada",
+      "data": "2026-10-07",
+      "prodId": 1775404101559,
+      "prodNome": "Bolo caseiro de banana VEG",
+      "qtd": 2,
       "obs": "",
       "ref": "Produção"
     }
