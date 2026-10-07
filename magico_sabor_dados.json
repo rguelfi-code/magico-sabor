@@ -840,7 +840,7 @@
       "sd": false,
       "dataCadastro": "2026-04-04",
       "dataAtualizacao": "2026-04-27",
-      "estoque": -3
+      "estoque": 0
     },
     {
       "id": 1775337876560,
@@ -29045,6 +29045,15 @@
       "prodId": 1775402992789,
       "prodNome": "Bolo caseiro de chocolate - C/cob",
       "qtd": 1,
+      "obs": "",
+      "ref": "Produção"
+    },
+    {
+      "tipo": "entrada",
+      "data": "2026-10-07",
+      "prodId": 1775337842248,
+      "prodNome": "Bolo de laranja VEG",
+      "qtd": 3,
       "obs": "",
       "ref": "Produção"
     }
