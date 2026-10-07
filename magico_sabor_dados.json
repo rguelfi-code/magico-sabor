@@ -384,7 +384,7 @@
       "sd": false,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-04-27",
-      "estoque": 5
+      "estoque": 7
     },
     {
       "id": 1775403738474,
@@ -29054,6 +29054,15 @@
       "prodId": 1775337842248,
       "prodNome": "Bolo de laranja VEG",
       "qtd": 3,
+      "obs": "",
+      "ref": "Produção"
+    },
+    {
+      "tipo": "entrada",
+      "data": "2026-10-07",
+      "prodId": 1775403653171,
+      "prodNome": "Bolo caseiro de laranja VEG",
+      "qtd": 2,
       "obs": "",
       "ref": "Produção"
     }
