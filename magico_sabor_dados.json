@@ -475,7 +475,7 @@
       "sd": false,
       "dataCadastro": "2026-04-04",
       "dataAtualizacao": "2026-04-27",
-      "estoque": 0
+      "estoque": 6
     },
     {
       "id": 1775338584762,
@@ -29020,6 +29020,15 @@
       "qtd": 3,
       "ref": "FAT-0225",
       "clienteNome": "Cassino Hotel"
+    },
+    {
+      "tipo": "entrada",
+      "data": "2026-10-07",
+      "prodId": 1775338517548,
+      "prodNome": "Bolo de banana VEG",
+      "qtd": 6,
+      "obs": "",
+      "ref": "Produção"
     }
   ],
   "_exportSeq": 50,
