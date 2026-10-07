@@ -25539,7 +25539,7 @@
       "total": 81,
       "dataEmissao": "2026-09-25",
       "status": "emitida",
-      "enviada": false
+      "enviada": true
     },
     {
       "id": 1790621110186,
