@@ -25619,7 +25619,7 @@
       "total": 81,
       "dataEmissao": "2026-10-01",
       "status": "emitida",
-      "enviada": false
+      "enviada": true
     },
     {
       "id": 1790860859275,
