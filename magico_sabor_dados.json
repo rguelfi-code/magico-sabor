@@ -12636,14 +12636,14 @@
           "preco": 38
         },
         {
-          "nome": "Bolo de chocolate",
-          "qtd": 1,
-          "preco": 55
+          "nome": "Bolo de chocolate VEG",
+          "preco": 45,
+          "qtd": 1
         },
         {
-          "nome": "Bolo de fubá",
-          "qtd": 1,
-          "preco": 50
+          "nome": "Bolo de fubá VEG",
+          "preco": 45,
+          "qtd": 1
         },
         {
           "nome": "Bolo de laranja VEG",
@@ -12661,8 +12661,8 @@
           "preco": 38
         }
       ],
-      "subtotal": 419,
-      "total": 419,
+      "subtotal": 404,
+      "total": 404,
       "status": "aberto",
       "dataRegistro": "2026-10-08",
       "entregue": false,
@@ -12722,7 +12722,10 @@
       "subtotal": 316,
       "total": 316,
       "status": "aberto",
-      "dataRegistro": "2026-10-08"
+      "dataRegistro": "2026-10-08",
+      "entregue": false,
+      "recebido": false,
+      "dataRecebimento": null
     }
   ],
   "precificados": [
@@ -26130,7 +26133,8 @@
       "subtotal": 55,
       "total": 55,
       "dataEmissao": "2026-10-08",
-      "status": "emitida"
+      "status": "emitida",
+      "enviada": false
     }
   ],
   "_movEstoque": [
