@@ -1511,7 +1511,7 @@
       "sd": false,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-04-27",
-      "estoque": -2
+      "estoque": 0
     },
     {
       "id": 1775413066535,
@@ -29685,6 +29685,15 @@
       "prodId": 1775337425494,
       "prodNome": "Bolo de chocolate VEG",
       "qtd": 4,
+      "obs": "",
+      "ref": "Produção"
+    },
+    {
+      "tipo": "entrada",
+      "data": "2026-10-09",
+      "prodId": 1775412822023,
+      "prodNome": "Pão australiano VEG",
+      "qtd": 2,
       "obs": "",
       "ref": "Produção"
     }
