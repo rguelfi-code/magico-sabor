@@ -26173,7 +26173,7 @@
       "total": 55,
       "dataEmissao": "2026-10-08",
       "status": "emitida",
-      "enviada": false
+      "enviada": true
     },
     {
       "id": 1791493075960,
