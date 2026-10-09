@@ -787,7 +787,7 @@
       "sd": false,
       "dataCadastro": "2026-04-04",
       "dataAtualizacao": "2026-04-27",
-      "estoque": -2
+      "estoque": 0
     },
     {
       "id": 1777304262670,
@@ -29669,6 +29669,15 @@
       "qtd": 8,
       "ref": "FAT-0231",
       "clienteNome": "Renata Gabriela"
+    },
+    {
+      "tipo": "entrada",
+      "data": "2026-10-09",
+      "prodId": 1775338141847,
+      "prodNome": "Bolo de fubá VEG",
+      "qtd": 2,
+      "obs": "",
+      "ref": "Produção"
     }
   ],
   "_exportSeq": 50,
