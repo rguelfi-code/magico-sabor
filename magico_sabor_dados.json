@@ -626,7 +626,7 @@
       "sd": false,
       "dataCadastro": "2026-04-04",
       "dataAtualizacao": "2026-04-27",
-      "estoque": -1
+      "estoque": 3
     },
     {
       "id": 1777304054271,
@@ -29676,6 +29676,15 @@
       "prodId": 1775338141847,
       "prodNome": "Bolo de fubá VEG",
       "qtd": 2,
+      "obs": "",
+      "ref": "Produção"
+    },
+    {
+      "tipo": "entrada",
+      "data": "2026-10-09",
+      "prodId": 1775337425494,
+      "prodNome": "Bolo de chocolate VEG",
+      "qtd": 4,
       "obs": "",
       "ref": "Produção"
     }
