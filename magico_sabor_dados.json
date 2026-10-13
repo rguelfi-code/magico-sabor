@@ -12866,6 +12866,51 @@
       "entregue": false,
       "recebido": false,
       "dataRecebimento": null
+    },
+    {
+      "id": 1791911770456,
+      "clienteId": 1775768243865,
+      "clienteNome": "Nacional Hotel",
+      "clienteTel": "(35) 99937 2003",
+      "clienteDoc": "",
+      "data": "2026-10-13",
+      "vencimento": "2026-10-13",
+      "tipo": "entrega",
+      "endereco": "",
+      "frete": 0,
+      "pagamento": "pix",
+      "obs": "",
+      "itens": [
+        {
+          "nome": "Bolo de fubá VEG",
+          "qtd": 1,
+          "preco": 45
+        },
+        {
+          "nome": "Bolo de banana VEG",
+          "qtd": 1,
+          "preco": 38
+        },
+        {
+          "nome": "Bolo de laranja VEG",
+          "qtd": 1,
+          "preco": 45
+        },
+        {
+          "nome": "Bolo de chocolate VEG",
+          "qtd": 1,
+          "preco": 45
+        },
+        {
+          "nome": "Pão de forma VEG",
+          "qtd": 2,
+          "preco": 36
+        }
+      ],
+      "subtotal": 245,
+      "total": 245,
+      "status": "aberto",
+      "dataRegistro": "2026-10-13"
     }
   ],
   "precificados": [
