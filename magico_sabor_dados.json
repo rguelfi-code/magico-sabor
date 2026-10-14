@@ -11569,8 +11569,8 @@
       "status": "entregue",
       "dataRegistro": "2026-09-17",
       "entregue": true,
-      "recebido": false,
-      "dataRecebimento": null
+      "recebido": true,
+      "dataRecebimento": "2026-10-14"
     },
     {
       "id": 1789654805093,
@@ -12070,8 +12070,8 @@
       "status": "entregue",
       "dataRegistro": "2026-09-25",
       "entregue": true,
-      "recebido": false,
-      "dataRecebimento": null
+      "recebido": true,
+      "dataRecebimento": "2026-10-14"
     },
     {
       "id": 1790603404671,
@@ -12232,8 +12232,8 @@
       "status": "entregue",
       "dataRegistro": "2026-10-01",
       "entregue": true,
-      "recebido": false,
-      "dataRecebimento": null
+      "recebido": true,
+      "dataRecebimento": "2026-10-14"
     },
     {
       "id": 1790857944941,
