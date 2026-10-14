@@ -12571,8 +12571,8 @@
       "status": "entregue",
       "dataRegistro": "2026-10-06",
       "entregue": true,
-      "recebido": false,
-      "dataRecebimento": null
+      "recebido": true,
+      "dataRecebimento": "2026-10-14"
     },
     {
       "id": 1791466044626,
