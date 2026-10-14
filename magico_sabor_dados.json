@@ -12911,7 +12911,9 @@
       "total": 245,
       "status": "entregue",
       "dataRegistro": "2026-10-13",
-      "entregue": true
+      "entregue": true,
+      "recebido": false,
+      "dataRecebimento": null
     },
     {
       "id": 1791924320496,
@@ -12947,7 +12949,9 @@
       "total": 192,
       "status": "entregue",
       "dataRegistro": "2026-10-13",
-      "entregue": false
+      "entregue": true,
+      "recebido": false,
+      "dataRecebimento": null
     }
   ],
   "precificados": [
@@ -26700,7 +26704,8 @@
       "subtotal": 245,
       "total": 245,
       "dataEmissao": "2026-10-13",
-      "status": "emitida"
+      "status": "emitida",
+      "enviada": false
     },
     {
       "id": 1791924514826,
@@ -26734,7 +26739,8 @@
       "subtotal": 192,
       "total": 192,
       "dataEmissao": "2026-10-13",
-      "status": "emitida"
+      "status": "emitida",
+      "enviada": false
     }
   ],
   "_movEstoque": [
