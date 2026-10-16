@@ -1549,7 +1549,7 @@
       "sd": false,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-04-27",
-      "estoque": -4
+      "estoque": 0
     },
     {
       "id": 1779109491117,
@@ -30448,6 +30448,15 @@
       "qtd": 1,
       "ref": "FAT-0237",
       "clienteNome": "Monreale - D.C. Turismo Ltda."
+    },
+    {
+      "tipo": "entrada",
+      "data": "2026-10-16",
+      "prodId": 1775412797431,
+      "prodNome": "Pão de forma VEG",
+      "qtd": 4,
+      "obs": "",
+      "ref": "Produção"
     }
   ],
   "_exportSeq": 50,
