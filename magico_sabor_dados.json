@@ -13083,7 +13083,34 @@
       "total": 699.2,
       "status": "entregue",
       "dataRegistro": "2026-10-17",
-      "entregue": false
+      "entregue": false,
+      "recebido": false,
+      "dataRecebimento": null
+    },
+    {
+      "id": 1792253141103,
+      "clienteId": 1775766684515,
+      "clienteNome": "Dani Faria",
+      "clienteTel": "(35) 99241 0412",
+      "clienteDoc": "",
+      "data": "2026-10-17",
+      "vencimento": "2026-10-17",
+      "tipo": "entrega",
+      "endereco": "Rua Prefeito Chagas, 305 - loja 36 - Ed. Manhattan",
+      "frete": 0,
+      "pagamento": "pix",
+      "obs": "",
+      "itens": [
+        {
+          "nome": "Pão francês premium",
+          "qtd": 10,
+          "preco": 7
+        }
+      ],
+      "subtotal": 70,
+      "total": 70,
+      "status": "aberto",
+      "dataRegistro": "2026-10-17"
     }
   ],
   "precificados": [
@@ -26996,7 +27023,8 @@
       "subtotal": 699.2,
       "total": 699.2,
       "dataEmissao": "2026-10-17",
-      "status": "emitida"
+      "status": "emitida",
+      "enviada": false
     }
   ],
   "_movEstoque": [
