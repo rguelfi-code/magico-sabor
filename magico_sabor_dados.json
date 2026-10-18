@@ -27053,7 +27053,7 @@
       "total": 70,
       "dataEmissao": "2026-10-17",
       "status": "emitida",
-      "enviada": false
+      "enviada": true
     }
   ],
   "_movEstoque": [
