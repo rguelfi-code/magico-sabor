@@ -1293,7 +1293,7 @@
       "sd": false,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-04-27",
-      "estoque": 17
+      "estoque": 7
     },
     {
       "id": 1775338784416,
@@ -1401,7 +1401,7 @@
       "sd": false,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-04-23",
-      "estoque": -54
+      "estoque": -67
     },
     {
       "id": 1790863807225,
@@ -13234,8 +13234,9 @@
       ],
       "subtotal": 115.5,
       "total": 115.5,
-      "status": "aberto",
-      "dataRegistro": "2026-10-18"
+      "status": "entregue",
+      "dataRegistro": "2026-10-18",
+      "entregue": false
     }
   ],
   "precificados": [
@@ -27260,6 +27261,35 @@
       "dataEmissao": "2026-10-18",
       "status": "emitida",
       "enviada": false
+    },
+    {
+      "id": 1792346811501,
+      "numero": "FAT-0242",
+      "encId": 1792346800311,
+      "clienteNome": "Aira",
+      "clienteDoc": "—",
+      "clienteTel": "(19) 99240 9965",
+      "clienteEnd": "São João da Boa Vista, 272 Jdm Estados",
+      "data": "2026-10-18",
+      "vencimento": "2026-10-18",
+      "pagamento": "pix",
+      "itens": [
+        {
+          "nome": "Disco pizza 100g  (5 un) VEG",
+          "qtd": 10,
+          "preco": 7
+        },
+        {
+          "nome": "Mini-pão 45g (6 un)",
+          "qtd": 13,
+          "preco": 3.5
+        }
+      ],
+      "frete": 0,
+      "subtotal": 115.5,
+      "total": 115.5,
+      "dataEmissao": "2026-10-18",
+      "status": "emitida"
     }
   ],
   "_movEstoque": [
@@ -30964,6 +30994,24 @@
       "qtd": 1,
       "ref": "FAT-0241",
       "clienteNome": "Monreale - D.C. Turismo Ltda."
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-10-18",
+      "prodId": 1775413148538,
+      "prodNome": "Disco pizza 100g  (5 un) VEG",
+      "qtd": 10,
+      "ref": "FAT-0242",
+      "clienteNome": "Aira"
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-10-18",
+      "prodId": 1775412948951,
+      "prodNome": "Mini-pão 45g (6 un)",
+      "qtd": 13,
+      "ref": "FAT-0242",
+      "clienteNome": "Aira"
     }
   ],
   "_exportSeq": 50,
