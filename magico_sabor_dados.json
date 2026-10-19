@@ -1293,7 +1293,7 @@
       "sd": false,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-04-27",
-      "estoque": 7
+      "estoque": 1
     },
     {
       "id": 1775338784416,
@@ -13300,8 +13300,9 @@
       ],
       "subtotal": 42,
       "total": 42,
-      "status": "aberto",
-      "dataRegistro": "2026-10-19"
+      "status": "entregue",
+      "dataRegistro": "2026-10-19",
+      "entregue": false
     }
   ],
   "precificados": [
@@ -27391,6 +27392,30 @@
       "dataEmissao": "2026-10-19",
       "status": "emitida",
       "enviada": false
+    },
+    {
+      "id": 1792444742628,
+      "numero": "FAT-0244",
+      "encId": 1792444667831,
+      "clienteNome": "Monreale - D.C. Turismo Ltda.",
+      "clienteDoc": "01.204.495/0001-33",
+      "clienteTel": "",
+      "clienteEnd": "Av. Leonor Furlaneto Delgado, 3033",
+      "data": "2026-10-19",
+      "vencimento": "2026-10-19",
+      "pagamento": "pix",
+      "itens": [
+        {
+          "nome": "Disco pizza 100g  (5 un) VEG",
+          "qtd": 6,
+          "preco": 7
+        }
+      ],
+      "frete": 0,
+      "subtotal": 42,
+      "total": 42,
+      "dataEmissao": "2026-10-19",
+      "status": "emitida"
     }
   ],
   "_movEstoque": [
@@ -31140,6 +31165,15 @@
       "qtd": 1,
       "ref": "FAT-0243",
       "clienteNome": "Palace Hotel"
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-10-19",
+      "prodId": 1775413148538,
+      "prodNome": "Disco pizza 100g  (5 un) VEG",
+      "qtd": 6,
+      "ref": "FAT-0244",
+      "clienteNome": "Monreale - D.C. Turismo Ltda."
     }
   ],
   "_exportSeq": 50,
