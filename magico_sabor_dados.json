@@ -13084,7 +13084,7 @@
       "total": 699.2,
       "status": "entregue",
       "dataRegistro": "2026-10-17",
-      "entregue": false,
+      "entregue": true,
       "recebido": false,
       "dataRecebimento": null
     },
