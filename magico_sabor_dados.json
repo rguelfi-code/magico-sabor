@@ -805,7 +805,7 @@
       "veg": true,
       "sd": false,
       "dataCadastro": "2026-04-27",
-      "estoque": 2
+      "estoque": 1
     },
     {
       "id": 1775338206653,
@@ -31355,6 +31355,17 @@
       "qtd": 8,
       "ref": "Ajuste (Contagem física)",
       "obs": "Saldo anterior: -2 un → 6 un",
+      "clienteNome": ""
+    },
+    {
+      "tipo": "saida",
+      "subtipo": "ajuste",
+      "data": "2026-10-21",
+      "prodId": 1777304262670,
+      "prodNome": "Bolo de fubá VEG - C/cob",
+      "qtd": 1,
+      "ref": "Ajuste (Contagem física)",
+      "obs": "Saldo anterior: 2 un → 1 un",
       "clienteNome": ""
     }
   ],
