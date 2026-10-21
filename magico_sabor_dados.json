@@ -1623,7 +1623,7 @@
       "veg": false,
       "sd": false,
       "dataCadastro": "2026-04-05",
-      "estoque": 4
+      "estoque": 3
     },
     {
       "id": 1775412983271,
@@ -31388,6 +31388,17 @@
       "qtd": 4,
       "ref": "Ajuste (Contagem física)",
       "obs": "Saldo anterior: 2 un → 6 un",
+      "clienteNome": ""
+    },
+    {
+      "tipo": "saida",
+      "subtipo": "ajuste",
+      "data": "2026-10-21",
+      "prodId": 1775412736500,
+      "prodNome": "Pão fatiado multigrãos",
+      "qtd": 1,
+      "ref": "Ajuste (Contagem física)",
+      "obs": "Saldo anterior: 4 un → 3 un",
       "clienteNome": ""
     }
   ],
