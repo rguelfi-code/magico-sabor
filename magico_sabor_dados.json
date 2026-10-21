@@ -1843,7 +1843,7 @@
       "sd": false,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-04-12",
-      "estoque": -4
+      "estoque": 5
     },
     {
       "id": 1775413947923,
@@ -31466,6 +31466,17 @@
       "qtd": 7,
       "ref": "Ajuste (Contagem física)",
       "obs": "Saldo anterior: 20 un → 13 un",
+      "clienteNome": ""
+    },
+    {
+      "tipo": "entrada",
+      "subtipo": "ajuste",
+      "data": "2026-10-21",
+      "prodId": 1775413913223,
+      "prodNome": "Torta de sorvete",
+      "qtd": 9,
+      "ref": "Ajuste (Contagem física)",
+      "obs": "Saldo anterior: -4 un → 5 un",
       "clienteNome": ""
     }
   ],
