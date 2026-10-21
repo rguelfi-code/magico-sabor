@@ -13276,7 +13276,7 @@
       "total": 112,
       "status": "entregue",
       "dataRegistro": "2026-10-19",
-      "entregue": false,
+      "entregue": true,
       "recebido": false,
       "dataRecebimento": null
     },
