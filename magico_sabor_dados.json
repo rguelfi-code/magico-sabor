@@ -476,7 +476,7 @@
       "sd": false,
       "dataCadastro": "2026-04-04",
       "dataAtualizacao": "2026-04-27",
-      "estoque": -7
+      "estoque": 2
     },
     {
       "id": 1775338584762,
@@ -31292,6 +31292,15 @@
       "prodId": 1777304262670,
       "prodNome": "Bolo de fubá VEG - C/cob",
       "qtd": 2,
+      "obs": "",
+      "ref": "Produção"
+    },
+    {
+      "tipo": "entrada",
+      "data": "2026-10-21",
+      "prodId": 1775338517548,
+      "prodNome": "Bolo de banana VEG",
+      "qtd": 9,
       "obs": "",
       "ref": "Produção"
     }
