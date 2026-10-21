@@ -147,7 +147,7 @@
       "sd": false,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-04-27",
-      "estoque": -2
+      "estoque": 6
     },
     {
       "id": 1775403049458,
@@ -31344,6 +31344,17 @@
       "qtd": 7,
       "ref": "Ajuste (Contagem física)",
       "obs": "Saldo anterior: -1 un → 6 un",
+      "clienteNome": ""
+    },
+    {
+      "tipo": "entrada",
+      "subtipo": "ajuste",
+      "data": "2026-10-21",
+      "prodId": 1775402992789,
+      "prodNome": "Bolo caseiro de chocolate - C/cob",
+      "qtd": 8,
+      "ref": "Ajuste (Contagem física)",
+      "obs": "Saldo anterior: -2 un → 6 un",
       "clienteNome": ""
     }
   ],
