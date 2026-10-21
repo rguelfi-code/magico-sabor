@@ -403,7 +403,7 @@
       "sd": true,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-04-27",
-      "estoque": -1
+      "estoque": 6
     },
     {
       "id": 1775404301425,
@@ -31333,6 +31333,17 @@
       "qtd": 2,
       "ref": "Ajuste (Contagem física)",
       "obs": "Saldo anterior: 10 un → 8 un",
+      "clienteNome": ""
+    },
+    {
+      "tipo": "entrada",
+      "subtipo": "ajuste",
+      "data": "2026-10-21",
+      "prodId": 1775403738474,
+      "prodNome": "Bolo caseiro de laranja ZERO",
+      "qtd": 7,
+      "ref": "Ajuste (Contagem física)",
+      "obs": "Saldo anterior: -1 un → 6 un",
       "clienteNome": ""
     }
   ],
