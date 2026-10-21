@@ -1622,7 +1622,7 @@
       "veg": false,
       "sd": false,
       "dataCadastro": "2026-04-05",
-      "estoque": 3
+      "estoque": 2
     },
     {
       "id": 1775412983271,
@@ -13328,8 +13328,9 @@
       ],
       "subtotal": 36,
       "total": 36,
-      "status": "aberto",
-      "dataRegistro": "2026-10-21"
+      "status": "entregue",
+      "dataRegistro": "2026-10-21",
+      "entregue": false
     }
   ],
   "precificados": [
@@ -27444,6 +27445,30 @@
       "dataEmissao": "2026-10-19",
       "status": "emitida",
       "enviada": false
+    },
+    {
+      "id": 1792598761164,
+      "numero": "FAT-0245",
+      "encId": 1792598724565,
+      "clienteNome": "Cláudia Flores",
+      "clienteDoc": "—",
+      "clienteTel": "(35) 98817 5729",
+      "clienteEnd": "Av. Reinaldo Amarante, 318 - Saúde",
+      "data": "2026-10-21",
+      "vencimento": "2026-10-21",
+      "pagamento": "pix",
+      "itens": [
+        {
+          "nome": "Pão fatiado multigrãos",
+          "qtd": 1,
+          "preco": 36
+        }
+      ],
+      "frete": 0,
+      "subtotal": 36,
+      "total": 36,
+      "dataEmissao": "2026-10-21",
+      "status": "emitida"
     }
   ],
   "_movEstoque": [
@@ -31202,6 +31227,15 @@
       "qtd": 6,
       "ref": "FAT-0244",
       "clienteNome": "Monreale - D.C. Turismo Ltda."
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-10-21",
+      "prodId": 1775412736500,
+      "prodNome": "Pão fatiado multigrãos",
+      "qtd": 1,
+      "ref": "FAT-0245",
+      "clienteNome": "Cláudia Flores"
     }
   ],
   "_exportSeq": 50,
