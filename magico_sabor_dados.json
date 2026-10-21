@@ -1458,7 +1458,7 @@
       "veg": false,
       "sd": false,
       "dataCadastro": "2026-04-05",
-      "estoque": 13
+      "estoque": 15
     },
     {
       "id": 1775414902376,
@@ -31444,6 +31444,17 @@
       "qtd": 4,
       "ref": "Ajuste (Contagem física)",
       "obs": "Saldo anterior: 0 un → 4 un",
+      "clienteNome": ""
+    },
+    {
+      "tipo": "entrada",
+      "subtipo": "ajuste",
+      "data": "2026-10-21",
+      "prodId": 1775414249914,
+      "prodNome": "Mousse de limão",
+      "qtd": 2,
+      "ref": "Ajuste (Contagem física)",
+      "obs": "Saldo anterior: 13 un → 15 un",
       "clienteNome": ""
     }
   ],
