@@ -476,7 +476,7 @@
       "sd": false,
       "dataCadastro": "2026-04-04",
       "dataAtualizacao": "2026-04-27",
-      "estoque": 2
+      "estoque": 6
     },
     {
       "id": 1775338584762,
@@ -31377,6 +31377,17 @@
       "qtd": 1,
       "ref": "Ajuste (Contagem física)",
       "obs": "Saldo anterior: 1 un → 2 un",
+      "clienteNome": ""
+    },
+    {
+      "tipo": "entrada",
+      "subtipo": "ajuste",
+      "data": "2026-10-21",
+      "prodId": 1775338517548,
+      "prodNome": "Bolo de banana VEG",
+      "qtd": 4,
+      "ref": "Ajuste (Contagem física)",
+      "obs": "Saldo anterior: 2 un → 6 un",
       "clienteNome": ""
     }
   ],
