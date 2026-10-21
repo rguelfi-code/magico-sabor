@@ -1550,7 +1550,7 @@
       "sd": false,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-04-27",
-      "estoque": -2
+      "estoque": 2
     },
     {
       "id": 1779109491117,
@@ -31399,6 +31399,17 @@
       "qtd": 1,
       "ref": "Ajuste (Contagem física)",
       "obs": "Saldo anterior: 4 un → 3 un",
+      "clienteNome": ""
+    },
+    {
+      "tipo": "entrada",
+      "subtipo": "ajuste",
+      "data": "2026-10-21",
+      "prodId": 1775412797431,
+      "prodNome": "Pão de forma VEG",
+      "qtd": 4,
+      "ref": "Ajuste (Contagem física)",
+      "obs": "Saldo anterior: -2 un → 2 un",
       "clienteNome": ""
     }
   ],
