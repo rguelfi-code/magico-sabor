@@ -13331,8 +13331,8 @@
       "status": "entregue",
       "dataRegistro": "2026-10-21",
       "entregue": true,
-      "recebido": false,
-      "dataRecebimento": null
+      "recebido": true,
+      "dataRecebimento": "2026-10-21"
     }
   ],
   "precificados": [
