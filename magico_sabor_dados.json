@@ -626,7 +626,7 @@
       "sd": false,
       "dataCadastro": "2026-04-04",
       "dataAtualizacao": "2026-04-27",
-      "estoque": 1
+      "estoque": 2
     },
     {
       "id": 1777304054271,
@@ -31366,6 +31366,17 @@
       "qtd": 1,
       "ref": "Ajuste (Contagem física)",
       "obs": "Saldo anterior: 2 un → 1 un",
+      "clienteNome": ""
+    },
+    {
+      "tipo": "entrada",
+      "subtipo": "ajuste",
+      "data": "2026-10-21",
+      "prodId": 1775337425494,
+      "prodNome": "Bolo de chocolate VEG",
+      "qtd": 1,
+      "ref": "Ajuste (Contagem física)",
+      "obs": "Saldo anterior: 1 un → 2 un",
       "clienteNome": ""
     }
   ],
