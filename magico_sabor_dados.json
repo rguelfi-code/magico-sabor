@@ -1401,7 +1401,7 @@
       "sd": false,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-04-23",
-      "estoque": -67
+      "estoque": -44
     },
     {
       "id": 1790863807225,
@@ -31255,6 +31255,15 @@
       "prodId": 1775412700553,
       "prodNome": "Pão fatiado milho",
       "qtd": 4,
+      "obs": "",
+      "ref": "Produção"
+    },
+    {
+      "tipo": "entrada",
+      "data": "2026-10-21",
+      "prodId": 1775412948951,
+      "prodNome": "Mini-pão 45g (6 un)",
+      "qtd": 23,
       "obs": "",
       "ref": "Produção"
     }
