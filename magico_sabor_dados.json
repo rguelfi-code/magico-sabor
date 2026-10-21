@@ -13330,7 +13330,9 @@
       "total": 36,
       "status": "entregue",
       "dataRegistro": "2026-10-21",
-      "entregue": false
+      "entregue": true,
+      "recebido": false,
+      "dataRecebimento": null
     }
   ],
   "precificados": [
@@ -27468,7 +27470,8 @@
       "subtotal": 36,
       "total": 36,
       "dataEmissao": "2026-10-21",
-      "status": "emitida"
+      "status": "emitida",
+      "enviada": false
     }
   ],
   "_movEstoque": [
