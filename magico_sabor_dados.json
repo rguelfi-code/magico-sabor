@@ -27471,7 +27471,7 @@
       "total": 36,
       "dataEmissao": "2026-10-21",
       "status": "emitida",
-      "enviada": false
+      "enviada": true
     }
   ],
   "_movEstoque": [
