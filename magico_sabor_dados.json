@@ -804,7 +804,8 @@
       "sl": true,
       "veg": true,
       "sd": false,
-      "dataCadastro": "2026-04-27"
+      "dataCadastro": "2026-04-27",
+      "estoque": 2
     },
     {
       "id": 1775338206653,
@@ -31282,6 +31283,15 @@
       "prodId": 1775337237472,
       "prodNome": "Bolo de cenoura C/cob",
       "qtd": 4,
+      "obs": "",
+      "ref": "Produção"
+    },
+    {
+      "tipo": "entrada",
+      "data": "2026-10-21",
+      "prodId": 1777304262670,
+      "prodNome": "Bolo de fubá VEG - C/cob",
+      "qtd": 2,
       "obs": "",
       "ref": "Produção"
     }
