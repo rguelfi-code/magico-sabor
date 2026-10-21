@@ -1042,7 +1042,8 @@
       "veg": true,
       "sd": false,
       "dataCadastro": "2026-04-04",
-      "dataAtualizacao": "2026-04-27"
+      "dataAtualizacao": "2026-04-27",
+      "estoque": 4
     },
     {
       "id": 1775403577871,
@@ -31432,6 +31433,17 @@
       "qtd": 13,
       "ref": "Ajuste (Contagem física)",
       "obs": "Saldo anterior: 1 un → 14 un",
+      "clienteNome": ""
+    },
+    {
+      "tipo": "entrada",
+      "subtipo": "ajuste",
+      "data": "2026-10-21",
+      "prodId": 1775337544293,
+      "prodNome": "Cobertura de cacau 150g VEG",
+      "qtd": 4,
+      "ref": "Ajuste (Contagem física)",
+      "obs": "Saldo anterior: 0 un → 4 un",
       "clienteNome": ""
     }
   ],
