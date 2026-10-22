@@ -476,7 +476,7 @@
       "sd": false,
       "dataCadastro": "2026-04-04",
       "dataAtualizacao": "2026-04-27",
-      "estoque": 6
+      "estoque": 4
     },
     {
       "id": 1775338584762,
@@ -644,7 +644,7 @@
       "veg": true,
       "sd": false,
       "dataCadastro": "2026-04-27",
-      "estoque": 3
+      "estoque": 2
     },
     {
       "id": 1775337460811,
@@ -842,7 +842,7 @@
       "sd": false,
       "dataCadastro": "2026-04-04",
       "dataAtualizacao": "2026-04-27",
-      "estoque": -11
+      "estoque": -13
     },
     {
       "id": 1775337876560,
@@ -1551,7 +1551,7 @@
       "sd": false,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-04-27",
-      "estoque": 2
+      "estoque": 1
     },
     {
       "id": 1779109491117,
@@ -1606,7 +1606,7 @@
       "veg": false,
       "sd": false,
       "dataCadastro": "2026-04-05",
-      "estoque": 4
+      "estoque": 3
     },
     {
       "id": 1775412736500,
@@ -1624,7 +1624,7 @@
       "veg": false,
       "sd": false,
       "dataCadastro": "2026-04-05",
-      "estoque": 3
+      "estoque": 2
     },
     {
       "id": 1775412983271,
@@ -13388,7 +13388,7 @@
       ],
       "subtotal": 370,
       "total": 370,
-      "status": "aberto",
+      "status": "entregue",
       "dataRegistro": "2026-10-22",
       "entregue": false,
       "recebido": false,
@@ -27567,6 +27567,60 @@
       "dataEmissao": "2026-10-21",
       "status": "emitida",
       "enviada": true
+    },
+    {
+      "id": 1792679334085,
+      "numero": "FAT-0246",
+      "encId": 1792674166785,
+      "clienteNome": "Monreale - D.C. Turismo Ltda.",
+      "clienteDoc": "01.204.495/0001-33",
+      "clienteTel": "",
+      "clienteEnd": "Av. Leonor Furlaneto Delgado, 3033",
+      "data": "2026-10-22",
+      "vencimento": "2026-10-22",
+      "pagamento": "pix",
+      "itens": [
+        {
+          "nome": "Bolo de banana VEG",
+          "qtd": 2,
+          "preco": 38
+        },
+        {
+          "nome": "Bolo de chocolate VEG - C/cob",
+          "qtd": 1,
+          "preco": 60
+        },
+        {
+          "nome": "Bolo de laranja VEG",
+          "qtd": 2,
+          "preco": 45
+        },
+        {
+          "nome": "Pão de forma VEG",
+          "qtd": 1,
+          "preco": 36
+        },
+        {
+          "nome": "Pão fatiado multigrãos",
+          "qtd": 1,
+          "preco": 36
+        },
+        {
+          "nome": "Pão fatiado milho",
+          "qtd": 1,
+          "preco": 36
+        },
+        {
+          "nome": "Pão fatiado abóbora",
+          "qtd": 1,
+          "preco": 36
+        }
+      ],
+      "frete": 0,
+      "subtotal": 370,
+      "total": 370,
+      "dataEmissao": "2026-10-22",
+      "status": "emitida"
     }
   ],
   "_movEstoque": [
@@ -31571,6 +31625,60 @@
       "ref": "Ajuste (Contagem física)",
       "obs": "Saldo anterior: -4 un → 5 un",
       "clienteNome": ""
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-10-22",
+      "prodId": 1775338517548,
+      "prodNome": "Bolo de banana VEG",
+      "qtd": 2,
+      "ref": "FAT-0246",
+      "clienteNome": "Monreale - D.C. Turismo Ltda."
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-10-22",
+      "prodId": 1777304054271,
+      "prodNome": "Bolo de chocolate VEG - C/cob",
+      "qtd": 1,
+      "ref": "FAT-0246",
+      "clienteNome": "Monreale - D.C. Turismo Ltda."
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-10-22",
+      "prodId": 1775337842248,
+      "prodNome": "Bolo de laranja VEG",
+      "qtd": 2,
+      "ref": "FAT-0246",
+      "clienteNome": "Monreale - D.C. Turismo Ltda."
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-10-22",
+      "prodId": 1775412797431,
+      "prodNome": "Pão de forma VEG",
+      "qtd": 1,
+      "ref": "FAT-0246",
+      "clienteNome": "Monreale - D.C. Turismo Ltda."
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-10-22",
+      "prodId": 1775412736500,
+      "prodNome": "Pão fatiado multigrãos",
+      "qtd": 1,
+      "ref": "FAT-0246",
+      "clienteNome": "Monreale - D.C. Turismo Ltda."
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-10-22",
+      "prodId": 1775412700553,
+      "prodNome": "Pão fatiado milho",
+      "qtd": 1,
+      "ref": "FAT-0246",
+      "clienteNome": "Monreale - D.C. Turismo Ltda."
     }
   ],
   "_exportSeq": 50,
