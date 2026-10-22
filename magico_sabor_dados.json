@@ -13362,12 +13362,7 @@
         },
         {
           "nome": "Bolo de laranja VEG",
-          "qtd": 1,
-          "preco": 45
-        },
-        {
-          "nome": "Bolo de fubá VEG",
-          "qtd": 1,
+          "qtd": 2,
           "preco": 45
         },
         {
@@ -13394,7 +13389,10 @@
       "subtotal": 370,
       "total": 370,
       "status": "aberto",
-      "dataRegistro": "2026-10-22"
+      "dataRegistro": "2026-10-22",
+      "entregue": false,
+      "recebido": false,
+      "dataRecebimento": null
     }
   ],
   "precificados": [
