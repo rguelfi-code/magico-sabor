@@ -644,7 +644,7 @@
       "veg": true,
       "sd": false,
       "dataCadastro": "2026-04-27",
-      "estoque": 2
+      "estoque": 1
     },
     {
       "id": 1775337460811,
@@ -787,7 +787,7 @@
       "sd": false,
       "dataCadastro": "2026-04-04",
       "dataAtualizacao": "2026-04-27",
-      "estoque": -3
+      "estoque": -4
     },
     {
       "id": 1777304262670,
@@ -1606,7 +1606,7 @@
       "veg": false,
       "sd": false,
       "dataCadastro": "2026-04-05",
-      "estoque": 3
+      "estoque": 2
     },
     {
       "id": 1775412736500,
@@ -13426,8 +13426,9 @@
       ],
       "subtotal": 141,
       "total": 141,
-      "status": "aberto",
-      "dataRegistro": "2026-10-22"
+      "status": "entregue",
+      "dataRegistro": "2026-10-22",
+      "entregue": false
     }
   ],
   "precificados": [
@@ -27621,6 +27622,40 @@
       "total": 370,
       "dataEmissao": "2026-10-22",
       "status": "emitida"
+    },
+    {
+      "id": 1792679369185,
+      "numero": "FAT-0247",
+      "encId": 1792679279733,
+      "clienteNome": "Monreale - D.C. Turismo Ltda.",
+      "clienteDoc": "01.204.495/0001-33",
+      "clienteTel": "",
+      "clienteEnd": "Av. Leonor Furlaneto Delgado, 3033",
+      "data": "2026-10-22",
+      "vencimento": "2026-10-22",
+      "pagamento": "pix",
+      "itens": [
+        {
+          "nome": "Bolo de fubá VEG",
+          "qtd": 1,
+          "preco": 45
+        },
+        {
+          "nome": "Bolo de chocolate VEG - C/cob",
+          "qtd": 1,
+          "preco": 60
+        },
+        {
+          "nome": "Pão fatiado milho",
+          "qtd": 1,
+          "preco": 36
+        }
+      ],
+      "frete": 0,
+      "subtotal": 141,
+      "total": 141,
+      "dataEmissao": "2026-10-22",
+      "status": "emitida"
     }
   ],
   "_movEstoque": [
@@ -31678,6 +31713,33 @@
       "prodNome": "Pão fatiado milho",
       "qtd": 1,
       "ref": "FAT-0246",
+      "clienteNome": "Monreale - D.C. Turismo Ltda."
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-10-22",
+      "prodId": 1775338141847,
+      "prodNome": "Bolo de fubá VEG",
+      "qtd": 1,
+      "ref": "FAT-0247",
+      "clienteNome": "Monreale - D.C. Turismo Ltda."
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-10-22",
+      "prodId": 1777304054271,
+      "prodNome": "Bolo de chocolate VEG - C/cob",
+      "qtd": 1,
+      "ref": "FAT-0247",
+      "clienteNome": "Monreale - D.C. Turismo Ltda."
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-10-22",
+      "prodId": 1775412700553,
+      "prodNome": "Pão fatiado milho",
+      "qtd": 1,
+      "ref": "FAT-0247",
       "clienteNome": "Monreale - D.C. Turismo Ltda."
     }
   ],
