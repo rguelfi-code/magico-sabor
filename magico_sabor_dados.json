@@ -476,7 +476,7 @@
       "sd": false,
       "dataCadastro": "2026-04-04",
       "dataAtualizacao": "2026-04-27",
-      "estoque": 4
+      "estoque": 3
     },
     {
       "id": 1775338584762,
@@ -787,7 +787,7 @@
       "sd": false,
       "dataCadastro": "2026-04-04",
       "dataAtualizacao": "2026-04-27",
-      "estoque": -4
+      "estoque": -5
     },
     {
       "id": 1777304262670,
@@ -13459,8 +13459,9 @@
       ],
       "subtotal": 83,
       "total": 83,
-      "status": "aberto",
-      "dataRegistro": "2026-10-25"
+      "status": "entregue",
+      "dataRegistro": "2026-10-25",
+      "entregue": false
     },
     {
       "id": 1792945262687,
@@ -27735,6 +27736,35 @@
       "dataEmissao": "2026-10-22",
       "status": "emitida",
       "enviada": false
+    },
+    {
+      "id": 1792945279021,
+      "numero": "FAT-0248",
+      "encId": 1792945180009,
+      "clienteNome": "Monreale - D.C. Turismo Ltda.",
+      "clienteDoc": "01.204.495/0001-33",
+      "clienteTel": "",
+      "clienteEnd": "Av. Leonor Furlaneto Delgado, 3033",
+      "data": "2026-10-25",
+      "vencimento": "2026-10-25",
+      "pagamento": "pix",
+      "itens": [
+        {
+          "nome": "Bolo de fubá VEG",
+          "qtd": 1,
+          "preco": 45
+        },
+        {
+          "nome": "Bolo de banana VEG",
+          "qtd": 1,
+          "preco": 38
+        }
+      ],
+      "frete": 0,
+      "subtotal": 83,
+      "total": 83,
+      "dataEmissao": "2026-10-25",
+      "status": "emitida"
     }
   ],
   "_movEstoque": [
@@ -31819,6 +31849,24 @@
       "prodNome": "Pão fatiado milho",
       "qtd": 1,
       "ref": "FAT-0247",
+      "clienteNome": "Monreale - D.C. Turismo Ltda."
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-10-25",
+      "prodId": 1775338141847,
+      "prodNome": "Bolo de fubá VEG",
+      "qtd": 1,
+      "ref": "FAT-0248",
+      "clienteNome": "Monreale - D.C. Turismo Ltda."
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-10-25",
+      "prodId": 1775338517548,
+      "prodNome": "Bolo de banana VEG",
+      "qtd": 1,
+      "ref": "FAT-0248",
       "clienteNome": "Monreale - D.C. Turismo Ltda."
     }
   ],
