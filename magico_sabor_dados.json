@@ -476,7 +476,7 @@
       "sd": false,
       "dataCadastro": "2026-04-04",
       "dataAtualizacao": "2026-04-27",
-      "estoque": 1
+      "estoque": 0
     },
     {
       "id": 1775338584762,
@@ -626,7 +626,7 @@
       "sd": false,
       "dataCadastro": "2026-04-04",
       "dataAtualizacao": "2026-04-27",
-      "estoque": 2
+      "estoque": 1
     },
     {
       "id": 1777304054271,
@@ -787,7 +787,7 @@
       "sd": false,
       "dataCadastro": "2026-04-04",
       "dataAtualizacao": "2026-04-27",
-      "estoque": -5
+      "estoque": -6
     },
     {
       "id": 1777304262670,
@@ -842,7 +842,7 @@
       "sd": false,
       "dataCadastro": "2026-04-04",
       "dataAtualizacao": "2026-04-27",
-      "estoque": -14
+      "estoque": -15
     },
     {
       "id": 1775337876560,
@@ -1513,7 +1513,7 @@
       "sd": false,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-04-27",
-      "estoque": 2
+      "estoque": 1
     },
     {
       "id": 1775413066535,
@@ -1551,7 +1551,7 @@
       "sd": false,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-04-27",
-      "estoque": 1
+      "estoque": 0
     },
     {
       "id": 1779109491117,
@@ -13641,7 +13641,7 @@
       ],
       "subtotal": 247,
       "total": 247,
-      "status": "aberto",
+      "status": "entregue",
       "dataRegistro": "2026-10-28",
       "entregue": false,
       "recebido": false,
@@ -27983,7 +27983,8 @@
       "subtotal": 119,
       "total": 119,
       "dataEmissao": "2026-10-28",
-      "status": "emitida"
+      "status": "emitida",
+      "enviada": false
     },
     {
       "id": 1793211371666,
@@ -28021,6 +28022,56 @@
       "frete": 0,
       "subtotal": 382.2,
       "total": 382.2,
+      "dataEmissao": "2026-10-28",
+      "status": "emitida",
+      "enviada": false
+    },
+    {
+      "id": 1793211523867,
+      "numero": "FAT-0252",
+      "encId": 1793209862954,
+      "clienteNome": "Nacional Hotel",
+      "clienteDoc": "—",
+      "clienteTel": "(35) 99937 2003",
+      "clienteEnd": "",
+      "data": "2026-10-28",
+      "vencimento": "2026-10-28",
+      "pagamento": "pix",
+      "itens": [
+        {
+          "nome": "Pão de forma VEG",
+          "qtd": 1,
+          "preco": 36
+        },
+        {
+          "nome": "Pão australiano VEG",
+          "qtd": 1,
+          "preco": 38
+        },
+        {
+          "nome": "Bolo de chocolate VEG",
+          "preco": 45,
+          "qtd": 1
+        },
+        {
+          "nome": "Bolo de banana VEG",
+          "preco": 38,
+          "qtd": 1
+        },
+        {
+          "nome": "Bolo de laranja VEG",
+          "preco": 45,
+          "qtd": 1
+        },
+        {
+          "nome": "Bolo de fubá VEG",
+          "preco": 45,
+          "qtd": 1
+        }
+      ],
+      "frete": 0,
+      "subtotal": 247,
+      "total": 247,
       "dataEmissao": "2026-10-28",
       "status": "emitida"
     }
@@ -32225,6 +32276,60 @@
       "qtd": 2,
       "ref": "FAT-0251",
       "clienteNome": "Cassino Hotel"
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-10-28",
+      "prodId": 1775412797431,
+      "prodNome": "Pão de forma VEG",
+      "qtd": 1,
+      "ref": "FAT-0252",
+      "clienteNome": "Nacional Hotel"
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-10-28",
+      "prodId": 1775412822023,
+      "prodNome": "Pão australiano VEG",
+      "qtd": 1,
+      "ref": "FAT-0252",
+      "clienteNome": "Nacional Hotel"
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-10-28",
+      "prodId": 1775337425494,
+      "prodNome": "Bolo de chocolate VEG",
+      "qtd": 1,
+      "ref": "FAT-0252",
+      "clienteNome": "Nacional Hotel"
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-10-28",
+      "prodId": 1775338517548,
+      "prodNome": "Bolo de banana VEG",
+      "qtd": 1,
+      "ref": "FAT-0252",
+      "clienteNome": "Nacional Hotel"
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-10-28",
+      "prodId": 1775337842248,
+      "prodNome": "Bolo de laranja VEG",
+      "qtd": 1,
+      "ref": "FAT-0252",
+      "clienteNome": "Nacional Hotel"
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-10-28",
+      "prodId": 1775338141847,
+      "prodNome": "Bolo de fubá VEG",
+      "qtd": 1,
+      "ref": "FAT-0252",
+      "clienteNome": "Nacional Hotel"
     }
   ],
   "_exportSeq": 50,
