@@ -476,7 +476,7 @@
       "sd": false,
       "dataCadastro": "2026-04-04",
       "dataAtualizacao": "2026-04-27",
-      "estoque": 2
+      "estoque": 1
     },
     {
       "id": 1775338584762,
@@ -842,7 +842,7 @@
       "sd": false,
       "dataCadastro": "2026-04-04",
       "dataAtualizacao": "2026-04-27",
-      "estoque": -13
+      "estoque": -14
     },
     {
       "id": 1775337876560,
@@ -1624,7 +1624,7 @@
       "veg": false,
       "sd": false,
       "dataCadastro": "2026-04-05",
-      "estoque": 1
+      "estoque": 0
     },
     {
       "id": 1775412983271,
@@ -13545,7 +13545,7 @@
       ],
       "subtotal": 119,
       "total": 119,
-      "status": "aberto",
+      "status": "entregue",
       "dataRegistro": "2026-10-28",
       "entregue": false,
       "recebido": false,
@@ -27950,6 +27950,40 @@
       "dataEmissao": "2026-10-25",
       "status": "emitida",
       "enviada": false
+    },
+    {
+      "id": 1793211305917,
+      "numero": "FAT-0250",
+      "encId": 1793196235749,
+      "clienteNome": "Monreale - D.C. Turismo Ltda.",
+      "clienteDoc": "01.204.495/0001-33",
+      "clienteTel": "",
+      "clienteEnd": "Av. Leonor Furlaneto Delgado, 3033",
+      "data": "2026-10-28",
+      "vencimento": "2026-10-28",
+      "pagamento": "pix",
+      "itens": [
+        {
+          "nome": "Bolo de banana VEG",
+          "qtd": 1,
+          "preco": 38
+        },
+        {
+          "nome": "Bolo de laranja VEG",
+          "qtd": 1,
+          "preco": 45
+        },
+        {
+          "nome": "Pão fatiado multigrãos",
+          "qtd": 1,
+          "preco": 36
+        }
+      ],
+      "frete": 0,
+      "subtotal": 119,
+      "total": 119,
+      "dataEmissao": "2026-10-28",
+      "status": "emitida"
     }
   ],
   "_movEstoque": [
@@ -32088,6 +32122,33 @@
       "prodNome": "Pão fatiado milho",
       "qtd": 1,
       "ref": "FAT-0249",
+      "clienteNome": "Monreale - D.C. Turismo Ltda."
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-10-28",
+      "prodId": 1775338517548,
+      "prodNome": "Bolo de banana VEG",
+      "qtd": 1,
+      "ref": "FAT-0250",
+      "clienteNome": "Monreale - D.C. Turismo Ltda."
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-10-28",
+      "prodId": 1775337842248,
+      "prodNome": "Bolo de laranja VEG",
+      "qtd": 1,
+      "ref": "FAT-0250",
+      "clienteNome": "Monreale - D.C. Turismo Ltda."
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-10-28",
+      "prodId": 1775412736500,
+      "prodNome": "Pão fatiado multigrãos",
+      "qtd": 1,
+      "ref": "FAT-0250",
       "clienteNome": "Monreale - D.C. Turismo Ltda."
     }
   ],
