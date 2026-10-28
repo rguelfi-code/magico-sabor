@@ -12617,8 +12617,8 @@
       "status": "entregue",
       "dataRegistro": "2026-10-08",
       "entregue": true,
-      "recebido": false,
-      "dataRecebimento": null
+      "recebido": true,
+      "dataRecebimento": "2026-10-28"
     },
     {
       "id": 1791466343699,
@@ -13546,7 +13546,10 @@
       "subtotal": 119,
       "total": 119,
       "status": "aberto",
-      "dataRegistro": "2026-10-28"
+      "dataRegistro": "2026-10-28",
+      "entregue": false,
+      "recebido": false,
+      "dataRecebimento": null
     },
     {
       "id": 1793196557077,
@@ -13586,7 +13589,10 @@
       "subtotal": 382.2,
       "total": 382.2,
       "status": "aberto",
-      "dataRegistro": "2026-10-28"
+      "dataRegistro": "2026-10-28",
+      "entregue": false,
+      "recebido": false,
+      "dataRecebimento": null
     }
   ],
   "precificados": [
