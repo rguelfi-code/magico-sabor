@@ -13646,6 +13646,36 @@
       "entregue": false,
       "recebido": false,
       "dataRecebimento": null
+    },
+    {
+      "id": 1793283844333,
+      "clienteId": 1775768615785,
+      "clienteNome": "Palace Hotel",
+      "clienteTel": "",
+      "clienteDoc": "20.971.621/0003-91",
+      "data": "2026-10-29",
+      "vencimento": "2026-10-29",
+      "tipo": "entrega",
+      "endereco": "Praça Dr. Pedro Sanches, SN",
+      "frete": 0,
+      "pagamento": "pix",
+      "obs": "",
+      "itens": [
+        {
+          "nome": "Bolo de chocolate VEG",
+          "qtd": 1,
+          "preco": 45
+        },
+        {
+          "nome": "Pão australiano VEG",
+          "qtd": 1,
+          "preco": 38
+        }
+      ],
+      "subtotal": 83,
+      "total": 83,
+      "status": "aberto",
+      "dataRegistro": "2026-10-29"
     }
   ],
   "precificados": [
@@ -28073,7 +28103,8 @@
       "subtotal": 247,
       "total": 247,
       "dataEmissao": "2026-10-28",
-      "status": "emitida"
+      "status": "emitida",
+      "enviada": false
     }
   ],
   "_movEstoque": [
