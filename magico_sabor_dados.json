@@ -626,7 +626,7 @@
       "sd": false,
       "dataCadastro": "2026-04-04",
       "dataAtualizacao": "2026-04-27",
-      "estoque": 1
+      "estoque": 0
     },
     {
       "id": 1777304054271,
@@ -1513,7 +1513,7 @@
       "sd": false,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-04-27",
-      "estoque": 1
+      "estoque": 0
     },
     {
       "id": 1775413066535,
@@ -13674,8 +13674,9 @@
       ],
       "subtotal": 83,
       "total": 83,
-      "status": "aberto",
-      "dataRegistro": "2026-10-29"
+      "status": "entregue",
+      "dataRegistro": "2026-10-29",
+      "entregue": false
     }
   ],
   "precificados": [
@@ -28105,6 +28106,35 @@
       "dataEmissao": "2026-10-28",
       "status": "emitida",
       "enviada": false
+    },
+    {
+      "id": 1793283855030,
+      "numero": "FAT-0253",
+      "encId": 1793283844333,
+      "clienteNome": "Palace Hotel",
+      "clienteDoc": "20.971.621/0003-91",
+      "clienteTel": "",
+      "clienteEnd": "Praça Dr. Pedro Sanches, SN",
+      "data": "2026-10-29",
+      "vencimento": "2026-10-29",
+      "pagamento": "pix",
+      "itens": [
+        {
+          "nome": "Bolo de chocolate VEG",
+          "qtd": 1,
+          "preco": 45
+        },
+        {
+          "nome": "Pão australiano VEG",
+          "qtd": 1,
+          "preco": 38
+        }
+      ],
+      "frete": 0,
+      "subtotal": 83,
+      "total": 83,
+      "dataEmissao": "2026-10-29",
+      "status": "emitida"
     }
   ],
   "_movEstoque": [
@@ -32361,6 +32391,24 @@
       "qtd": 1,
       "ref": "FAT-0252",
       "clienteNome": "Nacional Hotel"
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-10-29",
+      "prodId": 1775337425494,
+      "prodNome": "Bolo de chocolate VEG",
+      "qtd": 1,
+      "ref": "FAT-0253",
+      "clienteNome": "Palace Hotel"
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-10-29",
+      "prodId": 1775412822023,
+      "prodNome": "Pão australiano VEG",
+      "qtd": 1,
+      "ref": "FAT-0253",
+      "clienteNome": "Palace Hotel"
     }
   ],
   "_exportSeq": 50,
