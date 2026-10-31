@@ -13761,7 +13761,45 @@
       "subtotal": 57,
       "total": 57,
       "status": "aberto",
-      "dataRegistro": "2026-10-30"
+      "dataRegistro": "2026-10-30",
+      "entregue": false,
+      "recebido": false,
+      "dataRecebimento": null
+    },
+    {
+      "id": 1793475229136,
+      "clienteId": 1775767606839,
+      "clienteNome": "Monreale - D.C. Turismo Ltda.",
+      "clienteTel": "",
+      "clienteDoc": "01.204.495/0001-33",
+      "data": "2026-10-31",
+      "vencimento": "2026-10-31",
+      "tipo": "entrega",
+      "endereco": "Av. Leonor Furlaneto Delgado, 3033",
+      "frete": 0,
+      "pagamento": "pix",
+      "obs": "",
+      "itens": [
+        {
+          "nome": "Bolo de fubá VEG",
+          "qtd": 1,
+          "preco": 45
+        },
+        {
+          "nome": "Bolo de chocolate - C/cob",
+          "qtd": 1,
+          "preco": 65
+        },
+        {
+          "nome": "Bolo de laranja VEG",
+          "qtd": 1,
+          "preco": 45
+        }
+      ],
+      "subtotal": 155,
+      "total": 155,
+      "status": "aberto",
+      "dataRegistro": "2026-10-31"
     }
   ],
   "precificados": [
