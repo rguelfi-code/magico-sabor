@@ -1403,7 +1403,7 @@
       "sd": false,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-04-23",
-      "estoque": -50
+      "estoque": -56
     },
     {
       "id": 1790863807225,
@@ -1624,7 +1624,7 @@
       "veg": false,
       "sd": false,
       "dataCadastro": "2026-04-05",
-      "estoque": 0
+      "estoque": -1
     },
     {
       "id": 1775412983271,
@@ -13760,7 +13760,7 @@
       ],
       "subtotal": 57,
       "total": 57,
-      "status": "aberto",
+      "status": "entregue",
       "dataRegistro": "2026-10-30",
       "entregue": false,
       "recebido": false,
@@ -13799,7 +13799,10 @@
       "subtotal": 155,
       "total": 155,
       "status": "aberto",
-      "dataRegistro": "2026-10-31"
+      "dataRegistro": "2026-10-31",
+      "entregue": false,
+      "recebido": false,
+      "dataRecebimento": null
     }
   ],
   "precificados": [
@@ -28309,6 +28312,35 @@
       "dataEmissao": "2026-10-29",
       "status": "emitida",
       "enviada": false
+    },
+    {
+      "id": 1793482479525,
+      "numero": "FAT-0255",
+      "encId": 1793375734449,
+      "clienteNome": "Giulia Majeau",
+      "clienteDoc": "—",
+      "clienteTel": "(35) 98883 4185",
+      "clienteEnd": "Rua Ponta Porã, 184 - Jardim dos Estados",
+      "data": "2026-10-30",
+      "vencimento": "2026-10-30",
+      "pagamento": "pix",
+      "itens": [
+        {
+          "nome": "Pão fatiado multigrãos",
+          "qtd": 1,
+          "preco": 36
+        },
+        {
+          "nome": "Mini-pão 45g (6 un)",
+          "qtd": 6,
+          "preco": 3.5
+        }
+      ],
+      "frete": 0,
+      "subtotal": 57,
+      "total": 57,
+      "dataEmissao": "2026-10-31",
+      "status": "emitida"
     }
   ],
   "_movEstoque": [
@@ -32628,6 +32660,24 @@
       "qtd": 1,
       "ref": "FAT-0254",
       "clienteNome": "Monreale - D.C. Turismo Ltda."
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-10-31",
+      "prodId": 1775412736500,
+      "prodNome": "Pão fatiado multigrãos",
+      "qtd": 1,
+      "ref": "FAT-0255",
+      "clienteNome": "Giulia Majeau"
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-10-31",
+      "prodId": 1775412948951,
+      "prodNome": "Mini-pão 45g (6 un)",
+      "qtd": 6,
+      "ref": "FAT-0255",
+      "clienteNome": "Giulia Majeau"
     }
   ],
   "_exportSeq": 50,
