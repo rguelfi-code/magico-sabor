@@ -13762,7 +13762,7 @@
       "total": 57,
       "status": "entregue",
       "dataRegistro": "2026-10-30",
-      "entregue": false,
+      "entregue": true,
       "recebido": false,
       "dataRecebimento": null
     },
