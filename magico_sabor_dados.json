@@ -13763,8 +13763,8 @@
       "status": "entregue",
       "dataRegistro": "2026-10-30",
       "entregue": true,
-      "recebido": false,
-      "dataRecebimento": null
+      "recebido": true,
+      "dataRecebimento": "2026-10-31"
     },
     {
       "id": 1793475229136,
@@ -28340,7 +28340,8 @@
       "subtotal": 57,
       "total": 57,
       "dataEmissao": "2026-10-31",
-      "status": "emitida"
+      "status": "emitida",
+      "enviada": true
     }
   ],
   "_movEstoque": [
