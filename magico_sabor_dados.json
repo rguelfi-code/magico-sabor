@@ -644,7 +644,7 @@
       "veg": true,
       "sd": false,
       "dataCadastro": "2026-04-27",
-      "estoque": 1
+      "estoque": -2
     },
     {
       "id": 1775337460811,
@@ -28405,6 +28405,30 @@
       "dataEmissao": "2026-10-31",
       "status": "emitida",
       "enviada": false
+    },
+    {
+      "id": 1793564428749,
+      "numero": "FAT-0258",
+      "encId": 1793563882697,
+      "clienteNome": "Nacional Hotel",
+      "clienteDoc": "—",
+      "clienteTel": "(35) 99937 2003",
+      "clienteEnd": "",
+      "data": "2026-11-01",
+      "vencimento": "2026-11-01",
+      "pagamento": "pix",
+      "itens": [
+        {
+          "nome": "Bolo de chocolate VEG - C/cob",
+          "preco": 60,
+          "qtd": 3
+        }
+      ],
+      "frete": 0,
+      "subtotal": 180,
+      "total": 180,
+      "dataEmissao": "2026-11-01",
+      "status": "emitida"
     }
   ],
   "_movEstoque": [
@@ -32788,6 +32812,15 @@
       "qtd": 3,
       "ref": "Estorno FAT-0257",
       "obs": "Cancelamento de fatura",
+      "clienteNome": "Nacional Hotel"
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-11-01",
+      "prodId": 1777304054271,
+      "prodNome": "Bolo de chocolate VEG - C/cob",
+      "qtd": 3,
+      "ref": "FAT-0258",
       "clienteNome": "Nacional Hotel"
     }
   ],
