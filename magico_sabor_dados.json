@@ -13856,7 +13856,7 @@
       "total": 42,
       "status": "entregue",
       "dataRegistro": "2026-11-03",
-      "entregue": false,
+      "entregue": true,
       "recebido": false,
       "dataRecebimento": null
     },
@@ -13919,7 +13919,7 @@
       "total": 394,
       "status": "entregue",
       "dataRegistro": "2026-11-03",
-      "entregue": false,
+      "entregue": true,
       "recebido": false,
       "dataRecebimento": null
     },
