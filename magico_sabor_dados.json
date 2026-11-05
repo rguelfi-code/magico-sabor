@@ -13972,7 +13972,54 @@
       "total": 246,
       "status": "entregue",
       "dataRegistro": "2026-11-04",
-      "entregue": false
+      "entregue": false,
+      "recebido": false,
+      "dataRecebimento": null
+    },
+    {
+      "id": 1793888841895,
+      "clienteId": 1775767606839,
+      "clienteNome": "Monreale - D.C. Turismo Ltda.",
+      "clienteTel": "",
+      "clienteDoc": "01.204.495/0001-33",
+      "data": "2026-11-05",
+      "vencimento": "2026-11-05",
+      "tipo": "entrega",
+      "endereco": "Av. Leonor Furlaneto Delgado, 3033",
+      "frete": 0,
+      "pagamento": "pix",
+      "obs": "",
+      "itens": [
+        {
+          "nome": "Bolo de laranja VEG",
+          "qtd": 1,
+          "preco": 45
+        },
+        {
+          "nome": "Bolo de fubá VEG",
+          "qtd": 1,
+          "preco": 45
+        },
+        {
+          "nome": "Bolo de chocolate - C/cob",
+          "qtd": 1,
+          "preco": 65
+        },
+        {
+          "nome": "Pão fatiado multigrãos",
+          "qtd": 1,
+          "preco": 36
+        },
+        {
+          "nome": "Disco pizza 100g  (5 un) VEG",
+          "qtd": 10,
+          "preco": 7
+        }
+      ],
+      "subtotal": 261,
+      "total": 261,
+      "status": "aberto",
+      "dataRegistro": "2026-11-05"
     }
   ],
   "precificados": [
@@ -28705,7 +28752,8 @@
       "subtotal": 246,
       "total": 246,
       "dataEmissao": "2026-11-04",
-      "status": "emitida"
+      "status": "emitida",
+      "enviada": false
     }
   ],
   "_movEstoque": [
