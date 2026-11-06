@@ -934,7 +934,7 @@
       "sd": true,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-04-27",
-      "estoque": 1
+      "estoque": -1
     },
     {
       "id": 1775414426629,
@@ -1458,7 +1458,7 @@
       "veg": false,
       "sd": false,
       "dataCadastro": "2026-04-05",
-      "estoque": 15
+      "estoque": 13
     },
     {
       "id": 1775414902376,
@@ -1807,7 +1807,7 @@
       "sd": false,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-04-27",
-      "estoque": 13
+      "estoque": 11
     },
     {
       "id": 1775413867450,
@@ -1862,7 +1862,7 @@
       "sd": true,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-04-27",
-      "estoque": 1
+      "estoque": -1
     },
     {
       "id": 1775413645611,
@@ -14122,8 +14122,9 @@
       ],
       "subtotal": 116,
       "total": 116,
-      "status": "aberto",
-      "dataRegistro": "2026-11-06"
+      "status": "entregue",
+      "dataRegistro": "2026-11-06",
+      "entregue": false
     }
   ],
   "precificados": [
@@ -28958,6 +28959,45 @@
       "dataEmissao": "2026-11-05",
       "status": "emitida",
       "enviada": false
+    },
+    {
+      "id": 1793963019819,
+      "numero": "FAT-0265",
+      "encId": 1793963009095,
+      "clienteNome": "Nacional Hotel",
+      "clienteDoc": "—",
+      "clienteTel": "(35) 99937 2003",
+      "clienteEnd": "",
+      "data": "2026-11-06",
+      "vencimento": "2026-11-06",
+      "pagamento": "pix",
+      "itens": [
+        {
+          "nome": "Torta de maçã & chocolate VEG",
+          "qtd": 2,
+          "preco": 13
+        },
+        {
+          "nome": "Mousse de limão",
+          "qtd": 2,
+          "preco": 12
+        },
+        {
+          "nome": "Cheesecake c/frutas vermelhas ZERO",
+          "qtd": 2,
+          "preco": 16
+        },
+        {
+          "nome": "Torta de sorvete ZERO",
+          "qtd": 2,
+          "preco": 17
+        }
+      ],
+      "frete": 0,
+      "subtotal": 116,
+      "total": 116,
+      "dataEmissao": "2026-11-06",
+      "status": "emitida"
     }
   ],
   "_movEstoque": [
@@ -33539,6 +33579,42 @@
       "prodNome": "Pão de forma VEG",
       "qtd": 3,
       "ref": "FAT-0264",
+      "clienteNome": "Nacional Hotel"
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-11-06",
+      "prodId": 1775413995120,
+      "prodNome": "Torta de maçã & chocolate VEG",
+      "qtd": 2,
+      "ref": "FAT-0265",
+      "clienteNome": "Nacional Hotel"
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-11-06",
+      "prodId": 1775414249914,
+      "prodNome": "Mousse de limão",
+      "qtd": 2,
+      "ref": "FAT-0265",
+      "clienteNome": "Nacional Hotel"
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-11-06",
+      "prodId": 1775414153841,
+      "prodNome": "Cheesecake c/frutas vermelhas ZERO",
+      "qtd": 2,
+      "ref": "FAT-0265",
+      "clienteNome": "Nacional Hotel"
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-11-06",
+      "prodId": 1775413947923,
+      "prodNome": "Torta de sorvete ZERO",
+      "qtd": 2,
+      "ref": "FAT-0265",
       "clienteNome": "Nacional Hotel"
     }
   ],
