@@ -28689,7 +28689,7 @@
       "total": 83,
       "dataEmissao": "2026-10-29",
       "status": "emitida",
-      "enviada": false
+      "enviada": true
     },
     {
       "id": 1793286728855,
