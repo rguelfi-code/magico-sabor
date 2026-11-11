@@ -14020,7 +14020,7 @@
       "total": 261,
       "status": "entregue",
       "dataRegistro": "2026-11-05",
-      "entregue": false,
+      "entregue": true,
       "recebido": false,
       "dataRecebimento": null
     },
