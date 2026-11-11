@@ -29198,7 +29198,8 @@
       "subtotal": 114,
       "total": 114,
       "dataEmissao": "2026-11-11",
-      "status": "emitida"
+      "status": "emitida",
+      "enviada": true
     }
   ],
   "_movEstoque": [
