@@ -28319,7 +28319,7 @@
       "total": 112,
       "dataEmissao": "2026-10-19",
       "status": "emitida",
-      "enviada": false
+      "enviada": true
     },
     {
       "id": 1792444742628,
