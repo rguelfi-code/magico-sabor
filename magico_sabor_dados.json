@@ -258,7 +258,7 @@
       "sd": true,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-04-27",
-      "estoque": 2
+      "estoque": 1
     },
     {
       "id": 1777299423338,
@@ -403,7 +403,7 @@
       "sd": true,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-04-27",
-      "estoque": 4
+      "estoque": 3
     },
     {
       "id": 1775404301425,
@@ -1606,7 +1606,7 @@
       "veg": false,
       "sd": false,
       "dataCadastro": "2026-04-05",
-      "estoque": -2
+      "estoque": -3
     },
     {
       "id": 1775412736500,
@@ -14355,8 +14355,9 @@
       ],
       "subtotal": 142,
       "total": 142,
-      "status": "aberto",
-      "dataRegistro": "2026-11-12"
+      "status": "entregue",
+      "dataRegistro": "2026-11-12",
+      "entregue": false
     }
   ],
   "precificados": [
@@ -29404,6 +29405,45 @@
       "total": 275.2,
       "dataEmissao": "2026-11-12",
       "status": "emitida"
+    },
+    {
+      "id": 1794509520884,
+      "numero": "FAT-0271",
+      "encId": 1794509511553,
+      "clienteNome": "Carlton Plaza Ltda",
+      "clienteDoc": "71.478.457/0001-54",
+      "clienteTel": "",
+      "clienteEnd": "Rua Junqueiras, 601 Centro",
+      "data": "2026-11-12",
+      "vencimento": "2026-11-12",
+      "pagamento": "pix",
+      "itens": [
+        {
+          "nome": "Bolo caseiro de laranja ZERO",
+          "qtd": 1,
+          "preco": 35
+        },
+        {
+          "nome": "Bolo caseiro de coco ZERO",
+          "qtd": 1,
+          "preco": 35
+        },
+        {
+          "nome": "Pão fatiado milho",
+          "qtd": 1,
+          "preco": 36
+        },
+        {
+          "nome": "Pão fatiado abóbora",
+          "qtd": 1,
+          "preco": 36
+        }
+      ],
+      "frete": 0,
+      "subtotal": 142,
+      "total": 142,
+      "dataEmissao": "2026-11-12",
+      "status": "emitida"
     }
   ],
   "_movEstoque": [
@@ -34157,6 +34197,33 @@
       "qtd": 4,
       "ref": "FAT-0270",
       "clienteNome": "Cassino Hotel"
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-11-12",
+      "prodId": 1775403738474,
+      "prodNome": "Bolo caseiro de laranja ZERO",
+      "qtd": 1,
+      "ref": "FAT-0271",
+      "clienteNome": "Carlton Plaza Ltda"
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-11-12",
+      "prodId": 1775404199149,
+      "prodNome": "Bolo caseiro de coco ZERO",
+      "qtd": 1,
+      "ref": "FAT-0271",
+      "clienteNome": "Carlton Plaza Ltda"
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-11-12",
+      "prodId": 1775412700553,
+      "prodNome": "Pão fatiado milho",
+      "qtd": 1,
+      "ref": "FAT-0271",
+      "clienteNome": "Carlton Plaza Ltda"
     }
   ],
   "_exportSeq": 50,
