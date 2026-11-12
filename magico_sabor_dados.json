@@ -14271,7 +14271,7 @@
       "total": 220,
       "status": "entregue",
       "dataRegistro": "2026-11-12",
-      "entregue": false,
+      "entregue": true,
       "recebido": false,
       "dataRecebimento": null
     },
