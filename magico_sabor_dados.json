@@ -14572,7 +14572,34 @@
       "total": 296,
       "status": "entregue",
       "dataRegistro": "2026-11-15",
-      "entregue": false
+      "entregue": false,
+      "recebido": false,
+      "dataRecebimento": null
+    },
+    {
+      "id": 1794922484439,
+      "clienteId": 1778161807723,
+      "clienteNome": "Fernanda França",
+      "clienteTel": "(35) 99958 3655",
+      "clienteDoc": "",
+      "data": "2026-11-17",
+      "vencimento": "2026-11-17",
+      "tipo": "entrega",
+      "endereco": "Rua Assis Figueiredo 1920, apto. 31",
+      "frete": 0,
+      "pagamento": "pix",
+      "obs": "",
+      "itens": [
+        {
+          "nome": "Bolo caseiro de chocolate - C/cob",
+          "qtd": 1,
+          "preco": 40
+        }
+      ],
+      "subtotal": 40,
+      "total": 40,
+      "status": "aberto",
+      "dataRegistro": "2026-11-17"
     }
   ],
   "precificados": [
@@ -29860,7 +29887,8 @@
       "subtotal": 296,
       "total": 296,
       "dataEmissao": "2026-11-15",
-      "status": "emitida"
+      "status": "emitida",
+      "enviada": false
     }
   ],
   "_movEstoque": [
