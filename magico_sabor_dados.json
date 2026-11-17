@@ -14229,8 +14229,8 @@
       "status": "entregue",
       "dataRegistro": "2026-11-09",
       "entregue": true,
-      "recebido": false,
-      "dataRecebimento": null
+      "recebido": true,
+      "dataRecebimento": "2026-11-17"
     },
     {
       "id": 1794497251211,
@@ -29286,7 +29286,7 @@
       "total": 394,
       "dataEmissao": "2026-11-03",
       "status": "emitida",
-      "enviada": false
+      "enviada": true
     },
     {
       "id": 1793814042767,
