@@ -29476,7 +29476,7 @@
       "total": 116,
       "dataEmissao": "2026-11-06",
       "status": "emitida",
-      "enviada": false
+      "enviada": true
     },
     {
       "id": 1794244632900,
