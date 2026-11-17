@@ -14514,7 +14514,7 @@
       "total": 88,
       "status": "entregue",
       "dataRegistro": "2026-11-15",
-      "entregue": false,
+      "entregue": true,
       "recebido": false,
       "dataRecebimento": null
     },
@@ -14572,7 +14572,7 @@
       "total": 296,
       "status": "entregue",
       "dataRegistro": "2026-11-15",
-      "entregue": false,
+      "entregue": true,
       "recebido": false,
       "dataRecebimento": null
     },
