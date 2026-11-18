@@ -14603,6 +14603,41 @@
       "entregue": false,
       "recebido": false,
       "dataRecebimento": null
+    },
+    {
+      "id": 1795007159334,
+      "clienteId": 1775766590796,
+      "clienteNome": "Cassino Hotel",
+      "clienteTel": "(35) 99937 2003",
+      "clienteDoc": "",
+      "data": "2026-11-18",
+      "vencimento": "2026-11-18",
+      "tipo": "entrega",
+      "endereco": "",
+      "frete": 0,
+      "pagamento": "pix",
+      "obs": "",
+      "itens": [
+        {
+          "nome": "Bolo caseiro de chocolate - C/cob",
+          "qtd": 4,
+          "preco": 40
+        },
+        {
+          "nome": "Bolo caseiro de laranja VEG",
+          "qtd": 3,
+          "preco": 30
+        },
+        {
+          "nome": "Pão francês (6 un)",
+          "qtd": 6,
+          "preco": 3.8
+        }
+      ],
+      "subtotal": 272.8,
+      "total": 272.8,
+      "status": "aberto",
+      "dataRegistro": "2026-11-18"
     }
   ],
   "precificados": [
