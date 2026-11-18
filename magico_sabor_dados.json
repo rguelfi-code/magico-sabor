@@ -147,7 +147,7 @@
       "sd": false,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-04-27",
-      "estoque": 0
+      "estoque": -4
     },
     {
       "id": 1775403049458,
@@ -384,7 +384,7 @@
       "sd": false,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-04-27",
-      "estoque": 2
+      "estoque": -1
     },
     {
       "id": 1775403738474,
@@ -1643,7 +1643,7 @@
       "sd": false,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-06-12",
-      "estoque": -84
+      "estoque": -90
     },
     {
       "id": 1776807915677,
@@ -14636,8 +14636,9 @@
       ],
       "subtotal": 272.8,
       "total": 272.8,
-      "status": "aberto",
-      "dataRegistro": "2026-11-18"
+      "status": "entregue",
+      "dataRegistro": "2026-11-18",
+      "entregue": false
     }
   ],
   "precificados": [
@@ -29952,6 +29953,40 @@
       "dataEmissao": "2026-11-17",
       "status": "emitida",
       "enviada": false
+    },
+    {
+      "id": 1795007375958,
+      "numero": "FAT-0278",
+      "encId": 1795007159334,
+      "clienteNome": "Cassino Hotel",
+      "clienteDoc": "—",
+      "clienteTel": "(35) 99937 2003",
+      "clienteEnd": "",
+      "data": "2026-11-18",
+      "vencimento": "2026-11-18",
+      "pagamento": "pix",
+      "itens": [
+        {
+          "nome": "Bolo caseiro de chocolate - C/cob",
+          "qtd": 4,
+          "preco": 40
+        },
+        {
+          "nome": "Bolo caseiro de laranja VEG",
+          "qtd": 3,
+          "preco": 30
+        },
+        {
+          "nome": "Pão francês (6 un)",
+          "qtd": 6,
+          "preco": 3.8
+        }
+      ],
+      "frete": 0,
+      "subtotal": 272.8,
+      "total": 272.8,
+      "dataEmissao": "2026-11-18",
+      "status": "emitida"
     }
   ],
   "_movEstoque": [
@@ -34921,6 +34956,33 @@
       "qtd": 1,
       "ref": "FAT-0277",
       "clienteNome": "Fernanda França"
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-11-18",
+      "prodId": 1775402992789,
+      "prodNome": "Bolo caseiro de chocolate - C/cob",
+      "qtd": 4,
+      "ref": "FAT-0278",
+      "clienteNome": "Cassino Hotel"
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-11-18",
+      "prodId": 1775403653171,
+      "prodNome": "Bolo caseiro de laranja VEG",
+      "qtd": 3,
+      "ref": "FAT-0278",
+      "clienteNome": "Cassino Hotel"
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-11-18",
+      "prodId": 1775412983271,
+      "prodNome": "Pão francês (6 un)",
+      "qtd": 6,
+      "ref": "FAT-0278",
+      "clienteNome": "Cassino Hotel"
     }
   ],
   "_exportSeq": 50,
