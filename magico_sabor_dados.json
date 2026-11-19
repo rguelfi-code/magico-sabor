@@ -14762,6 +14762,46 @@
       "total": 430,
       "status": "aberto",
       "dataRegistro": "2026-11-19"
+    },
+    {
+      "id": 1795092980427,
+      "clienteId": 1795092870245,
+      "clienteNome": "Wesley",
+      "clienteTel": "(35) ",
+      "clienteDoc": "",
+      "data": "2026-11-19",
+      "vencimento": "2026-11-19",
+      "tipo": "entrega",
+      "endereco": "",
+      "frete": 0,
+      "pagamento": "pix",
+      "obs": "",
+      "itens": [
+        {
+          "nome": "Bolo caseiro de laranja VEG",
+          "qtd": 1,
+          "preco": 30
+        },
+        {
+          "nome": "Torta de sorvete",
+          "qtd": 1,
+          "preco": 14
+        },
+        {
+          "nome": "Cheesecake c/frutas vermelhas ZERO",
+          "qtd": 1,
+          "preco": 16
+        },
+        {
+          "nome": "Mousse de limão",
+          "qtd": 1,
+          "preco": 12
+        }
+      ],
+      "subtotal": 72,
+      "total": 72,
+      "status": "aberto",
+      "dataRegistro": "2026-11-19"
     }
   ],
   "precificados": [
