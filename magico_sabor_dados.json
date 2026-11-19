@@ -4241,6 +4241,17 @@
       "endereco": "Rua Assis Figueiredo, 1678",
       "obs": "",
       "dataCadastro": "2026-04-09"
+    },
+    {
+      "id": 1795092870245,
+      "nome": "Wesley",
+      "tel": "(35) ",
+      "doc": "",
+      "email": "",
+      "bairro": "Poços de Caldas",
+      "endereco": "",
+      "obs": "",
+      "dataCadastro": "2026-11-19"
     }
   ],
   "encomendas": [
