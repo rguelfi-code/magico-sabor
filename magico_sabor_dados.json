@@ -384,7 +384,7 @@
       "sd": false,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-04-27",
-      "estoque": -1
+      "estoque": -2
     },
     {
       "id": 1775403738474,
@@ -934,7 +934,7 @@
       "sd": true,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-04-27",
-      "estoque": -7
+      "estoque": -8
     },
     {
       "id": 1775414426629,
@@ -1458,7 +1458,7 @@
       "veg": false,
       "sd": false,
       "dataCadastro": "2026-04-05",
-      "estoque": 13
+      "estoque": 12
     },
     {
       "id": 1775414902376,
@@ -1843,7 +1843,7 @@
       "sd": false,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-04-12",
-      "estoque": 5
+      "estoque": 4
     },
     {
       "id": 1775413947923,
@@ -14803,8 +14803,9 @@
       ],
       "subtotal": 72,
       "total": 72,
-      "status": "aberto",
-      "dataRegistro": "2026-11-19"
+      "status": "entregue",
+      "dataRegistro": "2026-11-19",
+      "entregue": false
     }
   ],
   "precificados": [
@@ -30261,6 +30262,45 @@
       "total": 430,
       "dataEmissao": "2026-11-19",
       "status": "emitida"
+    },
+    {
+      "id": 1795093331088,
+      "numero": "FAT-0282",
+      "encId": 1795092980427,
+      "clienteNome": "Wesley",
+      "clienteDoc": "—",
+      "clienteTel": "(35) ",
+      "clienteEnd": "",
+      "data": "2026-11-19",
+      "vencimento": "2026-11-19",
+      "pagamento": "pix",
+      "itens": [
+        {
+          "nome": "Bolo caseiro de laranja VEG",
+          "qtd": 1,
+          "preco": 30
+        },
+        {
+          "nome": "Torta de sorvete",
+          "qtd": 1,
+          "preco": 14
+        },
+        {
+          "nome": "Cheesecake c/frutas vermelhas ZERO",
+          "qtd": 1,
+          "preco": 16
+        },
+        {
+          "nome": "Mousse de limão",
+          "qtd": 1,
+          "preco": 12
+        }
+      ],
+      "frete": 0,
+      "subtotal": 72,
+      "total": 72,
+      "dataEmissao": "2026-11-19",
+      "status": "emitida"
     }
   ],
   "_movEstoque": [
@@ -35347,6 +35387,42 @@
       "qtd": 4,
       "ref": "FAT-0281",
       "clienteNome": "Nacional Hotel"
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-11-19",
+      "prodId": 1775403653171,
+      "prodNome": "Bolo caseiro de laranja VEG",
+      "qtd": 1,
+      "ref": "FAT-0282",
+      "clienteNome": "Wesley"
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-11-19",
+      "prodId": 1775413913223,
+      "prodNome": "Torta de sorvete",
+      "qtd": 1,
+      "ref": "FAT-0282",
+      "clienteNome": "Wesley"
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-11-19",
+      "prodId": 1775414153841,
+      "prodNome": "Cheesecake c/frutas vermelhas ZERO",
+      "qtd": 1,
+      "ref": "FAT-0282",
+      "clienteNome": "Wesley"
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-11-19",
+      "prodId": 1775414249914,
+      "prodNome": "Mousse de limão",
+      "qtd": 1,
+      "ref": "FAT-0282",
+      "clienteNome": "Wesley"
     }
   ],
   "_exportSeq": 50,
