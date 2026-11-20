@@ -14682,7 +14682,9 @@
       "total": 105,
       "status": "entregue",
       "dataRegistro": "2026-11-19",
-      "entregue": false
+      "entregue": false,
+      "recebido": false,
+      "dataRecebimento": null
     },
     {
       "id": 1795092579350,
@@ -14718,7 +14720,9 @@
       "total": 143,
       "status": "entregue",
       "dataRegistro": "2026-11-19",
-      "entregue": false
+      "entregue": false,
+      "recebido": false,
+      "dataRecebimento": null
     },
     {
       "id": 1795092777418,
@@ -14764,7 +14768,9 @@
       "total": 430,
       "status": "entregue",
       "dataRegistro": "2026-11-19",
-      "entregue": false
+      "entregue": false,
+      "recebido": false,
+      "dataRecebimento": null
     },
     {
       "id": 1795092980427,
@@ -14805,7 +14811,39 @@
       "total": 72,
       "status": "entregue",
       "dataRegistro": "2026-11-19",
-      "entregue": false
+      "entregue": false,
+      "recebido": false,
+      "dataRecebimento": null
+    },
+    {
+      "id": 1795178721088,
+      "clienteId": 1775767606839,
+      "clienteNome": "Monreale - D.C. Turismo Ltda.",
+      "clienteTel": "",
+      "clienteDoc": "01.204.495/0001-33",
+      "data": "2026-11-20",
+      "vencimento": "2026-11-20",
+      "tipo": "entrega",
+      "endereco": "Av. Leonor Furlaneto Delgado, 3033",
+      "frete": 0,
+      "pagamento": "pix",
+      "obs": "",
+      "itens": [
+        {
+          "nome": "Pão fatiado milho",
+          "qtd": 1,
+          "preco": 36
+        },
+        {
+          "nome": "Pão fatiado multigrãos",
+          "qtd": 1,
+          "preco": 36
+        }
+      ],
+      "subtotal": 72,
+      "total": 72,
+      "status": "aberto",
+      "dataRegistro": "2026-11-20"
     }
   ],
   "precificados": [
@@ -30183,7 +30221,8 @@
       "subtotal": 105,
       "total": 105,
       "dataEmissao": "2026-11-19",
-      "status": "emitida"
+      "status": "emitida",
+      "enviada": false
     },
     {
       "id": 1795093161770,
@@ -30217,7 +30256,8 @@
       "subtotal": 143,
       "total": 143,
       "dataEmissao": "2026-11-19",
-      "status": "emitida"
+      "status": "emitida",
+      "enviada": false
     },
     {
       "id": 1795093211105,
@@ -30261,7 +30301,8 @@
       "subtotal": 430,
       "total": 430,
       "dataEmissao": "2026-11-19",
-      "status": "emitida"
+      "status": "emitida",
+      "enviada": false
     },
     {
       "id": 1795093331088,
@@ -30300,7 +30341,8 @@
       "subtotal": 72,
       "total": 72,
       "dataEmissao": "2026-11-19",
-      "status": "emitida"
+      "status": "emitida",
+      "enviada": false
     }
   ],
   "_movEstoque": [
