@@ -36,7 +36,7 @@
       "sd": true,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-04-27",
-      "estoque": 1
+      "estoque": 0
     },
     {
       "id": 1777236241520,
@@ -92,7 +92,7 @@
       "sd": true,
       "dataCadastro": "2026-04-04",
       "dataAtualizacao": "2026-05-11",
-      "estoque": -1
+      "estoque": -2
     },
     {
       "id": 1778510458992,
@@ -403,7 +403,7 @@
       "sd": true,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-04-27",
-      "estoque": 3
+      "estoque": 2
     },
     {
       "id": 1775404301425,
@@ -476,7 +476,7 @@
       "sd": false,
       "dataCadastro": "2026-04-04",
       "dataAtualizacao": "2026-04-27",
-      "estoque": -13
+      "estoque": -14
     },
     {
       "id": 1775338584762,
@@ -644,7 +644,7 @@
       "veg": true,
       "sd": false,
       "dataCadastro": "2026-04-27",
-      "estoque": -7
+      "estoque": -8
     },
     {
       "id": 1775337460811,
@@ -842,7 +842,7 @@
       "sd": false,
       "dataCadastro": "2026-04-04",
       "dataAtualizacao": "2026-04-27",
-      "estoque": -26
+      "estoque": -27
     },
     {
       "id": 1775337876560,
@@ -1551,7 +1551,7 @@
       "sd": false,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-04-27",
-      "estoque": -11
+      "estoque": -13
     },
     {
       "id": 1779109491117,
@@ -30434,6 +30434,60 @@
       "dataEmissao": "2026-11-20",
       "status": "emitida",
       "enviada": false
+    },
+    {
+      "id": 1795209609299,
+      "numero": "FAT-0285",
+      "encId": 1795207161113,
+      "clienteNome": "Monreale - D.C. Turismo Ltda.",
+      "clienteDoc": "01.204.495/0001-33",
+      "clienteTel": "",
+      "clienteEnd": "Av. Leonor Furlaneto Delgado, 3033",
+      "data": "2026-11-20",
+      "vencimento": "2026-11-20",
+      "pagamento": "pix",
+      "itens": [
+        {
+          "nome": "Pão de forma VEG",
+          "qtd": 2,
+          "preco": 36
+        },
+        {
+          "nome": "Bolo caseiro de laranja ZERO",
+          "qtd": 1,
+          "preco": 35
+        },
+        {
+          "nome": "Bolo caseiro de banana ZERO",
+          "qtd": 1,
+          "preco": 35
+        },
+        {
+          "nome": "Bolo caseiro de cenoura ZERO",
+          "qtd": 1,
+          "preco": 35
+        },
+        {
+          "nome": "Bolo de banana VEG",
+          "preco": 38,
+          "qtd": 1
+        },
+        {
+          "nome": "Bolo de laranja VEG",
+          "preco": 45,
+          "qtd": 1
+        },
+        {
+          "nome": "Bolo de chocolate VEG - C/cob",
+          "preco": 60,
+          "qtd": 1
+        }
+      ],
+      "frete": 0,
+      "subtotal": 320,
+      "total": 320,
+      "dataEmissao": "2026-11-20",
+      "status": "emitida"
     }
   ],
   "_movEstoque": [
@@ -35653,6 +35707,69 @@
       "qtd": 1,
       "ref": "Estorno FAT-0284",
       "obs": "Cancelamento de fatura",
+      "clienteNome": "Monreale - D.C. Turismo Ltda."
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-11-20",
+      "prodId": 1775412797431,
+      "prodNome": "Pão de forma VEG",
+      "qtd": 2,
+      "ref": "FAT-0285",
+      "clienteNome": "Monreale - D.C. Turismo Ltda."
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-11-20",
+      "prodId": 1775403738474,
+      "prodNome": "Bolo caseiro de laranja ZERO",
+      "qtd": 1,
+      "ref": "FAT-0285",
+      "clienteNome": "Monreale - D.C. Turismo Ltda."
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-11-20",
+      "prodId": 1775404145290,
+      "prodNome": "Bolo caseiro de banana ZERO",
+      "qtd": 1,
+      "ref": "FAT-0285",
+      "clienteNome": "Monreale - D.C. Turismo Ltda."
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-11-20",
+      "prodId": 1775339336605,
+      "prodNome": "Bolo caseiro de cenoura ZERO",
+      "qtd": 1,
+      "ref": "FAT-0285",
+      "clienteNome": "Monreale - D.C. Turismo Ltda."
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-11-20",
+      "prodId": 1775338517548,
+      "prodNome": "Bolo de banana VEG",
+      "qtd": 1,
+      "ref": "FAT-0285",
+      "clienteNome": "Monreale - D.C. Turismo Ltda."
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-11-20",
+      "prodId": 1775337842248,
+      "prodNome": "Bolo de laranja VEG",
+      "qtd": 1,
+      "ref": "FAT-0285",
+      "clienteNome": "Monreale - D.C. Turismo Ltda."
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-11-20",
+      "prodId": 1777304054271,
+      "prodNome": "Bolo de chocolate VEG - C/cob",
+      "qtd": 1,
+      "ref": "FAT-0285",
       "clienteNome": "Monreale - D.C. Turismo Ltda."
     }
   ],
