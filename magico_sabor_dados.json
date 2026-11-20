@@ -30056,7 +30056,7 @@
       "total": 396,
       "dataEmissao": "2026-11-13",
       "status": "emitida",
-      "enviada": false
+      "enviada": true
     },
     {
       "id": 1794660407846,
