@@ -1606,7 +1606,7 @@
       "veg": false,
       "sd": false,
       "dataCadastro": "2026-04-05",
-      "estoque": -4
+      "estoque": -5
     },
     {
       "id": 1775412736500,
@@ -1624,7 +1624,7 @@
       "veg": false,
       "sd": false,
       "dataCadastro": "2026-04-05",
-      "estoque": -6
+      "estoque": -7
     },
     {
       "id": 1775412983271,
@@ -14811,7 +14811,7 @@
       "total": 72,
       "status": "entregue",
       "dataRegistro": "2026-11-19",
-      "entregue": false,
+      "entregue": true,
       "recebido": false,
       "dataRecebimento": null
     },
@@ -14842,8 +14842,9 @@
       ],
       "subtotal": 72,
       "total": 72,
-      "status": "aberto",
-      "dataRegistro": "2026-11-20"
+      "status": "entregue",
+      "dataRegistro": "2026-11-20",
+      "entregue": false
     }
   ],
   "precificados": [
@@ -30343,6 +30344,35 @@
       "dataEmissao": "2026-11-19",
       "status": "emitida",
       "enviada": false
+    },
+    {
+      "id": 1795178726585,
+      "numero": "FAT-0283",
+      "encId": 1795178721088,
+      "clienteNome": "Monreale - D.C. Turismo Ltda.",
+      "clienteDoc": "01.204.495/0001-33",
+      "clienteTel": "",
+      "clienteEnd": "Av. Leonor Furlaneto Delgado, 3033",
+      "data": "2026-11-20",
+      "vencimento": "2026-11-20",
+      "pagamento": "pix",
+      "itens": [
+        {
+          "nome": "Pão fatiado milho",
+          "qtd": 1,
+          "preco": 36
+        },
+        {
+          "nome": "Pão fatiado multigrãos",
+          "qtd": 1,
+          "preco": 36
+        }
+      ],
+      "frete": 0,
+      "subtotal": 72,
+      "total": 72,
+      "dataEmissao": "2026-11-20",
+      "status": "emitida"
     }
   ],
   "_movEstoque": [
@@ -35465,6 +35495,24 @@
       "qtd": 1,
       "ref": "FAT-0282",
       "clienteNome": "Wesley"
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-11-20",
+      "prodId": 1775412700553,
+      "prodNome": "Pão fatiado milho",
+      "qtd": 1,
+      "ref": "FAT-0283",
+      "clienteNome": "Monreale - D.C. Turismo Ltda."
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-11-20",
+      "prodId": 1775412736500,
+      "prodNome": "Pão fatiado multigrãos",
+      "qtd": 1,
+      "ref": "FAT-0283",
+      "clienteNome": "Monreale - D.C. Turismo Ltda."
     }
   ],
   "_exportSeq": 50,
