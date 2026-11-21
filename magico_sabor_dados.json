@@ -14905,6 +14905,61 @@
       "entregue": false,
       "recebido": false,
       "dataRecebimento": null
+    },
+    {
+      "id": 1795273713975,
+      "clienteId": 1775767606839,
+      "clienteNome": "Monreale - D.C. Turismo Ltda.",
+      "clienteTel": "",
+      "clienteDoc": "01.204.495/0001-33",
+      "data": "2026-11-21",
+      "vencimento": "2026-11-21",
+      "tipo": "entrega",
+      "endereco": "Av. Leonor Furlaneto Delgado, 3033",
+      "frete": 0,
+      "pagamento": "pix",
+      "obs": "",
+      "itens": [
+        {
+          "nome": "Pão fatiado abóbora",
+          "qtd": 2,
+          "preco": 36
+        },
+        {
+          "nome": "Pão fatiado milho",
+          "qtd": 1,
+          "preco": 36
+        },
+        {
+          "nome": "Pão fatiado multigrãos",
+          "qtd": 2,
+          "preco": 36
+        },
+        {
+          "nome": "Bolo de banana VEG",
+          "qtd": 2,
+          "preco": 38
+        },
+        {
+          "nome": "Bolo de laranja VEG",
+          "qtd": 1,
+          "preco": 45
+        },
+        {
+          "nome": "Bolo de cenoura C/cob",
+          "qtd": 1,
+          "preco": 60
+        },
+        {
+          "nome": "Bolo de chocolate - C/cob",
+          "qtd": 1,
+          "preco": 65
+        }
+      ],
+      "subtotal": 426,
+      "total": 426,
+      "status": "aberto",
+      "dataRegistro": "2026-11-21"
     }
   ],
   "precificados": [
@@ -30487,7 +30542,8 @@
       "subtotal": 320,
       "total": 320,
       "dataEmissao": "2026-11-20",
-      "status": "emitida"
+      "status": "emitida",
+      "enviada": false
     }
   ],
   "_movEstoque": [
