@@ -476,7 +476,7 @@
       "sd": false,
       "dataCadastro": "2026-04-04",
       "dataAtualizacao": "2026-04-27",
-      "estoque": -16
+      "estoque": -20
     },
     {
       "id": 1775338584762,
@@ -644,7 +644,7 @@
       "veg": true,
       "sd": false,
       "dataCadastro": "2026-04-27",
-      "estoque": -8
+      "estoque": -12
     },
     {
       "id": 1775337460811,
@@ -842,7 +842,7 @@
       "sd": false,
       "dataCadastro": "2026-04-04",
       "dataAtualizacao": "2026-04-27",
-      "estoque": -29
+      "estoque": -33
     },
     {
       "id": 1775337876560,
@@ -14991,8 +14991,9 @@
       ],
       "subtotal": 572,
       "total": 572,
-      "status": "aberto",
-      "dataRegistro": "2026-11-21"
+      "status": "entregue",
+      "dataRegistro": "2026-11-21",
+      "entregue": false
     }
   ],
   "precificados": [
@@ -30626,6 +30627,40 @@
       "total": 406,
       "dataEmissao": "2026-11-21",
       "status": "emitida"
+    },
+    {
+      "id": 1795284701918,
+      "numero": "FAT-0288",
+      "encId": 1795283685711,
+      "clienteNome": "Nacional Hotel",
+      "clienteDoc": "—",
+      "clienteTel": "(35) 99937 2003",
+      "clienteEnd": "",
+      "data": "2026-11-21",
+      "vencimento": "2026-11-21",
+      "pagamento": "pix",
+      "itens": [
+        {
+          "nome": "Bolo de chocolate VEG - C/cob",
+          "qtd": 4,
+          "preco": 60
+        },
+        {
+          "nome": "Bolo de banana VEG",
+          "qtd": 4,
+          "preco": 38
+        },
+        {
+          "nome": "Bolo de laranja VEG",
+          "qtd": 4,
+          "preco": 45
+        }
+      ],
+      "frete": 0,
+      "subtotal": 572,
+      "total": 572,
+      "dataEmissao": "2026-11-21",
+      "status": "emitida"
     }
   ],
   "_movEstoque": [
@@ -36074,6 +36109,33 @@
       "qtd": 1,
       "ref": "FAT-0287",
       "clienteNome": "Monreale - D.C. Turismo Ltda."
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-11-21",
+      "prodId": 1777304054271,
+      "prodNome": "Bolo de chocolate VEG - C/cob",
+      "qtd": 4,
+      "ref": "FAT-0288",
+      "clienteNome": "Nacional Hotel"
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-11-21",
+      "prodId": 1775338517548,
+      "prodNome": "Bolo de banana VEG",
+      "qtd": 4,
+      "ref": "FAT-0288",
+      "clienteNome": "Nacional Hotel"
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-11-21",
+      "prodId": 1775337842248,
+      "prodNome": "Bolo de laranja VEG",
+      "qtd": 4,
+      "ref": "FAT-0288",
+      "clienteNome": "Nacional Hotel"
     }
   ],
   "_exportSeq": 50,
