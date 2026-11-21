@@ -476,7 +476,7 @@
       "sd": false,
       "dataCadastro": "2026-04-04",
       "dataAtualizacao": "2026-04-27",
-      "estoque": -14
+      "estoque": -16
     },
     {
       "id": 1775338584762,
@@ -513,7 +513,7 @@
       "sd": false,
       "dataCadastro": "2026-04-04",
       "dataAtualizacao": "2026-04-27",
-      "estoque": -3
+      "estoque": -4
     },
     {
       "id": 1775337315853,
@@ -842,7 +842,7 @@
       "sd": false,
       "dataCadastro": "2026-04-04",
       "dataAtualizacao": "2026-04-27",
-      "estoque": -27
+      "estoque": -29
     },
     {
       "id": 1775337876560,
@@ -1606,7 +1606,7 @@
       "veg": false,
       "sd": false,
       "dataCadastro": "2026-04-05",
-      "estoque": -5
+      "estoque": -6
     },
     {
       "id": 1775412736500,
@@ -1624,7 +1624,7 @@
       "veg": false,
       "sd": false,
       "dataCadastro": "2026-04-05",
-      "estoque": -7
+      "estoque": -9
     },
     {
       "id": 1775412983271,
@@ -30577,6 +30577,55 @@
       "dataEmissao": "2026-11-20",
       "status": "emitida",
       "enviada": false
+    },
+    {
+      "id": 1795284295334,
+      "numero": "FAT-0287",
+      "encId": 1795273713975,
+      "clienteNome": "Monreale - D.C. Turismo Ltda.",
+      "clienteDoc": "01.204.495/0001-33",
+      "clienteTel": "",
+      "clienteEnd": "Av. Leonor Furlaneto Delgado, 3033",
+      "data": "2026-11-21",
+      "vencimento": "2026-11-21",
+      "pagamento": "pix",
+      "itens": [
+        {
+          "nome": "Pão fatiado abóbora",
+          "qtd": 2,
+          "preco": 36
+        },
+        {
+          "nome": "Pão fatiado milho",
+          "qtd": 1,
+          "preco": 36
+        },
+        {
+          "nome": "Pão fatiado multigrãos",
+          "qtd": 2,
+          "preco": 36
+        },
+        {
+          "nome": "Bolo de banana VEG",
+          "qtd": 2,
+          "preco": 38
+        },
+        {
+          "nome": "Bolo de laranja VEG",
+          "qtd": 2,
+          "preco": 45
+        },
+        {
+          "nome": "Bolo de cenoura C/cob",
+          "qtd": 1,
+          "preco": 60
+        }
+      ],
+      "frete": 0,
+      "subtotal": 406,
+      "total": 406,
+      "dataEmissao": "2026-11-21",
+      "status": "emitida"
     }
   ],
   "_movEstoque": [
@@ -35979,6 +36028,51 @@
       "qtd": 1,
       "ref": "Estorno FAT-0286",
       "obs": "Cancelamento de fatura",
+      "clienteNome": "Monreale - D.C. Turismo Ltda."
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-11-21",
+      "prodId": 1775412700553,
+      "prodNome": "Pão fatiado milho",
+      "qtd": 1,
+      "ref": "FAT-0287",
+      "clienteNome": "Monreale - D.C. Turismo Ltda."
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-11-21",
+      "prodId": 1775412736500,
+      "prodNome": "Pão fatiado multigrãos",
+      "qtd": 2,
+      "ref": "FAT-0287",
+      "clienteNome": "Monreale - D.C. Turismo Ltda."
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-11-21",
+      "prodId": 1775338517548,
+      "prodNome": "Bolo de banana VEG",
+      "qtd": 2,
+      "ref": "FAT-0287",
+      "clienteNome": "Monreale - D.C. Turismo Ltda."
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-11-21",
+      "prodId": 1775337842248,
+      "prodNome": "Bolo de laranja VEG",
+      "qtd": 2,
+      "ref": "FAT-0287",
+      "clienteNome": "Monreale - D.C. Turismo Ltda."
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-11-21",
+      "prodId": 1775337237472,
+      "prodNome": "Bolo de cenoura C/cob",
+      "qtd": 1,
+      "ref": "FAT-0287",
       "clienteNome": "Monreale - D.C. Turismo Ltda."
     }
   ],
