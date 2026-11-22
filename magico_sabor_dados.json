@@ -15064,6 +15064,41 @@
       "total": 42,
       "status": "aberto",
       "dataRegistro": "2026-11-22"
+    },
+    {
+      "id": 1795356025595,
+      "clienteId": 1775764781355,
+      "clienteNome": "Ana Lúcia Rosico",
+      "clienteTel": "(35) 99126 2053",
+      "clienteDoc": "",
+      "data": "2026-11-22",
+      "vencimento": "2026-11-22",
+      "tipo": "entrega",
+      "endereco": "Rua Sapucaí, 68 apt 31 - S.Benedito",
+      "frete": 0,
+      "pagamento": "pix",
+      "obs": "",
+      "itens": [
+        {
+          "nome": "Pão francês (6 un)",
+          "qtd": 6,
+          "preco": 3.8
+        },
+        {
+          "nome": "Mini-pão 45g (6 un)",
+          "qtd": 6,
+          "preco": 3.5
+        },
+        {
+          "nome": "Bolo caseiro de banana VEG",
+          "qtd": 1,
+          "preco": 30
+        }
+      ],
+      "subtotal": 73.8,
+      "total": 73.8,
+      "status": "aberto",
+      "dataRegistro": "2026-11-22"
     }
   ],
   "precificados": [
