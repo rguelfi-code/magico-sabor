@@ -17,7 +17,7 @@
       "sd": false,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-08-30",
-      "estoque": 8
+      "estoque": 7
     },
     {
       "id": 1775404145290,
@@ -1403,7 +1403,7 @@
       "sd": false,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-04-23",
-      "estoque": -56
+      "estoque": -62
     },
     {
       "id": 1790863807225,
@@ -1643,7 +1643,7 @@
       "sd": false,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-06-12",
-      "estoque": -90
+      "estoque": -96
     },
     {
       "id": 1776807915677,
@@ -15098,8 +15098,9 @@
       ],
       "subtotal": 73.8,
       "total": 73.8,
-      "status": "aberto",
-      "dataRegistro": "2026-11-22"
+      "status": "entregue",
+      "dataRegistro": "2026-11-22",
+      "entregue": false
     }
   ],
   "precificados": [
@@ -30793,6 +30794,40 @@
       "total": 42,
       "dataEmissao": "2026-11-22",
       "status": "emitida"
+    },
+    {
+      "id": 1795356287391,
+      "numero": "FAT-0290",
+      "encId": 1795356025595,
+      "clienteNome": "Ana Lúcia Rosico",
+      "clienteDoc": "—",
+      "clienteTel": "(35) 99126 2053",
+      "clienteEnd": "Rua Sapucaí, 68 apt 31 - S.Benedito",
+      "data": "2026-11-22",
+      "vencimento": "2026-11-22",
+      "pagamento": "pix",
+      "itens": [
+        {
+          "nome": "Pão francês (6 un)",
+          "qtd": 6,
+          "preco": 3.8
+        },
+        {
+          "nome": "Mini-pão 45g (6 un)",
+          "qtd": 6,
+          "preco": 3.5
+        },
+        {
+          "nome": "Bolo caseiro de banana VEG",
+          "qtd": 1,
+          "preco": 30
+        }
+      ],
+      "frete": 0,
+      "subtotal": 73.8,
+      "total": 73.8,
+      "dataEmissao": "2026-11-22",
+      "status": "emitida"
     }
   ],
   "_movEstoque": [
@@ -36277,6 +36312,33 @@
       "qtd": 6,
       "ref": "FAT-0289",
       "clienteNome": "Carol Tenari"
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-11-22",
+      "prodId": 1775412983271,
+      "prodNome": "Pão francês (6 un)",
+      "qtd": 6,
+      "ref": "FAT-0290",
+      "clienteNome": "Ana Lúcia Rosico"
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-11-22",
+      "prodId": 1775412948951,
+      "prodNome": "Mini-pão 45g (6 un)",
+      "qtd": 6,
+      "ref": "FAT-0290",
+      "clienteNome": "Ana Lúcia Rosico"
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-11-22",
+      "prodId": 1775404101559,
+      "prodNome": "Bolo caseiro de banana VEG",
+      "qtd": 1,
+      "ref": "FAT-0290",
+      "clienteNome": "Ana Lúcia Rosico"
     }
   ],
   "_exportSeq": 50,
