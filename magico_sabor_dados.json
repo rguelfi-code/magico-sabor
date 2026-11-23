@@ -2649,14 +2649,14 @@
       "nome": "Granulado",
       "unidade": "kg",
       "estoque": 0,
-      "custo": 110,
+      "custo": 200,
       "minimo": 0,
       "fornecedor": "",
       "sg": true,
       "sl": true,
       "veg": false,
       "dataCadastro": "2026-04-05",
-      "dataAtualizacao": "2026-05-31"
+      "dataAtualizacao": "2026-11-23"
     },
     {
       "id": 1775423166759,
