@@ -2642,7 +2642,7 @@
       "sl": true,
       "veg": true,
       "dataCadastro": "2026-04-05",
-      "dataAtualizacao": "2026-09-10"
+      "dataAtualizacao": "2026-11-23"
     },
     {
       "id": 1775423117627,
@@ -15144,7 +15144,10 @@
       "subtotal": 408.4,
       "total": 408.4,
       "status": "aberto",
-      "dataRegistro": "2026-11-23"
+      "dataRegistro": "2026-11-23",
+      "entregue": false,
+      "recebido": false,
+      "dataRecebimento": null
     }
   ],
   "precificados": [
