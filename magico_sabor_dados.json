@@ -17,7 +17,7 @@
       "sd": false,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-08-30",
-      "estoque": 7
+      "estoque": 4
     },
     {
       "id": 1775404145290,
@@ -147,7 +147,7 @@
       "sd": false,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-04-27",
-      "estoque": -4
+      "estoque": -8
     },
     {
       "id": 1775403049458,
@@ -384,7 +384,7 @@
       "sd": false,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-04-27",
-      "estoque": -2
+      "estoque": -5
     },
     {
       "id": 1775403738474,
@@ -1680,7 +1680,7 @@
       "sd": false,
       "dataCadastro": "2026-06-11",
       "dataAtualizacao": "2026-06-12",
-      "estoque": 0
+      "estoque": -18
     },
     {
       "id": 1775413711563,
@@ -15143,7 +15143,7 @@
       ],
       "subtotal": 408.4,
       "total": 408.4,
-      "status": "aberto",
+      "status": "entregue",
       "dataRegistro": "2026-11-23",
       "entregue": false,
       "recebido": false,
@@ -30917,6 +30917,45 @@
       "dataEmissao": "2026-11-22",
       "status": "emitida",
       "enviada": false
+    },
+    {
+      "id": 1795511513636,
+      "numero": "FAT-0292",
+      "encId": 1795443411401,
+      "clienteNome": "Cassino Hotel",
+      "clienteDoc": "—",
+      "clienteTel": "(35) 99937 2003",
+      "clienteEnd": "",
+      "data": "2026-11-23",
+      "vencimento": "2026-11-23",
+      "pagamento": "pix",
+      "itens": [
+        {
+          "nome": "Bolo caseiro de chocolate - C/cob",
+          "qtd": 4,
+          "preco": 40
+        },
+        {
+          "nome": "Bolo caseiro de banana VEG",
+          "qtd": 3,
+          "preco": 30
+        },
+        {
+          "nome": "Bolo caseiro de laranja VEG",
+          "qtd": 3,
+          "preco": 30
+        },
+        {
+          "nome": "Pão francês vegano",
+          "qtd": 18,
+          "preco": 3.8
+        }
+      ],
+      "frete": 0,
+      "subtotal": 408.4,
+      "total": 408.4,
+      "dataEmissao": "2026-11-24",
+      "status": "emitida"
     }
   ],
   "_movEstoque": [
@@ -36464,6 +36503,42 @@
       "qtd": 8,
       "ref": "FAT-0291",
       "clienteNome": "Aira"
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-11-24",
+      "prodId": 1775402992789,
+      "prodNome": "Bolo caseiro de chocolate - C/cob",
+      "qtd": 4,
+      "ref": "FAT-0292",
+      "clienteNome": "Cassino Hotel"
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-11-24",
+      "prodId": 1775404101559,
+      "prodNome": "Bolo caseiro de banana VEG",
+      "qtd": 3,
+      "ref": "FAT-0292",
+      "clienteNome": "Cassino Hotel"
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-11-24",
+      "prodId": 1775403653171,
+      "prodNome": "Bolo caseiro de laranja VEG",
+      "qtd": 3,
+      "ref": "FAT-0292",
+      "clienteNome": "Cassino Hotel"
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-11-24",
+      "prodId": 1781188398351,
+      "prodNome": "Pão francês vegano",
+      "qtd": 18,
+      "ref": "FAT-0292",
+      "clienteNome": "Cassino Hotel"
     }
   ],
   "_exportSeq": 50,
