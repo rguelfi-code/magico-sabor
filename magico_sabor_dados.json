@@ -1935,14 +1935,14 @@
       "nome": "açúcar  de coco",
       "unidade": "kg",
       "estoque": 0,
-      "custo": 40,
+      "custo": 45,
       "minimo": 0,
       "fornecedor": "",
       "sg": true,
       "sl": true,
       "veg": true,
       "dataCadastro": "2026-04-05",
-      "dataAtualizacao": "2026-04-06"
+      "dataAtualizacao": "2026-11-25"
     },
     {
       "id": 1775418230108,
