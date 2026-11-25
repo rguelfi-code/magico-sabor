@@ -1907,14 +1907,14 @@
       "nome": "Abacaxi",
       "unidade": "kg",
       "estoque": 0,
-      "custo": 8,
+      "custo": 9,
       "minimo": 0,
       "fornecedor": "",
       "sg": true,
       "sl": true,
       "veg": true,
       "dataCadastro": "2026-10-01",
-      "dataAtualizacao": null
+      "dataAtualizacao": "2026-11-25"
     },
     {
       "id": 1776786967383,
@@ -31018,7 +31018,8 @@
       "subtotal": 140,
       "total": 140,
       "dataEmissao": "2026-11-24",
-      "status": "emitida"
+      "status": "emitida",
+      "enviada": false
     }
   ],
   "_movEstoque": [
