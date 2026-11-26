@@ -2019,14 +2019,14 @@
       "nome": "amêndoa crua",
       "unidade": "kg",
       "estoque": 0,
-      "custo": 100,
+      "custo": 115,
       "minimo": 0,
       "fornecedor": "",
       "sg": true,
       "sl": true,
       "veg": true,
       "dataCadastro": "2026-04-05",
-      "dataAtualizacao": "2026-05-30"
+      "dataAtualizacao": "2026-11-26"
     },
     {
       "id": 1775418578652,
