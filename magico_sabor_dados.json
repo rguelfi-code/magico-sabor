@@ -3111,12 +3111,12 @@
       "nome": "Bolo de aniversário",
       "tipo": "",
       "unidade": "un",
-      "custo": 4,
+      "custo": 5.5,
       "estoque": 0,
       "minimo": 0,
       "fornecedor": "local",
       "dataCadastro": "2026-04-06",
-      "dataAtualizacao": null
+      "dataAtualizacao": "2026-11-26"
     },
     {
       "id": 1775519603215,
