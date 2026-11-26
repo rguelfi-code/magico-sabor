@@ -30910,7 +30910,7 @@
       "total": 42,
       "dataEmissao": "2026-11-22",
       "status": "emitida",
-      "enviada": false
+      "enviada": true
     },
     {
       "id": 1795356287391,
