@@ -2229,14 +2229,14 @@
       "nome": "Choc vegano zero acúcar 55%",
       "unidade": "kg",
       "estoque": 0,
-      "custo": 200,
+      "custo": 300,
       "minimo": 0,
       "fornecedor": "",
       "sg": true,
       "sl": true,
       "veg": true,
       "dataCadastro": "2026-04-05",
-      "dataAtualizacao": "2026-10-01"
+      "dataAtualizacao": "2026-11-26"
     },
     {
       "id": 1775419330555,
