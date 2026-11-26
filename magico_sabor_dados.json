@@ -2999,14 +2999,14 @@
       "nome": "Semente de girassol",
       "unidade": "kg",
       "estoque": 0,
-      "custo": 30,
+      "custo": 43,
       "minimo": 0,
       "fornecedor": "",
       "sg": true,
       "sl": true,
       "veg": true,
       "dataCadastro": "2026-04-05",
-      "dataAtualizacao": null
+      "dataAtualizacao": "2026-11-26"
     },
     {
       "id": 1775426032490,
