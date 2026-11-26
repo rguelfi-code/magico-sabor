@@ -3160,12 +3160,12 @@
       "nome": "Forneável Bolo Inglês",
       "tipo": "",
       "unidade": "un",
-      "custo": 2,
+      "custo": 2.3,
       "estoque": 0,
       "minimo": 0,
       "fornecedor": "",
       "dataCadastro": "2026-04-06",
-      "dataAtualizacao": "2026-04-26"
+      "dataAtualizacao": "2026-11-26"
     },
     {
       "id": 1775509791820,
