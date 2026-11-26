@@ -2775,14 +2775,14 @@
       "nome": "Limão",
       "unidade": "kg",
       "estoque": 0,
-      "custo": 15,
+      "custo": 17,
       "minimo": 0,
       "fornecedor": "",
       "sg": true,
       "sl": true,
       "veg": true,
       "dataCadastro": "2026-04-05",
-      "dataAtualizacao": "2026-09-10"
+      "dataAtualizacao": "2026-11-26"
     },
     {
       "id": 1775423430912,
