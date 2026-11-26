@@ -3173,12 +3173,12 @@
       "tipo": "Papel Manteiga",
       "desc": "",
       "unidade": "un",
-      "custo": 0.25,
+      "custo": 0.35,
       "estoque": 0,
       "minimo": 0,
       "fornecedor": "ML",
       "dataCadastro": "2026-04-06",
-      "dataAtualizacao": null
+      "dataAtualizacao": "2026-11-26"
     },
     {
       "id": 1779372958816,
