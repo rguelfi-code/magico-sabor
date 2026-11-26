@@ -2831,14 +2831,14 @@
       "nome": "mel",
       "unidade": "kg",
       "estoque": 0,
-      "custo": 85,
+      "custo": 75,
       "minimo": 0,
       "fornecedor": "local",
       "sg": true,
       "sl": true,
       "veg": false,
       "dataCadastro": "2026-04-05",
-      "dataAtualizacao": "2026-04-06"
+      "dataAtualizacao": "2026-11-26"
     },
     {
       "id": 1775425307256,
