@@ -2719,14 +2719,14 @@
       "nome": "leite condensado",
       "unidade": "kg",
       "estoque": 0,
-      "custo": 25,
+      "custo": 29,
       "minimo": 0,
       "fornecedor": "",
       "sg": true,
       "sl": true,
       "veg": false,
       "dataCadastro": "2026-04-05",
-      "dataAtualizacao": "2026-05-31"
+      "dataAtualizacao": "2026-11-26"
     },
     {
       "id": 1775423318836,
