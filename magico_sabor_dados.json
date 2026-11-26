@@ -15178,7 +15178,7 @@
       "total": 140,
       "status": "entregue",
       "dataRegistro": "2026-11-24",
-      "entregue": false,
+      "entregue": true,
       "recebido": false,
       "dataRecebimento": null
     },
