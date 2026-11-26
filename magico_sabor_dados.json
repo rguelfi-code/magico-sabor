@@ -2369,14 +2369,14 @@
       "nome": "essência de caramelo",
       "unidade": "kg",
       "estoque": 0,
-      "custo": 130,
+      "custo": 470,
       "minimo": 0,
       "fornecedor": "",
       "sg": true,
       "sl": true,
       "veg": true,
       "dataCadastro": "2026-04-05",
-      "dataAtualizacao": null
+      "dataAtualizacao": "2026-11-26"
     },
     {
       "id": 1775422519607,
