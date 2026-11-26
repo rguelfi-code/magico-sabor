@@ -476,7 +476,7 @@
       "sd": false,
       "dataCadastro": "2026-04-04",
       "dataAtualizacao": "2026-04-27",
-      "estoque": -20
+      "estoque": -21
     },
     {
       "id": 1775338584762,
@@ -733,7 +733,7 @@
       "veg": false,
       "sd": false,
       "dataCadastro": "2026-04-04",
-      "estoque": -2
+      "estoque": -3
     },
     {
       "id": 1777299703324,
@@ -1624,7 +1624,7 @@
       "veg": false,
       "sd": false,
       "dataCadastro": "2026-04-05",
-      "estoque": -9
+      "estoque": -10
     },
     {
       "id": 1775412983271,
@@ -15214,8 +15214,9 @@
       ],
       "subtotal": 124,
       "total": 124,
-      "status": "aberto",
-      "dataRegistro": "2026-11-26"
+      "status": "entregue",
+      "dataRegistro": "2026-11-26",
+      "entregue": false
     }
   ],
   "precificados": [
@@ -31055,6 +31056,40 @@
       "dataEmissao": "2026-11-24",
       "status": "emitida",
       "enviada": false
+    },
+    {
+      "id": 1795699581367,
+      "numero": "FAT-0294",
+      "encId": 1795699560877,
+      "clienteNome": "Monreale - D.C. Turismo Ltda.",
+      "clienteDoc": "01.204.495/0001-33",
+      "clienteTel": "",
+      "clienteEnd": "Av. Leonor Furlaneto Delgado, 3033",
+      "data": "2026-11-26",
+      "vencimento": "2026-11-26",
+      "pagamento": "pix",
+      "itens": [
+        {
+          "nome": "Bolo de fubá",
+          "qtd": 1,
+          "preco": 50
+        },
+        {
+          "nome": "Bolo de banana VEG",
+          "qtd": 1,
+          "preco": 38
+        },
+        {
+          "nome": "Pão fatiado multigrãos",
+          "qtd": 1,
+          "preco": 36
+        }
+      ],
+      "frete": 0,
+      "subtotal": 124,
+      "total": 124,
+      "dataEmissao": "2026-11-26",
+      "status": "emitida"
     }
   ],
   "_movEstoque": [
@@ -36655,6 +36690,33 @@
       "prodNome": "Bolo caseiro de laranja ZERO",
       "qtd": 2,
       "ref": "FAT-0293",
+      "clienteNome": "Monreale - D.C. Turismo Ltda."
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-11-26",
+      "prodId": 1775338094778,
+      "prodNome": "Bolo de fubá",
+      "qtd": 1,
+      "ref": "FAT-0294",
+      "clienteNome": "Monreale - D.C. Turismo Ltda."
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-11-26",
+      "prodId": 1775338517548,
+      "prodNome": "Bolo de banana VEG",
+      "qtd": 1,
+      "ref": "FAT-0294",
+      "clienteNome": "Monreale - D.C. Turismo Ltda."
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-11-26",
+      "prodId": 1775412736500,
+      "prodNome": "Pão fatiado multigrãos",
+      "qtd": 1,
+      "ref": "FAT-0294",
       "clienteNome": "Monreale - D.C. Turismo Ltda."
     }
   ],
