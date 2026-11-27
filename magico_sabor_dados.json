@@ -30968,7 +30968,7 @@
       "total": 1033,
       "dataEmissao": "2026-11-27",
       "status": "emitida",
-      "enviada": true
+      "enviada": false
     }
   ],
   "_movEstoque": [
