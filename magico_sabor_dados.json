@@ -476,7 +476,7 @@
       "sd": false,
       "dataCadastro": "2026-04-04",
       "dataAtualizacao": "2026-04-27",
-      "estoque": -21
+      "estoque": -22
     },
     {
       "id": 1775338584762,
@@ -604,7 +604,7 @@
       "sl": true,
       "veg": false,
       "sd": false,
-      "estoque": 0,
+      "estoque": -1,
       "estoqueMin": 0,
       "dataCadastro": "2026-08-30",
       "dataAtualizacao": "2026-08-30"
@@ -2887,14 +2887,14 @@
       "nome": "óleo de coco s sabor",
       "unidade": "kg",
       "estoque": 0,
-      "custo": 75,
+      "custo": 60,
       "minimo": 0,
       "fornecedor": "",
       "sg": true,
       "sl": true,
       "veg": true,
       "dataCadastro": "2026-04-05",
-      "dataAtualizacao": "2026-11-26"
+      "dataAtualizacao": "2026-11-27"
     },
     {
       "id": 1775425432436,
@@ -15290,8 +15290,9 @@
       ],
       "subtotal": 103,
       "total": 103,
-      "status": "aberto",
-      "dataRegistro": "2026-11-27"
+      "status": "entregue",
+      "dataRegistro": "2026-11-27",
+      "entregue": false
     }
   ],
   "precificados": [
@@ -31216,6 +31217,35 @@
       "dataEmissao": "2026-11-27",
       "status": "emitida",
       "enviada": false
+    },
+    {
+      "id": 1795804550529,
+      "numero": "FAT-0300",
+      "encId": 1795804536519,
+      "clienteNome": "Monreale - D.C. Turismo Ltda.",
+      "clienteDoc": "01.204.495/0001-33",
+      "clienteTel": "",
+      "clienteEnd": "Av. Leonor Furlaneto Delgado, 3033",
+      "data": "2026-11-27",
+      "vencimento": "2026-11-27",
+      "pagamento": "pix",
+      "itens": [
+        {
+          "nome": "Bolo de banana VEG",
+          "qtd": 1,
+          "preco": 38
+        },
+        {
+          "nome": "Bolo de chocolate (1) - C/cob",
+          "qtd": 1,
+          "preco": 65
+        }
+      ],
+      "frete": 0,
+      "subtotal": 103,
+      "total": 103,
+      "dataEmissao": "2026-11-27",
+      "status": "emitida"
     }
   ],
   "_movEstoque": [
@@ -37139,6 +37169,24 @@
       "qtd": 18,
       "ref": "FAT-0299",
       "clienteNome": "Palace Hotel"
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-11-27",
+      "prodId": 1775338517548,
+      "prodNome": "Bolo de banana VEG",
+      "qtd": 1,
+      "ref": "FAT-0300",
+      "clienteNome": "Monreale - D.C. Turismo Ltda."
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-11-27",
+      "prodId": 1788115879112,
+      "prodNome": "Bolo de chocolate (1) - C/cob",
+      "qtd": 1,
+      "ref": "FAT-0300",
+      "clienteNome": "Monreale - D.C. Turismo Ltda."
     }
   ],
   "_exportSeq": 50,
