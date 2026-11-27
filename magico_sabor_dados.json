@@ -15150,7 +15150,7 @@
       "total": 210,
       "status": "entregue",
       "dataRegistro": "2026-11-27",
-      "entregue": false,
+      "entregue": true,
       "recebido": false,
       "dataRecebimento": null
     },
