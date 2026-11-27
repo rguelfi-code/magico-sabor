@@ -1199,6 +1199,20 @@ function configurarGitHub(){
   carregarDoGitHub();
 }
 
+function backupDiario(json){
+  // 1º carregamento bem-sucedido do dia: baixa o estado do GitHub (início do dia)
+  try{
+    var d=new Date(),dia=d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');
+    if(localStorage.getItem('msBackupDia')===dia)return;
+    var blob=new Blob([json],{type:'application/json'});
+    var a=document.createElement('a');a.href=URL.createObjectURL(blob);
+    a.download='magico_sabor_inicio_do_dia_'+dia+'.json';
+    document.body.appendChild(a);a.click();document.body.removeChild(a);
+    setTimeout(function(){URL.revokeObjectURL(a.href);},5000);
+    localStorage.setItem('msBackupDia',dia);
+  }catch(e){}
+}
+
 async function carregarDoGitHub(){
   if(!GH_TOKEN){setStatus('Clique em Configurar GitHub para conectar', '#888');return;}
   try{
@@ -1239,6 +1253,7 @@ async function carregarDoGitHub(){
     document.getElementById('btnGitHub').textContent = 'GitHub conectado';
     document.getElementById('btnGitHub').onclick = function(){if(confirm('Recarregar dados do GitHub?'))carregarDoGitHub();};
     var banner=document.getElementById('bannerSalvar');if(banner)banner.style.display='none';
+    backupDiario(json);
   }catch(err){
     // Fallback: carregar via URL pública raw
     setStatus('Tentando carregamento alternativo...', '#a67c20');
@@ -1372,8 +1387,18 @@ try{
     if(imp._exportSeq)dados._exportSeq=imp._exportSeq;
     if(imp._crSaldosIni){crSaldosIni={};Object.entries(imp._crSaldosIni).forEach(function(kv){crSaldosIni[Number(kv[0])]=kv[1];});}
     if(imp._crParciais){crParciais={};Object.entries(imp._crParciais).forEach(function(kv){crParciais[Number(kv[0])]=kv[1];});}
+    if(imp._historico)dados._historico=imp._historico;
+    if(imp._movEstoque)dados._movEstoque=imp._movEstoque;
     sessionStorage.removeItem('msImport');
-    setTimeout(function(){if(GH_TOKEN)salvarNoGitHub();}, 2000);
+    window._msRestaurado=true;
+    setTimeout(async function(){
+      if(!GH_TOKEN)return;
+      try{
+        var r=await fetch('https://api.github.com/repos/'+GH_USER+'/'+GH_REPO+'/contents/'+GH_FILE,{headers:{'Authorization':'token '+GH_TOKEN,'Accept':'application/vnd.github.v3+json'}});
+        if(r.ok){var d=await r.json();GH_SHA=d.sha;}
+      }catch(e){}
+      salvarNoGitHub();
+    }, 1500);
   }
 }catch(e){}
 
@@ -1399,7 +1424,7 @@ function importarViaBtn(){
 
 // Conectar ao GitHub automaticamente se token existir
 if(GH_TOKEN){
-  setTimeout(carregarDoGitHub, 1000);
+  if(!window._msRestaurado)setTimeout(carregarDoGitHub, 1000);
 } else {
   setStatus('Clique em Configurar GitHub para conectar', '#888');
 }
