@@ -15250,13 +15250,13 @@
           "preco": 45
         },
         {
-          "nome": "Pão francês vegano",
-          "qtd": 18,
-          "preco": 3.8
+          "nome": "Pão de forma VEG",
+          "preco": 36,
+          "qtd": 1
         }
       ],
-      "subtotal": 113.39999999999999,
-      "total": 113.39999999999999,
+      "subtotal": 81,
+      "total": 81,
       "status": "entregue",
       "dataRegistro": "2026-11-27",
       "entregue": false,
