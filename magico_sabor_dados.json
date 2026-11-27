@@ -934,7 +934,7 @@
       "sd": true,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-04-27",
-      "estoque": -12
+      "estoque": -16
     },
     {
       "id": 1775414426629,
@@ -1862,7 +1862,7 @@
       "sd": true,
       "dataCadastro": "2026-04-05",
       "dataAtualizacao": "2026-04-27",
-      "estoque": -7
+      "estoque": -12
     },
     {
       "id": 1775413645611,
@@ -15181,7 +15181,7 @@
       ],
       "subtotal": 149,
       "total": 149,
-      "status": "aberto",
+      "status": "entregue",
       "dataRegistro": "2026-11-27",
       "entregue": false,
       "recebido": false,
@@ -31123,6 +31123,35 @@
       "dataEmissao": "2026-11-27",
       "status": "emitida",
       "enviada": false
+    },
+    {
+      "id": 1795802934793,
+      "numero": "FAT-0298",
+      "encId": 1795791663202,
+      "clienteNome": "Monreale - D.C. Turismo Ltda.",
+      "clienteDoc": "01.204.495/0001-33",
+      "clienteTel": "",
+      "clienteEnd": "Av. Leonor Furlaneto Delgado, 3033",
+      "data": "2026-11-27",
+      "vencimento": "2026-11-27",
+      "pagamento": "pix",
+      "itens": [
+        {
+          "nome": "Torta de sorvete ZERO",
+          "qtd": 5,
+          "preco": 17
+        },
+        {
+          "nome": "Cheesecake c/frutas vermelhas ZERO",
+          "qtd": 4,
+          "preco": 16
+        }
+      ],
+      "frete": 0,
+      "subtotal": 149,
+      "total": 149,
+      "dataEmissao": "2026-11-27",
+      "status": "emitida"
     }
   ],
   "_movEstoque": [
@@ -37010,6 +37039,24 @@
       "qtd": 18,
       "ref": "FAT-0297",
       "clienteNome": "Cassino Hotel"
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-11-27",
+      "prodId": 1775413947923,
+      "prodNome": "Torta de sorvete ZERO",
+      "qtd": 5,
+      "ref": "FAT-0298",
+      "clienteNome": "Monreale - D.C. Turismo Ltda."
+    },
+    {
+      "tipo": "saida",
+      "data": "2026-11-27",
+      "prodId": 1775414153841,
+      "prodNome": "Cheesecake c/frutas vermelhas ZERO",
+      "qtd": 4,
+      "ref": "FAT-0298",
+      "clienteNome": "Monreale - D.C. Turismo Ltda."
     }
   ],
   "_exportSeq": 50,
