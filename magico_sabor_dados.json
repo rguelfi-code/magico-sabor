@@ -15113,8 +15113,8 @@
       "status": "entregue",
       "dataRegistro": "2026-11-27",
       "entregue": true,
-      "recebido": true,
-      "dataRecebimento": "2026-11-27"
+      "recebido": false,
+      "dataRecebimento": null
     }
   ],
   "precificados": [
